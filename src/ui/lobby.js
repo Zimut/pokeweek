@@ -150,7 +150,7 @@ export class LobbyScreen {
         style: `--ring:${c.color}`,
         onclick: () => { this.form.character = c.id; this.render(); },
       }, [
-        el('span', { class: 'lb-char-sprite', style: `--sheet:url("assets/characters/${c.id}.png")` }),
+        el('span', { class: 'lb-char-sprite', style: `--sheet:url("${new URL(`assets/characters/${c.id}.png`, document.baseURI).href}")` }),
       ]);
     }));
   }

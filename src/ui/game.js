@@ -256,7 +256,7 @@ export class GameController {
     });
     this.showOverlay([
       el('div', { class: 'pc-head' }, [
-        el('span', { class: 'lb-char-sprite pc-avatar', style: `--sheet:url("assets/characters/${card.character || 'red'}.png")` }),
+        el('span', { class: 'lb-char-sprite pc-avatar', style: `--sheet:url("${new URL(`assets/characters/${card.character || 'red'}.png`, document.baseURI).href}")` }),
         el('div', { class: 'pc-id' }, [
           el('h2', { class: 'pc-name', text: card.name || p.name || 'Player' }),
           el('span', { class: 'pc-money', text: `₽${(card.money || 0).toLocaleString('en-US')}` }),

@@ -58,12 +58,15 @@ const HOP_MS = 200;  // walk-bounce duration — quicker than a full step, so th
 // actor body's background-image; facing/frame pick the cell in CSS.
 const PLAYER_CHARS = new Set(['red', 'blue', 'green', 'gold', 'silver', 'kris']);
 const NPC_VARIANTS = 4;
-const charSheet = (id) => `assets/characters/${PLAYER_CHARS.has(id) ? id : 'red'}.png`;
+// Character sheets are applied via a CSS custom property (--sheet) consumed by an
+// external stylesheet, where a relative url() would resolve against the .css file,
+// not the page. Resolve to an absolute URL so it works at any base path.
+const charSheet = (id) => new URL(`assets/characters/${PLAYER_CHARS.has(id) ? id : 'red'}.png`, document.baseURI).href;
 // Deterministic NPC look per (map,id) so a given trainer always wears the same.
 const npcSheet = (map, id) => {
   let h = 2166136261;
   for (const ch of `${map}:${id}`) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); }
-  return `assets/characters/npc-${(h >>> 0) % NPC_VARIANTS}.png`;
+  return new URL(`assets/characters/npc-${(h >>> 0) % NPC_VARIANTS}.png`, document.baseURI).href;
 };
 // Build the inner sprite body for an actor, themed to a sheet URL. Wrapped in a
 // hop element so the walk-bounce (translateY) never collides with the body's
