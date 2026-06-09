@@ -79,7 +79,7 @@ const progression = {
   dayDefaultMs: 24 * 60 * 60 * 1000,
   starters: ['bulbasaur', 'charmander', 'squirtle', 'chikorita', 'cyndaquil', 'totodile'],
   shinyRate: 300,                 // 1 in 300 wild encounters
-  encounterStepRate: 0.12,        // ~12% per grass step (doubled wild encounter rate)
+  encounterStepRate: 0.24,        // ~24% per grass step
   // base per-throw catch probability by rarity (before HP/status/ball mults)
   catchBaseByRarity: { common: 0.45, uncommon: 0.30, rare: 0.18, veryrare: 0.10 },
   ballMult: { pokeball: 1, greatball: 5 },
@@ -184,10 +184,13 @@ function rarityOf(num) {
 }
 const encounters = {};
 for (const m of MAPS) {
-  const band = m.band;
+  // Wild Pokémon sit BELOW the route's band — from (band min − 2) to (band max −
+  // 4) — so the grass is weaker than the trainers/gyms (e.g. Route 1 → 3..9).
+  const encMin = Math.max(2, m.band[0] - 2);
+  const encMax = Math.max(encMin, m.band[1] - 4);
   const list = MAP_MONS[m.map].map((num) => {
     const rarity = rarityOf(num);
-    return { num, species: idOf(num), name: byNum[num].name, rarity, weight: RARITY_WEIGHT[rarity], min: band[0], max: band[1] };
+    return { num, species: idOf(num), name: byNum[num].name, rarity, weight: RARITY_WEIGHT[rarity], min: encMin, max: encMax };
   });
   encounters[m.map] = list;
 }
@@ -494,7 +497,7 @@ function checkSet(s, where) {
 for (const m of MAPS) {
   for (const t of trainers[m.map]) { assert(t.party.length >= 1, `map${m.map} trainer ${t.id} empty`); for (const s of t.party) checkSet(s, `map${m.map} trainer ${t.id}`); for (const s of t.party) assert(s.level <= m.cap, `map${m.map} trainer ${t.id} ${s.species} over cap`); }
   for (const side of ['kanto', 'johto']) { const g = gyms[m.map][side]; assert(g.team.length >= 2, `map${m.map} ${side} gym too small`); for (const s of g.team) checkSet(s, `map${m.map} ${g.leader}`); }
-  for (const e of encounters[m.map]) { assert(e.min >= m.band[0] && e.max <= m.band[1], `map${m.map} encounter ${e.species} level out of band`); }
+  for (const e of encounters[m.map]) { assert(e.min >= 2 && e.min <= e.max && e.max <= m.cap, `map${m.map} encounter ${e.species} bad level range ${e.min}-${e.max}`); }
 }
 // evolution sanity: all targets exist + not removed
 for (const [from, list] of Object.entries(evolution)) for (const e of list) {
