@@ -1,0 +1,27 @@
+{
+  "name": "pokeweek",
+  "version": "0.1.0",
+  "description": "PokeWeek - a Gen 2 faithful online multiplayer Pokemon battle game",
+  "type": "module",
+  "scripts": {
+    "build:data": "node scripts/build-data.mjs",
+    "build:learnsets": "node scripts/build-learnsets.mjs",
+    "build:sprites": "node scripts/download-sprites.mjs",
+    "build:characters": "node scripts/build-characters.mjs",
+    "build:tiles": "node scripts/build-tiles.mjs",
+    "build:world": "node scripts/build-world.mjs",
+    "build:all": "node scripts/build-data.mjs && node scripts/build-learnsets.mjs && node scripts/download-sprites.mjs && node scripts/build-characters.mjs && node scripts/build-tiles.mjs && node scripts/build-world.mjs",
+    "serve": "node scripts/serve.mjs",
+    "server": "node server/server.mjs",
+    "test:mechanics": "node scripts/test-mechanics.mjs",
+    "test:online": "node scripts/test-online.mjs",
+    "test:ws": "node scripts/test-ws.mjs",
+    "test:lobby": "node scripts/test-lobby.mjs",
+    "test:presence": "node scripts/test-presence.mjs",
+    "test:week": "node scripts/test-week.mjs",
+    "test:tournament": "node scripts/test-tournament.mjs",
+    "test": "node scripts/test-mechanics.mjs && node scripts/test-online.mjs && node scripts/test-ws.mjs && node scripts/test-lobby.mjs && node scripts/test-presence.mjs && node scripts/test-week.mjs && node scripts/test-tournament.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

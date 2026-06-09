@@ -1,0 +1,6223 @@
+{
+ "1": [
+  {
+   "id": 0,
+   "class": "Youngster",
+   "name": "Liz",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "butterfree",
+     "level": 12,
+     "moves": [
+      "confusion"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 9,
+      "def": 12,
+      "spa": 16,
+      "spd": 21,
+      "spe": 16
+     }
+    },
+    {
+     "species": "jigglypuff",
+     "level": 13,
+     "moves": [
+      "sing",
+      "defensecurl",
+      "pound"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 14,
+      "def": 11,
+      "spa": 10,
+      "spd": 19,
+      "spe": 17
+     }
+    },
+    {
+     "species": "jigglypuff",
+     "level": 14,
+     "moves": [
+      "sing",
+      "defensecurl",
+      "pound",
+      "disable"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 15,
+      "def": 13,
+      "spa": 18,
+      "spd": 21,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Lass",
+   "name": "Sam",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "hoppip",
+     "level": 11,
+     "moves": [
+      "splash",
+      "synthesis",
+      "tailwhip",
+      "tackle"
+     ],
+     "evs": {
+      "hp": 10,
+      "atk": 16,
+      "def": 13,
+      "spa": 8,
+      "spd": 13,
+      "spe": 17
+     }
+    },
+    {
+     "species": "spinarak",
+     "level": 12,
+     "moves": [
+      "poisonsting",
+      "stringshot",
+      "scaryface",
+      "constrict"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 12,
+      "def": 16,
+      "spa": 16,
+      "spd": 11,
+      "spe": 15
+     }
+    },
+    {
+     "species": "rattata",
+     "level": 13,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "quickattack",
+      "hyperfang"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 16,
+      "def": 10,
+      "spa": 13,
+      "spd": 14,
+      "spe": 20
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Bug Catcher",
+   "name": "Kai",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "pidgey",
+     "level": 10,
+     "moves": [
+      "tackle",
+      "sandattack",
+      "gust"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 8,
+      "def": 10,
+      "spa": 14,
+      "spd": 11,
+      "spe": 14
+     }
+    },
+    {
+     "species": "butterfree",
+     "level": 11,
+     "moves": [
+      "confusion"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 12,
+      "def": 13,
+      "spa": 11,
+      "spd": 18,
+      "spe": 9
+     }
+    },
+    {
+     "species": "mareep",
+     "level": 12,
+     "moves": [
+      "growl",
+      "tackle",
+      "thundershock"
+     ],
+     "evs": {
+      "hp": 16,
+      "atk": 12,
+      "def": 13,
+      "spa": 17,
+      "spd": 17,
+      "spe": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Picnicker",
+   "name": "Bret",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "spinarak",
+     "level": 9,
+     "moves": [
+      "poisonsting",
+      "stringshot",
+      "scaryface"
+     ],
+     "evs": {
+      "hp": 8,
+      "atk": 10,
+      "def": 8,
+      "spa": 10,
+      "spd": 11,
+      "spe": 17
+     }
+    },
+    {
+     "species": "ledyba",
+     "level": 10,
+     "moves": [
+      "tackle",
+      "supersonic"
+     ],
+     "evs": {
+      "hp": 16,
+      "atk": 8,
+      "def": 10,
+      "spa": 10,
+      "spd": 9,
+      "spe": 17
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Youngster",
+   "name": "Tess",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "clefairy",
+     "level": 8,
+     "moves": [
+      "growl",
+      "pound",
+      "encore",
+      "sing"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 7,
+      "def": 9,
+      "spa": 12,
+      "spd": 10,
+      "spe": 7
+     }
+    },
+    {
+     "species": "jigglypuff",
+     "level": 9,
+     "moves": [
+      "sing",
+      "defensecurl",
+      "pound"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 14,
+      "def": 9,
+      "spa": 13,
+      "spd": 5,
+      "spe": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Lass",
+   "name": "Dale",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "pichu",
+     "level": 7,
+     "moves": [
+      "charm",
+      "thundershock",
+      "tailwhip"
+     ],
+     "evs": {
+      "hp": 5,
+      "atk": 10,
+      "def": 9,
+      "spa": 5,
+      "spd": 9,
+      "spe": 11
+     }
+    },
+    {
+     "species": "spinarak",
+     "level": 8,
+     "moves": [
+      "poisonsting",
+      "stringshot",
+      "scaryface"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 8,
+      "def": 7,
+      "spa": 8,
+      "spd": 7,
+      "spe": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Bug Catcher",
+   "name": "Nina",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "hoothoot",
+     "level": 6,
+     "moves": [
+      "growl",
+      "tackle",
+      "foresight"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 5,
+      "def": 6,
+      "spa": 7,
+      "spd": 7,
+      "spe": 7
+     }
+    },
+    {
+     "species": "kakuna",
+     "level": 7,
+     "moves": [
+      "harden"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 5,
+      "def": 12,
+      "spa": 10,
+      "spd": 5,
+      "spe": 5
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Picnicker",
+   "name": "Owen",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "sunkern",
+     "level": 5,
+     "moves": [
+      "absorb",
+      "growth"
+     ],
+     "evs": {
+      "hp": 7,
+      "atk": 5,
+      "def": 6,
+      "spa": 6,
+      "spd": 8,
+      "spe": 3
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Youngster",
+   "name": "Rita",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "pichu",
+     "level": 5,
+     "moves": [
+      "charm",
+      "thundershock"
+     ],
+     "evs": {
+      "hp": 5,
+      "atk": 6,
+      "def": 5,
+      "spa": 7,
+      "spd": 6,
+      "spe": 6
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Lass",
+   "name": "Gus",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "caterpie",
+     "level": 5,
+     "moves": [
+      "stringshot",
+      "tackle"
+     ],
+     "evs": {
+      "hp": 6,
+      "atk": 5,
+      "def": 6,
+      "spa": 8,
+      "spd": 7,
+      "spe": 4
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Bug Catcher",
+   "name": "Vera",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "rattata",
+     "level": 12,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 16,
+      "atk": 7,
+      "def": 16,
+      "spa": 18,
+      "spd": 13,
+      "spe": 13
+     }
+    },
+    {
+     "species": "hoppip",
+     "level": 13,
+     "moves": [
+      "synthesis",
+      "tailwhip",
+      "tackle",
+      "poisonpowder"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 20,
+      "def": 13,
+      "spa": 10,
+      "spd": 18,
+      "spe": 10
+     }
+    },
+    {
+     "species": "spinarak",
+     "level": 14,
+     "moves": [
+      "poisonsting",
+      "stringshot",
+      "scaryface",
+      "constrict"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 14,
+      "def": 16,
+      "spa": 19,
+      "spd": 22,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Picnicker",
+   "name": "Theo",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "rattata",
+     "level": 11,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 10,
+      "def": 14,
+      "spa": 18,
+      "spd": 9,
+      "spe": 13
+     }
+    },
+    {
+     "species": "pikachu",
+     "level": 12,
+     "moves": [
+      "thundershock",
+      "tailwhip",
+      "thunderwave",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 13,
+      "def": 18,
+      "spa": 11,
+      "spd": 14,
+      "spe": 14
+     }
+    },
+    {
+     "species": "pikachu",
+     "level": 13,
+     "moves": [
+      "thundershock",
+      "tailwhip",
+      "thunderwave",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 18,
+      "def": 9,
+      "spa": 21,
+      "spd": 12,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Youngster",
+   "name": "Mona",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "sentret",
+     "level": 10,
+     "moves": [
+      "tackle",
+      "defensecurl"
+     ],
+     "evs": {
+      "hp": 8,
+      "atk": 14,
+      "def": 13,
+      "spa": 13,
+      "spd": 12,
+      "spe": 10
+     }
+    },
+    {
+     "species": "sunkern",
+     "level": 11,
+     "moves": [
+      "absorb",
+      "growth",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 18,
+      "def": 9,
+      "spa": 15,
+      "spd": 11,
+      "spe": 11
+     }
+    },
+    {
+     "species": "butterfree",
+     "level": 12,
+     "moves": [
+      "confusion"
+     ],
+     "evs": {
+      "hp": 15,
+      "atk": 18,
+      "def": 11,
+      "spa": 19,
+      "spd": 10,
+      "spe": 11
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Lass",
+   "name": "Cody",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "ledyba",
+     "level": 9,
+     "moves": [
+      "tackle",
+      "supersonic"
+     ],
+     "evs": {
+      "hp": 9,
+      "atk": 12,
+      "def": 12,
+      "spa": 9,
+      "spd": 9,
+      "spe": 12
+     }
+    },
+    {
+     "species": "pidgey",
+     "level": 10,
+     "moves": [
+      "tackle",
+      "sandattack",
+      "gust"
+     ],
+     "evs": {
+      "hp": 15,
+      "atk": 14,
+      "def": 8,
+      "spa": 12,
+      "spd": 6,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Bug Catcher",
+   "name": "Iris",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "sunkern",
+     "level": 8,
+     "moves": [
+      "absorb",
+      "growth"
+     ],
+     "evs": {
+      "hp": 8,
+      "atk": 11,
+      "def": 6,
+      "spa": 9,
+      "spd": 14,
+      "spe": 8
+     }
+    },
+    {
+     "species": "sunkern",
+     "level": 9,
+     "moves": [
+      "absorb",
+      "growth"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 9,
+      "def": 11,
+      "spa": 13,
+      "spd": 10,
+      "spe": 6
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Picnicker",
+   "name": "Hank",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "mareep",
+     "level": 7,
+     "moves": [
+      "growl",
+      "tackle"
+     ],
+     "evs": {
+      "hp": 10,
+      "atk": 9,
+      "def": 10,
+      "spa": 5,
+      "spd": 10,
+      "spe": 4
+     }
+    },
+    {
+     "species": "hoothoot",
+     "level": 8,
+     "moves": [
+      "growl",
+      "tackle",
+      "foresight"
+     ],
+     "evs": {
+      "hp": 7,
+      "atk": 14,
+      "def": 7,
+      "spa": 6,
+      "spd": 14,
+      "spe": 7
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Youngster",
+   "name": "Zoe",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "marill",
+     "level": 6,
+     "moves": [
+      "tackle",
+      "defensecurl",
+      "tailwhip"
+     ],
+     "evs": {
+      "hp": 6,
+      "atk": 8,
+      "def": 6,
+      "spa": 10,
+      "spd": 5,
+      "spe": 7
+     }
+    },
+    {
+     "species": "hoothoot",
+     "level": 7,
+     "moves": [
+      "growl",
+      "tackle",
+      "foresight"
+     ],
+     "evs": {
+      "hp": 8,
+      "atk": 9,
+      "def": 5,
+      "spa": 9,
+      "spd": 10,
+      "spe": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Lass",
+   "name": "Pete",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "rattata",
+     "level": 5,
+     "moves": [
+      "tackle",
+      "tailwhip"
+     ],
+     "evs": {
+      "hp": 4,
+      "atk": 6,
+      "def": 6,
+      "spa": 6,
+      "spd": 6,
+      "spe": 6
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Bug Catcher",
+   "name": "Lana",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "sentret",
+     "level": 5,
+     "moves": [
+      "tackle",
+      "defensecurl"
+     ],
+     "evs": {
+      "hp": 8,
+      "atk": 9,
+      "def": 5,
+      "spa": 6,
+      "spd": 4,
+      "spe": 4
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Picnicker",
+   "name": "Joey",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "marill",
+     "level": 5,
+     "moves": [
+      "tackle",
+      "defensecurl"
+     ],
+     "evs": {
+      "hp": 5,
+      "atk": 7,
+      "def": 5,
+      "spa": 7,
+      "spd": 6,
+      "spe": 5
+     }
+    }
+   ]
+  }
+ ],
+ "2": [
+  {
+   "id": 0,
+   "class": "Bug Catcher",
+   "name": "Bret",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "nidorina",
+     "level": 18,
+     "moves": [
+      "growl",
+      "tackle",
+      "scratch",
+      "doublekick"
+     ],
+     "evs": {
+      "hp": 22,
+      "atk": 20,
+      "def": 19,
+      "spa": 22,
+      "spd": 24,
+      "spe": 18
+     }
+    },
+    {
+     "species": "paras",
+     "level": 19,
+     "moves": [
+      "scratch",
+      "stunspore",
+      "poisonpowder",
+      "leechlife"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 13,
+      "def": 29,
+      "spa": 20,
+      "spd": 11,
+      "spe": 29
+     }
+    },
+    {
+     "species": "ekans",
+     "level": 20,
+     "moves": [
+      "leer",
+      "wrap",
+      "poisonsting",
+      "bite"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 23,
+      "def": 17,
+      "spa": 29,
+      "spd": 18,
+      "spe": 27
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Camper",
+   "name": "Tess",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "snubbull",
+     "level": 17,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "charm",
+      "bite"
+     ],
+     "evs": {
+      "hp": 26,
+      "atk": 23,
+      "def": 21,
+      "spa": 20,
+      "spd": 14,
+      "spe": 15
+     }
+    },
+    {
+     "species": "nidorino",
+     "level": 18,
+     "moves": [
+      "leer",
+      "tackle",
+      "hornattack",
+      "doublekick"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 30,
+      "def": 18,
+      "spa": 19,
+      "spd": 22,
+      "spe": 20
+     }
+    },
+    {
+     "species": "snubbull",
+     "level": 19,
+     "moves": [
+      "tailwhip",
+      "charm",
+      "bite",
+      "lick"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 25,
+      "def": 26,
+      "spa": 23,
+      "spd": 20,
+      "spe": 22
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Youngster",
+   "name": "Dale",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "bellsprout",
+     "level": 15,
+     "moves": [
+      "vinewhip",
+      "growth",
+      "wrap",
+      "sleeppowder"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 22,
+      "def": 21,
+      "spa": 15,
+      "spd": 12,
+      "spe": 18
+     }
+    },
+    {
+     "species": "nidorino",
+     "level": 16,
+     "moves": [
+      "leer",
+      "tackle",
+      "hornattack",
+      "doublekick"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 11,
+      "def": 11,
+      "spa": 12,
+      "spd": 29,
+      "spe": 22
+     }
+    },
+    {
+     "species": "oddish",
+     "level": 17,
+     "moves": [
+      "absorb",
+      "sweetscent",
+      "poisonpowder",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 15,
+      "def": 17,
+      "spa": 30,
+      "spd": 27,
+      "spe": 16
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Lass",
+   "name": "Nina",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "snubbull",
+     "level": 15,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "charm",
+      "bite"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 17,
+      "def": 10,
+      "spa": 11,
+      "spd": 12,
+      "spe": 26
+     }
+    },
+    {
+     "species": "mankey",
+     "level": 16,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick",
+      "karatechop"
+     ],
+     "evs": {
+      "hp": 15,
+      "atk": 19,
+      "def": 27,
+      "spa": 22,
+      "spd": 18,
+      "spe": 11
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Twins",
+   "name": "Owen",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "togetic",
+     "level": 14,
+     "moves": [
+      "charm",
+      "growl",
+      "metronome"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 15,
+      "def": 17,
+      "spa": 19,
+      "spd": 13,
+      "spe": 19
+     }
+    },
+    {
+     "species": "psyduck",
+     "level": 15,
+     "moves": [
+      "scratch",
+      "tailwhip",
+      "disable"
+     ],
+     "evs": {
+      "hp": 15,
+      "atk": 21,
+      "def": 20,
+      "spa": 17,
+      "spd": 24,
+      "spe": 8
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Bug Catcher",
+   "name": "Rita",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "meowth",
+     "level": 12,
+     "moves": [
+      "growl",
+      "scratch",
+      "bite"
+     ],
+     "evs": {
+      "hp": 12,
+      "atk": 10,
+      "def": 15,
+      "spa": 17,
+      "spd": 16,
+      "spe": 14
+     }
+    },
+    {
+     "species": "oddish",
+     "level": 13,
+     "moves": [
+      "absorb",
+      "sweetscent"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 10,
+      "def": 13,
+      "spa": 19,
+      "spd": 13,
+      "spe": 16
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Camper",
+   "name": "Gus",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "oddish",
+     "level": 11,
+     "moves": [
+      "absorb",
+      "sweetscent"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 19,
+      "def": 7,
+      "spa": 12,
+      "spd": 13,
+      "spe": 9
+     }
+    },
+    {
+     "species": "meowth",
+     "level": 12,
+     "moves": [
+      "growl",
+      "scratch",
+      "bite"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 8,
+      "def": 16,
+      "spa": 14,
+      "spd": 18,
+      "spe": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Youngster",
+   "name": "Vera",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "bellsprout",
+     "level": 11,
+     "moves": [
+      "vinewhip",
+      "growth",
+      "wrap"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 8,
+      "def": 17,
+      "spa": 12,
+      "spd": 15,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Lass",
+   "name": "Theo",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "togetic",
+     "level": 9,
+     "moves": [
+      "charm",
+      "growl",
+      "metronome"
+     ],
+     "evs": {
+      "hp": 10,
+      "atk": 11,
+      "def": 7,
+      "spa": 14,
+      "spd": 10,
+      "spe": 11
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Twins",
+   "name": "Mona",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "snubbull",
+     "level": 8,
+     "moves": [
+      "scaryface",
+      "tackle",
+      "tailwhip",
+      "charm"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 13,
+      "def": 8,
+      "spa": 7,
+      "spd": 7,
+      "spe": 7
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Bug Catcher",
+   "name": "Cody",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "venonat",
+     "level": 18,
+     "moves": [
+      "foresight",
+      "tackle",
+      "supersonic",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 25,
+      "def": 10,
+      "spa": 27,
+      "spd": 24,
+      "spe": 21
+     }
+    },
+    {
+     "species": "psyduck",
+     "level": 19,
+     "moves": [
+      "scratch",
+      "tailwhip",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 25,
+      "def": 24,
+      "spa": 18,
+      "spd": 14,
+      "spe": 22
+     }
+    },
+    {
+     "species": "ekans",
+     "level": 20,
+     "moves": [
+      "leer",
+      "wrap",
+      "poisonsting",
+      "bite"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 25,
+      "def": 21,
+      "spa": 22,
+      "spd": 21,
+      "spe": 21
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Camper",
+   "name": "Iris",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "oddish",
+     "level": 17,
+     "moves": [
+      "absorb",
+      "sweetscent",
+      "poisonpowder",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 15,
+      "def": 31,
+      "spa": 11,
+      "spd": 19,
+      "spe": 14
+     }
+    },
+    {
+     "species": "oddish",
+     "level": 18,
+     "moves": [
+      "sweetscent",
+      "poisonpowder",
+      "stunspore",
+      "sleeppowder"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 23,
+      "def": 10,
+      "spa": 23,
+      "spd": 28,
+      "spe": 22
+     }
+    },
+    {
+     "species": "nidorina",
+     "level": 19,
+     "moves": [
+      "tackle",
+      "scratch",
+      "doublekick",
+      "poisonsting"
+     ],
+     "evs": {
+      "hp": 12,
+      "atk": 31,
+      "def": 30,
+      "spa": 24,
+      "spd": 19,
+      "spe": 17
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Youngster",
+   "name": "Hank",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "mankey",
+     "level": 15,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick",
+      "karatechop"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 18,
+      "def": 23,
+      "spa": 21,
+      "spd": 11,
+      "spe": 9
+     }
+    },
+    {
+     "species": "psyduck",
+     "level": 16,
+     "moves": [
+      "scratch",
+      "tailwhip",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 15,
+      "def": 23,
+      "spa": 23,
+      "spd": 14,
+      "spe": 20
+     }
+    },
+    {
+     "species": "snubbull",
+     "level": 17,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "charm",
+      "bite"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 28,
+      "def": 11,
+      "spa": 24,
+      "spd": 12,
+      "spe": 26
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Lass",
+   "name": "Zoe",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "mankey",
+     "level": 15,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick",
+      "karatechop"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 12,
+      "def": 25,
+      "spa": 19,
+      "spd": 13,
+      "spe": 24
+     }
+    },
+    {
+     "species": "nidorino",
+     "level": 16,
+     "moves": [
+      "leer",
+      "tackle",
+      "hornattack",
+      "doublekick"
+     ],
+     "evs": {
+      "hp": 25,
+      "atk": 24,
+      "def": 18,
+      "spa": 16,
+      "spd": 18,
+      "spe": 13
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Twins",
+   "name": "Pete",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "mankey",
+     "level": 14,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 10,
+      "def": 11,
+      "spa": 26,
+      "spd": 10,
+      "spe": 22
+     }
+    },
+    {
+     "species": "zubat",
+     "level": 15,
+     "moves": [
+      "leechlife",
+      "supersonic",
+      "bite"
+     ],
+     "evs": {
+      "hp": 15,
+      "atk": 19,
+      "def": 13,
+      "spa": 26,
+      "spd": 21,
+      "spe": 12
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Bug Catcher",
+   "name": "Lana",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "mankey",
+     "level": 12,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 11,
+      "def": 11,
+      "spa": 17,
+      "spd": 13,
+      "spe": 20
+     }
+    },
+    {
+     "species": "natu",
+     "level": 13,
+     "moves": [
+      "leer",
+      "peck",
+      "nightshade"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 13,
+      "def": 19,
+      "spa": 12,
+      "spd": 21,
+      "spe": 13
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Camper",
+   "name": "Joey",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "venonat",
+     "level": 11,
+     "moves": [
+      "disable",
+      "foresight",
+      "tackle",
+      "supersonic"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 8,
+      "def": 14,
+      "spa": 12,
+      "spd": 9,
+      "spe": 17
+     }
+    },
+    {
+     "species": "snubbull",
+     "level": 12,
+     "moves": [
+      "scaryface",
+      "tackle",
+      "tailwhip",
+      "charm"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 15,
+      "def": 8,
+      "spa": 10,
+      "spd": 19,
+      "spe": 18
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Youngster",
+   "name": "Mikey",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "mankey",
+     "level": 11,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick"
+     ],
+     "evs": {
+      "hp": 7,
+      "atk": 11,
+      "def": 15,
+      "spa": 14,
+      "spd": 18,
+      "spe": 11
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Lass",
+   "name": "Anna",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "mankey",
+     "level": 9,
+     "moves": [
+      "leer",
+      "scratch",
+      "lowkick"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 14,
+      "def": 7,
+      "spa": 15,
+      "spd": 7,
+      "spe": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Twins",
+   "name": "Liz",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "ekans",
+     "level": 8,
+     "moves": [
+      "leer",
+      "wrap"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 7,
+      "def": 6,
+      "spa": 7,
+      "spd": 9,
+      "spe": 14
+     }
+    }
+   ]
+  }
+ ],
+ "3": [
+  {
+   "id": 0,
+   "class": "Hiker",
+   "name": "Nina",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "voltorb",
+     "level": 24,
+     "moves": [
+      "tackle",
+      "screech",
+      "sonicboom",
+      "selfdestruct"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 34,
+      "def": 35,
+      "spa": 25,
+      "spd": 33,
+      "spe": 22
+     }
+    },
+    {
+     "species": "aipom",
+     "level": 25,
+     "moves": [
+      "tailwhip",
+      "sandattack",
+      "batonpass",
+      "furyswipes"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 19,
+      "def": 24,
+      "spa": 43,
+      "spd": 26,
+      "spe": 19
+     }
+    },
+    {
+     "species": "aipom",
+     "level": 26,
+     "moves": [
+      "tailwhip",
+      "sandattack",
+      "batonpass",
+      "furyswipes"
+     ],
+     "evs": {
+      "hp": 51,
+      "atk": 23,
+      "def": 30,
+      "spa": 23,
+      "spd": 29,
+      "spe": 28
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Super Nerd",
+   "name": "Owen",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "quilava",
+     "level": 23,
+     "moves": [
+      "tackle",
+      "smokescreen",
+      "ember",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 25,
+      "atk": 30,
+      "def": 36,
+      "spa": 16,
+      "spd": 25,
+      "spe": 28
+     }
+    },
+    {
+     "species": "houndoom",
+     "level": 24,
+     "moves": [
+      "leer",
+      "roar",
+      "smog",
+      "bite"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 13,
+      "def": 37,
+      "spa": 29,
+      "spd": 20,
+      "spe": 34
+     }
+    },
+    {
+     "species": "koffing",
+     "level": 25,
+     "moves": [
+      "smog",
+      "selfdestruct",
+      "sludge",
+      "smokescreen"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 28,
+      "def": 18,
+      "spa": 32,
+      "spd": 17,
+      "spe": 46
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Engineer",
+   "name": "Rita",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "gastly",
+     "level": 21,
+     "moves": [
+      "spite",
+      "meanlook",
+      "curse",
+      "nightshade"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 33,
+      "def": 35,
+      "spa": 14,
+      "spd": 15,
+      "spe": 30
+     }
+    },
+    {
+     "species": "magnemite",
+     "level": 22,
+     "moves": [
+      "thundershock",
+      "supersonic",
+      "sonicboom",
+      "thunderwave"
+     ],
+     "evs": {
+      "hp": 22,
+      "atk": 33,
+      "def": 16,
+      "spa": 24,
+      "spd": 24,
+      "spe": 35
+     }
+    },
+    {
+     "species": "ponyta",
+     "level": 23,
+     "moves": [
+      "growl",
+      "tailwhip",
+      "ember",
+      "stomp"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 18,
+      "def": 33,
+      "spa": 21,
+      "spd": 19,
+      "spe": 35
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Firebreather",
+   "name": "Gus",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "houndour",
+     "level": 21,
+     "moves": [
+      "leer",
+      "roar",
+      "smog",
+      "bite"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 27,
+      "def": 21,
+      "spa": 19,
+      "spd": 30,
+      "spe": 23
+     }
+    },
+    {
+     "species": "kadabra",
+     "level": 22,
+     "moves": [
+      "teleport",
+      "confusion",
+      "disable",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 42,
+      "atk": 21,
+      "def": 17,
+      "spa": 18,
+      "spd": 34,
+      "spe": 22
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Camper",
+   "name": "Vera",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "drowzee",
+     "level": 19,
+     "moves": [
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 19,
+      "def": 14,
+      "spa": 20,
+      "spd": 27,
+      "spe": 22
+     }
+    },
+    {
+     "species": "slugma",
+     "level": 20,
+     "moves": [
+      "smog",
+      "ember",
+      "rockthrow"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 23,
+      "def": 12,
+      "spa": 23,
+      "spd": 29,
+      "spe": 22
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Hiker",
+   "name": "Theo",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "geodude",
+     "level": 18,
+     "moves": [
+      "tackle",
+      "defensecurl",
+      "rockthrow",
+      "magnitude"
+     ],
+     "evs": {
+      "hp": 16,
+      "atk": 23,
+      "def": 14,
+      "spa": 26,
+      "spd": 20,
+      "spe": 28
+     }
+    },
+    {
+     "species": "growlithe",
+     "level": 19,
+     "moves": [
+      "bite",
+      "roar",
+      "ember",
+      "leer"
+     ],
+     "evs": {
+      "hp": 25,
+      "atk": 22,
+      "def": 30,
+      "spa": 30,
+      "spd": 13,
+      "spe": 13
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Super Nerd",
+   "name": "Mona",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "houndour",
+     "level": 16,
+     "moves": [
+      "ember",
+      "leer",
+      "roar",
+      "smog"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 28,
+      "def": 13,
+      "spa": 16,
+      "spd": 24,
+      "spe": 14
+     }
+    },
+    {
+     "species": "gastly",
+     "level": 17,
+     "moves": [
+      "lick",
+      "spite",
+      "meanlook",
+      "curse"
+     ],
+     "evs": {
+      "hp": 22,
+      "atk": 17,
+      "def": 12,
+      "spa": 35,
+      "spd": 14,
+      "spe": 19
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Engineer",
+   "name": "Cody",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "voltorb",
+     "level": 16,
+     "moves": [
+      "tackle",
+      "screech"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 24,
+      "def": 13,
+      "spa": 19,
+      "spd": 19,
+      "spe": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Firebreather",
+   "name": "Iris",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "voltorb",
+     "level": 14,
+     "moves": [
+      "tackle",
+      "screech"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 25,
+      "def": 14,
+      "spa": 13,
+      "spd": 12,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Camper",
+   "name": "Hank",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "slugma",
+     "level": 13,
+     "moves": [
+      "smog",
+      "ember"
+     ],
+     "evs": {
+      "hp": 11,
+      "atk": 18,
+      "def": 14,
+      "spa": 18,
+      "spd": 15,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Hiker",
+   "name": "Zoe",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "magnemite",
+     "level": 24,
+     "moves": [
+      "thundershock",
+      "supersonic",
+      "sonicboom",
+      "thunderwave"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 33,
+      "def": 32,
+      "spa": 28,
+      "spd": 29,
+      "spe": 29
+     }
+    },
+    {
+     "species": "ponyta",
+     "level": 25,
+     "moves": [
+      "growl",
+      "tailwhip",
+      "ember",
+      "stomp"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 22,
+      "def": 23,
+      "spa": 17,
+      "spd": 49,
+      "spe": 33
+     }
+    },
+    {
+     "species": "slugma",
+     "level": 26,
+     "moves": [
+      "smog",
+      "ember",
+      "rockthrow",
+      "harden"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 28,
+      "def": 30,
+      "spa": 29,
+      "spd": 39,
+      "spe": 35
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Super Nerd",
+   "name": "Pete",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "kadabra",
+     "level": 23,
+     "moves": [
+      "teleport",
+      "confusion",
+      "disable",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 21,
+      "def": 31,
+      "spa": 18,
+      "spd": 33,
+      "spe": 22
+     }
+    },
+    {
+     "species": "grimer",
+     "level": 24,
+     "moves": [
+      "harden",
+      "disable",
+      "sludge",
+      "minimize"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 37,
+      "def": 27,
+      "spa": 25,
+      "spd": 15,
+      "spe": 31
+     }
+    },
+    {
+     "species": "diglett",
+     "level": 25,
+     "moves": [
+      "growl",
+      "magnitude",
+      "dig",
+      "sandattack"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 36,
+      "def": 35,
+      "spa": 29,
+      "spd": 20,
+      "spe": 36
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Engineer",
+   "name": "Lana",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "drowzee",
+     "level": 21,
+     "moves": [
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 17,
+      "def": 34,
+      "spa": 18,
+      "spd": 35,
+      "spe": 25
+     }
+    },
+    {
+     "species": "houndour",
+     "level": 22,
+     "moves": [
+      "leer",
+      "roar",
+      "smog",
+      "bite"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 35,
+      "def": 12,
+      "spa": 34,
+      "spd": 26,
+      "spe": 19
+     }
+    },
+    {
+     "species": "quilava",
+     "level": 23,
+     "moves": [
+      "tackle",
+      "smokescreen",
+      "ember",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 18,
+      "def": 46,
+      "spa": 17,
+      "spd": 16,
+      "spe": 42
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Firebreather",
+   "name": "Joey",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "drowzee",
+     "level": 21,
+     "moves": [
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 27,
+      "def": 25,
+      "spa": 17,
+      "spd": 29,
+      "spe": 17
+     }
+    },
+    {
+     "species": "magnemite",
+     "level": 22,
+     "moves": [
+      "thundershock",
+      "supersonic",
+      "sonicboom",
+      "thunderwave"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 24,
+      "def": 29,
+      "spa": 16,
+      "spd": 25,
+      "spe": 23
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Camper",
+   "name": "Mikey",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "quilava",
+     "level": 19,
+     "moves": [
+      "leer",
+      "tackle",
+      "smokescreen",
+      "ember"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 27,
+      "def": 32,
+      "spa": 17,
+      "spd": 25,
+      "spe": 14
+     }
+    },
+    {
+     "species": "kadabra",
+     "level": 20,
+     "moves": [
+      "kinesis",
+      "teleport",
+      "confusion",
+      "disable"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 22,
+      "def": 28,
+      "spa": 14,
+      "spd": 28,
+      "spe": 18
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Hiker",
+   "name": "Anna",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "diglett",
+     "level": 18,
+     "moves": [
+      "scratch",
+      "growl",
+      "magnitude",
+      "dig"
+     ],
+     "evs": {
+      "hp": 25,
+      "atk": 30,
+      "def": 13,
+      "spa": 28,
+      "spd": 13,
+      "spe": 18
+     }
+    },
+    {
+     "species": "slugma",
+     "level": 19,
+     "moves": [
+      "smog",
+      "ember",
+      "rockthrow"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 20,
+      "def": 23,
+      "spa": 26,
+      "spd": 16,
+      "spe": 27
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Super Nerd",
+   "name": "Liz",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "aipom",
+     "level": 16,
+     "moves": [
+      "scratch",
+      "tailwhip",
+      "sandattack",
+      "batonpass"
+     ],
+     "evs": {
+      "hp": 14,
+      "atk": 16,
+      "def": 21,
+      "spa": 16,
+      "spd": 15,
+      "spe": 30
+     }
+    },
+    {
+     "species": "machop",
+     "level": 17,
+     "moves": [
+      "leer",
+      "lowkick",
+      "focusenergy",
+      "karatechop"
+     ],
+     "evs": {
+      "hp": 15,
+      "atk": 18,
+      "def": 20,
+      "spa": 24,
+      "spd": 21,
+      "spe": 21
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Engineer",
+   "name": "Sam",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "diglett",
+     "level": 16,
+     "moves": [
+      "scratch",
+      "growl",
+      "magnitude"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 17,
+      "def": 17,
+      "spa": 20,
+      "spd": 14,
+      "spe": 22
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Firebreather",
+   "name": "Kai",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "aipom",
+     "level": 14,
+     "moves": [
+      "scratch",
+      "tailwhip",
+      "sandattack",
+      "batonpass"
+     ],
+     "evs": {
+      "hp": 8,
+      "atk": 21,
+      "def": 17,
+      "spa": 14,
+      "spd": 21,
+      "spe": 17
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Camper",
+   "name": "Bret",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "houndour",
+     "level": 13,
+     "moves": [
+      "ember",
+      "leer",
+      "roar",
+      "smog"
+     ],
+     "evs": {
+      "hp": 16,
+      "atk": 14,
+      "def": 18,
+      "spa": 14,
+      "spd": 12,
+      "spe": 17
+     }
+    }
+   ]
+  }
+ ],
+ "4": [
+  {
+   "id": 0,
+   "class": "Swimmer",
+   "name": "Gus",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "shellder",
+     "level": 30,
+     "moves": [
+      "withdraw",
+      "supersonic",
+      "aurorabeam",
+      "protect"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 37,
+      "def": 43,
+      "spa": 40,
+      "spd": 20,
+      "spe": 40
+     }
+    },
+    {
+     "species": "corsola",
+     "level": 31,
+     "moves": [
+      "bubble",
+      "recover",
+      "bubblebeam",
+      "spikecannon"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 50,
+      "def": 29,
+      "spa": 53,
+      "spd": 19,
+      "spe": 32
+     }
+    },
+    {
+     "species": "gyarados",
+     "level": 32,
+     "moves": [
+      "thrash",
+      "bite",
+      "dragonrage",
+      "leer"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 32,
+      "def": 47,
+      "spa": 43,
+      "spd": 34,
+      "spe": 40
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Sailor",
+   "name": "Vera",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "horsea",
+     "level": 28,
+     "moves": [
+      "bubble",
+      "smokescreen",
+      "leer",
+      "watergun"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 18,
+      "def": 37,
+      "spa": 33,
+      "spd": 42,
+      "spe": 36
+     }
+    },
+    {
+     "species": "gyarados",
+     "level": 29,
+     "moves": [
+      "thrash",
+      "bite",
+      "dragonrage"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 54,
+      "def": 24,
+      "spa": 21,
+      "spd": 48,
+      "spe": 22
+     }
+    },
+    {
+     "species": "shellder",
+     "level": 30,
+     "moves": [
+      "withdraw",
+      "supersonic",
+      "aurorabeam",
+      "protect"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 24,
+      "def": 26,
+      "spa": 45,
+      "spd": 45,
+      "spe": 46
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Fisher",
+   "name": "Theo",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "gyarados",
+     "level": 27,
+     "moves": [
+      "thrash",
+      "bite",
+      "dragonrage"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 22,
+      "def": 27,
+      "spa": 40,
+      "spd": 37,
+      "spe": 34
+     }
+    },
+    {
+     "species": "goldeen",
+     "level": 28,
+     "moves": [
+      "tailwhip",
+      "supersonic",
+      "hornattack",
+      "flail"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 40,
+      "def": 37,
+      "spa": 35,
+      "spd": 23,
+      "spe": 25
+     }
+    },
+    {
+     "species": "delibird",
+     "level": 29,
+     "moves": [
+      "present"
+     ],
+     "evs": {
+      "hp": 22,
+      "atk": 40,
+      "def": 30,
+      "spa": 29,
+      "spd": 49,
+      "spe": 32
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Lass",
+   "name": "Mona",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "krabby",
+     "level": 26,
+     "moves": [
+      "leer",
+      "visegrip",
+      "harden",
+      "stomp"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 34,
+      "def": 27,
+      "spa": 19,
+      "spd": 19,
+      "spe": 39
+     }
+    },
+    {
+     "species": "lanturn",
+     "level": 27,
+     "moves": [
+      "supersonic",
+      "flail",
+      "watergun",
+      "spark"
+     ],
+     "evs": {
+      "hp": 36,
+      "atk": 45,
+      "def": 39,
+      "spa": 25,
+      "spd": 24,
+      "spe": 21
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Beauty",
+   "name": "Cody",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "staryu",
+     "level": 25,
+     "moves": [
+      "watergun",
+      "rapidspin",
+      "recover",
+      "swift"
+     ],
+     "evs": {
+      "hp": 24,
+      "atk": 26,
+      "def": 37,
+      "spa": 39,
+      "spd": 28,
+      "spe": 21
+     }
+    },
+    {
+     "species": "seel",
+     "level": 26,
+     "moves": [
+      "headbutt",
+      "growl",
+      "aurorabeam",
+      "rest"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 25,
+      "def": 36,
+      "spa": 43,
+      "spd": 23,
+      "spe": 18
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Swimmer",
+   "name": "Iris",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "staryu",
+     "level": 23,
+     "moves": [
+      "tackle",
+      "watergun",
+      "rapidspin",
+      "recover"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 14,
+      "def": 23,
+      "spa": 41,
+      "spd": 29,
+      "spe": 31
+     }
+    },
+    {
+     "species": "tentacool",
+     "level": 24,
+     "moves": [
+      "poisonsting",
+      "supersonic",
+      "constrict",
+      "acid"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 38,
+      "def": 18,
+      "spa": 28,
+      "spd": 32,
+      "spe": 24
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Sailor",
+   "name": "Hank",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "krabby",
+     "level": 22,
+     "moves": [
+      "bubble",
+      "leer",
+      "visegrip",
+      "harden"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 23,
+      "def": 25,
+      "spa": 36,
+      "spd": 27,
+      "spe": 15
+     }
+    },
+    {
+     "species": "tentacool",
+     "level": 23,
+     "moves": [
+      "poisonsting",
+      "supersonic",
+      "constrict",
+      "acid"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 25,
+      "def": 29,
+      "spa": 26,
+      "spd": 29,
+      "spe": 30
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Fisher",
+   "name": "Zoe",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "qwilfish",
+     "level": 21,
+     "moves": [
+      "tackle",
+      "harden",
+      "minimize",
+      "watergun"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 16,
+      "def": 20,
+      "spa": 17,
+      "spd": 32,
+      "spe": 32
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Lass",
+   "name": "Pete",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "horsea",
+     "level": 20,
+     "moves": [
+      "bubble",
+      "smokescreen",
+      "leer"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 17,
+      "def": 15,
+      "spa": 33,
+      "spd": 18,
+      "spe": 36
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Beauty",
+   "name": "Lana",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "krabby",
+     "level": 18,
+     "moves": [
+      "bubble",
+      "leer",
+      "visegrip",
+      "harden"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 11,
+      "def": 31,
+      "spa": 22,
+      "spd": 25,
+      "spe": 18
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Swimmer",
+   "name": "Joey",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "shellder",
+     "level": 30,
+     "moves": [
+      "withdraw",
+      "supersonic",
+      "aurorabeam",
+      "protect"
+     ],
+     "evs": {
+      "hp": 38,
+      "atk": 35,
+      "def": 30,
+      "spa": 28,
+      "spd": 35,
+      "spe": 43
+     }
+    },
+    {
+     "species": "mantine",
+     "level": 31,
+     "moves": [
+      "tackle",
+      "supersonic",
+      "bubblebeam",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 46,
+      "atk": 27,
+      "def": 30,
+      "spa": 51,
+      "spd": 34,
+      "spe": 28
+     }
+    },
+    {
+     "species": "kingler",
+     "level": 32,
+     "moves": [
+      "visegrip",
+      "harden",
+      "stomp",
+      "guillotine"
+     ],
+     "evs": {
+      "hp": 56,
+      "atk": 55,
+      "def": 28,
+      "spa": 35,
+      "spd": 26,
+      "spe": 24
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Sailor",
+   "name": "Mikey",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "wartortle",
+     "level": 28,
+     "moves": [
+      "withdraw",
+      "watergun",
+      "bite",
+      "rapidspin"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 34,
+      "def": 31,
+      "spa": 29,
+      "spd": 21,
+      "spe": 48
+     }
+    },
+    {
+     "species": "staryu",
+     "level": 29,
+     "moves": [
+      "watergun",
+      "rapidspin",
+      "recover",
+      "swift"
+     ],
+     "evs": {
+      "hp": 24,
+      "atk": 44,
+      "def": 28,
+      "spa": 50,
+      "spd": 29,
+      "spe": 29
+     }
+    },
+    {
+     "species": "kingler",
+     "level": 30,
+     "moves": [
+      "visegrip",
+      "harden",
+      "stomp",
+      "guillotine"
+     ],
+     "evs": {
+      "hp": 22,
+      "atk": 38,
+      "def": 57,
+      "spa": 28,
+      "spd": 28,
+      "spe": 37
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Fisher",
+   "name": "Anna",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "mantine",
+     "level": 27,
+     "moves": [
+      "tackle",
+      "supersonic",
+      "bubblebeam",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 22,
+      "def": 29,
+      "spa": 18,
+      "spd": 47,
+      "spe": 39
+     }
+    },
+    {
+     "species": "corsola",
+     "level": 28,
+     "moves": [
+      "harden",
+      "bubble",
+      "recover",
+      "bubblebeam"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 41,
+      "def": 36,
+      "spa": 43,
+      "spd": 38,
+      "spe": 19
+     }
+    },
+    {
+     "species": "gyarados",
+     "level": 29,
+     "moves": [
+      "thrash",
+      "bite",
+      "dragonrage"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 47,
+      "def": 29,
+      "spa": 23,
+      "spd": 51,
+      "spe": 19
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Lass",
+   "name": "Liz",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "tentacool",
+     "level": 26,
+     "moves": [
+      "supersonic",
+      "constrict",
+      "acid",
+      "bubblebeam"
+     ],
+     "evs": {
+      "hp": 45,
+      "atk": 19,
+      "def": 41,
+      "spa": 35,
+      "spd": 24,
+      "spe": 18
+     }
+    },
+    {
+     "species": "qwilfish",
+     "level": 27,
+     "moves": [
+      "tackle",
+      "harden",
+      "minimize",
+      "watergun"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 47,
+      "def": 19,
+      "spa": 33,
+      "spd": 26,
+      "spe": 35
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Beauty",
+   "name": "Sam",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "shellder",
+     "level": 25,
+     "moves": [
+      "withdraw",
+      "supersonic",
+      "aurorabeam",
+      "protect"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 27,
+      "def": 34,
+      "spa": 32,
+      "spd": 22,
+      "spe": 27
+     }
+    },
+    {
+     "species": "goldeen",
+     "level": 26,
+     "moves": [
+      "tailwhip",
+      "supersonic",
+      "hornattack",
+      "flail"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 38,
+      "def": 24,
+      "spa": 32,
+      "spd": 37,
+      "spe": 23
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Swimmer",
+   "name": "Kai",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "tentacool",
+     "level": 23,
+     "moves": [
+      "poisonsting",
+      "supersonic",
+      "constrict",
+      "acid"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 27,
+      "def": 26,
+      "spa": 37,
+      "spd": 28,
+      "spe": 26
+     }
+    },
+    {
+     "species": "wartortle",
+     "level": 24,
+     "moves": [
+      "bubble",
+      "withdraw",
+      "watergun",
+      "bite"
+     ],
+     "evs": {
+      "hp": 26,
+      "atk": 14,
+      "def": 17,
+      "spa": 38,
+      "spd": 38,
+      "spe": 34
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Sailor",
+   "name": "Bret",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "corsola",
+     "level": 22,
+     "moves": [
+      "tackle",
+      "harden",
+      "bubble",
+      "recover"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 29,
+      "def": 15,
+      "spa": 33,
+      "spd": 31,
+      "spe": 29
+     }
+    },
+    {
+     "species": "horsea",
+     "level": 23,
+     "moves": [
+      "bubble",
+      "smokescreen",
+      "leer",
+      "watergun"
+     ],
+     "evs": {
+      "hp": 38,
+      "atk": 34,
+      "def": 16,
+      "spa": 21,
+      "spd": 39,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Fisher",
+   "name": "Tess",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "staryu",
+     "level": 21,
+     "moves": [
+      "tackle",
+      "watergun",
+      "rapidspin",
+      "recover"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 14,
+      "def": 30,
+      "spa": 29,
+      "spd": 27,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Lass",
+   "name": "Dale",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "staryu",
+     "level": 20,
+     "moves": [
+      "tackle",
+      "watergun",
+      "rapidspin",
+      "recover"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 26,
+      "def": 35,
+      "spa": 16,
+      "spd": 18,
+      "spe": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Beauty",
+   "name": "Nina",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "goldeen",
+     "level": 18,
+     "moves": [
+      "peck",
+      "tailwhip",
+      "supersonic",
+      "hornattack"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 21,
+      "def": 23,
+      "spa": 14,
+      "spd": 20,
+      "spe": 28
+     }
+    }
+   ]
+  }
+ ],
+ "5": [
+  {
+   "id": 0,
+   "class": "Psychic",
+   "name": "Mona",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "dunsparce",
+     "level": 36,
+     "moves": [
+      "glare",
+      "spite",
+      "pursuit",
+      "screech"
+     ],
+     "evs": {
+      "hp": 49,
+      "atk": 43,
+      "def": 44,
+      "spa": 49,
+      "spd": 34,
+      "spe": 31
+     }
+    },
+    {
+     "species": "lickitung",
+     "level": 37,
+     "moves": [
+      "stomp",
+      "wrap",
+      "disable",
+      "slam"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 31,
+      "def": 54,
+      "spa": 26,
+      "spd": 58,
+      "spe": 34
+     }
+    },
+    {
+     "species": "unown",
+     "level": 38,
+     "moves": [
+      "hiddenpower"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 35,
+      "def": 49,
+      "spa": 44,
+      "spd": 52,
+      "spe": 55
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Pokémaniac",
+   "name": "Cody",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "farfetchd",
+     "level": 34,
+     "moves": [
+      "leer",
+      "furyattack",
+      "swordsdance",
+      "agility"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 29,
+      "def": 45,
+      "spa": 34,
+      "spd": 41,
+      "spe": 53
+     }
+    },
+    {
+     "species": "stantler",
+     "level": 35,
+     "moves": [
+      "leer",
+      "hypnosis",
+      "stomp",
+      "sandattack"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 58,
+      "def": 55,
+      "spa": 46,
+      "spd": 35,
+      "spe": 23
+     }
+    },
+    {
+     "species": "unown",
+     "level": 36,
+     "moves": [
+      "hiddenpower"
+     ],
+     "evs": {
+      "hp": 47,
+      "atk": 30,
+      "def": 28,
+      "spa": 42,
+      "spd": 53,
+      "spe": 52
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Bird Keeper",
+   "name": "Iris",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "dodrio",
+     "level": 33,
+     "moves": [
+      "pursuit",
+      "furyattack",
+      "triattack",
+      "rage"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 38,
+      "def": 26,
+      "spa": 38,
+      "spd": 30,
+      "spe": 49
+     }
+    },
+    {
+     "species": "dunsparce",
+     "level": 34,
+     "moves": [
+      "glare",
+      "spite",
+      "pursuit",
+      "screech"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 51,
+      "def": 47,
+      "spa": 28,
+      "spd": 36,
+      "spe": 42
+     }
+    },
+    {
+     "species": "tangela",
+     "level": 35,
+     "moves": [
+      "vinewhip",
+      "bind",
+      "megadrain",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 36,
+      "def": 29,
+      "spa": 45,
+      "spd": 34,
+      "spe": 48
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Lass",
+   "name": "Hank",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "stantler",
+     "level": 32,
+     "moves": [
+      "leer",
+      "hypnosis",
+      "stomp",
+      "sandattack"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 47,
+      "def": 38,
+      "spa": 50,
+      "spd": 21,
+      "spe": 26
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 33,
+     "moves": [
+      "defensecurl",
+      "stomp",
+      "milkdrink",
+      "bide"
+     ],
+     "evs": {
+      "hp": 26,
+      "atk": 56,
+      "def": 32,
+      "spa": 22,
+      "spd": 50,
+      "spe": 43
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Schoolboy",
+   "name": "Zoe",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "ivysaur",
+     "level": 31,
+     "moves": [
+      "poisonpowder",
+      "sleeppowder",
+      "razorleaf",
+      "sweetscent"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 48,
+      "def": 21,
+      "spa": 45,
+      "spd": 39,
+      "spe": 43
+     }
+    },
+    {
+     "species": "dodrio",
+     "level": 32,
+     "moves": [
+      "pursuit",
+      "furyattack",
+      "triattack",
+      "rage"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 45,
+      "def": 53,
+      "spa": 20,
+      "spd": 32,
+      "spe": 42
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Psychic",
+   "name": "Pete",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "kangaskhan",
+     "level": 29,
+     "moves": [
+      "leer",
+      "bite",
+      "tailwhip",
+      "megapunch"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 39,
+      "def": 34,
+      "spa": 45,
+      "spd": 26,
+      "spe": 43
+     }
+    },
+    {
+     "species": "kangaskhan",
+     "level": 30,
+     "moves": [
+      "leer",
+      "bite",
+      "tailwhip",
+      "megapunch"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 27,
+      "def": 20,
+      "spa": 35,
+      "spd": 27,
+      "spe": 51
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Pokémaniac",
+   "name": "Lana",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "stantler",
+     "level": 28,
+     "moves": [
+      "tackle",
+      "leer",
+      "hypnosis",
+      "stomp"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 39,
+      "def": 38,
+      "spa": 29,
+      "spd": 34,
+      "spe": 29
+     }
+    },
+    {
+     "species": "girafarig",
+     "level": 29,
+     "moves": [
+      "tackle",
+      "confusion",
+      "stomp",
+      "agility"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 41,
+      "def": 20,
+      "spa": 37,
+      "spd": 26,
+      "spe": 48
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Bird Keeper",
+   "name": "Joey",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "smeargle",
+     "level": 27,
+     "moves": [
+      "tackle",
+      "quickattack",
+      "swift",
+      "headbutt"
+     ],
+     "evs": {
+      "hp": 41,
+      "atk": 38,
+      "def": 28,
+      "spa": 29,
+      "spd": 23,
+      "spe": 30
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Lass",
+   "name": "Mikey",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "exeggcute",
+     "level": 26,
+     "moves": [
+      "reflect",
+      "leechseed",
+      "confusion",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 18,
+      "def": 24,
+      "spa": 25,
+      "spd": 46,
+      "spe": 34
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Schoolboy",
+   "name": "Anna",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "miltank",
+     "level": 24,
+     "moves": [
+      "growl",
+      "defensecurl",
+      "stomp",
+      "milkdrink"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 33,
+      "def": 18,
+      "spa": 17,
+      "spd": 32,
+      "spe": 39
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Psychic",
+   "name": "Liz",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "venusaur",
+     "level": 36,
+     "moves": [
+      "poisonpowder",
+      "sleeppowder",
+      "razorleaf",
+      "sweetscent"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 39,
+      "def": 40,
+      "spa": 49,
+      "spd": 25,
+      "spe": 49
+     }
+    },
+    {
+     "species": "smeargle",
+     "level": 37,
+     "moves": [
+      "swift",
+      "headbutt",
+      "slash",
+      "bodyslam"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 21,
+      "def": 55,
+      "spa": 24,
+      "spd": 58,
+      "spe": 52
+     }
+    },
+    {
+     "species": "girafarig",
+     "level": 38,
+     "moves": [
+      "confusion",
+      "stomp",
+      "agility",
+      "batonpass"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 51,
+      "def": 38,
+      "spa": 42,
+      "spd": 40,
+      "spe": 61
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Pokémaniac",
+   "name": "Sam",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "smeargle",
+     "level": 34,
+     "moves": [
+      "quickattack",
+      "swift",
+      "headbutt",
+      "slash"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 34,
+      "def": 36,
+      "spa": 46,
+      "spd": 46,
+      "spe": 49
+     }
+    },
+    {
+     "species": "tauros",
+     "level": 35,
+     "moves": [
+      "hornattack",
+      "scaryface",
+      "pursuit",
+      "rest"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 53,
+      "def": 44,
+      "spa": 32,
+      "spd": 34,
+      "spe": 51
+     }
+    },
+    {
+     "species": "dunsparce",
+     "level": 36,
+     "moves": [
+      "glare",
+      "spite",
+      "pursuit",
+      "screech"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 51,
+      "def": 50,
+      "spa": 27,
+      "spd": 27,
+      "spe": 60
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Bird Keeper",
+   "name": "Kai",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "sudowoodo",
+     "level": 33,
+     "moves": [
+      "rockthrow",
+      "flail",
+      "lowkick",
+      "rockslide"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 34,
+      "def": 24,
+      "spa": 52,
+      "spd": 48,
+      "spe": 29
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 34,
+     "moves": [
+      "stomp",
+      "milkdrink",
+      "bide",
+      "rollout"
+     ],
+     "evs": {
+      "hp": 48,
+      "atk": 45,
+      "def": 32,
+      "spa": 52,
+      "spd": 27,
+      "spe": 34
+     }
+    },
+    {
+     "species": "lickitung",
+     "level": 35,
+     "moves": [
+      "defensecurl",
+      "stomp",
+      "wrap",
+      "disable"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 34,
+      "def": 48,
+      "spa": 45,
+      "spd": 39,
+      "spe": 49
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Lass",
+   "name": "Bret",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "tauros",
+     "level": 32,
+     "moves": [
+      "rage",
+      "hornattack",
+      "scaryface",
+      "pursuit"
+     ],
+     "evs": {
+      "hp": 36,
+      "atk": 29,
+      "def": 56,
+      "spa": 23,
+      "spd": 52,
+      "spe": 28
+     }
+    },
+    {
+     "species": "yanma",
+     "level": 33,
+     "moves": [
+      "doubleteam",
+      "sonicboom",
+      "detect",
+      "supersonic"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 44,
+      "def": 28,
+      "spa": 44,
+      "spd": 37,
+      "spe": 26
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Schoolboy",
+   "name": "Tess",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "sudowoodo",
+     "level": 31,
+     "moves": [
+      "rockthrow",
+      "flail",
+      "lowkick",
+      "rockslide"
+     ],
+     "evs": {
+      "hp": 24,
+      "atk": 22,
+      "def": 42,
+      "spa": 35,
+      "spd": 33,
+      "spe": 61
+     }
+    },
+    {
+     "species": "tangela",
+     "level": 32,
+     "moves": [
+      "poisonpowder",
+      "vinewhip",
+      "bind",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 32,
+      "def": 60,
+      "spa": 35,
+      "spd": 26,
+      "spe": 35
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Psychic",
+   "name": "Dale",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "smeargle",
+     "level": 29,
+     "moves": [
+      "quickattack",
+      "swift",
+      "headbutt",
+      "slash"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 26,
+      "def": 24,
+      "spa": 36,
+      "spd": 49,
+      "spe": 33
+     }
+    },
+    {
+     "species": "mrmime",
+     "level": 30,
+     "moves": [
+      "meditate",
+      "doubleslap",
+      "lightscreen",
+      "reflect"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 51,
+      "def": 20,
+      "spa": 27,
+      "spd": 40,
+      "spe": 39
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Pokémaniac",
+   "name": "Nina",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "dunsparce",
+     "level": 28,
+     "moves": [
+      "defensecurl",
+      "glare",
+      "spite",
+      "pursuit"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 40,
+      "def": 29,
+      "spa": 25,
+      "spd": 42,
+      "spe": 43
+     }
+    },
+    {
+     "species": "kangaskhan",
+     "level": 29,
+     "moves": [
+      "leer",
+      "bite",
+      "tailwhip",
+      "megapunch"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 36,
+      "def": 37,
+      "spa": 34,
+      "spd": 36,
+      "spe": 39
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Bird Keeper",
+   "name": "Owen",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "miltank",
+     "level": 27,
+     "moves": [
+      "defensecurl",
+      "stomp",
+      "milkdrink",
+      "bide"
+     ],
+     "evs": {
+      "hp": 24,
+      "atk": 39,
+      "def": 33,
+      "spa": 22,
+      "spd": 43,
+      "spe": 28
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Lass",
+   "name": "Rita",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "ivysaur",
+     "level": 26,
+     "moves": [
+      "vinewhip",
+      "poisonpowder",
+      "sleeppowder",
+      "razorleaf"
+     ],
+     "evs": {
+      "hp": 25,
+      "atk": 23,
+      "def": 37,
+      "spa": 19,
+      "spd": 36,
+      "spe": 41
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Schoolboy",
+   "name": "Gus",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "mrmime",
+     "level": 24,
+     "moves": [
+      "confusion",
+      "substitute",
+      "meditate",
+      "doubleslap"
+     ],
+     "evs": {
+      "hp": 36,
+      "atk": 29,
+      "def": 21,
+      "spa": 18,
+      "spd": 28,
+      "spe": 37
+     }
+    }
+   ]
+  }
+ ],
+ "6": [
+  {
+   "id": 0,
+   "class": "Hiker",
+   "name": "Hank",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "murkrow",
+     "level": 42,
+     "moves": [
+      "haze",
+      "nightshade",
+      "feintattack",
+      "meanlook"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 59,
+      "def": 60,
+      "spa": 57,
+      "spd": 60,
+      "spe": 29
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 43,
+     "moves": [
+      "confuseray",
+      "meanlook",
+      "psybeam",
+      "painsplit"
+     ],
+     "evs": {
+      "hp": 49,
+      "atk": 40,
+      "def": 45,
+      "spa": 71,
+      "spd": 32,
+      "spe": 64
+     }
+    },
+    {
+     "species": "electabuzz",
+     "level": 44,
+     "moves": [
+      "thunderpunch",
+      "lightscreen",
+      "swift",
+      "screech"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 31,
+      "def": 56,
+      "spa": 34,
+      "spd": 75,
+      "spe": 55
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Skier",
+   "name": "Zoe",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "heracross",
+     "level": 40,
+     "moves": [
+      "endure",
+      "furyattack",
+      "counter",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 64,
+      "def": 35,
+      "spa": 65,
+      "spd": 27,
+      "spe": 31
+     }
+    },
+    {
+     "species": "electabuzz",
+     "level": 41,
+     "moves": [
+      "thunderpunch",
+      "lightscreen",
+      "swift",
+      "screech"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 29,
+      "def": 28,
+      "spa": 72,
+      "spd": 35,
+      "spe": 66
+     }
+    },
+    {
+     "species": "marowak",
+     "level": 42,
+     "moves": [
+      "focusenergy",
+      "bonemerang",
+      "rage",
+      "falseswipe"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 57,
+      "def": 51,
+      "spa": 55,
+      "spd": 55,
+      "spe": 48
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Blackbelt",
+   "name": "Pete",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "ursaring",
+     "level": 39,
+     "moves": [
+      "furyswipes",
+      "feintattack",
+      "rest",
+      "slash"
+     ],
+     "evs": {
+      "hp": 39,
+      "atk": 58,
+      "def": 57,
+      "spa": 29,
+      "spd": 51,
+      "spe": 40
+     }
+    },
+    {
+     "species": "rhyhorn",
+     "level": 40,
+     "moves": [
+      "stomp",
+      "furyattack",
+      "scaryface",
+      "horndrill"
+     ],
+     "evs": {
+      "hp": 56,
+      "atk": 45,
+      "def": 36,
+      "spa": 56,
+      "spd": 23,
+      "spe": 63
+     }
+    },
+    {
+     "species": "magmar",
+     "level": 41,
+     "moves": [
+      "firepunch",
+      "smokescreen",
+      "sunnyday",
+      "flamethrower"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 66,
+      "def": 69,
+      "spa": 33,
+      "spd": 51,
+      "spe": 36
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Birdkeeper",
+   "name": "Lana",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "skarmory",
+     "level": 38,
+     "moves": [
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 26,
+      "atk": 33,
+      "def": 70,
+      "spa": 57,
+      "spd": 50,
+      "spe": 30
+     }
+    },
+    {
+     "species": "ursaring",
+     "level": 39,
+     "moves": [
+      "furyswipes",
+      "feintattack",
+      "rest",
+      "slash"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 45,
+      "def": 36,
+      "spa": 51,
+      "spd": 50,
+      "spe": 55
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Pokémaniac",
+   "name": "Joey",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "magmar",
+     "level": 37,
+     "moves": [
+      "smog",
+      "firepunch",
+      "smokescreen",
+      "sunnyday"
+     ],
+     "evs": {
+      "hp": 53,
+      "atk": 43,
+      "def": 34,
+      "spa": 24,
+      "spd": 54,
+      "spe": 51
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 38,
+     "moves": [
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 38,
+      "atk": 54,
+      "def": 37,
+      "spa": 49,
+      "spd": 45,
+      "spe": 43
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Hiker",
+   "name": "Mikey",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "forretress",
+     "level": 35,
+     "moves": [
+      "selfdestruct",
+      "takedown",
+      "rapidspin",
+      "bide"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 59,
+      "def": 36,
+      "spa": 28,
+      "spd": 44,
+      "spe": 46
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 36,
+     "moves": [
+      "peck",
+      "sandattack",
+      "swift",
+      "agility"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 45,
+      "def": 55,
+      "spa": 40,
+      "spd": 24,
+      "spe": 61
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Skier",
+   "name": "Anna",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "charmeleon",
+     "level": 34,
+     "moves": [
+      "smokescreen",
+      "rage",
+      "scaryface",
+      "flamethrower"
+     ],
+     "evs": {
+      "hp": 45,
+      "atk": 33,
+      "def": 33,
+      "spa": 43,
+      "spd": 44,
+      "spe": 40
+     }
+    },
+    {
+     "species": "murkrow",
+     "level": 35,
+     "moves": [
+      "pursuit",
+      "haze",
+      "nightshade",
+      "feintattack"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 48,
+      "def": 45,
+      "spa": 28,
+      "spd": 43,
+      "spe": 53
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Blackbelt",
+   "name": "Liz",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "piloswine",
+     "level": 33,
+     "moves": [
+      "powdersnow",
+      "endure",
+      "takedown",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 19,
+      "def": 38,
+      "spa": 54,
+      "spd": 23,
+      "spe": 54
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Birdkeeper",
+   "name": "Sam",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "murkrow",
+     "level": 32,
+     "moves": [
+      "pursuit",
+      "haze",
+      "nightshade",
+      "feintattack"
+     ],
+     "evs": {
+      "hp": 45,
+      "atk": 42,
+      "def": 33,
+      "spa": 36,
+      "spd": 32,
+      "spe": 36
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Pokémaniac",
+   "name": "Kai",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "heracross",
+     "level": 30,
+     "moves": [
+      "hornattack",
+      "endure",
+      "furyattack",
+      "counter"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 22,
+      "def": 35,
+      "spa": 28,
+      "spd": 37,
+      "spe": 43
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Hiker",
+   "name": "Bret",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "gligar",
+     "level": 42,
+     "moves": [
+      "harden",
+      "quickattack",
+      "feintattack",
+      "slash"
+     ],
+     "evs": {
+      "hp": 24,
+      "atk": 52,
+      "def": 57,
+      "spa": 59,
+      "spd": 37,
+      "spe": 64
+     }
+    },
+    {
+     "species": "ursaring",
+     "level": 43,
+     "moves": [
+      "furyswipes",
+      "feintattack",
+      "rest",
+      "slash"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 73,
+      "def": 36,
+      "spa": 36,
+      "spd": 47,
+      "spe": 44
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 44,
+     "moves": [
+      "confuseray",
+      "meanlook",
+      "psybeam",
+      "painsplit"
+     ],
+     "evs": {
+      "hp": 46,
+      "atk": 61,
+      "def": 69,
+      "spa": 32,
+      "spd": 62,
+      "spe": 39
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Skier",
+   "name": "Tess",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "misdreavus",
+     "level": 40,
+     "moves": [
+      "confuseray",
+      "meanlook",
+      "psybeam",
+      "painsplit"
+     ],
+     "evs": {
+      "hp": 59,
+      "atk": 36,
+      "def": 39,
+      "spa": 32,
+      "spd": 62,
+      "spe": 52
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 41,
+     "moves": [
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 47,
+      "def": 50,
+      "spa": 48,
+      "spd": 35,
+      "spe": 57
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 42,
+     "moves": [
+      "confuseray",
+      "meanlook",
+      "psybeam",
+      "painsplit"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 77,
+      "def": 58,
+      "spa": 50,
+      "spd": 39,
+      "spe": 42
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Blackbelt",
+   "name": "Dale",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "ursaring",
+     "level": 39,
+     "moves": [
+      "furyswipes",
+      "feintattack",
+      "rest",
+      "slash"
+     ],
+     "evs": {
+      "hp": 38,
+      "atk": 55,
+      "def": 60,
+      "spa": 29,
+      "spd": 59,
+      "spe": 33
+     }
+    },
+    {
+     "species": "forretress",
+     "level": 40,
+     "moves": [
+      "takedown",
+      "rapidspin",
+      "bide",
+      "explosion"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 33,
+      "def": 34,
+      "spa": 56,
+      "spd": 56,
+      "spe": 49
+     }
+    },
+    {
+     "species": "gligar",
+     "level": 41,
+     "moves": [
+      "harden",
+      "quickattack",
+      "feintattack",
+      "slash"
+     ],
+     "evs": {
+      "hp": 38,
+      "atk": 46,
+      "def": 49,
+      "spa": 31,
+      "spd": 71,
+      "spe": 52
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Birdkeeper",
+   "name": "Nina",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "donphan",
+     "level": 38,
+     "moves": [
+      "defensecurl",
+      "flail",
+      "furyattack",
+      "rollout"
+     ],
+     "evs": {
+      "hp": 45,
+      "atk": 31,
+      "def": 52,
+      "spa": 49,
+      "spd": 31,
+      "spe": 58
+     }
+    },
+    {
+     "species": "sneasel",
+     "level": 39,
+     "moves": [
+      "quickattack",
+      "screech",
+      "feintattack",
+      "furyswipes"
+     ],
+     "evs": {
+      "hp": 60,
+      "atk": 31,
+      "def": 64,
+      "spa": 52,
+      "spd": 35,
+      "spe": 32
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Pokémaniac",
+   "name": "Owen",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "marowak",
+     "level": 37,
+     "moves": [
+      "leer",
+      "focusenergy",
+      "bonemerang",
+      "rage"
+     ],
+     "evs": {
+      "hp": 55,
+      "atk": 58,
+      "def": 28,
+      "spa": 31,
+      "spd": 61,
+      "spe": 27
+     }
+    },
+    {
+     "species": "steelix",
+     "level": 38,
+     "moves": [
+      "rockthrow",
+      "harden",
+      "rage",
+      "sandstorm"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 63,
+      "def": 37,
+      "spa": 39,
+      "spd": 33,
+      "spe": 63
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Hiker",
+   "name": "Rita",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "skarmory",
+     "level": 35,
+     "moves": [
+      "peck",
+      "sandattack",
+      "swift",
+      "agility"
+     ],
+     "evs": {
+      "hp": 59,
+      "atk": 32,
+      "def": 23,
+      "spa": 54,
+      "spd": 24,
+      "spe": 53
+     }
+    },
+    {
+     "species": "sneasel",
+     "level": 36,
+     "moves": [
+      "quickattack",
+      "screech",
+      "feintattack",
+      "furyswipes"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 57,
+      "def": 47,
+      "spa": 36,
+      "spd": 38,
+      "spe": 41
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Skier",
+   "name": "Gus",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "murkrow",
+     "level": 34,
+     "moves": [
+      "pursuit",
+      "haze",
+      "nightshade",
+      "feintattack"
+     ],
+     "evs": {
+      "hp": 48,
+      "atk": 40,
+      "def": 53,
+      "spa": 23,
+      "spd": 48,
+      "spe": 27
+     }
+    },
+    {
+     "species": "murkrow",
+     "level": 35,
+     "moves": [
+      "pursuit",
+      "haze",
+      "nightshade",
+      "feintattack"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 42,
+      "def": 38,
+      "spa": 43,
+      "spd": 45,
+      "spe": 34
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Blackbelt",
+   "name": "Vera",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "heracross",
+     "level": 33,
+     "moves": [
+      "hornattack",
+      "endure",
+      "furyattack",
+      "counter"
+     ],
+     "evs": {
+      "hp": 56,
+      "atk": 28,
+      "def": 25,
+      "spa": 46,
+      "spd": 39,
+      "spe": 36
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Birdkeeper",
+   "name": "Theo",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "shuckle",
+     "level": 32,
+     "moves": [
+      "wrap",
+      "encore",
+      "safeguard",
+      "bide"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 45,
+      "def": 30,
+      "spa": 53,
+      "spd": 26,
+      "spe": 50
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Pokémaniac",
+   "name": "Mona",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "electabuzz",
+     "level": 30,
+     "moves": [
+      "quickattack",
+      "thunderpunch",
+      "lightscreen",
+      "swift"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 41,
+      "def": 36,
+      "spa": 23,
+      "spd": 48,
+      "spe": 31
+     }
+    }
+   ]
+  }
+ ],
+ "7": [
+  {
+   "id": 0,
+   "class": "Cooltrainer",
+   "name": "Lana",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "ditto",
+     "level": 49,
+     "moves": [
+      "transform"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 51,
+      "def": 79,
+      "spa": 56,
+      "spd": 47,
+      "spe": 45
+     }
+    },
+    {
+     "species": "aerodactyl",
+     "level": 50,
+     "moves": [
+      "ancientpower",
+      "scaryface",
+      "takedown",
+      "hyperbeam"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 78,
+      "def": 35,
+      "spa": 40,
+      "spd": 87,
+      "spe": 79
+     }
+    },
+    {
+     "species": "aerodactyl",
+     "level": 51,
+     "moves": [
+      "ancientpower",
+      "scaryface",
+      "takedown",
+      "hyperbeam"
+     ],
+     "evs": {
+      "hp": 71,
+      "atk": 73,
+      "def": 54,
+      "spa": 53,
+      "spd": 73,
+      "spe": 33
+     }
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "class": "Veteran",
+   "name": "Joey",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "kabutops",
+     "level": 47,
+     "moves": [
+      "leer",
+      "sandattack",
+      "endure",
+      "slash"
+     ],
+     "evs": {
+      "hp": 71,
+      "atk": 55,
+      "def": 65,
+      "spa": 26,
+      "spd": 53,
+      "spe": 59
+     }
+    },
+    {
+     "species": "dragonair",
+     "level": 48,
+     "moves": [
+      "dragonrage",
+      "slam",
+      "agility",
+      "safeguard"
+     ],
+     "evs": {
+      "hp": 58,
+      "atk": 70,
+      "def": 32,
+      "spa": 58,
+      "spd": 73,
+      "spe": 46
+     }
+    },
+    {
+     "species": "pupitar",
+     "level": 49,
+     "moves": [
+      "rockslide",
+      "thrash",
+      "scaryface",
+      "crunch"
+     ],
+     "evs": {
+      "hp": 51,
+      "atk": 80,
+      "def": 71,
+      "spa": 36,
+      "spd": 76,
+      "spe": 29
+     }
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "class": "Ace Trainer",
+   "name": "Mikey",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "kabutops",
+     "level": 46,
+     "moves": [
+      "leer",
+      "sandattack",
+      "endure",
+      "slash"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 44,
+      "def": 62,
+      "spa": 54,
+      "spd": 51,
+      "spe": 59
+     }
+    },
+    {
+     "species": "scizor",
+     "level": 47,
+     "moves": [
+      "agility",
+      "metalclaw",
+      "slash",
+      "swordsdance"
+     ],
+     "evs": {
+      "hp": 40,
+      "atk": 54,
+      "def": 38,
+      "spa": 74,
+      "spd": 70,
+      "spe": 53
+     }
+    },
+    {
+     "species": "omastar",
+     "level": 48,
+     "moves": [
+      "watergun",
+      "leer",
+      "protect",
+      "spikecannon"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 55,
+      "def": 56,
+      "spa": 55,
+      "spd": 69,
+      "spe": 71
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "class": "Dragon Tamer",
+   "name": "Anna",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "blissey",
+     "level": 45,
+     "moves": [
+      "sing",
+      "eggbomb",
+      "defensecurl",
+      "lightscreen"
+     ],
+     "evs": {
+      "hp": 46,
+      "atk": 59,
+      "def": 42,
+      "spa": 58,
+      "spd": 55,
+      "spe": 55
+     }
+    },
+    {
+     "species": "scizor",
+     "level": 46,
+     "moves": [
+      "agility",
+      "metalclaw",
+      "slash",
+      "swordsdance"
+     ],
+     "evs": {
+      "hp": 66,
+      "atk": 44,
+      "def": 80,
+      "spa": 51,
+      "spd": 52,
+      "spe": 29
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Cooltrainer",
+   "name": "Liz",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "porygon2",
+     "level": 43,
+     "moves": [
+      "recover",
+      "defensecurl",
+      "lockon",
+      "triattack"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 70,
+      "def": 29,
+      "spa": 37,
+      "spd": 38,
+      "spe": 62
+     }
+    },
+    {
+     "species": "dragonair",
+     "level": 44,
+     "moves": [
+      "twister",
+      "dragonrage",
+      "slam",
+      "agility"
+     ],
+     "evs": {
+      "hp": 63,
+      "atk": 44,
+      "def": 59,
+      "spa": 47,
+      "spd": 50,
+      "spe": 46
+     }
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Veteran",
+   "name": "Sam",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "omastar",
+     "level": 42,
+     "moves": [
+      "watergun",
+      "leer",
+      "protect",
+      "spikecannon"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 53,
+      "def": 50,
+      "spa": 38,
+      "spd": 51,
+      "spe": 52
+     }
+    },
+    {
+     "species": "eevee",
+     "level": 43,
+     "moves": [
+      "bite",
+      "batonpass",
+      "focusenergy",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 37,
+      "def": 66,
+      "spa": 58,
+      "spd": 30,
+      "spe": 57
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "class": "Ace Trainer",
+   "name": "Kai",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "slowbro",
+     "level": 40,
+     "moves": [
+      "confusion",
+      "disable",
+      "headbutt",
+      "withdraw"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 46,
+      "def": 38,
+      "spa": 59,
+      "spd": 39,
+      "spe": 34
+     }
+    },
+    {
+     "species": "jynx",
+     "level": 41,
+     "moves": [
+      "doubleslap",
+      "icepunch",
+      "meanlook",
+      "bodyslam"
+     ],
+     "evs": {
+      "hp": 38,
+      "atk": 29,
+      "def": 63,
+      "spa": 66,
+      "spd": 64,
+      "spe": 28
+     }
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Dragon Tamer",
+   "name": "Bret",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "slowbro",
+     "level": 39,
+     "moves": [
+      "confusion",
+      "disable",
+      "headbutt",
+      "withdraw"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 37,
+      "def": 35,
+      "spa": 55,
+      "spd": 30,
+      "spe": 51
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "class": "Cooltrainer",
+   "name": "Tess",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "porygon2",
+     "level": 38,
+     "moves": [
+      "recover",
+      "defensecurl",
+      "lockon",
+      "triattack"
+     ],
+     "evs": {
+      "hp": 67,
+      "atk": 47,
+      "def": 46,
+      "spa": 31,
+      "spd": 41,
+      "spe": 34
+     }
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Veteran",
+   "name": "Dale",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "snorlax",
+     "level": 36,
+     "moves": [
+      "bellydrum",
+      "headbutt",
+      "rest",
+      "snore"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 50,
+      "def": 41,
+      "spa": 36,
+      "spd": 42,
+      "spe": 56
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Ace Trainer",
+   "name": "Nina",
+   "rank": 9,
+   "reward": 650,
+   "party": [
+    {
+     "species": "eevee",
+     "level": 49,
+     "moves": [
+      "bite",
+      "batonpass",
+      "focusenergy",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 75,
+      "atk": 51,
+      "def": 39,
+      "spa": 66,
+      "spd": 78,
+      "spe": 33
+     }
+    },
+    {
+     "species": "blissey",
+     "level": 50,
+     "moves": [
+      "eggbomb",
+      "defensecurl",
+      "lightscreen",
+      "doubleedge"
+     ],
+     "evs": {
+      "hp": 81,
+      "atk": 36,
+      "def": 61,
+      "spa": 45,
+      "spd": 81,
+      "spe": 46
+     }
+    },
+    {
+     "species": "pupitar",
+     "level": 51,
+     "moves": [
+      "rockslide",
+      "thrash",
+      "scaryface",
+      "crunch"
+     ],
+     "evs": {
+      "hp": 76,
+      "atk": 33,
+      "def": 42,
+      "spa": 67,
+      "spd": 72,
+      "spe": 67
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Dragon Tamer",
+   "name": "Owen",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "porygon2",
+     "level": 47,
+     "moves": [
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
+     ],
+     "evs": {
+      "hp": 46,
+      "atk": 73,
+      "def": 60,
+      "spa": 57,
+      "spd": 51,
+      "spe": 42
+     }
+    },
+    {
+     "species": "jynx",
+     "level": 48,
+     "moves": [
+      "doubleslap",
+      "icepunch",
+      "meanlook",
+      "bodyslam"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 66,
+      "def": 45,
+      "spa": 56,
+      "spd": 67,
+      "spe": 37
+     }
+    },
+    {
+     "species": "hitmonlee",
+     "level": 49,
+     "moves": [
+      "mindreader",
+      "foresight",
+      "endure",
+      "megakick"
+     ],
+     "evs": {
+      "hp": 59,
+      "atk": 55,
+      "def": 72,
+      "spa": 72,
+      "spd": 42,
+      "spe": 43
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Cooltrainer",
+   "name": "Rita",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "snorlax",
+     "level": 46,
+     "moves": [
+      "headbutt",
+      "rest",
+      "snore",
+      "bodyslam"
+     ],
+     "evs": {
+      "hp": 59,
+      "atk": 59,
+      "def": 69,
+      "spa": 69,
+      "spd": 28,
+      "spe": 38
+     }
+    },
+    {
+     "species": "eevee",
+     "level": 47,
+     "moves": [
+      "bite",
+      "batonpass",
+      "focusenergy",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 68,
+      "def": 63,
+      "spa": 45,
+      "spd": 33,
+      "spe": 63
+     }
+    },
+    {
+     "species": "dragonair",
+     "level": 48,
+     "moves": [
+      "dragonrage",
+      "slam",
+      "agility",
+      "safeguard"
+     ],
+     "evs": {
+      "hp": 74,
+      "atk": 31,
+      "def": 58,
+      "spa": 43,
+      "spd": 81,
+      "spe": 49
+     }
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Veteran",
+   "name": "Gus",
+   "rank": 6,
+   "reward": 500,
+   "party": [
+    {
+     "species": "pupitar",
+     "level": 45,
+     "moves": [
+      "screech",
+      "rockslide",
+      "thrash",
+      "scaryface"
+     ],
+     "evs": {
+      "hp": 67,
+      "atk": 61,
+      "def": 50,
+      "spa": 42,
+      "spd": 48,
+      "spe": 49
+     }
+    },
+    {
+     "species": "lapras",
+     "level": 46,
+     "moves": [
+      "confuseray",
+      "perishsong",
+      "icebeam",
+      "raindance"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 53,
+      "def": 48,
+      "spa": 47,
+      "spd": 69,
+      "spe": 74
+     }
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "class": "Ace Trainer",
+   "name": "Vera",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "jynx",
+     "level": 43,
+     "moves": [
+      "doubleslap",
+      "icepunch",
+      "meanlook",
+      "bodyslam"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 64,
+      "def": 37,
+      "spa": 54,
+      "spd": 48,
+      "spe": 33
+     }
+    },
+    {
+     "species": "scizor",
+     "level": 44,
+     "moves": [
+      "agility",
+      "metalclaw",
+      "slash",
+      "swordsdance"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 63,
+      "def": 70,
+      "spa": 58,
+      "spd": 40,
+      "spe": 46
+     }
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "class": "Dragon Tamer",
+   "name": "Theo",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "blissey",
+     "level": 42,
+     "moves": [
+      "sing",
+      "eggbomb",
+      "defensecurl",
+      "lightscreen"
+     ],
+     "evs": {
+      "hp": 28,
+      "atk": 37,
+      "def": 41,
+      "spa": 77,
+      "spd": 68,
+      "spe": 43
+     }
+    },
+    {
+     "species": "pupitar",
+     "level": 43,
+     "moves": [
+      "screech",
+      "rockslide",
+      "thrash",
+      "scaryface"
+     ],
+     "evs": {
+      "hp": 69,
+      "atk": 37,
+      "def": 36,
+      "spa": 39,
+      "spd": 52,
+      "spe": 69
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Cooltrainer",
+   "name": "Mona",
+   "rank": 3,
+   "reward": 350,
+   "party": [
+    {
+     "species": "hitmonlee",
+     "level": 40,
+     "moves": [
+      "focusenergy",
+      "highjumpkick",
+      "mindreader",
+      "foresight"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 75,
+      "def": 32,
+      "spa": 44,
+      "spd": 29,
+      "spe": 70
+     }
+    },
+    {
+     "species": "eevee",
+     "level": 41,
+     "moves": [
+      "quickattack",
+      "bite",
+      "batonpass",
+      "focusenergy"
+     ],
+     "evs": {
+      "hp": 61,
+      "atk": 40,
+      "def": 37,
+      "spa": 50,
+      "spd": 42,
+      "spe": 57
+     }
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "class": "Veteran",
+   "name": "Cody",
+   "rank": 2,
+   "reward": 300,
+   "party": [
+    {
+     "species": "jynx",
+     "level": 39,
+     "moves": [
+      "powdersnow",
+      "doubleslap",
+      "icepunch",
+      "meanlook"
+     ],
+     "evs": {
+      "hp": 41,
+      "atk": 43,
+      "def": 32,
+      "spa": 51,
+      "spd": 47,
+      "spe": 59
+     }
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "class": "Ace Trainer",
+   "name": "Iris",
+   "rank": 1,
+   "reward": 250,
+   "party": [
+    {
+     "species": "porygon2",
+     "level": 38,
+     "moves": [
+      "recover",
+      "defensecurl",
+      "lockon",
+      "triattack"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 27,
+      "def": 65,
+      "spa": 29,
+      "spd": 42,
+      "spe": 39
+     }
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "class": "Dragon Tamer",
+   "name": "Hank",
+   "rank": 0,
+   "reward": 200,
+   "party": [
+    {
+     "species": "porygon2",
+     "level": 36,
+     "moves": [
+      "recover",
+      "defensecurl",
+      "lockon",
+      "triattack"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 62,
+      "def": 36,
+      "spa": 60,
+      "spd": 26,
+      "spe": 35
+     }
+    }
+   ]
+  }
+ ],
+ "8": []
+}

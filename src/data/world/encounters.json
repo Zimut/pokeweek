@@ -1,0 +1,1079 @@
+{
+ "1": [
+  {
+   "num": 16,
+   "species": "pidgey",
+   "name": "Pidgey",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 19,
+   "species": "rattata",
+   "name": "Rattata",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 10,
+   "species": "caterpie",
+   "name": "Caterpie",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 13,
+   "species": "weedle",
+   "name": "Weedle",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 21,
+   "species": "spearow",
+   "name": "Spearow",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 161,
+   "species": "sentret",
+   "name": "Sentret",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 163,
+   "species": "hoothoot",
+   "name": "Hoothoot",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 165,
+   "species": "ledyba",
+   "name": "Ledyba",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 167,
+   "species": "spinarak",
+   "name": "Spinarak",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 187,
+   "species": "hoppip",
+   "name": "Hoppip",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 191,
+   "species": "sunkern",
+   "name": "Sunkern",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 194,
+   "species": "wooper",
+   "name": "Wooper",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 172,
+   "species": "pichu",
+   "name": "Pichu",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 173,
+   "species": "cleffa",
+   "name": "Cleffa",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 174,
+   "species": "igglybuff",
+   "name": "Igglybuff",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 179,
+   "species": "mareep",
+   "name": "Mareep",
+   "rarity": "common",
+   "weight": 40,
+   "min": 3,
+   "max": 7
+  },
+  {
+   "num": 183,
+   "species": "marill",
+   "name": "Marill",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 3,
+   "max": 7
+  }
+ ],
+ "2": [
+  {
+   "num": 43,
+   "species": "oddish",
+   "name": "Oddish",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 69,
+   "species": "bellsprout",
+   "name": "Bellsprout",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 41,
+   "species": "zubat",
+   "name": "Zubat",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 46,
+   "species": "paras",
+   "name": "Paras",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 48,
+   "species": "venonat",
+   "name": "Venonat",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 23,
+   "species": "ekans",
+   "name": "Ekans",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 27,
+   "species": "sandshrew",
+   "name": "Sandshrew",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 29,
+   "species": "nidoranf",
+   "name": "Nidoran-F",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 32,
+   "species": "nidoranm",
+   "name": "Nidoran-M",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 56,
+   "species": "mankey",
+   "name": "Mankey",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 52,
+   "species": "meowth",
+   "name": "Meowth",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 54,
+   "species": "psyduck",
+   "name": "Psyduck",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 60,
+   "species": "poliwag",
+   "name": "Poliwag",
+   "rarity": "common",
+   "weight": 40,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 177,
+   "species": "natu",
+   "name": "Natu",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 209,
+   "species": "snubbull",
+   "name": "Snubbull",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 175,
+   "species": "togepi",
+   "name": "Togepi",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 8,
+   "max": 12
+  },
+  {
+   "num": 152,
+   "species": "chikorita",
+   "name": "Chikorita",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 8,
+   "max": 12
+  }
+ ],
+ "3": [
+  {
+   "num": 63,
+   "species": "abra",
+   "name": "Abra",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 66,
+   "species": "machop",
+   "name": "Machop",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 74,
+   "species": "geodude",
+   "name": "Geodude",
+   "rarity": "common",
+   "weight": 40,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 50,
+   "species": "diglett",
+   "name": "Diglett",
+   "rarity": "common",
+   "weight": 40,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 81,
+   "species": "magnemite",
+   "name": "Magnemite",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 100,
+   "species": "voltorb",
+   "name": "Voltorb",
+   "rarity": "common",
+   "weight": 40,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 88,
+   "species": "grimer",
+   "name": "Grimer",
+   "rarity": "common",
+   "weight": 40,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 109,
+   "species": "koffing",
+   "name": "Koffing",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 92,
+   "species": "gastly",
+   "name": "Gastly",
+   "rarity": "common",
+   "weight": 40,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 96,
+   "species": "drowzee",
+   "name": "Drowzee",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 37,
+   "species": "vulpix",
+   "name": "Vulpix",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 58,
+   "species": "growlithe",
+   "name": "Growlithe",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 77,
+   "species": "ponyta",
+   "name": "Ponyta",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 218,
+   "species": "slugma",
+   "name": "Slugma",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 228,
+   "species": "houndour",
+   "name": "Houndour",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 155,
+   "species": "cyndaquil",
+   "name": "Cyndaquil",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 13,
+   "max": 18
+  },
+  {
+   "num": 190,
+   "species": "aipom",
+   "name": "Aipom",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 13,
+   "max": 18
+  }
+ ],
+ "4": [
+  {
+   "num": 72,
+   "species": "tentacool",
+   "name": "Tentacool",
+   "rarity": "common",
+   "weight": 40,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 98,
+   "species": "krabby",
+   "name": "Krabby",
+   "rarity": "common",
+   "weight": 40,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 90,
+   "species": "shellder",
+   "name": "Shellder",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 120,
+   "species": "staryu",
+   "name": "Staryu",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 118,
+   "species": "goldeen",
+   "name": "Goldeen",
+   "rarity": "common",
+   "weight": 40,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 86,
+   "species": "seel",
+   "name": "Seel",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 116,
+   "species": "horsea",
+   "name": "Horsea",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 170,
+   "species": "chinchou",
+   "name": "Chinchou",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 223,
+   "species": "remoraid",
+   "name": "Remoraid",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 211,
+   "species": "qwilfish",
+   "name": "Qwilfish",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 222,
+   "species": "corsola",
+   "name": "Corsola",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 129,
+   "species": "magikarp",
+   "name": "Magikarp",
+   "rarity": "common",
+   "weight": 40,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 7,
+   "species": "squirtle",
+   "name": "Squirtle",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 158,
+   "species": "totodile",
+   "name": "Totodile",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 226,
+   "species": "mantine",
+   "name": "Mantine",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 18,
+   "max": 24
+  },
+  {
+   "num": 225,
+   "species": "delibird",
+   "name": "Delibird",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 18,
+   "max": 24
+  }
+ ],
+ "5": [
+  {
+   "num": 102,
+   "species": "exeggcute",
+   "name": "Exeggcute",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 114,
+   "species": "tangela",
+   "name": "Tangela",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 108,
+   "species": "lickitung",
+   "name": "Lickitung",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 84,
+   "species": "doduo",
+   "name": "Doduo",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 83,
+   "species": "farfetchd",
+   "name": "Farfetch’d",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 122,
+   "species": "mrmime",
+   "name": "Mr. Mime",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 203,
+   "species": "girafarig",
+   "name": "Girafarig",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 206,
+   "species": "dunsparce",
+   "name": "Dunsparce",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 234,
+   "species": "stantler",
+   "name": "Stantler",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 241,
+   "species": "miltank",
+   "name": "Miltank",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 128,
+   "species": "tauros",
+   "name": "Tauros",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 115,
+   "species": "kangaskhan",
+   "name": "Kangaskhan",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 1,
+   "species": "bulbasaur",
+   "name": "Bulbasaur",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 185,
+   "species": "sudowoodo",
+   "name": "Sudowoodo",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 193,
+   "species": "yanma",
+   "name": "Yanma",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 235,
+   "species": "smeargle",
+   "name": "Smeargle",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 24,
+   "max": 30
+  },
+  {
+   "num": 201,
+   "species": "unown",
+   "name": "Unown",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 24,
+   "max": 30
+  }
+ ],
+ "6": [
+  {
+   "num": 104,
+   "species": "cubone",
+   "name": "Cubone",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 111,
+   "species": "rhyhorn",
+   "name": "Rhyhorn",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 95,
+   "species": "onix",
+   "name": "Onix",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 220,
+   "species": "swinub",
+   "name": "Swinub",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 215,
+   "species": "sneasel",
+   "name": "Sneasel",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 198,
+   "species": "murkrow",
+   "name": "Murkrow",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 200,
+   "species": "misdreavus",
+   "name": "Misdreavus",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 207,
+   "species": "gligar",
+   "name": "Gligar",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 227,
+   "species": "skarmory",
+   "name": "Skarmory",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 231,
+   "species": "phanpy",
+   "name": "Phanpy",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 216,
+   "species": "teddiursa",
+   "name": "Teddiursa",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 204,
+   "species": "pineco",
+   "name": "Pineco",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 214,
+   "species": "heracross",
+   "name": "Heracross",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 213,
+   "species": "shuckle",
+   "name": "Shuckle",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 4,
+   "species": "charmander",
+   "name": "Charmander",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 240,
+   "species": "magby",
+   "name": "Magby",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 30,
+   "max": 36
+  },
+  {
+   "num": 239,
+   "species": "elekid",
+   "name": "Elekid",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 30,
+   "max": 36
+  }
+ ],
+ "7": [
+  {
+   "num": 246,
+   "species": "larvitar",
+   "name": "Larvitar",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 147,
+   "species": "dratini",
+   "name": "Dratini",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 131,
+   "species": "lapras",
+   "name": "Lapras",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 133,
+   "species": "eevee",
+   "name": "Eevee",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 137,
+   "species": "porygon",
+   "name": "Porygon",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 123,
+   "species": "scyther",
+   "name": "Scyther",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 127,
+   "species": "pinsir",
+   "name": "Pinsir",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 138,
+   "species": "omanyte",
+   "name": "Omanyte",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 140,
+   "species": "kabuto",
+   "name": "Kabuto",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 142,
+   "species": "aerodactyl",
+   "name": "Aerodactyl",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 113,
+   "species": "chansey",
+   "name": "Chansey",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 143,
+   "species": "snorlax",
+   "name": "Snorlax",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 238,
+   "species": "smoochum",
+   "name": "Smoochum",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 236,
+   "species": "tyrogue",
+   "name": "Tyrogue",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 132,
+   "species": "ditto",
+   "name": "Ditto",
+   "rarity": "veryrare",
+   "weight": 3,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 79,
+   "species": "slowpoke",
+   "name": "Slowpoke",
+   "rarity": "uncommon",
+   "weight": 20,
+   "min": 36,
+   "max": 44
+  },
+  {
+   "num": 202,
+   "species": "wobbuffet",
+   "name": "Wobbuffet",
+   "rarity": "rare",
+   "weight": 8,
+   "min": 36,
+   "max": 44
+  }
+ ],
+ "8": []
+}

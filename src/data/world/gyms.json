@@ -1,0 +1,811 @@
+{
+ "1": {
+  "kanto": {
+   "leader": "Brock",
+   "region": "Kanto",
+   "gymType": "Rock",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "geodude",
+     "level": 15,
+     "moves": [
+      "tackle",
+      "defensecurl",
+      "rockthrow"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 105,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "onix",
+     "level": 15,
+     "moves": [
+      "screech",
+      "tackle",
+      "bind",
+      "rockthrow"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 105,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Falkner",
+   "region": "Johto",
+   "gymType": "Flying",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "pidgey",
+     "level": 15,
+     "moves": [
+      "tackle",
+      "sandattack",
+      "gust",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 105,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "pidgeotto",
+     "level": 15,
+     "moves": [
+      "tackle",
+      "sandattack",
+      "gust",
+      "quickattack"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 105,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "2": {
+  "kanto": {
+   "leader": "Misty",
+   "region": "Kanto",
+   "gymType": "Water",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "goldeen",
+     "level": 21,
+     "moves": [
+      "peck",
+      "tailwhip",
+      "supersonic",
+      "hornattack"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 147,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "staryu",
+     "level": 21,
+     "moves": [
+      "tackle",
+      "watergun",
+      "rapidspin",
+      "recover"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 147,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Bugsy",
+   "region": "Johto",
+   "gymType": "Bug",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "butterfree",
+     "level": 21,
+     "moves": [
+      "poisonpowder",
+      "stunspore",
+      "sleeppowder",
+      "supersonic"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 147,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "beedrill",
+     "level": 21,
+     "moves": [
+      "furyattack",
+      "focusenergy",
+      "twineedle"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 147,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "scyther",
+     "level": 21,
+     "moves": [
+      "quickattack",
+      "focusenergy",
+      "pursuit",
+      "falseswipe"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 147,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "3": {
+  "kanto": {
+   "leader": "Lt. Surge",
+   "region": "Kanto",
+   "gymType": "Electric",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "voltorb",
+     "level": 27,
+     "moves": [
+      "tackle",
+      "screech",
+      "sonicboom",
+      "selfdestruct"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 189,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "pikachu",
+     "level": 27,
+     "moves": [
+      "quickattack",
+      "doubleteam",
+      "slam",
+      "thunderbolt"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 189,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "magnemite",
+     "level": 27,
+     "moves": [
+      "supersonic",
+      "sonicboom",
+      "thunderwave",
+      "lockon"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 189,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Whitney",
+   "region": "Johto",
+   "gymType": "Normal",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "clefairy",
+     "level": 27,
+     "moves": [
+      "sing",
+      "doubleslap",
+      "minimize",
+      "defensecurl"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 189,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 27,
+     "moves": [
+      "defensecurl",
+      "stomp",
+      "milkdrink",
+      "bide"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 189,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "4": {
+  "kanto": {
+   "leader": "Erika",
+   "region": "Kanto",
+   "gymType": "Grass",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "gloom",
+     "level": 33,
+     "moves": [
+      "poisonpowder",
+      "stunspore",
+      "sleeppowder",
+      "acid"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 231,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "weepinbell",
+     "level": 33,
+     "moves": [
+      "poisonpowder",
+      "stunspore",
+      "acid",
+      "sweetscent"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 231,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "tangela",
+     "level": 33,
+     "moves": [
+      "poisonpowder",
+      "vinewhip",
+      "bind",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 231,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Morty",
+   "region": "Johto",
+   "gymType": "Ghost",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "haunter",
+     "level": 33,
+     "moves": [
+      "meanlook",
+      "curse",
+      "nightshade",
+      "confuseray"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 231,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "haunter",
+     "level": 33,
+     "moves": [
+      "meanlook",
+      "curse",
+      "nightshade",
+      "confuseray"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 231,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 33,
+     "moves": [
+      "spite",
+      "confuseray",
+      "meanlook",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 231,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "5": {
+  "kanto": {
+   "leader": "Sabrina",
+   "region": "Kanto",
+   "gymType": "Psychic",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "alakazam",
+     "level": 39,
+     "moves": [
+      "psybeam",
+      "recover",
+      "futuresight",
+      "psychic"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 252,
+      "spd": 0,
+      "spe": 21
+     }
+    },
+    {
+     "species": "hypno",
+     "level": 39,
+     "moves": [
+      "disable",
+      "confusion",
+      "headbutt",
+      "poisongas"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 21,
+      "spe": 0
+     }
+    },
+    {
+     "species": "mrmime",
+     "level": 39,
+     "moves": [
+      "lightscreen",
+      "reflect",
+      "encore",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 252,
+      "spd": 21,
+      "spe": 0
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Jasmine",
+   "region": "Johto",
+   "gymType": "Steel",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "magneton",
+     "level": 39,
+     "moves": [
+      "thunderwave",
+      "lockon",
+      "swift",
+      "triattack"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 21,
+      "spa": 252,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "steelix",
+     "level": 39,
+     "moves": [
+      "rockthrow",
+      "harden",
+      "rage",
+      "sandstorm"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 21,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 39,
+     "moves": [
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 21,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "6": {
+  "kanto": {
+   "leader": "Blaine",
+   "region": "Kanto",
+   "gymType": "Fire",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "magmar",
+     "level": 45,
+     "moves": [
+      "firepunch",
+      "smokescreen",
+      "sunnyday",
+      "flamethrower"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 0,
+      "def": 0,
+      "spa": 252,
+      "spd": 0,
+      "spe": 63
+     }
+    },
+    {
+     "species": "rapidash",
+     "level": 45,
+     "moves": [
+      "stomp",
+      "firespin",
+      "takedown",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 63
+     }
+    },
+    {
+     "species": "arcanine",
+     "level": 45,
+     "moves": [
+      "flamewheel",
+      "leer",
+      "roar",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 63
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Pryce",
+   "region": "Johto",
+   "gymType": "Ice",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "dewgong",
+     "level": 45,
+     "moves": [
+      "aurorabeam",
+      "rest",
+      "takedown",
+      "icebeam"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 63,
+      "spe": 0
+     }
+    },
+    {
+     "species": "piloswine",
+     "level": 45,
+     "moves": [
+      "endure",
+      "takedown",
+      "furyattack",
+      "mist"
+     ],
+     "evs": {
+      "hp": 63,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    },
+    {
+     "species": "lapras",
+     "level": 45,
+     "moves": [
+      "confuseray",
+      "perishsong",
+      "icebeam",
+      "raindance"
+     ],
+     "evs": {
+      "hp": 63,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "7": {
+  "kanto": {
+   "leader": "Giovanni",
+   "region": "Kanto",
+   "gymType": "Ground",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "dugtrio",
+     "level": 52,
+     "moves": [
+      "dig",
+      "sandattack",
+      "slash",
+      "earthquake"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 112
+     }
+    },
+    {
+     "species": "nidoking",
+     "level": 52,
+     "moves": [
+      "hornattack",
+      "poisonsting",
+      "tackle",
+      "thrash"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 0,
+      "spe": 112
+     }
+    },
+    {
+     "species": "rhydon",
+     "level": 52,
+     "moves": [
+      "stomp",
+      "furyattack",
+      "scaryface",
+      "horndrill"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 112,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  },
+  "johto": {
+   "leader": "Clair",
+   "region": "Johto",
+   "gymType": "Dragon",
+   "reward": 1000,
+   "team": [
+    {
+     "species": "gyarados",
+     "level": 52,
+     "moves": [
+      "twister",
+      "hydropump",
+      "raindance",
+      "hyperbeam"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 112,
+      "spe": 0
+     }
+    },
+    {
+     "species": "dragonair",
+     "level": 52,
+     "moves": [
+      "dragonrage",
+      "slam",
+      "agility",
+      "safeguard"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 0,
+      "spa": 0,
+      "spd": 112,
+      "spe": 0
+     }
+    },
+    {
+     "species": "kingdra",
+     "level": 52,
+     "moves": [
+      "watergun",
+      "twister",
+      "agility",
+      "hydropump"
+     ],
+     "evs": {
+      "hp": 0,
+      "atk": 252,
+      "def": 112,
+      "spa": 0,
+      "spd": 0,
+      "spe": 0
+     }
+    }
+   ]
+  }
+ },
+ "8": {}
+}

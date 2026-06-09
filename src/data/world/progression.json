@@ -1,0 +1,141 @@
+{
+ "mapCount": 7,
+ "arenaMap": 8,
+ "weekDays": 7,
+ "startMoney": 0,
+ "teamSize": 6,
+ "rewards": {
+  "trainer": 200,
+  "gym": 1000,
+  "pvpWin": 1000,
+  "pvpLose": -1000,
+  "dailyPenalty": -2000
+ },
+ "ballOptions": [
+  10,
+  25,
+  50,
+  100,
+  "infinite"
+ ],
+ "dayDefaultMs": 86400000,
+ "starters": [
+  "bulbasaur",
+  "charmander",
+  "squirtle",
+  "chikorita",
+  "cyndaquil",
+  "totodile"
+ ],
+ "shinyRate": 300,
+ "encounterStepRate": 0.12,
+ "catchBaseByRarity": {
+  "common": 0.45,
+  "uncommon": 0.3,
+  "rare": 0.18,
+  "veryrare": 0.1
+ },
+ "ballMult": {
+  "pokeball": 1,
+  "greatball": 5
+ },
+ "maps": [
+  {
+   "map": 1,
+   "band": [
+    3,
+    7
+   ],
+   "cap": 15,
+   "gymLevel": 10,
+   "kanto": "Brock",
+   "johto": "Falkner",
+   "theme": "meadow",
+   "maxLevel": 15
+  },
+  {
+   "map": 2,
+   "band": [
+    8,
+    12
+   ],
+   "cap": 21,
+   "gymLevel": 16,
+   "kanto": "Misty",
+   "johto": "Bugsy",
+   "theme": "forest",
+   "maxLevel": 21
+  },
+  {
+   "map": 3,
+   "band": [
+    13,
+    18
+   ],
+   "cap": 27,
+   "gymLevel": 22,
+   "kanto": "Lt. Surge",
+   "johto": "Whitney",
+   "theme": "cave",
+   "maxLevel": 27
+  },
+  {
+   "map": 4,
+   "band": [
+    18,
+    24
+   ],
+   "cap": 33,
+   "gymLevel": 28,
+   "kanto": "Erika",
+   "johto": "Morty",
+   "theme": "coast",
+   "maxLevel": 33
+  },
+  {
+   "map": 5,
+   "band": [
+    24,
+    30
+   ],
+   "cap": 39,
+   "gymLevel": 34,
+   "kanto": "Sabrina",
+   "johto": "Jasmine",
+   "theme": "plain",
+   "maxLevel": 39
+  },
+  {
+   "map": 6,
+   "band": [
+    30,
+    36
+   ],
+   "cap": 45,
+   "gymLevel": 40,
+   "kanto": "Blaine",
+   "johto": "Pryce",
+   "theme": "mountain",
+   "maxLevel": 45
+  },
+  {
+   "map": 7,
+   "band": [
+    36,
+    44
+   ],
+   "cap": 52,
+   "gymLevel": 48,
+   "kanto": "Giovanni",
+   "johto": "Clair",
+   "theme": "plateau",
+   "maxLevel": 52
+  },
+  {
+   "map": 8,
+   "cap": 55,
+   "theme": "arena",
+   "maxLevel": 55
+  }
+ ]
+}

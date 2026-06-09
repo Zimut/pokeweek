@@ -1,0 +1,1634 @@
+{
+ "1": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "2": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "3": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "4": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "5": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "6": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "7": [
+  {
+   "id": "greatball",
+   "name": "Great Ball",
+   "kind": "ball",
+   "price": 500,
+   "mult": 5
+  },
+  {
+   "id": "rarecandy",
+   "name": "Rare Candy",
+   "kind": "levelup",
+   "price": 2000
+  },
+  {
+   "id": "hpup",
+   "name": "HP Up",
+   "kind": "statboost",
+   "stat": "hp",
+   "price": 1000
+  },
+  {
+   "id": "protein",
+   "name": "Protein",
+   "kind": "statboost",
+   "stat": "atk",
+   "price": 1000
+  },
+  {
+   "id": "iron",
+   "name": "Iron",
+   "kind": "statboost",
+   "stat": "def",
+   "price": 1000
+  },
+  {
+   "id": "calcium",
+   "name": "Calcium",
+   "kind": "statboost",
+   "stat": "spa",
+   "price": 1000
+  },
+  {
+   "id": "zinc",
+   "name": "Zinc",
+   "kind": "statboost",
+   "stat": "spd",
+   "price": 1000
+  },
+  {
+   "id": "carbos",
+   "name": "Carbos",
+   "kind": "statboost",
+   "stat": "spe",
+   "price": 1000
+  },
+  {
+   "id": "firestone",
+   "name": "Fire Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "waterstone",
+   "name": "Water Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "thunderstone",
+   "name": "Thunder Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "leafstone",
+   "name": "Leaf Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "moonstone",
+   "name": "Moon Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "sunstone",
+   "name": "Sun Stone",
+   "kind": "stone",
+   "price": 2000
+  },
+  {
+   "id": "tm1",
+   "name": "TM01 Dynamic Punch",
+   "kind": "tm",
+   "move": "dynamicpunch",
+   "price": 2000
+  },
+  {
+   "id": "tm6",
+   "name": "TM06 Toxic",
+   "kind": "tm",
+   "move": "toxic",
+   "price": 2000
+  },
+  {
+   "id": "tm14",
+   "name": "TM14 Blizzard",
+   "kind": "tm",
+   "move": "blizzard",
+   "price": 2000
+  },
+  {
+   "id": "tm15",
+   "name": "TM15 Hyper Beam",
+   "kind": "tm",
+   "move": "hyperbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm22",
+   "name": "TM22 Solar Beam",
+   "kind": "tm",
+   "move": "solarbeam",
+   "price": 2000
+  },
+  {
+   "id": "tm23",
+   "name": "TM23 Iron Tail",
+   "kind": "tm",
+   "move": "irontail",
+   "price": 2000
+  },
+  {
+   "id": "tm24",
+   "name": "TM24 Dragon Breath",
+   "kind": "tm",
+   "move": "dragonbreath",
+   "price": 2000
+  },
+  {
+   "id": "tm25",
+   "name": "TM25 Thunder",
+   "kind": "tm",
+   "move": "thunder",
+   "price": 2000
+  },
+  {
+   "id": "tm26",
+   "name": "TM26 Earthquake",
+   "kind": "tm",
+   "move": "earthquake",
+   "price": 2000
+  },
+  {
+   "id": "tm27",
+   "name": "TM27 Return",
+   "kind": "tm",
+   "move": "return",
+   "price": 2000
+  },
+  {
+   "id": "tm29",
+   "name": "TM29 Psychic",
+   "kind": "tm",
+   "move": "psychic",
+   "price": 2000
+  },
+  {
+   "id": "tm30",
+   "name": "TM30 Shadow Ball",
+   "kind": "tm",
+   "move": "shadowball",
+   "price": 2000
+  },
+  {
+   "id": "tm32",
+   "name": "TM32 Double Team",
+   "kind": "tm",
+   "move": "doubleteam",
+   "price": 2000
+  },
+  {
+   "id": "tm35",
+   "name": "TM35 Sleep Talk",
+   "kind": "tm",
+   "move": "sleeptalk",
+   "price": 2000
+  },
+  {
+   "id": "tm36",
+   "name": "TM36 Sludge Bomb",
+   "kind": "tm",
+   "move": "sludgebomb",
+   "price": 2000
+  },
+  {
+   "id": "tm37",
+   "name": "TM37 Sandstorm",
+   "kind": "tm",
+   "move": "sandstorm",
+   "price": 2000
+  },
+  {
+   "id": "tm38",
+   "name": "TM38 Fire Blast",
+   "kind": "tm",
+   "move": "fireblast",
+   "price": 2000
+  },
+  {
+   "id": "tm44",
+   "name": "TM44 Rest",
+   "kind": "tm",
+   "move": "rest",
+   "price": 2000
+  },
+  {
+   "id": "tm45",
+   "name": "TM45 Attract",
+   "kind": "tm",
+   "move": "attract",
+   "price": 2000
+  },
+  {
+   "id": "tm46",
+   "name": "TM46 Thief",
+   "kind": "tm",
+   "move": "thief",
+   "price": 2000
+  }
+ ],
+ "8": []
+}
