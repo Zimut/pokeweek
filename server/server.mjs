@@ -222,7 +222,7 @@ export function handleConnection(conn) {
 // client simulates and reports its save.
 export function handleLobbyMessage(conn, m) {
   if (!REGISTRY) { conn.send({ t: 'error', msg: 'Lobby service not ready.' }); return; }
-  const pickOpts = () => ({ mode: m.mode, dayLength: m.dayLength, dayLengthMs: m.dayLengthMs, ballAllowance: m.ballAllowance, name: m.name, starter: m.starter, character: m.character });
+  const pickOpts = () => ({ mode: m.mode, dayLength: m.dayLength, dayLengthMs: m.dayLengthMs, encounterAllowance: m.encounterAllowance, name: m.name, starter: m.starter, character: m.character });
 
   switch (m.t) {
     case 'createLobby': {

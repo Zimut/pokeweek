@@ -94,7 +94,7 @@ export class Battle {
     if (sideIndex === 0) text = initial ? `Go! ${p.name}!` : `Go! ${p.name}!`;
     else text = this.kind === 'wild' ? `Wild ${p.name} appeared!` : `${side.name} sent out ${p.name}!`;
     this.add({
-      type: 'switchIn', side: sideIndex, name: p.name, num: p.num, level: p.level,
+      type: 'switchIn', side: sideIndex, name: p.name, num: p.num, level: p.level, shiny: !!p.shiny,
       hp: p.hp, maxhp: p.maxhp, hpPct: p.hpPercent(), status: p.status, gender: p.gender, text,
     });
     // Spikes (Gen 2) on entry.
@@ -145,7 +145,7 @@ export class Battle {
     return side.team.map((p, i) => ({
       index: i, name: p.name, num: p.num, level: p.level, hp: p.hp, maxhp: p.maxhp,
       hpPct: p.hpPercent(), status: p.status, fainted: p.isFainted(), active: i === side.activeIndex,
-      types: p.types,
+      types: p.types, shiny: !!p.shiny,
     }));
   }
 
@@ -184,7 +184,9 @@ export class Battle {
   runTurn(a0, a1) {
     this.turn++;
     this.add({ type: 'turn', n: this.turn });
-    for (const s of this.sides) { s.active.movedThisTurn = false; s.active.justSwitchedIn = false; s.active.lastDamage = null; }
+    // Flinch only lasts the turn it's inflicted: clear any leftover at the start
+    // of each turn so a flincher who moved SECOND can't flinch the foe next turn.
+    for (const s of this.sides) { s.active.movedThisTurn = false; s.active.justSwitchedIn = false; s.active.lastDamage = null; delete s.active.volatiles.flinch; }
 
     const actions = [
       { side: 0, choice: a0, pokemon: this.sides[0].active },

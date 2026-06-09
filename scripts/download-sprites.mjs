@@ -31,11 +31,16 @@ async function download(url, dest) {
 async function main() {
   await mkdir(join(ASSETS, 'front'), { recursive: true });
   await mkdir(join(ASSETS, 'back'), { recursive: true });
+  await mkdir(join(ASSETS, 'front', 'shiny'), { recursive: true });
+  await mkdir(join(ASSETS, 'back', 'shiny'), { recursive: true });
 
   const jobs = [];
   for (let id = 1; id <= 251; id++) {
     jobs.push({ url: `${REPO}/${id}.png`, dest: join(ASSETS, 'front', `${id}.png`), id, kind: 'front' });
     jobs.push({ url: `${REPO}/back/${id}.png`, dest: join(ASSETS, 'back', `${id}.png`), id, kind: 'back' });
+    // Shiny variants — same HGSS art, recoloured (used for shiny Pokémon).
+    jobs.push({ url: `${REPO}/shiny/${id}.png`, dest: join(ASSETS, 'front', 'shiny', `${id}.png`), id, kind: 'front-shiny' });
+    jobs.push({ url: `${REPO}/back/shiny/${id}.png`, dest: join(ASSETS, 'back', 'shiny', `${id}.png`), id, kind: 'back-shiny' });
   }
 
   const stats = { ok: 0, skip: 0, '404': 0, fail: 0 };

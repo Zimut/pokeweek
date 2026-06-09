@@ -16,8 +16,8 @@ export async function loadDex() {
 }
 
 // National-dex-number sprites downloaded under /assets/sprites/{front,back}.
-export const spriteFront = (num) => `assets/sprites/front/${num}.png`;
-export const spriteBack = (num) => `assets/sprites/back/${num}.png`;
+export const spriteFront = (num, shiny = false) => `assets/sprites/front/${shiny ? 'shiny/' : ''}${num}.png`;
+export const spriteBack = (num, shiny = false) => `assets/sprites/back/${shiny ? 'shiny/' : ''}${num}.png`;
 
 // Battle-EXP curve. `expToNext(level)` is the experience needed to advance from
 // `level` to the next; `expFraction(mon)` is a mon's 0–1 progress toward its

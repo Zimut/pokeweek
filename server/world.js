@@ -25,13 +25,14 @@ let WORLD = null;
 export async function ensureWorld() {
   if (WORLD) return WORLD;
   const dir = join(__dirname, '..', 'src', 'data', 'world');
-  const [progression, maps] = await Promise.all([
+  const [progression, maps, encounters] = await Promise.all([
     readFile(join(dir, 'progression.json'), 'utf8').then(JSON.parse),
     readFile(join(dir, 'maps.json'), 'utf8').then(JSON.parse),
+    readFile(join(dir, 'encounters.json'), 'utf8').then(JSON.parse),
   ]);
   const mapById = {};
   for (const m of maps) mapById[m.map] = m;
-  WORLD = { progression, mapById };
+  WORLD = { progression, mapById, encounters };
   return WORLD;
 }
 
@@ -39,20 +40,20 @@ const DAY_PRESETS = { '1min': 60000, '1hour': 3600000, '24hour': 86400000 };
 const newId = () => crypto.randomBytes(9).toString('base64url'); // ~12 chars
 const newSecret = () => crypto.randomBytes(18).toString('base64url');
 
-// Normalise a requested ball allowance. The lobby UI offers a 5–99 slider whose
-// last notch means unlimited, so we accept any integer (clamped to 1–99) plus
-// the "infinite" sentinel; anything unparseable falls back to 25.
-function normalizeAllowance(progression, req) {
+// Normalise a requested per-map catchable-encounter allowance. The lobby UI
+// offers a 1–50 slider whose last notch means unlimited; accept any integer
+// (clamped 1–50) plus the "infinite" sentinel; anything else falls back to 10.
+function normalizeEncounters(req) {
   if (req === 'infinite' || req === 'Infinity') return 'infinite';
   const n = Math.round(Number(req));
-  if (Number.isFinite(n)) return Math.max(1, Math.min(99, n));
-  return 25;
+  if (Number.isFinite(n)) return Math.max(1, Math.min(50, n));
+  return 10;
 }
 
-// Starting Poké Ball count for a fresh map. Stored as "infinite" (a JSON-safe
-// sentinel) when the allowance is unlimited; the client maps it to Infinity.
-function startingBalls(allowance) {
-  return { pokeball: allowance === 'infinite' ? 'infinite' : allowance, greatball: 0 };
+// Map 1's starting catchable-encounter pool for a fresh save (other maps get
+// their pool the first time the player visits them). Unlimited → no tracking.
+function startingEncounters(allowance) {
+  return allowance === 'infinite' ? {} : { 1: allowance };
 }
 
 export class Lobby {
@@ -62,7 +63,7 @@ export class Lobby {
     this.code = code;
     this.mode = opts.mode === 'week' ? 'week' : 'free';
     this.dayLengthMs = DAY_PRESETS[opts.dayLength] || Number(opts.dayLengthMs) || world.progression.dayDefaultMs || 86400000;
-    this.ballAllowance = normalizeAllowance(world.progression, opts.ballAllowance);
+    this.encounterAllowance = normalizeEncounters(opts.encounterAllowance ?? opts.ballAllowance);
     // Free mode opens every route from the start (still badge-gated); week mode
     // unlocks map 1 only and the day scheduler reveals the rest (Task 18).
     this.unlockedMap = this.mode === 'week' ? 1 : world.progression.mapCount;
@@ -83,7 +84,7 @@ export class Lobby {
     return {
       code: this.code,
       mode: this.mode,
-      ballAllowance: this.ballAllowance,
+      encounterAllowance: this.encounterAllowance,
       unlockedMap: this.unlockedMap,
       mapCount: this.world.progression.mapCount,
       arenaMap: this.world.progression.arenaMap,
@@ -96,12 +97,20 @@ export class Lobby {
     };
   }
 
-  // Build the initial save for a brand-new player: starter at Lv5 on map 1's
-  // spawn, ₽0, this map's ball allowance, nothing caught but the starter.
-  initialSave({ name, starter, character }) {
+  // A new player is GIFTED a random Lv5 Pokémon drawn from the Route 1 + Route 2
+  // wild pools (15 IVs across the board) — no starter is chosen.
+  giftSpecies() {
+    const enc = this.world.encounters || {};
+    const pool = [...(enc[1] || []), ...(enc[2] || [])].map((e) => e.species).filter(Boolean);
+    if (!pool.length) return toId(this.world.progression.starters[0]);
+    return toId(pool[Math.floor(Math.random() * pool.length)]);
+  }
+
+  // Build the initial save for a brand-new player: a gifted Lv5 mon on map 1's
+  // spawn, ₽0, this map's encounter allowance, nothing caught but the gift.
+  initialSave({ name, character }) {
     const prog = this.world.progression;
-    const starters = prog.starters;
-    const sid = toId(starter && starters.includes(toId(starter)) ? toId(starter) : starters[0]);
+    const sid = this.giftSpecies();
     const m1 = this.world.mapById[1];
     const spawn = (m1 && m1.spawn) || { x: 0, y: 0 };
     return {
@@ -112,12 +121,14 @@ export class Lobby {
       badges: {}, beatenTrainers: {},
       party: [{
         species: sid, level: 5, shiny: false,
-        ivs: { hp: 15, atk: 15, def: 15, spa: 15, spd: 15, spe: 15 }, // starters: a fixed 15/31
+        ivs: { hp: 15, atk: 15, def: 15, spa: 15, spd: 15, spe: 15 }, // gifts: a fixed 15 in every stat
         evs: { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 },
         moves: this.dex.defaultMoves(sid, 5),
       }],
       box: [], bag: {}, candies: {},
-      balls: startingBalls(this.ballAllowance),
+      balls: { greatball: 0 },                       // Poké Balls are unlimited/free
+      encounters: startingEncounters(this.encounterAllowance),
+      wildSeen: 0,                                   // scripted intro levels (3,4,5) use this
       caught: { [sid]: true },
       battledToday: false,
     };
@@ -217,7 +228,7 @@ export class Lobby {
       code: this.code,
       mode: this.mode,
       dayLengthMs: this.dayLengthMs,
-      ballAllowance: this.ballAllowance,
+      encounterAllowance: this.encounterAllowance,
       unlockedMap: this.unlockedMap,
       dayIndex: this.dayIndex,
       dayStartedAt: this.dayStartedAt,
@@ -233,7 +244,7 @@ export class Lobby {
     const lobby = new Lobby(data.code, {
       mode: data.mode,
       dayLengthMs: data.dayLengthMs,
-      ballAllowance: data.ballAllowance,
+      encounterAllowance: data.encounterAllowance ?? data.ballAllowance,
     }, world, dex);
     lobby.unlockedMap = data.unlockedMap ?? lobby.unlockedMap;
     lobby.dayIndex = data.dayIndex ?? 0;
@@ -264,6 +275,8 @@ function sanitizeSave(save, prev) {
     box: Array.isArray(save.box) ? save.box : prev.box,
     bag: (save.bag && typeof save.bag === 'object') ? save.bag : prev.bag,
     balls: (save.balls && typeof save.balls === 'object') ? save.balls : prev.balls,
+    encounters: (save.encounters && typeof save.encounters === 'object') ? save.encounters : (prev.encounters || {}),
+    wildSeen: Number.isFinite(save.wildSeen) ? save.wildSeen : (prev.wildSeen || 0),
     candies: (save.candies && typeof save.candies === 'object') ? save.candies : (prev.candies || {}),
     caught: (save.caught && typeof save.caught === 'object') ? save.caught : prev.caught,
     battledToday: typeof save.battledToday === 'boolean' ? save.battledToday : (prev.battledToday || false),

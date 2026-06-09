@@ -56,8 +56,21 @@ export class PartyMenu {
 
     const actions = [];
     if (this.useItemId != null && where === 'p') {
-      const isTM = ['tm', 'hm'].includes(g.itemDef(this.useItemId).kind);
-      actions.push(el('button', { class: 'primary sm', text: isTM ? 'Teach' : 'Use here', onclick: () => this.applyUse(i) }));
+      const item = g.itemDef(this.useItemId);
+      const isTM = ['tm', 'hm'].includes(item.kind);
+      if (isTM) {
+        // Only Pokémon whose learnset includes the move can be taught it. Show
+        // why the rest are unavailable rather than offering a dead "Teach".
+        const chk = g.tmLearnable(mon, item);
+        const knows = (mon.moves || []).includes(item.move);
+        actions.push(el('button', {
+          class: 'primary sm', disabled: !chk.ok,
+          text: chk.ok ? 'Teach' : (knows ? 'Knows it' : "Can't learn"),
+          onclick: () => this.applyUse(i),
+        }));
+      } else {
+        actions.push(el('button', { class: 'primary sm', text: 'Use here', onclick: () => this.applyUse(i) }));
+      }
     } else {
       actions.push(el('button', { class: 'ghost sm', text: 'Summary', onclick: () => g.showMonSummary(mon) }));
       if (where === 'p') actions.push(el('button', { class: 'secondary sm', text: '→ Box', onclick: () => this.act(g.movePartyToBox(i)) }));
@@ -67,7 +80,7 @@ export class PartyMenu {
     const card = el('div', { class: `mn-card${mon.shiny ? ' shiny' : ''}${where === 'b' ? ' has-release' : ''}` }, [
       // PC Box cards get a left-side red X to release (permanently delete) the mon.
       where === 'b' ? el('button', { class: 'mn-release', title: `Release ${g.monName(mon)}`, text: '✕', onclick: () => this.releaseNow(i) }) : null,
-      el('img', { class: 'mn-sprite', src: spriteFront(species.num), alt: species.name }),
+      el('img', { class: 'mn-sprite', src: spriteFront(species.num, mon.shiny), alt: species.name }),
       el('div', { class: 'mn-meta' }, [
         el('span', { class: 'mn-name', text: `${g.monName(mon)}${mon.shiny ? ' ✦' : ''}` }),
         el('span', { class: 'mn-lv', text: `Lv ${mon.level}${capped ? ` (▼${cap})` : ''}` }),
@@ -159,7 +172,7 @@ export class PartyMenu {
       ondrop: (e) => { if (this.dragCandy) { e.preventDefault(); const s = this.dragCandy; this.dragCandy = null; this.openEvPick(s, i); } },
       onclick: () => { if (this.candySel) this.openEvPick(this.candySel, i); },
     }, [
-      el('img', { class: 'ct-sprite', src: spriteFront(sp.num), alt: sp.name, draggable: 'false' }),
+      el('img', { class: 'ct-sprite', src: spriteFront(sp.num, mon.shiny), alt: sp.name, draggable: 'false' }),
       el('div', { class: 'ct-info' }, [
         el('span', { class: 'ct-name', text: g.monName(mon) }),
         el('span', { class: 'ct-ev', text: `EV ${evTotal}/510` }),

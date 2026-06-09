@@ -470,6 +470,22 @@ h1, h2, h3 { margin: 0 0 8px; letter-spacing: .5px; }
 }
 .ow-toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+/* celebratory evolution toast: evolved sprite + message with a golden glow */
+.ow-evo-toast {
+  position: absolute; top: 16px; left: 50%; transform: translate(-50%, -16px) scale(.9);
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 16px 8px 8px; border-radius: 14px;
+  background: linear-gradient(135deg, rgba(40,32,8,.96), rgba(28,24,40,.96));
+  border: 2px solid #f0c000; box-shadow: 0 0 18px 3px rgba(240,200,0,.55), var(--shadow);
+  color: #fff; font-size: 14px; font-weight: 700; white-space: nowrap;
+  opacity: 0; pointer-events: none; z-index: 9;
+  transition: opacity .35s ease, transform .35s ease;
+}
+.ow-evo-toast.show { opacity: 1; transform: translate(-50%, 0) scale(1); }
+.ow-evo-sprite { width: 48px; height: 48px; image-rendering: auto; filter: drop-shadow(0 0 6px rgba(240,200,0,.8)); }
+.ow-evo-text b { color: #ffe46b; }
+.ow-evo-spark { font-size: 16px; }
+
 /* ephemeral chat: bottom-bar input + speech bubbles above actors (no log) */
 .ow-chat-input {
   flex: 1; min-width: 90px; max-width: 340px; margin: 0 10px;

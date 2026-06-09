@@ -43,24 +43,22 @@
   {
    "map": 1,
    "band": [
-    3,
-    7
+    5,
+    13
    ],
-   "cap": 15,
-   "gymLevel": 10,
+   "cap": 13,
    "kanto": "Brock",
    "johto": "Falkner",
    "theme": "meadow",
-   "maxLevel": 15
+   "maxLevel": 13
   },
   {
    "map": 2,
    "band": [
-    8,
-    12
+    13,
+    21
    ],
    "cap": 21,
-   "gymLevel": 16,
    "kanto": "Misty",
    "johto": "Bugsy",
    "theme": "forest",
@@ -69,73 +67,68 @@
   {
    "map": 3,
    "band": [
-    13,
-    18
+    21,
+    29
    ],
-   "cap": 27,
-   "gymLevel": 22,
+   "cap": 29,
    "kanto": "Lt. Surge",
    "johto": "Whitney",
    "theme": "cave",
-   "maxLevel": 27
+   "maxLevel": 29
   },
   {
    "map": 4,
    "band": [
-    18,
-    24
+    29,
+    37
    ],
-   "cap": 33,
-   "gymLevel": 28,
+   "cap": 37,
    "kanto": "Erika",
    "johto": "Morty",
    "theme": "coast",
-   "maxLevel": 33
+   "maxLevel": 37
   },
   {
    "map": 5,
    "band": [
-    24,
-    30
+    37,
+    45
    ],
-   "cap": 39,
-   "gymLevel": 34,
+   "cap": 45,
    "kanto": "Sabrina",
    "johto": "Jasmine",
    "theme": "plain",
-   "maxLevel": 39
+   "maxLevel": 45
   },
   {
    "map": 6,
    "band": [
-    30,
-    36
+    45,
+    53
    ],
-   "cap": 45,
-   "gymLevel": 40,
+   "cap": 53,
    "kanto": "Blaine",
    "johto": "Pryce",
    "theme": "mountain",
-   "maxLevel": 45
+   "maxLevel": 53
   },
   {
    "map": 7,
    "band": [
-    36,
-    44
+    53,
+    61
    ],
-   "cap": 52,
-   "gymLevel": 48,
+   "cap": 61,
    "kanto": "Giovanni",
    "johto": "Clair",
    "theme": "plateau",
-   "maxLevel": 52
+   "maxLevel": 61
   },
   {
    "map": 8,
-   "cap": 55,
+   "cap": 61,
    "theme": "arena",
-   "maxLevel": 55
+   "maxLevel": 61
   }
  ]
 }

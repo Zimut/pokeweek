@@ -56,7 +56,7 @@ let code, idA, idB;
 try {
   // ---- two players in one lobby ------------------------------------------
   const a = client(); await open(a);
-  a.send({ t: 'createLobby', mode: 'free', ballAllowance: 25, name: 'Ash', starter: 'charmander', character: 'red' });
+  a.send({ t: 'createLobby', mode: 'free', encounterAllowance: 25, name: 'Ash', starter: 'charmander', character: 'red' });
   const created = await waitFor(a, 'lobbyCreated', 'A create');
   code = created.code; idA = created.playerId;
 

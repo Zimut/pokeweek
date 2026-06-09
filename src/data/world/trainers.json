@@ -9,52 +9,34 @@
    "party": [
     {
      "species": "butterfree",
-     "level": 12,
+     "level": 11,
      "moves": [
       "confusion"
      ],
      "evs": {
-      "hp": 11,
-      "atk": 9,
-      "def": 12,
-      "spa": 16,
-      "spd": 21,
-      "spe": 16
+      "hp": 10,
+      "atk": 8,
+      "def": 11,
+      "spa": 15,
+      "spd": 19,
+      "spe": 14
      }
     },
     {
      "species": "jigglypuff",
-     "level": 13,
+     "level": 12,
      "moves": [
       "sing",
       "defensecurl",
       "pound"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 14,
-      "def": 11,
-      "spa": 10,
-      "spd": 19,
-      "spe": 17
-     }
-    },
-    {
-     "species": "jigglypuff",
-     "level": 14,
-     "moves": [
-      "sing",
-      "defensecurl",
-      "pound",
-      "disable"
-     ],
-     "evs": {
-      "hp": 17,
-      "atk": 15,
-      "def": 13,
-      "spa": 18,
-      "spd": 21,
-      "spe": 14
+      "hp": 18,
+      "atk": 13,
+      "def": 10,
+      "spa": 9,
+      "spd": 18,
+      "spe": 16
      }
     }
    ]
@@ -66,6 +48,23 @@
    "rank": 8,
    "reward": 600,
    "party": [
+    {
+     "species": "jigglypuff",
+     "level": 10,
+     "moves": [
+      "sing",
+      "defensecurl",
+      "pound"
+     ],
+     "evs": {
+      "hp": 12,
+      "atk": 11,
+      "def": 10,
+      "spa": 13,
+      "spd": 15,
+      "spe": 10
+     }
+    },
     {
      "species": "hoppip",
      "level": 11,
@@ -83,42 +82,6 @@
       "spd": 13,
       "spe": 17
      }
-    },
-    {
-     "species": "spinarak",
-     "level": 12,
-     "moves": [
-      "poisonsting",
-      "stringshot",
-      "scaryface",
-      "constrict"
-     ],
-     "evs": {
-      "hp": 13,
-      "atk": 12,
-      "def": 16,
-      "spa": 16,
-      "spd": 11,
-      "spe": 15
-     }
-    },
-    {
-     "species": "rattata",
-     "level": 13,
-     "moves": [
-      "tackle",
-      "tailwhip",
-      "quickattack",
-      "hyperfang"
-     ],
-     "evs": {
-      "hp": 18,
-      "atk": 16,
-      "def": 10,
-      "spa": 13,
-      "spd": 14,
-      "spe": 20
-     }
     }
    ]
   },
@@ -130,52 +93,37 @@
    "reward": 550,
    "party": [
     {
-     "species": "pidgey",
-     "level": 10,
+     "species": "spinarak",
+     "level": 9,
      "moves": [
-      "tackle",
-      "sandattack",
-      "gust"
+      "poisonsting",
+      "stringshot",
+      "scaryface"
      ],
      "evs": {
-      "hp": 14,
-      "atk": 8,
-      "def": 10,
-      "spa": 14,
-      "spd": 11,
-      "spe": 14
+      "hp": 10,
+      "atk": 9,
+      "def": 12,
+      "spa": 12,
+      "spd": 8,
+      "spe": 11
      }
     },
     {
-     "species": "butterfree",
-     "level": 11,
+     "species": "rattata",
+     "level": 10,
      "moves": [
-      "confusion"
+      "tackle",
+      "tailwhip",
+      "quickattack"
      ],
      "evs": {
       "hp": 13,
       "atk": 12,
-      "def": 13,
-      "spa": 11,
-      "spd": 18,
-      "spe": 9
-     }
-    },
-    {
-     "species": "mareep",
-     "level": 12,
-     "moves": [
-      "growl",
-      "tackle",
-      "thundershock"
-     ],
-     "evs": {
-      "hp": 16,
-      "atk": 12,
-      "def": 13,
-      "spa": 17,
-      "spd": 17,
-      "spe": 9
+      "def": 8,
+      "spa": 10,
+      "spd": 11,
+      "spe": 16
      }
     }
    ]
@@ -187,6 +135,63 @@
    "rank": 6,
    "reward": 500,
    "party": [
+    {
+     "species": "pidgey",
+     "level": 9,
+     "moves": [
+      "tackle",
+      "sandattack",
+      "gust"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 7,
+      "def": 9,
+      "spa": 12,
+      "spd": 10,
+      "spe": 12
+     }
+    },
+    {
+     "species": "butterfree",
+     "level": 10,
+     "moves": [
+      "confusion"
+     ],
+     "evs": {
+      "hp": 12,
+      "atk": 11,
+      "def": 12,
+      "spa": 10,
+      "spd": 17,
+      "spe": 9
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Youngster",
+   "name": "Tess",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "mareep",
+     "level": 8,
+     "moves": [
+      "growl",
+      "tackle"
+     ],
+     "evs": {
+      "hp": 10,
+      "atk": 8,
+      "def": 9,
+      "spa": 11,
+      "spd": 12,
+      "spe": 6
+     }
+    },
     {
      "species": "spinarak",
      "level": 9,
@@ -203,66 +208,6 @@
       "spd": 11,
       "spe": 17
      }
-    },
-    {
-     "species": "ledyba",
-     "level": 10,
-     "moves": [
-      "tackle",
-      "supersonic"
-     ],
-     "evs": {
-      "hp": 16,
-      "atk": 8,
-      "def": 10,
-      "spa": 10,
-      "spd": 9,
-      "spe": 17
-     }
-    }
-   ]
-  },
-  {
-   "id": 4,
-   "class": "Youngster",
-   "name": "Tess",
-   "rank": 5,
-   "reward": 450,
-   "party": [
-    {
-     "species": "clefairy",
-     "level": 8,
-     "moves": [
-      "growl",
-      "pound",
-      "encore",
-      "sing"
-     ],
-     "evs": {
-      "hp": 11,
-      "atk": 7,
-      "def": 9,
-      "spa": 12,
-      "spd": 10,
-      "spe": 7
-     }
-    },
-    {
-     "species": "jigglypuff",
-     "level": 9,
-     "moves": [
-      "sing",
-      "defensecurl",
-      "pound"
-     ],
-     "evs": {
-      "hp": 11,
-      "atk": 14,
-      "def": 9,
-      "spa": 13,
-      "spd": 5,
-      "spe": 10
-     }
     }
    ]
   },
@@ -274,37 +219,19 @@
    "reward": 400,
    "party": [
     {
-     "species": "pichu",
-     "level": 7,
-     "moves": [
-      "charm",
-      "thundershock",
-      "tailwhip"
-     ],
-     "evs": {
-      "hp": 5,
-      "atk": 10,
-      "def": 9,
-      "spa": 5,
-      "spd": 9,
-      "spe": 11
-     }
-    },
-    {
-     "species": "spinarak",
+     "species": "ledyba",
      "level": 8,
      "moves": [
-      "poisonsting",
-      "stringshot",
-      "scaryface"
+      "tackle",
+      "supersonic"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 8,
-      "def": 7,
+      "hp": 13,
+      "atk": 6,
+      "def": 8,
       "spa": 8,
       "spd": 7,
-      "spe": 9
+      "spe": 14
      }
     }
    ]
@@ -317,35 +244,20 @@
    "reward": 350,
    "party": [
     {
-     "species": "hoothoot",
-     "level": 6,
-     "moves": [
-      "growl",
-      "tackle",
-      "foresight"
-     ],
-     "evs": {
-      "hp": 11,
-      "atk": 5,
-      "def": 6,
-      "spa": 7,
-      "spd": 7,
-      "spe": 7
-     }
-    },
-    {
-     "species": "kakuna",
+     "species": "cleffa",
      "level": 7,
      "moves": [
-      "harden"
+      "charm",
+      "pound",
+      "encore"
      ],
      "evs": {
-      "hp": 11,
-      "atk": 5,
-      "def": 12,
+      "hp": 10,
+      "atk": 6,
+      "def": 8,
       "spa": 10,
-      "spd": 5,
-      "spe": 5
+      "spd": 8,
+      "spe": 6
      }
     }
    ]
@@ -358,19 +270,20 @@
    "reward": 300,
    "party": [
     {
-     "species": "sunkern",
-     "level": 5,
+     "species": "igglybuff",
+     "level": 7,
      "moves": [
-      "absorb",
-      "growth"
+      "charm",
+      "sing",
+      "defensecurl"
      ],
      "evs": {
-      "hp": 7,
-      "atk": 5,
-      "def": 6,
-      "spa": 6,
-      "spd": 8,
-      "spe": 3
+      "hp": 9,
+      "atk": 11,
+      "def": 7,
+      "spa": 10,
+      "spd": 4,
+      "spe": 8
      }
     }
    ]
@@ -384,18 +297,19 @@
    "party": [
     {
      "species": "pichu",
-     "level": 5,
+     "level": 6,
      "moves": [
       "charm",
-      "thundershock"
+      "thundershock",
+      "tailwhip"
      ],
      "evs": {
-      "hp": 5,
-      "atk": 6,
-      "def": 5,
-      "spa": 7,
-      "spd": 6,
-      "spe": 6
+      "hp": 4,
+      "atk": 9,
+      "def": 8,
+      "spa": 4,
+      "spd": 7,
+      "spe": 10
      }
     }
    ]
@@ -408,19 +322,19 @@
    "reward": 200,
    "party": [
     {
-     "species": "caterpie",
+     "species": "spinarak",
      "level": 5,
      "moves": [
-      "stringshot",
-      "tackle"
+      "poisonsting",
+      "stringshot"
      ],
      "evs": {
-      "hp": 6,
+      "hp": 11,
       "atk": 5,
-      "def": 6,
-      "spa": 8,
-      "spd": 7,
-      "spe": 4
+      "def": 5,
+      "spa": 5,
+      "spd": 4,
+      "spe": 6
      }
     }
    ]
@@ -433,56 +347,36 @@
    "reward": 650,
    "party": [
     {
-     "species": "rattata",
+     "species": "hoothoot",
+     "level": 11,
+     "moves": [
+      "growl",
+      "tackle",
+      "foresight",
+      "peck"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 9,
+      "def": 10,
+      "spa": 12,
+      "spd": 13,
+      "spe": 12
+     }
+    },
+    {
+     "species": "beedrill",
      "level": 12,
      "moves": [
-      "tackle",
-      "tailwhip",
-      "quickattack"
+      "furyattack"
      ],
      "evs": {
-      "hp": 16,
-      "atk": 7,
-      "def": 16,
-      "spa": 18,
-      "spd": 13,
-      "spe": 13
-     }
-    },
-    {
-     "species": "hoppip",
-     "level": 13,
-     "moves": [
-      "synthesis",
-      "tailwhip",
-      "tackle",
-      "poisonpowder"
-     ],
-     "evs": {
-      "hp": 21,
-      "atk": 20,
-      "def": 13,
-      "spa": 10,
-      "spd": 18,
-      "spe": 10
-     }
-    },
-    {
-     "species": "spinarak",
-     "level": 14,
-     "moves": [
-      "poisonsting",
-      "stringshot",
-      "scaryface",
-      "constrict"
-     ],
-     "evs": {
-      "hp": 14,
-      "atk": 14,
-      "def": 16,
-      "spa": 19,
-      "spd": 22,
-      "spe": 14
+      "hp": 19,
+      "atk": 9,
+      "def": 21,
+      "spa": 17,
+      "spd": 9,
+      "spe": 8
      }
     }
    ]
@@ -495,43 +389,25 @@
    "reward": 600,
    "party": [
     {
-     "species": "rattata",
-     "level": 11,
+     "species": "sunkern",
+     "level": 10,
      "moves": [
-      "tackle",
-      "tailwhip",
-      "quickattack"
-     ],
-     "evs": {
-      "hp": 13,
-      "atk": 10,
-      "def": 14,
-      "spa": 18,
-      "spd": 9,
-      "spe": 13
-     }
-    },
-    {
-     "species": "pikachu",
-     "level": 12,
-     "moves": [
-      "thundershock",
-      "tailwhip",
-      "thunderwave",
-      "quickattack"
+      "absorb",
+      "growth",
+      "megadrain"
      ],
      "evs": {
       "hp": 14,
-      "atk": 13,
-      "def": 18,
-      "spa": 11,
-      "spd": 14,
-      "spe": 14
+      "atk": 10,
+      "def": 12,
+      "spa": 13,
+      "spd": 16,
+      "spe": 6
      }
     },
     {
      "species": "pikachu",
-     "level": 13,
+     "level": 11,
      "moves": [
       "thundershock",
       "tailwhip",
@@ -539,12 +415,12 @@
       "quickattack"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 18,
-      "def": 9,
-      "spa": 21,
-      "spd": 12,
-      "spe": 14
+      "hp": 11,
+      "atk": 14,
+      "def": 10,
+      "spa": 15,
+      "spd": 14,
+      "spe": 13
      }
     }
    ]
@@ -557,50 +433,34 @@
    "reward": 550,
    "party": [
     {
-     "species": "sentret",
+     "species": "metapod",
+     "level": 9,
+     "moves": [
+      "harden"
+     ],
+     "evs": {
+      "hp": 10,
+      "atk": 9,
+      "def": 10,
+      "spa": 14,
+      "spd": 13,
+      "spe": 8
+     }
+    },
+    {
+     "species": "rattata",
      "level": 10,
      "moves": [
       "tackle",
-      "defensecurl"
+      "tailwhip",
+      "quickattack"
      ],
      "evs": {
-      "hp": 8,
-      "atk": 14,
+      "hp": 14,
+      "atk": 6,
       "def": 13,
-      "spa": 13,
-      "spd": 12,
-      "spe": 10
-     }
-    },
-    {
-     "species": "sunkern",
-     "level": 11,
-     "moves": [
-      "absorb",
-      "growth",
-      "megadrain"
-     ],
-     "evs": {
-      "hp": 13,
-      "atk": 18,
-      "def": 9,
       "spa": 15,
       "spd": 11,
-      "spe": 11
-     }
-    },
-    {
-     "species": "butterfree",
-     "level": 12,
-     "moves": [
-      "confusion"
-     ],
-     "evs": {
-      "hp": 15,
-      "atk": 18,
-      "def": 11,
-      "spa": 19,
-      "spd": 10,
       "spe": 11
      }
     }
@@ -614,36 +474,37 @@
    "reward": 500,
    "party": [
     {
-     "species": "ledyba",
+     "species": "hoppip",
      "level": 9,
      "moves": [
-      "tackle",
-      "supersonic"
+      "splash",
+      "synthesis",
+      "tailwhip"
      ],
      "evs": {
-      "hp": 9,
-      "atk": 12,
-      "def": 12,
-      "spa": 9,
-      "spd": 9,
-      "spe": 12
+      "hp": 14,
+      "atk": 14,
+      "def": 9,
+      "spa": 7,
+      "spd": 12,
+      "spe": 7
      }
     },
     {
-     "species": "pidgey",
+     "species": "spinarak",
      "level": 10,
      "moves": [
-      "tackle",
-      "sandattack",
-      "gust"
+      "poisonsting",
+      "stringshot",
+      "scaryface"
      ],
      "evs": {
-      "hp": 15,
-      "atk": 14,
-      "def": 8,
-      "spa": 12,
-      "spd": 6,
-      "spe": 14
+      "hp": 10,
+      "atk": 10,
+      "def": 11,
+      "spa": 14,
+      "spd": 16,
+      "spe": 10
      }
     }
    ]
@@ -656,35 +517,38 @@
    "reward": 450,
    "party": [
     {
-     "species": "sunkern",
+     "species": "rattata",
      "level": 8,
      "moves": [
-      "absorb",
-      "growth"
+      "tackle",
+      "tailwhip",
+      "quickattack"
      ],
      "evs": {
-      "hp": 8,
-      "atk": 11,
-      "def": 6,
-      "spa": 9,
-      "spd": 14,
-      "spe": 8
+      "hp": 9,
+      "atk": 8,
+      "def": 10,
+      "spa": 13,
+      "spd": 7,
+      "spe": 10
      }
     },
     {
-     "species": "sunkern",
+     "species": "pikachu",
      "level": 9,
      "moves": [
-      "absorb",
-      "growth"
+      "growl",
+      "thundershock",
+      "tailwhip",
+      "thunderwave"
      ],
      "evs": {
-      "hp": 14,
-      "atk": 9,
-      "def": 11,
-      "spa": 13,
-      "spd": 10,
-      "spe": 6
+      "hp": 10,
+      "atk": 10,
+      "def": 13,
+      "spa": 8,
+      "spd": 11,
+      "spe": 11
      }
     }
    ]
@@ -697,36 +561,21 @@
    "reward": 400,
    "party": [
     {
-     "species": "mareep",
-     "level": 7,
-     "moves": [
-      "growl",
-      "tackle"
-     ],
-     "evs": {
-      "hp": 10,
-      "atk": 9,
-      "def": 10,
-      "spa": 5,
-      "spd": 10,
-      "spe": 4
-     }
-    },
-    {
-     "species": "hoothoot",
+     "species": "pikachu",
      "level": 8,
      "moves": [
       "growl",
-      "tackle",
-      "foresight"
+      "thundershock",
+      "tailwhip",
+      "thunderwave"
      ],
      "evs": {
-      "hp": 7,
-      "atk": 14,
-      "def": 7,
-      "spa": 6,
-      "spd": 14,
-      "spe": 7
+      "hp": 10,
+      "atk": 11,
+      "def": 6,
+      "spa": 13,
+      "spd": 8,
+      "spe": 8
      }
     }
    ]
@@ -739,37 +588,19 @@
    "reward": 350,
    "party": [
     {
-     "species": "marill",
-     "level": 6,
+     "species": "sentret",
+     "level": 7,
      "moves": [
       "tackle",
-      "defensecurl",
-      "tailwhip"
+      "defensecurl"
      ],
      "evs": {
       "hp": 6,
-      "atk": 8,
-      "def": 6,
-      "spa": 10,
-      "spd": 5,
-      "spe": 7
-     }
-    },
-    {
-     "species": "hoothoot",
-     "level": 7,
-     "moves": [
-      "growl",
-      "tackle",
-      "foresight"
-     ],
-     "evs": {
-      "hp": 8,
-      "atk": 9,
-      "def": 5,
+      "atk": 10,
+      "def": 9,
       "spa": 9,
-      "spd": 10,
-      "spe": 9
+      "spd": 8,
+      "spe": 7
      }
     }
    ]
@@ -782,19 +613,19 @@
    "reward": 300,
    "party": [
     {
-     "species": "rattata",
-     "level": 5,
+     "species": "sunkern",
+     "level": 7,
      "moves": [
-      "tackle",
-      "tailwhip"
+      "absorb",
+      "growth"
      ],
      "evs": {
-      "hp": 4,
-      "atk": 6,
+      "hp": 8,
+      "atk": 12,
       "def": 6,
-      "spa": 6,
-      "spd": 6,
-      "spe": 6
+      "spa": 10,
+      "spd": 7,
+      "spe": 7
      }
     }
    ]
@@ -807,19 +638,19 @@
    "reward": 250,
    "party": [
     {
-     "species": "sentret",
-     "level": 5,
+     "species": "caterpie",
+     "level": 6,
      "moves": [
-      "tackle",
-      "defensecurl"
+      "stringshot",
+      "tackle"
      ],
      "evs": {
       "hp": 8,
       "atk": 9,
       "def": 5,
-      "spa": 6,
-      "spd": 4,
-      "spe": 4
+      "spa": 9,
+      "spd": 5,
+      "spe": 5
      }
     }
    ]
@@ -832,19 +663,18 @@
    "reward": 200,
    "party": [
     {
-     "species": "marill",
+     "species": "ledyba",
      "level": 5,
      "moves": [
-      "tackle",
-      "defensecurl"
+      "tackle"
      ],
      "evs": {
       "hp": 5,
       "atk": 7,
-      "def": 5,
-      "spa": 7,
-      "spd": 6,
-      "spe": 5
+      "def": 6,
+      "spa": 5,
+      "spd": 5,
+      "spe": 6
      }
     }
    ]
@@ -860,25 +690,25 @@
    "party": [
     {
      "species": "nidorina",
-     "level": 18,
+     "level": 19,
      "moves": [
-      "growl",
       "tackle",
       "scratch",
-      "doublekick"
+      "doublekick",
+      "poisonsting"
      ],
      "evs": {
-      "hp": 22,
-      "atk": 20,
-      "def": 19,
-      "spa": 22,
-      "spd": 24,
-      "spe": 18
+      "hp": 24,
+      "atk": 21,
+      "def": 21,
+      "spa": 23,
+      "spd": 25,
+      "spe": 19
      }
     },
     {
      "species": "paras",
-     "level": 19,
+     "level": 20,
      "moves": [
       "scratch",
       "stunspore",
@@ -886,30 +716,12 @@
       "leechlife"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 13,
-      "def": 29,
-      "spa": 20,
-      "spd": 11,
-      "spe": 29
-     }
-    },
-    {
-     "species": "ekans",
-     "level": 20,
-     "moves": [
-      "leer",
-      "wrap",
-      "poisonsting",
-      "bite"
-     ],
-     "evs": {
-      "hp": 27,
-      "atk": 23,
-      "def": 17,
-      "spa": 29,
-      "spd": 18,
-      "spe": 27
+      "hp": 32,
+      "atk": 14,
+      "def": 31,
+      "spa": 21,
+      "spd": 12,
+      "spe": 31
      }
     }
    ]
@@ -922,39 +734,21 @@
    "reward": 600,
    "party": [
     {
-     "species": "snubbull",
-     "level": 17,
-     "moves": [
-      "tackle",
-      "tailwhip",
-      "charm",
-      "bite"
-     ],
-     "evs": {
-      "hp": 26,
-      "atk": 23,
-      "def": 21,
-      "spa": 20,
-      "spd": 14,
-      "spe": 15
-     }
-    },
-    {
-     "species": "nidorino",
+     "species": "ekans",
      "level": 18,
      "moves": [
       "leer",
-      "tackle",
-      "hornattack",
-      "doublekick"
+      "wrap",
+      "poisonsting",
+      "bite"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 30,
-      "def": 18,
-      "spa": 19,
-      "spd": 22,
-      "spe": 20
+      "hp": 24,
+      "atk": 20,
+      "def": 15,
+      "spa": 26,
+      "spd": 16,
+      "spe": 25
      }
     },
     {
@@ -967,12 +761,12 @@
       "lick"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 25,
-      "def": 26,
-      "spa": 23,
-      "spd": 20,
-      "spe": 22
+      "hp": 29,
+      "atk": 26,
+      "def": 23,
+      "spa": 22,
+      "spd": 16,
+      "spe": 16
      }
     }
    ]
@@ -985,26 +779,8 @@
    "reward": 550,
    "party": [
     {
-     "species": "bellsprout",
-     "level": 15,
-     "moves": [
-      "vinewhip",
-      "growth",
-      "wrap",
-      "sleeppowder"
-     ],
-     "evs": {
-      "hp": 17,
-      "atk": 22,
-      "def": 21,
-      "spa": 15,
-      "spd": 12,
-      "spe": 18
-     }
-    },
-    {
      "species": "nidorino",
-     "level": 16,
+     "level": 17,
      "moves": [
       "leer",
       "tackle",
@@ -1012,30 +788,30 @@
       "doublekick"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 11,
-      "def": 11,
-      "spa": 12,
-      "spd": 29,
-      "spe": 22
+      "hp": 16,
+      "atk": 28,
+      "def": 17,
+      "spa": 18,
+      "spd": 21,
+      "spe": 19
      }
     },
     {
-     "species": "oddish",
-     "level": 17,
+     "species": "snubbull",
+     "level": 18,
      "moves": [
-      "absorb",
-      "sweetscent",
-      "poisonpowder",
-      "stunspore"
+      "tackle",
+      "tailwhip",
+      "charm",
+      "bite"
      ],
      "evs": {
-      "hp": 14,
-      "atk": 15,
-      "def": 17,
-      "spa": 30,
-      "spd": 27,
-      "spe": 16
+      "hp": 16,
+      "atk": 24,
+      "def": 25,
+      "spa": 22,
+      "spd": 19,
+      "spe": 21
      }
     }
    ]
@@ -1048,8 +824,71 @@
    "reward": 500,
    "party": [
     {
+     "species": "bellsprout",
+     "level": 17,
+     "moves": [
+      "growth",
+      "wrap",
+      "sleeppowder",
+      "poisonpowder"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 25,
+      "def": 24,
+      "spa": 17,
+      "spd": 14,
+      "spe": 20
+     }
+    },
+    {
+     "species": "nidorino",
+     "level": 18,
+     "moves": [
+      "leer",
+      "tackle",
+      "hornattack",
+      "doublekick"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 13,
+      "def": 12,
+      "spa": 13,
+      "spd": 32,
+      "spe": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "class": "Twins",
+   "name": "Owen",
+   "rank": 5,
+   "reward": 450,
+   "party": [
+    {
+     "species": "oddish",
+     "level": 16,
+     "moves": [
+      "absorb",
+      "sweetscent",
+      "poisonpowder",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 13,
+      "atk": 14,
+      "def": 16,
+      "spa": 29,
+      "spd": 25,
+      "spe": 16
+     }
+    },
+    {
      "species": "snubbull",
-     "level": 15,
+     "level": 17,
      "moves": [
       "tackle",
       "tailwhip",
@@ -1057,14 +896,23 @@
       "bite"
      ],
      "evs": {
-      "hp": 29,
-      "atk": 17,
-      "def": 10,
-      "spa": 11,
-      "spd": 12,
-      "spe": 26
+      "hp": 33,
+      "atk": 19,
+      "def": 11,
+      "spa": 12,
+      "spd": 14,
+      "spe": 29
      }
-    },
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "class": "Bug Catcher",
+   "name": "Rita",
+   "rank": 4,
+   "reward": 400,
+   "party": [
     {
      "species": "mankey",
      "level": 16,
@@ -1086,29 +934,38 @@
    ]
   },
   {
-   "id": 4,
-   "class": "Twins",
-   "name": "Owen",
-   "rank": 5,
-   "reward": 450,
+   "id": 6,
+   "class": "Camper",
+   "name": "Gus",
+   "rank": 3,
+   "reward": 350,
    "party": [
     {
      "species": "togetic",
-     "level": 14,
+     "level": 15,
      "moves": [
       "charm",
       "growl",
       "metronome"
      ],
      "evs": {
-      "hp": 14,
-      "atk": 15,
-      "def": 17,
-      "spa": 19,
-      "spd": 13,
-      "spe": 19
+      "hp": 16,
+      "atk": 16,
+      "def": 18,
+      "spa": 21,
+      "spd": 14,
+      "spe": 20
      }
-    },
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "class": "Youngster",
+   "name": "Vera",
+   "rank": 2,
+   "reward": 300,
+   "party": [
     {
      "species": "psyduck",
      "level": 15,
@@ -1129,29 +986,38 @@
    ]
   },
   {
-   "id": 5,
-   "class": "Bug Catcher",
-   "name": "Rita",
-   "rank": 4,
-   "reward": 400,
+   "id": 8,
+   "class": "Lass",
+   "name": "Theo",
+   "rank": 1,
+   "reward": 250,
    "party": [
     {
      "species": "meowth",
-     "level": 12,
+     "level": 14,
      "moves": [
       "growl",
       "scratch",
       "bite"
      ],
      "evs": {
-      "hp": 12,
-      "atk": 10,
-      "def": 15,
-      "spa": 17,
-      "spd": 16,
-      "spe": 14
+      "hp": 14,
+      "atk": 11,
+      "def": 17,
+      "spa": 19,
+      "spd": 19,
+      "spe": 17
      }
-    },
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "class": "Twins",
+   "name": "Mona",
+   "rank": 0,
+   "reward": 200,
+   "party": [
     {
      "species": "oddish",
      "level": 13,
@@ -1171,133 +1037,120 @@
    ]
   },
   {
-   "id": 6,
-   "class": "Camper",
-   "name": "Gus",
-   "rank": 3,
-   "reward": 350,
-   "party": [
-    {
-     "species": "oddish",
-     "level": 11,
-     "moves": [
-      "absorb",
-      "sweetscent"
-     ],
-     "evs": {
-      "hp": 17,
-      "atk": 19,
-      "def": 7,
-      "spa": 12,
-      "spd": 13,
-      "spe": 9
-     }
-    },
-    {
-     "species": "meowth",
-     "level": 12,
-     "moves": [
-      "growl",
-      "scratch",
-      "bite"
-     ],
-     "evs": {
-      "hp": 20,
-      "atk": 8,
-      "def": 16,
-      "spa": 14,
-      "spd": 18,
-      "spe": 9
-     }
-    }
-   ]
-  },
-  {
-   "id": 7,
-   "class": "Youngster",
-   "name": "Vera",
-   "rank": 2,
-   "reward": 300,
-   "party": [
-    {
-     "species": "bellsprout",
-     "level": 11,
-     "moves": [
-      "vinewhip",
-      "growth",
-      "wrap"
-     ],
-     "evs": {
-      "hp": 11,
-      "atk": 8,
-      "def": 17,
-      "spa": 12,
-      "spd": 15,
-      "spe": 14
-     }
-    }
-   ]
-  },
-  {
-   "id": 8,
-   "class": "Lass",
-   "name": "Theo",
-   "rank": 1,
-   "reward": 250,
-   "party": [
-    {
-     "species": "togetic",
-     "level": 9,
-     "moves": [
-      "charm",
-      "growl",
-      "metronome"
-     ],
-     "evs": {
-      "hp": 10,
-      "atk": 11,
-      "def": 7,
-      "spa": 14,
-      "spd": 10,
-      "spe": 11
-     }
-    }
-   ]
-  },
-  {
-   "id": 9,
-   "class": "Twins",
-   "name": "Mona",
-   "rank": 0,
-   "reward": 200,
-   "party": [
-    {
-     "species": "snubbull",
-     "level": 8,
-     "moves": [
-      "scaryface",
-      "tackle",
-      "tailwhip",
-      "charm"
-     ],
-     "evs": {
-      "hp": 14,
-      "atk": 13,
-      "def": 8,
-      "spa": 7,
-      "spd": 7,
-      "spe": 7
-     }
-    }
-   ]
-  },
-  {
    "id": 10,
    "class": "Bug Catcher",
    "name": "Cody",
    "rank": 9,
    "reward": 650,
    "party": [
+    {
+     "species": "oddish",
+     "level": 19,
+     "moves": [
+      "sweetscent",
+      "poisonpowder",
+      "stunspore",
+      "sleeppowder"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 33,
+      "def": 12,
+      "spa": 22,
+      "spd": 23,
+      "spe": 15
+     }
+    },
+    {
+     "species": "meowth",
+     "level": 20,
+     "moves": [
+      "growl",
+      "scratch",
+      "bite",
+      "payday"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 13,
+      "def": 26,
+      "spa": 23,
+      "spd": 30,
+      "spe": 15
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Camper",
+   "name": "Iris",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "bellsprout",
+     "level": 18,
+     "moves": [
+      "growth",
+      "wrap",
+      "sleeppowder",
+      "poisonpowder"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 12,
+      "def": 29,
+      "spa": 20,
+      "spd": 24,
+      "spe": 23
+     }
+    },
+    {
+     "species": "togetic",
+     "level": 19,
+     "moves": [
+      "charm",
+      "growl",
+      "metronome",
+      "sweetkiss"
+     ],
+     "evs": {
+      "hp": 20,
+      "atk": 23,
+      "def": 14,
+      "spa": 30,
+      "spd": 22,
+      "spe": 24
+     }
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "class": "Youngster",
+   "name": "Hank",
+   "rank": 7,
+   "reward": 550,
+   "party": [
+    {
+     "species": "snubbull",
+     "level": 17,
+     "moves": [
+      "tackle",
+      "tailwhip",
+      "charm",
+      "bite"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 27,
+      "def": 18,
+      "spa": 15,
+      "spd": 15,
+      "spe": 15
+     }
+    },
     {
      "species": "venonat",
      "level": 18,
@@ -1315,10 +1168,19 @@
       "spd": 24,
       "spe": 21
      }
-    },
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "class": "Lass",
+   "name": "Zoe",
+   "rank": 6,
+   "reward": 500,
+   "party": [
     {
      "species": "psyduck",
-     "level": 19,
+     "level": 17,
      "moves": [
       "scratch",
       "tailwhip",
@@ -1326,17 +1188,17 @@
       "confusion"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 25,
-      "def": 24,
-      "spa": 18,
-      "spd": 14,
-      "spe": 22
+      "hp": 27,
+      "atk": 22,
+      "def": 21,
+      "spa": 16,
+      "spd": 13,
+      "spe": 20
      }
     },
     {
      "species": "ekans",
-     "level": 20,
+     "level": 18,
      "moves": [
       "leer",
       "wrap",
@@ -1344,23 +1206,41 @@
       "bite"
      ],
      "evs": {
-      "hp": 29,
-      "atk": 25,
-      "def": 21,
-      "spa": 22,
-      "spd": 21,
-      "spe": 21
+      "hp": 26,
+      "atk": 22,
+      "def": 19,
+      "spa": 20,
+      "spd": 19,
+      "spe": 19
      }
     }
    ]
   },
   {
-   "id": 11,
-   "class": "Camper",
-   "name": "Iris",
-   "rank": 8,
-   "reward": 600,
+   "id": 14,
+   "class": "Twins",
+   "name": "Pete",
+   "rank": 5,
+   "reward": 450,
    "party": [
+    {
+     "species": "oddish",
+     "level": 16,
+     "moves": [
+      "absorb",
+      "sweetscent",
+      "poisonpowder",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 14,
+      "def": 29,
+      "spa": 11,
+      "spd": 18,
+      "spe": 13
+     }
+    },
     {
      "species": "oddish",
      "level": 17,
@@ -1371,58 +1251,49 @@
       "stunspore"
      ],
      "evs": {
-      "hp": 29,
-      "atk": 15,
-      "def": 31,
-      "spa": 11,
-      "spd": 19,
-      "spe": 14
-     }
-    },
-    {
-     "species": "oddish",
-     "level": 18,
-     "moves": [
-      "sweetscent",
-      "poisonpowder",
-      "stunspore",
-      "sleeppowder"
-     ],
-     "evs": {
-      "hp": 19,
-      "atk": 23,
-      "def": 10,
-      "spa": 23,
-      "spd": 28,
-      "spe": 22
-     }
-    },
-    {
-     "species": "nidorina",
-     "level": 19,
-     "moves": [
-      "tackle",
-      "scratch",
-      "doublekick",
-      "poisonsting"
-     ],
-     "evs": {
-      "hp": 12,
-      "atk": 31,
-      "def": 30,
-      "spa": 24,
-      "spd": 19,
-      "spe": 17
+      "hp": 18,
+      "atk": 22,
+      "def": 9,
+      "spa": 22,
+      "spd": 26,
+      "spe": 21
      }
     }
    ]
   },
   {
-   "id": 12,
-   "class": "Youngster",
-   "name": "Hank",
-   "rank": 7,
-   "reward": 550,
+   "id": 15,
+   "class": "Bug Catcher",
+   "name": "Lana",
+   "rank": 4,
+   "reward": 400,
+   "party": [
+    {
+     "species": "nidorina",
+     "level": 16,
+     "moves": [
+      "growl",
+      "tackle",
+      "scratch",
+      "doublekick"
+     ],
+     "evs": {
+      "hp": 10,
+      "atk": 26,
+      "def": 26,
+      "spa": 20,
+      "spd": 16,
+      "spe": 14
+     }
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "class": "Camper",
+   "name": "Joey",
+   "rank": 3,
+   "reward": 350,
    "party": [
     {
      "species": "mankey",
@@ -1441,218 +1312,6 @@
       "spd": 11,
       "spe": 9
      }
-    },
-    {
-     "species": "psyduck",
-     "level": 16,
-     "moves": [
-      "scratch",
-      "tailwhip",
-      "disable",
-      "confusion"
-     ],
-     "evs": {
-      "hp": 17,
-      "atk": 15,
-      "def": 23,
-      "spa": 23,
-      "spd": 14,
-      "spe": 20
-     }
-    },
-    {
-     "species": "snubbull",
-     "level": 17,
-     "moves": [
-      "tackle",
-      "tailwhip",
-      "charm",
-      "bite"
-     ],
-     "evs": {
-      "hp": 18,
-      "atk": 28,
-      "def": 11,
-      "spa": 24,
-      "spd": 12,
-      "spe": 26
-     }
-    }
-   ]
-  },
-  {
-   "id": 13,
-   "class": "Lass",
-   "name": "Zoe",
-   "rank": 6,
-   "reward": 500,
-   "party": [
-    {
-     "species": "mankey",
-     "level": 15,
-     "moves": [
-      "leer",
-      "scratch",
-      "lowkick",
-      "karatechop"
-     ],
-     "evs": {
-      "hp": 13,
-      "atk": 12,
-      "def": 25,
-      "spa": 19,
-      "spd": 13,
-      "spe": 24
-     }
-    },
-    {
-     "species": "nidorino",
-     "level": 16,
-     "moves": [
-      "leer",
-      "tackle",
-      "hornattack",
-      "doublekick"
-     ],
-     "evs": {
-      "hp": 25,
-      "atk": 24,
-      "def": 18,
-      "spa": 16,
-      "spd": 18,
-      "spe": 13
-     }
-    }
-   ]
-  },
-  {
-   "id": 14,
-   "class": "Twins",
-   "name": "Pete",
-   "rank": 5,
-   "reward": 450,
-   "party": [
-    {
-     "species": "mankey",
-     "level": 14,
-     "moves": [
-      "leer",
-      "scratch",
-      "lowkick"
-     ],
-     "evs": {
-      "hp": 19,
-      "atk": 10,
-      "def": 11,
-      "spa": 26,
-      "spd": 10,
-      "spe": 22
-     }
-    },
-    {
-     "species": "zubat",
-     "level": 15,
-     "moves": [
-      "leechlife",
-      "supersonic",
-      "bite"
-     ],
-     "evs": {
-      "hp": 15,
-      "atk": 19,
-      "def": 13,
-      "spa": 26,
-      "spd": 21,
-      "spe": 12
-     }
-    }
-   ]
-  },
-  {
-   "id": 15,
-   "class": "Bug Catcher",
-   "name": "Lana",
-   "rank": 4,
-   "reward": 400,
-   "party": [
-    {
-     "species": "mankey",
-     "level": 12,
-     "moves": [
-      "leer",
-      "scratch",
-      "lowkick"
-     ],
-     "evs": {
-      "hp": 13,
-      "atk": 11,
-      "def": 11,
-      "spa": 17,
-      "spd": 13,
-      "spe": 20
-     }
-    },
-    {
-     "species": "natu",
-     "level": 13,
-     "moves": [
-      "leer",
-      "peck",
-      "nightshade"
-     ],
-     "evs": {
-      "hp": 13,
-      "atk": 13,
-      "def": 19,
-      "spa": 12,
-      "spd": 21,
-      "spe": 13
-     }
-    }
-   ]
-  },
-  {
-   "id": 16,
-   "class": "Camper",
-   "name": "Joey",
-   "rank": 3,
-   "reward": 350,
-   "party": [
-    {
-     "species": "venonat",
-     "level": 11,
-     "moves": [
-      "disable",
-      "foresight",
-      "tackle",
-      "supersonic"
-     ],
-     "evs": {
-      "hp": 17,
-      "atk": 8,
-      "def": 14,
-      "spa": 12,
-      "spd": 9,
-      "spe": 17
-     }
-    },
-    {
-     "species": "snubbull",
-     "level": 12,
-     "moves": [
-      "scaryface",
-      "tackle",
-      "tailwhip",
-      "charm"
-     ],
-     "evs": {
-      "hp": 14,
-      "atk": 15,
-      "def": 8,
-      "spa": 10,
-      "spd": 19,
-      "spe": 18
-     }
     }
    ]
   },
@@ -1664,20 +1323,20 @@
    "reward": 300,
    "party": [
     {
-     "species": "mankey",
-     "level": 11,
+     "species": "psyduck",
+     "level": 15,
      "moves": [
-      "leer",
       "scratch",
-      "lowkick"
+      "tailwhip",
+      "disable"
      ],
      "evs": {
-      "hp": 7,
-      "atk": 11,
-      "def": 15,
-      "spa": 14,
-      "spd": 18,
-      "spe": 11
+      "hp": 16,
+      "atk": 14,
+      "def": 22,
+      "spa": 21,
+      "spd": 13,
+      "spe": 19
      }
     }
    ]
@@ -1690,20 +1349,21 @@
    "reward": 250,
    "party": [
     {
-     "species": "mankey",
-     "level": 9,
+     "species": "snubbull",
+     "level": 14,
      "moves": [
-      "leer",
-      "scratch",
-      "lowkick"
+      "tackle",
+      "tailwhip",
+      "charm",
+      "bite"
      ],
      "evs": {
-      "hp": 11,
-      "atk": 14,
-      "def": 7,
-      "spa": 15,
-      "spd": 7,
-      "spe": 9
+      "hp": 15,
+      "atk": 23,
+      "def": 9,
+      "spa": 20,
+      "spd": 10,
+      "spe": 22
      }
     }
    ]
@@ -1716,19 +1376,20 @@
    "reward": 200,
    "party": [
     {
-     "species": "ekans",
-     "level": 8,
+     "species": "mankey",
+     "level": 13,
      "moves": [
       "leer",
-      "wrap"
+      "scratch",
+      "lowkick"
      ],
      "evs": {
-      "hp": 13,
-      "atk": 7,
-      "def": 6,
-      "spa": 7,
-      "spd": 9,
-      "spe": 14
+      "hp": 11,
+      "atk": 10,
+      "def": 22,
+      "spa": 17,
+      "spd": 11,
+      "spe": 20
      }
     }
    ]
@@ -1744,7 +1405,7 @@
    "party": [
     {
      "species": "voltorb",
-     "level": 24,
+     "level": 26,
      "moves": [
       "tackle",
       "screech",
@@ -1752,48 +1413,48 @@
       "selfdestruct"
      ],
      "evs": {
-      "hp": 18,
-      "atk": 34,
-      "def": 35,
-      "spa": 25,
-      "spd": 33,
-      "spe": 22
+      "hp": 19,
+      "atk": 37,
+      "def": 38,
+      "spa": 27,
+      "spd": 36,
+      "spe": 24
      }
     },
     {
      "species": "aipom",
-     "level": 25,
+     "level": 27,
      "moves": [
-      "tailwhip",
       "sandattack",
       "batonpass",
-      "furyswipes"
+      "furyswipes",
+      "swift"
      ],
      "evs": {
-      "hp": 44,
-      "atk": 19,
-      "def": 24,
-      "spa": 43,
-      "spd": 26,
-      "spe": 19
+      "hp": 47,
+      "atk": 20,
+      "def": 26,
+      "spa": 46,
+      "spd": 28,
+      "spe": 21
      }
     },
     {
      "species": "aipom",
-     "level": 26,
+     "level": 28,
      "moves": [
-      "tailwhip",
       "sandattack",
       "batonpass",
-      "furyswipes"
+      "furyswipes",
+      "swift"
      ],
      "evs": {
-      "hp": 51,
-      "atk": 23,
-      "def": 30,
-      "spa": 23,
-      "spd": 29,
-      "spe": 28
+      "hp": 54,
+      "atk": 24,
+      "def": 33,
+      "spa": 24,
+      "spd": 31,
+      "spe": 30
      }
     }
    ]
@@ -1807,7 +1468,7 @@
    "party": [
     {
      "species": "quilava",
-     "level": 23,
+     "level": 25,
      "moves": [
       "tackle",
       "smokescreen",
@@ -1815,17 +1476,17 @@
       "quickattack"
      ],
      "evs": {
-      "hp": 25,
-      "atk": 30,
-      "def": 36,
-      "spa": 16,
-      "spd": 25,
-      "spe": 28
+      "hp": 28,
+      "atk": 33,
+      "def": 39,
+      "spa": 18,
+      "spd": 27,
+      "spe": 31
      }
     },
     {
      "species": "houndoom",
-     "level": 24,
+     "level": 26,
      "moves": [
       "leer",
       "roar",
@@ -1833,17 +1494,17 @@
       "bite"
      ],
      "evs": {
-      "hp": 35,
-      "atk": 13,
-      "def": 37,
-      "spa": 29,
-      "spd": 20,
-      "spe": 34
+      "hp": 38,
+      "atk": 14,
+      "def": 40,
+      "spa": 31,
+      "spd": 21,
+      "spe": 37
      }
     },
     {
      "species": "koffing",
-     "level": 25,
+     "level": 27,
      "moves": [
       "smog",
       "selfdestruct",
@@ -1851,12 +1512,12 @@
       "smokescreen"
      ],
      "evs": {
-      "hp": 34,
-      "atk": 28,
-      "def": 18,
-      "spa": 32,
-      "spd": 17,
-      "spe": 46
+      "hp": 37,
+      "atk": 30,
+      "def": 19,
+      "spa": 34,
+      "spd": 19,
+      "spe": 50
      }
     }
    ]
@@ -1870,7 +1531,7 @@
    "party": [
     {
      "species": "gastly",
-     "level": 21,
+     "level": 24,
      "moves": [
       "spite",
       "meanlook",
@@ -1878,17 +1539,17 @@
       "nightshade"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 33,
-      "def": 35,
-      "spa": 14,
-      "spd": 15,
-      "spe": 30
+      "hp": 23,
+      "atk": 38,
+      "def": 39,
+      "spa": 16,
+      "spd": 17,
+      "spe": 34
      }
     },
     {
      "species": "magnemite",
-     "level": 22,
+     "level": 25,
      "moves": [
       "thundershock",
       "supersonic",
@@ -1896,30 +1557,30 @@
       "thunderwave"
      ],
      "evs": {
-      "hp": 22,
-      "atk": 33,
-      "def": 16,
-      "spa": 24,
-      "spd": 24,
-      "spe": 35
+      "hp": 25,
+      "atk": 37,
+      "def": 18,
+      "spa": 28,
+      "spd": 27,
+      "spe": 40
      }
     },
     {
      "species": "ponyta",
-     "level": 23,
+     "level": 26,
      "moves": [
-      "growl",
       "tailwhip",
       "ember",
-      "stomp"
+      "stomp",
+      "firespin"
      ],
      "evs": {
-      "hp": 35,
-      "atk": 18,
-      "def": 33,
-      "spa": 21,
-      "spd": 19,
-      "spe": 35
+      "hp": 40,
+      "atk": 20,
+      "def": 37,
+      "spa": 24,
+      "spd": 21,
+      "spe": 39
      }
     }
    ]
@@ -1932,8 +1593,8 @@
    "reward": 500,
    "party": [
     {
-     "species": "houndour",
-     "level": 21,
+     "species": "houndoom",
+     "level": 24,
      "moves": [
       "leer",
       "roar",
@@ -1941,17 +1602,17 @@
       "bite"
      ],
      "evs": {
-      "hp": 27,
-      "atk": 27,
-      "def": 21,
-      "spa": 19,
-      "spd": 30,
-      "spe": 23
+      "hp": 31,
+      "atk": 31,
+      "def": 24,
+      "spa": 21,
+      "spd": 34,
+      "spe": 26
      }
     },
     {
      "species": "kadabra",
-     "level": 22,
+     "level": 25,
      "moves": [
       "teleport",
       "confusion",
@@ -1959,12 +1620,30 @@
       "psybeam"
      ],
      "evs": {
+      "hp": 48,
+      "atk": 24,
+      "def": 20,
+      "spa": 21,
+      "spd": 39,
+      "spe": 25
+     }
+    },
+    {
+     "species": "hypno",
+     "level": 26,
+     "moves": [
+      "pound",
+      "disable",
+      "confusion",
+      "headbutt"
+     ],
+     "evs": {
       "hp": 42,
-      "atk": 21,
-      "def": 17,
-      "spa": 18,
-      "spd": 34,
-      "spe": 22
+      "atk": 26,
+      "def": 19,
+      "spa": 27,
+      "spd": 37,
+      "spe": 31
      }
     }
    ]
@@ -1977,38 +1656,57 @@
    "reward": 450,
    "party": [
     {
-     "species": "drowzee",
-     "level": 19,
-     "moves": [
-      "hypnosis",
-      "pound",
-      "disable",
-      "confusion"
-     ],
-     "evs": {
-      "hp": 30,
-      "atk": 19,
-      "def": 14,
-      "spa": 20,
-      "spd": 27,
-      "spe": 22
-     }
-    },
-    {
      "species": "slugma",
-     "level": 20,
+     "level": 23,
      "moves": [
       "smog",
       "ember",
-      "rockthrow"
+      "rockthrow",
+      "harden"
      ],
      "evs": {
-      "hp": 31,
-      "atk": 23,
-      "def": 12,
-      "spa": 23,
-      "spd": 29,
-      "spe": 22
+      "hp": 36,
+      "atk": 27,
+      "def": 14,
+      "spa": 26,
+      "spd": 33,
+      "spe": 26
+     }
+    },
+    {
+     "species": "geodude",
+     "level": 24,
+     "moves": [
+      "defensecurl",
+      "rockthrow",
+      "magnitude",
+      "selfdestruct"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 31,
+      "def": 19,
+      "spa": 34,
+      "spd": 26,
+      "spe": 37
+     }
+    },
+    {
+     "species": "growlithe",
+     "level": 25,
+     "moves": [
+      "bite",
+      "roar",
+      "ember",
+      "leer"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 29,
+      "def": 40,
+      "spa": 39,
+      "spd": 17,
+      "spe": 17
      }
     }
    ]
@@ -2021,39 +1719,39 @@
    "reward": 400,
    "party": [
     {
-     "species": "geodude",
-     "level": 18,
+     "species": "houndour",
+     "level": 23,
      "moves": [
-      "tackle",
-      "defensecurl",
-      "rockthrow",
-      "magnitude"
-     ],
-     "evs": {
-      "hp": 16,
-      "atk": 23,
-      "def": 14,
-      "spa": 26,
-      "spd": 20,
-      "spe": 28
-     }
-    },
-    {
-     "species": "growlithe",
-     "level": 19,
-     "moves": [
-      "bite",
+      "leer",
       "roar",
-      "ember",
-      "leer"
+      "smog",
+      "bite"
      ],
      "evs": {
       "hp": 25,
-      "atk": 22,
-      "def": 30,
-      "spa": 30,
-      "spd": 13,
-      "spe": 13
+      "atk": 40,
+      "def": 19,
+      "spa": 23,
+      "spd": 34,
+      "spe": 20
+     }
+    },
+    {
+     "species": "gastly",
+     "level": 24,
+     "moves": [
+      "spite",
+      "meanlook",
+      "curse",
+      "nightshade"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 24,
+      "def": 17,
+      "spa": 49,
+      "spd": 20,
+      "spe": 27
      }
     }
    ]
@@ -2066,39 +1764,38 @@
    "reward": 350,
    "party": [
     {
-     "species": "houndour",
-     "level": 16,
+     "species": "voltorb",
+     "level": 22,
      "moves": [
-      "ember",
-      "leer",
-      "roar",
-      "smog"
+      "tackle",
+      "screech",
+      "sonicboom"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 28,
-      "def": 13,
-      "spa": 16,
-      "spd": 24,
-      "spe": 14
+      "hp": 16,
+      "atk": 33,
+      "def": 18,
+      "spa": 26,
+      "spd": 27,
+      "spe": 34
      }
     },
     {
-     "species": "gastly",
-     "level": 17,
+     "species": "voltorb",
+     "level": 23,
      "moves": [
-      "lick",
-      "spite",
-      "meanlook",
-      "curse"
+      "tackle",
+      "screech",
+      "sonicboom",
+      "selfdestruct"
      ],
      "evs": {
-      "hp": 22,
-      "atk": 17,
-      "def": 12,
-      "spa": 35,
-      "spd": 14,
-      "spe": 19
+      "hp": 33,
+      "atk": 41,
+      "def": 24,
+      "spa": 21,
+      "spd": 20,
+      "spe": 23
      }
     }
    ]
@@ -2111,19 +1808,39 @@
    "reward": 300,
    "party": [
     {
-     "species": "voltorb",
-     "level": 16,
+     "species": "slugma",
+     "level": 22,
      "moves": [
-      "tackle",
-      "screech"
+      "smog",
+      "ember",
+      "rockthrow",
+      "harden"
      ],
      "evs": {
-      "hp": 11,
-      "atk": 24,
-      "def": 13,
-      "spa": 19,
-      "spd": 19,
-      "spe": 25
+      "hp": 19,
+      "atk": 30,
+      "def": 24,
+      "spa": 31,
+      "spd": 26,
+      "spe": 24
+     }
+    },
+    {
+     "species": "magnemite",
+     "level": 23,
+     "moves": [
+      "thundershock",
+      "supersonic",
+      "sonicboom",
+      "thunderwave"
+     ],
+     "evs": {
+      "hp": 16,
+      "atk": 31,
+      "def": 30,
+      "spa": 27,
+      "spd": 28,
+      "spe": 28
      }
     }
    ]
@@ -2136,19 +1853,39 @@
    "reward": 250,
    "party": [
     {
-     "species": "voltorb",
-     "level": 14,
+     "species": "ponyta",
+     "level": 21,
      "moves": [
-      "tackle",
-      "screech"
+      "growl",
+      "tailwhip",
+      "ember",
+      "stomp"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 25,
-      "def": 14,
-      "spa": 13,
-      "spd": 12,
-      "spe": 14
+      "hp": 26,
+      "atk": 18,
+      "def": 19,
+      "spa": 15,
+      "spd": 41,
+      "spe": 28
+     }
+    },
+    {
+     "species": "slugma",
+     "level": 22,
+     "moves": [
+      "smog",
+      "ember",
+      "rockthrow",
+      "harden"
+     ],
+     "evs": {
+      "hp": 17,
+      "atk": 24,
+      "def": 26,
+      "spa": 25,
+      "spd": 33,
+      "spe": 30
      }
     }
    ]
@@ -2161,19 +1898,39 @@
    "reward": 200,
    "party": [
     {
-     "species": "slugma",
-     "level": 13,
+     "species": "kadabra",
+     "level": 20,
      "moves": [
-      "smog",
-      "ember"
+      "kinesis",
+      "teleport",
+      "confusion",
+      "disable"
      ],
      "evs": {
-      "hp": 11,
-      "atk": 18,
-      "def": 14,
-      "spa": 18,
-      "spd": 15,
-      "spe": 14
+      "hp": 31,
+      "atk": 19,
+      "def": 27,
+      "spa": 16,
+      "spd": 29,
+      "spe": 19
+     }
+    },
+    {
+     "species": "grimer",
+     "level": 21,
+     "moves": [
+      "pound",
+      "harden",
+      "disable",
+      "sludge"
+     ],
+     "evs": {
+      "hp": 29,
+      "atk": 32,
+      "def": 23,
+      "spa": 22,
+      "spd": 13,
+      "spe": 27
      }
     }
    ]
@@ -2186,57 +1943,57 @@
    "reward": 650,
    "party": [
     {
-     "species": "magnemite",
-     "level": 24,
+     "species": "dugtrio",
+     "level": 26,
      "moves": [
-      "thundershock",
-      "supersonic",
-      "sonicboom",
-      "thunderwave"
+      "growl",
+      "magnitude",
+      "dig",
+      "sandattack"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 33,
-      "def": 32,
-      "spa": 28,
-      "spd": 29,
-      "spe": 29
+      "hp": 20,
+      "atk": 37,
+      "def": 37,
+      "spa": 30,
+      "spd": 21,
+      "spe": 38
      }
     },
     {
-     "species": "ponyta",
-     "level": 25,
+     "species": "hypno",
+     "level": 27,
      "moves": [
-      "growl",
-      "tailwhip",
-      "ember",
-      "stomp"
+      "pound",
+      "disable",
+      "confusion",
+      "headbutt"
      ],
      "evs": {
-      "hp": 31,
+      "hp": 24,
       "atk": 22,
-      "def": 23,
-      "spa": 17,
-      "spd": 49,
+      "def": 43,
+      "spa": 23,
+      "spd": 45,
       "spe": 33
      }
     },
     {
-     "species": "slugma",
-     "level": 26,
+     "species": "houndoom",
+     "level": 28,
      "moves": [
+      "leer",
+      "roar",
       "smog",
-      "ember",
-      "rockthrow",
-      "harden"
+      "bite"
      ],
      "evs": {
-      "hp": 21,
-      "atk": 28,
-      "def": 30,
-      "spa": 29,
-      "spd": 39,
-      "spe": 35
+      "hp": 35,
+      "atk": 45,
+      "def": 15,
+      "spa": 43,
+      "spd": 33,
+      "spe": 24
      }
     }
    ]
@@ -2249,57 +2006,57 @@
    "reward": 600,
    "party": [
     {
-     "species": "kadabra",
-     "level": 23,
-     "moves": [
-      "teleport",
-      "confusion",
-      "disable",
-      "psybeam"
-     ],
-     "evs": {
-      "hp": 35,
-      "atk": 21,
-      "def": 31,
-      "spa": 18,
-      "spd": 33,
-      "spe": 22
-     }
-    },
-    {
-     "species": "grimer",
-     "level": 24,
-     "moves": [
-      "harden",
-      "disable",
-      "sludge",
-      "minimize"
-     ],
-     "evs": {
-      "hp": 33,
-      "atk": 37,
-      "def": 27,
-      "spa": 25,
-      "spd": 15,
-      "spe": 31
-     }
-    },
-    {
-     "species": "diglett",
+     "species": "quilava",
      "level": 25,
      "moves": [
-      "growl",
-      "magnitude",
-      "dig",
-      "sandattack"
+      "tackle",
+      "smokescreen",
+      "ember",
+      "quickattack"
      ],
      "evs": {
-      "hp": 19,
-      "atk": 36,
-      "def": 35,
-      "spa": 29,
-      "spd": 20,
-      "spe": 36
+      "hp": 25,
+      "atk": 19,
+      "def": 50,
+      "spa": 18,
+      "spd": 18,
+      "spe": 45
+     }
+    },
+    {
+     "species": "hypno",
+     "level": 26,
+     "moves": [
+      "pound",
+      "disable",
+      "confusion",
+      "headbutt"
+     ],
+     "evs": {
+      "hp": 40,
+      "atk": 34,
+      "def": 31,
+      "spa": 21,
+      "spd": 36,
+      "spe": 21
+     }
+    },
+    {
+     "species": "magnemite",
+     "level": 27,
+     "moves": [
+      "supersonic",
+      "sonicboom",
+      "thunderwave",
+      "lockon"
+     ],
+     "evs": {
+      "hp": 45,
+      "atk": 30,
+      "def": 36,
+      "spa": 20,
+      "spd": 31,
+      "spe": 28
      }
     }
    ]
@@ -2312,44 +2069,8 @@
    "reward": 550,
    "party": [
     {
-     "species": "drowzee",
-     "level": 21,
-     "moves": [
-      "hypnosis",
-      "pound",
-      "disable",
-      "confusion"
-     ],
-     "evs": {
-      "hp": 19,
-      "atk": 17,
-      "def": 34,
-      "spa": 18,
-      "spd": 35,
-      "spe": 25
-     }
-    },
-    {
-     "species": "houndour",
-     "level": 22,
-     "moves": [
-      "leer",
-      "roar",
-      "smog",
-      "bite"
-     ],
-     "evs": {
-      "hp": 27,
-      "atk": 35,
-      "def": 12,
-      "spa": 34,
-      "spd": 26,
-      "spe": 19
-     }
-    },
-    {
      "species": "quilava",
-     "level": 23,
+     "level": 24,
      "moves": [
       "tackle",
       "smokescreen",
@@ -2358,11 +2079,47 @@
      ],
      "evs": {
       "hp": 23,
-      "atk": 18,
-      "def": 46,
+      "atk": 35,
+      "def": 40,
+      "spa": 21,
+      "spd": 31,
+      "spe": 18
+     }
+    },
+    {
+     "species": "kadabra",
+     "level": 25,
+     "moves": [
+      "teleport",
+      "confusion",
+      "disable",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 28,
+      "def": 35,
       "spa": 17,
-      "spd": 16,
-      "spe": 42
+      "spd": 35,
+      "spe": 23
+     }
+    },
+    {
+     "species": "dugtrio",
+     "level": 26,
+     "moves": [
+      "growl",
+      "magnitude",
+      "dig",
+      "sandattack"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 43,
+      "def": 18,
+      "spa": 40,
+      "spd": 19,
+      "spe": 27
      }
     }
    ]
@@ -2375,39 +2132,57 @@
    "reward": 500,
    "party": [
     {
-     "species": "drowzee",
-     "level": 21,
+     "species": "slugma",
+     "level": 24,
      "moves": [
-      "hypnosis",
-      "pound",
-      "disable",
-      "confusion"
+      "smog",
+      "ember",
+      "rockthrow",
+      "harden"
      ],
      "evs": {
-      "hp": 32,
-      "atk": 27,
-      "def": 25,
-      "spa": 17,
-      "spd": 29,
-      "spe": 17
+      "hp": 27,
+      "atk": 26,
+      "def": 29,
+      "spa": 33,
+      "spd": 20,
+      "spe": 34
      }
     },
     {
-     "species": "magnemite",
-     "level": 22,
+     "species": "aipom",
+     "level": 25,
      "moves": [
-      "thundershock",
-      "supersonic",
-      "sonicboom",
-      "thunderwave"
+      "tailwhip",
+      "sandattack",
+      "batonpass",
+      "furyswipes"
      ],
      "evs": {
-      "hp": 37,
-      "atk": 24,
-      "def": 29,
-      "spa": 16,
-      "spd": 25,
-      "spe": 23
+      "hp": 21,
+      "atk": 25,
+      "def": 33,
+      "spa": 25,
+      "spd": 24,
+      "spe": 47
+     }
+    },
+    {
+     "species": "machop",
+     "level": 26,
+     "moves": [
+      "focusenergy",
+      "karatechop",
+      "seismictoss",
+      "foresight"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 27,
+      "def": 30,
+      "spa": 37,
+      "spd": 32,
+      "spe": 33
      }
     }
    ]
@@ -2420,39 +2195,57 @@
    "reward": 450,
    "party": [
     {
-     "species": "quilava",
-     "level": 19,
+     "species": "diglett",
+     "level": 23,
      "moves": [
-      "leer",
-      "tackle",
-      "smokescreen",
-      "ember"
+      "scratch",
+      "growl",
+      "magnitude",
+      "dig"
      ],
      "evs": {
-      "hp": 18,
-      "atk": 27,
-      "def": 32,
-      "spa": 17,
-      "spd": 25,
-      "spe": 14
+      "hp": 31,
+      "atk": 25,
+      "def": 25,
+      "spa": 28,
+      "spd": 21,
+      "spe": 32
      }
     },
     {
-     "species": "kadabra",
-     "level": 20,
+     "species": "aipom",
+     "level": 24,
      "moves": [
-      "kinesis",
-      "teleport",
-      "confusion",
-      "disable"
+      "tailwhip",
+      "sandattack",
+      "batonpass",
+      "furyswipes"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 22,
-      "def": 28,
-      "spa": 14,
-      "spd": 28,
-      "spe": 18
+      "hp": 13,
+      "atk": 37,
+      "def": 30,
+      "spa": 24,
+      "spd": 35,
+      "spe": 29
+     }
+    },
+    {
+     "species": "houndoom",
+     "level": 25,
+     "moves": [
+      "leer",
+      "roar",
+      "smog",
+      "bite"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 28,
+      "def": 34,
+      "spa": 27,
+      "spd": 23,
+      "spe": 33
      }
     }
    ]
@@ -2465,38 +2258,39 @@
    "reward": 400,
    "party": [
     {
-     "species": "diglett",
-     "level": 18,
+     "species": "koffing",
+     "level": 23,
      "moves": [
-      "scratch",
-      "growl",
-      "magnitude",
-      "dig"
+      "tackle",
+      "smog",
+      "selfdestruct",
+      "sludge"
      ],
      "evs": {
-      "hp": 25,
-      "atk": 30,
-      "def": 13,
-      "spa": 28,
-      "spd": 13,
-      "spe": 18
+      "hp": 34,
+      "atk": 15,
+      "def": 16,
+      "spa": 32,
+      "spd": 33,
+      "spe": 31
      }
     },
     {
-     "species": "slugma",
-     "level": 19,
+     "species": "kadabra",
+     "level": 24,
      "moves": [
-      "smog",
-      "ember",
-      "rockthrow"
+      "teleport",
+      "confusion",
+      "disable",
+      "psybeam"
      ],
      "evs": {
-      "hp": 21,
-      "atk": 20,
-      "def": 23,
+      "hp": 34,
+      "atk": 37,
+      "def": 26,
       "spa": 26,
-      "spd": 16,
-      "spe": 27
+      "spd": 24,
+      "spe": 21
      }
     }
    ]
@@ -2509,39 +2303,39 @@
    "reward": 350,
    "party": [
     {
-     "species": "aipom",
-     "level": 16,
+     "species": "magnemite",
+     "level": 22,
      "moves": [
-      "scratch",
-      "tailwhip",
-      "sandattack",
-      "batonpass"
+      "thundershock",
+      "supersonic",
+      "sonicboom",
+      "thunderwave"
      ],
      "evs": {
-      "hp": 14,
-      "atk": 16,
-      "def": 21,
-      "spa": 16,
-      "spd": 15,
-      "spe": 30
+      "hp": 17,
+      "atk": 35,
+      "def": 24,
+      "spa": 18,
+      "spd": 30,
+      "spe": 31
      }
     },
     {
-     "species": "machop",
-     "level": 17,
+     "species": "drowzee",
+     "level": 23,
      "moves": [
-      "leer",
-      "lowkick",
-      "focusenergy",
-      "karatechop"
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
      ],
      "evs": {
-      "hp": 15,
-      "atk": 18,
-      "def": 20,
-      "spa": 24,
-      "spd": 21,
-      "spe": 21
+      "hp": 25,
+      "atk": 21,
+      "def": 25,
+      "spa": 26,
+      "spd": 42,
+      "spe": 22
      }
     }
    ]
@@ -2554,20 +2348,39 @@
    "reward": 300,
    "party": [
     {
-     "species": "diglett",
-     "level": 16,
+     "species": "drowzee",
+     "level": 22,
      "moves": [
-      "scratch",
-      "growl",
-      "magnitude"
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
      ],
      "evs": {
-      "hp": 21,
-      "atk": 17,
-      "def": 17,
-      "spa": 20,
-      "spd": 14,
-      "spe": 22
+      "hp": 19,
+      "atk": 18,
+      "def": 16,
+      "spa": 37,
+      "spd": 29,
+      "spe": 35
+     }
+    },
+    {
+     "species": "drowzee",
+     "level": 23,
+     "moves": [
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 29,
+      "def": 29,
+      "spa": 22,
+      "spd": 29,
+      "spe": 28
      }
     }
    ]
@@ -2580,21 +2393,39 @@
    "reward": 250,
    "party": [
     {
-     "species": "aipom",
-     "level": 14,
+     "species": "gastly",
+     "level": 21,
      "moves": [
-      "scratch",
-      "tailwhip",
-      "sandattack",
-      "batonpass"
+      "spite",
+      "meanlook",
+      "curse",
+      "nightshade"
      ],
      "evs": {
-      "hp": 8,
-      "atk": 21,
-      "def": 17,
-      "spa": 14,
-      "spd": 21,
-      "spe": 17
+      "hp": 14,
+      "atk": 14,
+      "def": 35,
+      "spa": 31,
+      "spd": 29,
+      "spe": 24
+     }
+    },
+    {
+     "species": "drowzee",
+     "level": 22,
+     "moves": [
+      "hypnosis",
+      "pound",
+      "disable",
+      "confusion"
+     ],
+     "evs": {
+      "hp": 19,
+      "atk": 44,
+      "def": 19,
+      "spa": 23,
+      "spd": 29,
+      "spe": 20
      }
     }
    ]
@@ -2607,21 +2438,39 @@
    "reward": 200,
    "party": [
     {
-     "species": "houndour",
-     "level": 13,
+     "species": "geodude",
+     "level": 20,
      "moves": [
-      "ember",
-      "leer",
-      "roar",
-      "smog"
+      "tackle",
+      "defensecurl",
+      "rockthrow",
+      "magnitude"
      ],
      "evs": {
-      "hp": 16,
+      "hp": 18,
       "atk": 14,
-      "def": 18,
-      "spa": 14,
-      "spd": 12,
-      "spe": 17
+      "def": 34,
+      "spa": 21,
+      "spd": 26,
+      "spe": 29
+     }
+    },
+    {
+     "species": "aipom",
+     "level": 21,
+     "moves": [
+      "tailwhip",
+      "sandattack",
+      "batonpass",
+      "furyswipes"
+     ],
+     "evs": {
+      "hp": 18,
+      "atk": 32,
+      "def": 25,
+      "spa": 21,
+      "spd": 16,
+      "spe": 36
      }
     }
    ]
@@ -2637,25 +2486,25 @@
    "party": [
     {
      "species": "shellder",
-     "level": 30,
+     "level": 34,
      "moves": [
-      "withdraw",
       "supersonic",
       "aurorabeam",
-      "protect"
+      "protect",
+      "leer"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 37,
-      "def": 43,
-      "spa": 40,
-      "spd": 20,
-      "spe": 40
+      "hp": 34,
+      "atk": 42,
+      "def": 49,
+      "spa": 46,
+      "spd": 22,
+      "spe": 46
      }
     },
     {
      "species": "corsola",
-     "level": 31,
+     "level": 35,
      "moves": [
       "bubble",
       "recover",
@@ -2663,30 +2512,30 @@
       "spikecannon"
      ],
      "evs": {
-      "hp": 33,
-      "atk": 50,
-      "def": 29,
-      "spa": 53,
-      "spd": 19,
-      "spe": 32
+      "hp": 38,
+      "atk": 57,
+      "def": 33,
+      "spa": 60,
+      "spd": 22,
+      "spe": 36
      }
     },
     {
      "species": "gyarados",
-     "level": 32,
+     "level": 36,
      "moves": [
-      "thrash",
       "bite",
       "dragonrage",
-      "leer"
+      "leer",
+      "twister"
      ],
      "evs": {
-      "hp": 27,
-      "atk": 32,
-      "def": 47,
-      "spa": 43,
-      "spd": 34,
-      "spe": 40
+      "hp": 31,
+      "atk": 36,
+      "def": 53,
+      "spa": 48,
+      "spd": 38,
+      "spe": 45
      }
     }
    ]
@@ -2699,56 +2548,57 @@
    "reward": 600,
    "party": [
     {
-     "species": "horsea",
-     "level": 28,
+     "species": "seadra",
+     "level": 33,
      "moves": [
-      "bubble",
       "smokescreen",
       "leer",
-      "watergun"
+      "watergun",
+      "twister"
      ],
      "evs": {
-      "hp": 31,
-      "atk": 18,
-      "def": 37,
-      "spa": 33,
-      "spd": 42,
-      "spe": 36
+      "hp": 37,
+      "atk": 21,
+      "def": 43,
+      "spa": 39,
+      "spd": 49,
+      "spe": 42
      }
     },
     {
      "species": "gyarados",
-     "level": 29,
+     "level": 34,
      "moves": [
       "thrash",
       "bite",
-      "dragonrage"
+      "dragonrage",
+      "leer"
      ],
      "evs": {
-      "hp": 34,
-      "atk": 54,
-      "def": 24,
-      "spa": 21,
-      "spd": 48,
-      "spe": 22
+      "hp": 40,
+      "atk": 63,
+      "def": 29,
+      "spa": 24,
+      "spd": 56,
+      "spe": 26
      }
     },
     {
      "species": "shellder",
-     "level": 30,
+     "level": 35,
      "moves": [
-      "withdraw",
       "supersonic",
       "aurorabeam",
-      "protect"
+      "protect",
+      "leer"
      ],
      "evs": {
-      "hp": 23,
-      "atk": 24,
-      "def": 26,
-      "spa": 45,
-      "spd": 45,
-      "spe": 46
+      "hp": 27,
+      "atk": 28,
+      "def": 30,
+      "spa": 53,
+      "spd": 53,
+      "spe": 54
      }
     }
    ]
@@ -2762,52 +2612,53 @@
    "party": [
     {
      "species": "gyarados",
-     "level": 27,
+     "level": 32,
      "moves": [
       "thrash",
       "bite",
-      "dragonrage"
+      "dragonrage",
+      "leer"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 22,
-      "def": 27,
-      "spa": 40,
-      "spd": 37,
-      "spe": 34
+      "hp": 33,
+      "atk": 26,
+      "def": 32,
+      "spa": 48,
+      "spd": 44,
+      "spe": 41
      }
     },
     {
-     "species": "goldeen",
-     "level": 28,
+     "species": "seaking",
+     "level": 33,
      "moves": [
-      "tailwhip",
       "supersonic",
       "hornattack",
-      "flail"
+      "flail",
+      "furyattack"
      ],
      "evs": {
-      "hp": 37,
-      "atk": 40,
-      "def": 37,
-      "spa": 35,
-      "spd": 23,
-      "spe": 25
+      "hp": 43,
+      "atk": 47,
+      "def": 44,
+      "spa": 41,
+      "spd": 27,
+      "spe": 30
      }
     },
     {
      "species": "delibird",
-     "level": 29,
+     "level": 34,
      "moves": [
       "present"
      ],
      "evs": {
-      "hp": 22,
-      "atk": 40,
-      "def": 30,
-      "spa": 29,
-      "spd": 49,
-      "spe": 32
+      "hp": 26,
+      "atk": 47,
+      "def": 35,
+      "spa": 34,
+      "spd": 58,
+      "spe": 37
      }
     }
    ]
@@ -2820,39 +2671,57 @@
    "reward": 500,
    "party": [
     {
-     "species": "krabby",
-     "level": 26,
+     "species": "kingler",
+     "level": 32,
      "moves": [
-      "leer",
       "visegrip",
       "harden",
-      "stomp"
+      "stomp",
+      "guillotine"
      ],
      "evs": {
-      "hp": 44,
-      "atk": 34,
-      "def": 27,
-      "spa": 19,
-      "spd": 19,
-      "spe": 39
+      "hp": 54,
+      "atk": 42,
+      "def": 33,
+      "spa": 23,
+      "spd": 23,
+      "spe": 48
      }
     },
     {
      "species": "lanturn",
-     "level": 27,
+     "level": 33,
      "moves": [
-      "supersonic",
       "flail",
       "watergun",
-      "spark"
+      "spark",
+      "confuseray"
      ],
      "evs": {
-      "hp": 36,
-      "atk": 45,
-      "def": 39,
-      "spa": 25,
-      "spd": 24,
-      "spe": 21
+      "hp": 44,
+      "atk": 54,
+      "def": 48,
+      "spa": 31,
+      "spd": 29,
+      "spe": 26
+     }
+    },
+    {
+     "species": "staryu",
+     "level": 34,
+     "moves": [
+      "rapidspin",
+      "recover",
+      "swift",
+      "bubblebeam"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 35,
+      "def": 51,
+      "spa": 53,
+      "spd": 38,
+      "spe": 29
      }
     }
    ]
@@ -2865,26 +2734,8 @@
    "reward": 450,
    "party": [
     {
-     "species": "staryu",
-     "level": 25,
-     "moves": [
-      "watergun",
-      "rapidspin",
-      "recover",
-      "swift"
-     ],
-     "evs": {
-      "hp": 24,
-      "atk": 26,
-      "def": 37,
-      "spa": 39,
-      "spd": 28,
-      "spe": 21
-     }
-    },
-    {
      "species": "seel",
-     "level": 26,
+     "level": 31,
      "moves": [
       "headbutt",
       "growl",
@@ -2892,12 +2743,48 @@
       "rest"
      ],
      "evs": {
-      "hp": 37,
-      "atk": 25,
-      "def": 36,
-      "spa": 43,
-      "spd": 23,
-      "spe": 18
+      "hp": 44,
+      "atk": 30,
+      "def": 43,
+      "spa": 51,
+      "spd": 27,
+      "spe": 22
+     }
+    },
+    {
+     "species": "staryu",
+     "level": 32,
+     "moves": [
+      "rapidspin",
+      "recover",
+      "swift",
+      "bubblebeam"
+     ],
+     "evs": {
+      "hp": 32,
+      "atk": 20,
+      "def": 32,
+      "spa": 56,
+      "spd": 41,
+      "spe": 43
+     }
+    },
+    {
+     "species": "tentacruel",
+     "level": 33,
+     "moves": [
+      "constrict",
+      "acid",
+      "bubblebeam",
+      "wrap"
+     ],
+     "evs": {
+      "hp": 39,
+      "atk": 53,
+      "def": 25,
+      "spa": 38,
+      "spd": 43,
+      "spe": 32
      }
     }
    ]
@@ -2910,39 +2797,39 @@
    "reward": 400,
    "party": [
     {
-     "species": "staryu",
-     "level": 23,
+     "species": "kingler",
+     "level": 31,
      "moves": [
-      "tackle",
-      "watergun",
-      "rapidspin",
-      "recover"
+      "visegrip",
+      "harden",
+      "stomp",
+      "guillotine"
      ],
      "evs": {
-      "hp": 23,
-      "atk": 14,
-      "def": 23,
-      "spa": 41,
-      "spd": 29,
-      "spe": 31
+      "hp": 38,
+      "atk": 33,
+      "def": 36,
+      "spa": 51,
+      "spd": 38,
+      "spe": 20
      }
     },
     {
-     "species": "tentacool",
-     "level": 24,
+     "species": "tentacruel",
+     "level": 32,
      "moves": [
-      "poisonsting",
-      "supersonic",
       "constrict",
-      "acid"
+      "acid",
+      "bubblebeam",
+      "wrap"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 38,
-      "def": 18,
-      "spa": 28,
-      "spd": 32,
-      "spe": 24
+      "hp": 29,
+      "atk": 35,
+      "def": 41,
+      "spa": 37,
+      "spd": 40,
+      "spe": 42
      }
     }
    ]
@@ -2955,39 +2842,39 @@
    "reward": 350,
    "party": [
     {
-     "species": "krabby",
-     "level": 22,
+     "species": "qwilfish",
+     "level": 30,
      "moves": [
-      "bubble",
-      "leer",
-      "visegrip",
-      "harden"
+      "harden",
+      "minimize",
+      "watergun",
+      "pinmissile"
      ],
      "evs": {
-      "hp": 27,
+      "hp": 44,
       "atk": 23,
-      "def": 25,
-      "spa": 36,
-      "spd": 27,
-      "spe": 15
+      "def": 28,
+      "spa": 24,
+      "spd": 45,
+      "spe": 45
      }
     },
     {
-     "species": "tentacool",
-     "level": 23,
+     "species": "horsea",
+     "level": 31,
      "moves": [
-      "poisonsting",
-      "supersonic",
-      "constrict",
-      "acid"
+      "smokescreen",
+      "leer",
+      "watergun",
+      "twister"
      ],
      "evs": {
-      "hp": 21,
-      "atk": 25,
-      "def": 29,
-      "spa": 26,
+      "hp": 32,
+      "atk": 27,
+      "def": 23,
+      "spa": 51,
       "spd": 29,
-      "spe": 30
+      "spe": 56
      }
     }
    ]
@@ -3000,21 +2887,39 @@
    "reward": 300,
    "party": [
     {
-     "species": "qwilfish",
-     "level": 21,
+     "species": "kingler",
+     "level": 30,
      "moves": [
-      "tackle",
+      "visegrip",
       "harden",
-      "minimize",
-      "watergun"
+      "stomp",
+      "guillotine"
      ],
      "evs": {
-      "hp": 31,
-      "atk": 16,
-      "def": 20,
-      "spa": 17,
-      "spd": 32,
-      "spe": 32
+      "hp": 29,
+      "atk": 19,
+      "def": 52,
+      "spa": 37,
+      "spd": 41,
+      "spe": 31
+     }
+    },
+    {
+     "species": "shellder",
+     "level": 31,
+     "moves": [
+      "withdraw",
+      "supersonic",
+      "aurorabeam",
+      "protect"
+     ],
+     "evs": {
+      "hp": 40,
+      "atk": 37,
+      "def": 31,
+      "spa": 29,
+      "spd": 37,
+      "spe": 45
      }
     }
    ]
@@ -3027,20 +2932,39 @@
    "reward": 250,
    "party": [
     {
-     "species": "horsea",
-     "level": 20,
+     "species": "mantine",
+     "level": 29,
      "moves": [
-      "bubble",
-      "smokescreen",
-      "leer"
+      "tackle",
+      "supersonic",
+      "bubblebeam",
+      "takedown"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 17,
-      "def": 15,
-      "spa": 33,
-      "spd": 18,
-      "spe": 36
+      "hp": 43,
+      "atk": 25,
+      "def": 28,
+      "spa": 48,
+      "spd": 32,
+      "spe": 26
+     }
+    },
+    {
+     "species": "kingler",
+     "level": 30,
+     "moves": [
+      "visegrip",
+      "harden",
+      "stomp",
+      "guillotine"
+     ],
+     "evs": {
+      "hp": 53,
+      "atk": 52,
+      "def": 26,
+      "spa": 32,
+      "spd": 24,
+      "spe": 22
      }
     }
    ]
@@ -3051,96 +2975,6 @@
    "name": "Lana",
    "rank": 0,
    "reward": 200,
-   "party": [
-    {
-     "species": "krabby",
-     "level": 18,
-     "moves": [
-      "bubble",
-      "leer",
-      "visegrip",
-      "harden"
-     ],
-     "evs": {
-      "hp": 18,
-      "atk": 11,
-      "def": 31,
-      "spa": 22,
-      "spd": 25,
-      "spe": 18
-     }
-    }
-   ]
-  },
-  {
-   "id": 10,
-   "class": "Swimmer",
-   "name": "Joey",
-   "rank": 9,
-   "reward": 650,
-   "party": [
-    {
-     "species": "shellder",
-     "level": 30,
-     "moves": [
-      "withdraw",
-      "supersonic",
-      "aurorabeam",
-      "protect"
-     ],
-     "evs": {
-      "hp": 38,
-      "atk": 35,
-      "def": 30,
-      "spa": 28,
-      "spd": 35,
-      "spe": 43
-     }
-    },
-    {
-     "species": "mantine",
-     "level": 31,
-     "moves": [
-      "tackle",
-      "supersonic",
-      "bubblebeam",
-      "takedown"
-     ],
-     "evs": {
-      "hp": 46,
-      "atk": 27,
-      "def": 30,
-      "spa": 51,
-      "spd": 34,
-      "spe": 28
-     }
-    },
-    {
-     "species": "kingler",
-     "level": 32,
-     "moves": [
-      "visegrip",
-      "harden",
-      "stomp",
-      "guillotine"
-     ],
-     "evs": {
-      "hp": 56,
-      "atk": 55,
-      "def": 28,
-      "spa": 35,
-      "spd": 26,
-      "spe": 24
-     }
-    }
-   ]
-  },
-  {
-   "id": 11,
-   "class": "Sailor",
-   "name": "Mikey",
-   "rank": 8,
-   "reward": 600,
    "party": [
     {
      "species": "wartortle",
@@ -3177,10 +3011,19 @@
       "spd": 29,
       "spe": 29
      }
-    },
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "class": "Swimmer",
+   "name": "Joey",
+   "rank": 9,
+   "reward": 650,
+   "party": [
     {
      "species": "kingler",
-     "level": 30,
+     "level": 34,
      "moves": [
       "visegrip",
       "harden",
@@ -3188,12 +3031,111 @@
       "guillotine"
      ],
      "evs": {
-      "hp": 22,
-      "atk": 38,
-      "def": 57,
-      "spa": 28,
-      "spd": 28,
-      "spe": 37
+      "hp": 25,
+      "atk": 43,
+      "def": 65,
+      "spa": 31,
+      "spd": 32,
+      "spe": 42
+     }
+    },
+    {
+     "species": "mantine",
+     "level": 35,
+     "moves": [
+      "supersonic",
+      "bubblebeam",
+      "takedown",
+      "agility"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 28,
+      "def": 37,
+      "spa": 24,
+      "spd": 61,
+      "spe": 51
+     }
+    },
+    {
+     "species": "corsola",
+     "level": 36,
+     "moves": [
+      "bubble",
+      "recover",
+      "bubblebeam",
+      "spikecannon"
+     ],
+     "evs": {
+      "hp": 23,
+      "atk": 53,
+      "def": 47,
+      "spa": 55,
+      "spd": 49,
+      "spe": 25
+     }
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "class": "Sailor",
+   "name": "Mikey",
+   "rank": 8,
+   "reward": 600,
+   "party": [
+    {
+     "species": "gyarados",
+     "level": 33,
+     "moves": [
+      "thrash",
+      "bite",
+      "dragonrage",
+      "leer"
+     ],
+     "evs": {
+      "hp": 39,
+      "atk": 54,
+      "def": 33,
+      "spa": 26,
+      "spd": 58,
+      "spe": 21
+     }
+    },
+    {
+     "species": "tentacruel",
+     "level": 34,
+     "moves": [
+      "constrict",
+      "acid",
+      "bubblebeam",
+      "wrap"
+     ],
+     "evs": {
+      "hp": 59,
+      "atk": 25,
+      "def": 53,
+      "spa": 45,
+      "spd": 31,
+      "spe": 24
+     }
+    },
+    {
+     "species": "qwilfish",
+     "level": 35,
+     "moves": [
+      "harden",
+      "minimize",
+      "watergun",
+      "pinmissile"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 61,
+      "def": 25,
+      "spa": 43,
+      "spd": 34,
+      "spe": 45
      }
     }
    ]
@@ -3206,56 +3148,57 @@
    "reward": 550,
    "party": [
     {
-     "species": "mantine",
-     "level": 27,
+     "species": "shellder",
+     "level": 32,
      "moves": [
-      "tackle",
+      "withdraw",
       "supersonic",
+      "aurorabeam",
+      "protect"
+     ],
+     "evs": {
+      "hp": 42,
+      "atk": 35,
+      "def": 44,
+      "spa": 41,
+      "spd": 28,
+      "spe": 35
+     }
+    },
+    {
+     "species": "seaking",
+     "level": 33,
+     "moves": [
+      "supersonic",
+      "hornattack",
+      "flail",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 36,
+      "atk": 48,
+      "def": 31,
+      "spa": 40,
+      "spd": 46,
+      "spe": 29
+     }
+    },
+    {
+     "species": "tentacruel",
+     "level": 34,
+     "moves": [
+      "constrict",
+      "acid",
       "bubblebeam",
-      "takedown"
+      "wrap"
      ],
      "evs": {
-      "hp": 34,
-      "atk": 22,
-      "def": 29,
-      "spa": 18,
-      "spd": 47,
-      "spe": 39
-     }
-    },
-    {
-     "species": "corsola",
-     "level": 28,
-     "moves": [
-      "harden",
-      "bubble",
-      "recover",
-      "bubblebeam"
-     ],
-     "evs": {
-      "hp": 18,
-      "atk": 41,
-      "def": 36,
-      "spa": 43,
-      "spd": 38,
-      "spe": 19
-     }
-    },
-    {
-     "species": "gyarados",
-     "level": 29,
-     "moves": [
-      "thrash",
-      "bite",
-      "dragonrage"
-     ],
-     "evs": {
-      "hp": 35,
-      "atk": 47,
-      "def": 29,
-      "spa": 23,
-      "spd": 51,
-      "spe": 19
+      "hp": 25,
+      "atk": 39,
+      "def": 39,
+      "spa": 54,
+      "spd": 42,
+      "spe": 38
      }
     }
    ]
@@ -3268,39 +3211,57 @@
    "reward": 500,
    "party": [
     {
-     "species": "tentacool",
-     "level": 26,
+     "species": "wartortle",
+     "level": 32,
      "moves": [
-      "supersonic",
-      "constrict",
-      "acid",
-      "bubblebeam"
+      "watergun",
+      "bite",
+      "rapidspin",
+      "protect"
      ],
      "evs": {
-      "hp": 45,
-      "atk": 19,
-      "def": 41,
-      "spa": 35,
-      "spd": 24,
-      "spe": 18
+      "hp": 35,
+      "atk": 18,
+      "def": 23,
+      "spa": 51,
+      "spd": 51,
+      "spe": 45
      }
     },
     {
-     "species": "qwilfish",
-     "level": 27,
+     "species": "corsola",
+     "level": 33,
      "moves": [
-      "tackle",
-      "harden",
-      "minimize",
-      "watergun"
+      "bubble",
+      "recover",
+      "bubblebeam",
+      "spikecannon"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 47,
-      "def": 19,
-      "spa": 33,
-      "spd": 26,
-      "spe": 35
+      "hp": 25,
+      "atk": 43,
+      "def": 23,
+      "spa": 49,
+      "spd": 46,
+      "spe": 44
+     }
+    },
+    {
+     "species": "seadra",
+     "level": 34,
+     "moves": [
+      "smokescreen",
+      "leer",
+      "watergun",
+      "twister"
+     ],
+     "evs": {
+      "hp": 56,
+      "atk": 50,
+      "def": 23,
+      "spa": 31,
+      "spd": 57,
+      "spe": 21
      }
     }
    ]
@@ -3313,39 +3274,57 @@
    "reward": 450,
    "party": [
     {
-     "species": "shellder",
-     "level": 25,
+     "species": "staryu",
+     "level": 31,
      "moves": [
-      "withdraw",
-      "supersonic",
-      "aurorabeam",
-      "protect"
+      "rapidspin",
+      "recover",
+      "swift",
+      "bubblebeam"
      ],
      "evs": {
-      "hp": 33,
-      "atk": 27,
-      "def": 34,
-      "spa": 32,
-      "spd": 22,
-      "spe": 27
+      "hp": 48,
+      "atk": 21,
+      "def": 44,
+      "spa": 43,
+      "spd": 40,
+      "spe": 21
      }
     },
     {
-     "species": "goldeen",
-     "level": 26,
+     "species": "staryu",
+     "level": 32,
      "moves": [
-      "tailwhip",
-      "supersonic",
-      "hornattack",
-      "flail"
+      "rapidspin",
+      "recover",
+      "swift",
+      "bubblebeam"
      ],
      "evs": {
-      "hp": 29,
+      "hp": 33,
+      "atk": 41,
+      "def": 56,
+      "spa": 26,
+      "spd": 28,
+      "spe": 39
+     }
+    },
+    {
+     "species": "seaking",
+     "level": 33,
+     "moves": [
+      "supersonic",
+      "hornattack",
+      "flail",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 36,
       "atk": 38,
-      "def": 24,
-      "spa": 32,
+      "def": 43,
+      "spa": 26,
       "spd": 37,
-      "spe": 23
+      "spe": 51
      }
     }
    ]
@@ -3358,39 +3337,39 @@
    "reward": 400,
    "party": [
     {
-     "species": "tentacool",
-     "level": 23,
+     "species": "horsea",
+     "level": 31,
      "moves": [
-      "poisonsting",
-      "supersonic",
-      "constrict",
-      "acid"
+      "smokescreen",
+      "leer",
+      "watergun",
+      "twister"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 27,
-      "def": 26,
-      "spa": 37,
-      "spd": 28,
-      "spe": 26
+      "hp": 56,
+      "atk": 21,
+      "def": 59,
+      "spa": 25,
+      "spd": 22,
+      "spe": 34
      }
     },
     {
-     "species": "wartortle",
-     "level": 24,
+     "species": "mantine",
+     "level": 32,
      "moves": [
-      "bubble",
-      "withdraw",
-      "watergun",
-      "bite"
+      "supersonic",
+      "bubblebeam",
+      "takedown",
+      "agility"
      ],
      "evs": {
-      "hp": 26,
-      "atk": 14,
-      "def": 17,
-      "spa": 38,
-      "spd": 38,
-      "spe": 34
+      "hp": 54,
+      "atk": 24,
+      "def": 32,
+      "spa": 26,
+      "spd": 46,
+      "spe": 41
      }
     }
    ]
@@ -3403,39 +3382,36 @@
    "reward": 350,
    "party": [
     {
-     "species": "corsola",
-     "level": 22,
+     "species": "delibird",
+     "level": 30,
      "moves": [
-      "tackle",
-      "harden",
-      "bubble",
-      "recover"
+      "present"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 29,
-      "def": 15,
-      "spa": 33,
-      "spd": 31,
-      "spe": 29
+      "hp": 23,
+      "atk": 19,
+      "def": 47,
+      "spa": 30,
+      "spd": 52,
+      "spe": 40
      }
     },
     {
      "species": "horsea",
-     "level": 23,
+     "level": 31,
      "moves": [
-      "bubble",
       "smokescreen",
       "leer",
-      "watergun"
+      "watergun",
+      "twister"
      ],
      "evs": {
-      "hp": 38,
-      "atk": 34,
-      "def": 16,
-      "spa": 21,
-      "spd": 39,
-      "spe": 14
+      "hp": 31,
+      "atk": 30,
+      "def": 31,
+      "spa": 42,
+      "spd": 52,
+      "spe": 32
      }
     }
    ]
@@ -3448,21 +3424,39 @@
    "reward": 300,
    "party": [
     {
-     "species": "staryu",
-     "level": 21,
+     "species": "octillery",
+     "level": 30,
      "moves": [
-      "tackle",
-      "watergun",
-      "rapidspin",
-      "recover"
+      "aurorabeam",
+      "bubblebeam",
+      "psybeam",
+      "octazooka"
      ],
      "evs": {
-      "hp": 33,
-      "atk": 14,
-      "def": 30,
-      "spa": 29,
-      "spd": 27,
-      "spe": 14
+      "hp": 27,
+      "atk": 32,
+      "def": 45,
+      "spa": 35,
+      "spd": 29,
+      "spe": 41
+     }
+    },
+    {
+     "species": "corsola",
+     "level": 31,
+     "moves": [
+      "bubble",
+      "recover",
+      "bubblebeam",
+      "spikecannon"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 18,
+      "def": 33,
+      "spa": 53,
+      "spd": 28,
+      "spe": 47
      }
     }
    ]
@@ -3475,21 +3469,36 @@
    "reward": 250,
    "party": [
     {
-     "species": "staryu",
-     "level": 20,
+     "species": "delibird",
+     "level": 29,
      "moves": [
-      "tackle",
-      "watergun",
-      "rapidspin",
-      "recover"
+      "present"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 26,
+      "hp": 28,
+      "atk": 31,
+      "def": 48,
+      "spa": 22,
+      "spd": 31,
+      "spe": 43
+     }
+    },
+    {
+     "species": "horsea",
+     "level": 30,
+     "moves": [
+      "smokescreen",
+      "leer",
+      "watergun",
+      "twister"
+     ],
+     "evs": {
+      "hp": 21,
+      "atk": 43,
       "def": 35,
-      "spa": 16,
-      "spd": 18,
-      "spe": 25
+      "spa": 30,
+      "spd": 36,
+      "spe": 44
      }
     }
    ]
@@ -3502,21 +3511,39 @@
    "reward": 200,
    "party": [
     {
-     "species": "goldeen",
-     "level": 18,
+     "species": "shellder",
+     "level": 28,
      "moves": [
-      "peck",
-      "tailwhip",
+      "withdraw",
       "supersonic",
-      "hornattack"
+      "aurorabeam",
+      "protect"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 21,
-      "def": 23,
-      "spa": 14,
-      "spd": 20,
-      "spe": 28
+      "hp": 36,
+      "atk": 38,
+      "def": 38,
+      "spa": 39,
+      "spd": 15,
+      "spe": 30
+     }
+    },
+    {
+     "species": "lanturn",
+     "level": 29,
+     "moves": [
+      "supersonic",
+      "flail",
+      "watergun",
+      "spark"
+     ],
+     "evs": {
+      "hp": 26,
+      "atk": 27,
+      "def": 25,
+      "spa": 47,
+      "spd": 53,
+      "spe": 26
      }
     }
    ]
@@ -3532,25 +3559,25 @@
    "party": [
     {
      "species": "dunsparce",
-     "level": 36,
+     "level": 41,
      "moves": [
-      "glare",
       "spite",
       "pursuit",
-      "screech"
+      "screech",
+      "takedown"
      ],
      "evs": {
-      "hp": 49,
-      "atk": 43,
-      "def": 44,
-      "spa": 49,
-      "spd": 34,
-      "spe": 31
+      "hp": 56,
+      "atk": 49,
+      "def": 50,
+      "spa": 56,
+      "spd": 39,
+      "spe": 35
      }
     },
     {
      "species": "lickitung",
-     "level": 37,
+     "level": 42,
      "moves": [
       "stomp",
       "wrap",
@@ -3558,27 +3585,45 @@
       "slam"
      ],
      "evs": {
-      "hp": 57,
-      "atk": 31,
-      "def": 54,
-      "spa": 26,
-      "spd": 58,
-      "spe": 34
+      "hp": 65,
+      "atk": 35,
+      "def": 61,
+      "spa": 30,
+      "spd": 65,
+      "spe": 38
      }
     },
     {
      "species": "unown",
-     "level": 38,
+     "level": 43,
      "moves": [
       "hiddenpower"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 35,
-      "def": 49,
+      "hp": 34,
+      "atk": 40,
+      "def": 56,
+      "spa": 50,
+      "spd": 59,
+      "spe": 63
+     }
+    },
+    {
+     "species": "farfetchd",
+     "level": 44,
+     "moves": [
+      "swordsdance",
+      "agility",
+      "slash",
+      "falseswipe"
+     ],
+     "evs": {
+      "hp": 48,
+      "atk": 37,
+      "def": 58,
       "spa": 44,
-      "spd": 52,
-      "spe": 55
+      "spd": 54,
+      "spe": 68
      }
     }
    ]
@@ -3591,54 +3636,72 @@
    "reward": 600,
    "party": [
     {
-     "species": "farfetchd",
-     "level": 34,
-     "moves": [
-      "leer",
-      "furyattack",
-      "swordsdance",
-      "agility"
-     ],
-     "evs": {
-      "hp": 37,
-      "atk": 29,
-      "def": 45,
-      "spa": 34,
-      "spd": 41,
-      "spe": 53
-     }
-    },
-    {
      "species": "stantler",
-     "level": 35,
+     "level": 40,
      "moves": [
-      "leer",
       "hypnosis",
       "stomp",
-      "sandattack"
+      "sandattack",
+      "takedown"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 58,
-      "def": 55,
-      "spa": 46,
-      "spd": 35,
-      "spe": 23
+      "hp": 32,
+      "atk": 66,
+      "def": 62,
+      "spa": 53,
+      "spd": 40,
+      "spe": 26
      }
     },
     {
      "species": "unown",
-     "level": 36,
+     "level": 41,
      "moves": [
       "hiddenpower"
      ],
      "evs": {
-      "hp": 47,
-      "atk": 30,
-      "def": 28,
-      "spa": 42,
-      "spd": 53,
-      "spe": 52
+      "hp": 53,
+      "atk": 35,
+      "def": 32,
+      "spa": 48,
+      "spd": 60,
+      "spe": 60
+     }
+    },
+    {
+     "species": "dodrio",
+     "level": 42,
+     "moves": [
+      "furyattack",
+      "triattack",
+      "rage",
+      "drillpeck"
+     ],
+     "evs": {
+      "hp": 63,
+      "atk": 49,
+      "def": 33,
+      "spa": 48,
+      "spd": 38,
+      "spe": 63
+     }
+    },
+    {
+     "species": "dunsparce",
+     "level": 43,
+     "moves": [
+      "spite",
+      "pursuit",
+      "screech",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 64,
+      "def": 60,
+      "spa": 36,
+      "spd": 46,
+      "spe": 53
      }
     }
    ]
@@ -3651,44 +3714,8 @@
    "reward": 550,
    "party": [
     {
-     "species": "dodrio",
-     "level": 33,
-     "moves": [
-      "pursuit",
-      "furyattack",
-      "triattack",
-      "rage"
-     ],
-     "evs": {
-      "hp": 50,
-      "atk": 38,
-      "def": 26,
-      "spa": 38,
-      "spd": 30,
-      "spe": 49
-     }
-    },
-    {
-     "species": "dunsparce",
-     "level": 34,
-     "moves": [
-      "glare",
-      "spite",
-      "pursuit",
-      "screech"
-     ],
-     "evs": {
-      "hp": 34,
-      "atk": 51,
-      "def": 47,
-      "spa": 28,
-      "spd": 36,
-      "spe": 42
-     }
-    },
-    {
      "species": "tangela",
-     "level": 35,
+     "level": 39,
      "moves": [
       "vinewhip",
       "bind",
@@ -3696,12 +3723,66 @@
       "stunspore"
      ],
      "evs": {
-      "hp": 52,
-      "atk": 36,
-      "def": 29,
-      "spa": 45,
-      "spd": 34,
-      "spe": 48
+      "hp": 58,
+      "atk": 41,
+      "def": 33,
+      "spa": 50,
+      "spd": 38,
+      "spe": 54
+     }
+    },
+    {
+     "species": "stantler",
+     "level": 40,
+     "moves": [
+      "hypnosis",
+      "stomp",
+      "sandattack",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 53,
+      "atk": 59,
+      "def": 48,
+      "spa": 62,
+      "spd": 26,
+      "spe": 32
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 41,
+     "moves": [
+      "stomp",
+      "milkdrink",
+      "bide",
+      "rollout"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 70,
+      "def": 40,
+      "spa": 28,
+      "spd": 63,
+      "spe": 54
+     }
+    },
+    {
+     "species": "venusaur",
+     "level": 42,
+     "moves": [
+      "sleeppowder",
+      "razorleaf",
+      "sweetscent",
+      "growth"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 66,
+      "def": 28,
+      "spa": 61,
+      "spd": 53,
+      "spe": 59
      }
     }
    ]
@@ -3714,37 +3795,73 @@
    "reward": 500,
    "party": [
     {
-     "species": "stantler",
-     "level": 32,
+     "species": "dodrio",
+     "level": 39,
      "moves": [
-      "leer",
-      "hypnosis",
-      "stomp",
-      "sandattack"
+      "furyattack",
+      "triattack",
+      "rage",
+      "drillpeck"
      ],
      "evs": {
-      "hp": 43,
-      "atk": 47,
-      "def": 38,
-      "spa": 50,
-      "spd": 21,
-      "spe": 26
+      "hp": 39,
+      "atk": 55,
+      "def": 65,
+      "spa": 24,
+      "spd": 39,
+      "spe": 51
      }
     },
     {
-     "species": "miltank",
-     "level": 33,
+     "species": "kangaskhan",
+     "level": 40,
      "moves": [
-      "defensecurl",
-      "stomp",
-      "milkdrink",
-      "bide"
+      "tailwhip",
+      "megapunch",
+      "rage",
+      "endure"
      ],
      "evs": {
-      "hp": 26,
-      "atk": 56,
-      "def": 32,
-      "spa": 22,
+      "hp": 23,
+      "atk": 54,
+      "def": 46,
+      "spa": 62,
+      "spd": 35,
+      "spe": 59
+     }
+    },
+    {
+     "species": "kangaskhan",
+     "level": 41,
+     "moves": [
+      "tailwhip",
+      "megapunch",
+      "rage",
+      "endure"
+     ],
+     "evs": {
+      "hp": 69,
+      "atk": 37,
+      "def": 27,
+      "spa": 47,
+      "spd": 37,
+      "spe": 69
+     }
+    },
+    {
+     "species": "stantler",
+     "level": 42,
+     "moves": [
+      "hypnosis",
+      "stomp",
+      "sandattack",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 42,
+      "atk": 58,
+      "def": 57,
+      "spa": 44,
       "spd": 50,
       "spe": 43
      }
@@ -3759,39 +3876,75 @@
    "reward": 450,
    "party": [
     {
-     "species": "ivysaur",
-     "level": 31,
+     "species": "girafarig",
+     "level": 38,
      "moves": [
-      "poisonpowder",
-      "sleeppowder",
-      "razorleaf",
-      "sweetscent"
+      "confusion",
+      "stomp",
+      "agility",
+      "batonpass"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 48,
-      "def": 21,
-      "spa": 45,
-      "spd": 39,
-      "spe": 43
+      "hp": 40,
+      "atk": 54,
+      "def": 26,
+      "spa": 49,
+      "spd": 35,
+      "spe": 63
      }
     },
     {
-     "species": "dodrio",
-     "level": 32,
+     "species": "smeargle",
+     "level": 39,
      "moves": [
-      "pursuit",
-      "furyattack",
-      "triattack",
-      "rage"
+      "swift",
+      "headbutt",
+      "slash",
+      "bodyslam"
      ],
      "evs": {
-      "hp": 32,
-      "atk": 45,
-      "def": 53,
-      "spa": 20,
-      "spd": 32,
-      "spe": 42
+      "hp": 59,
+      "atk": 55,
+      "def": 41,
+      "spa": 42,
+      "spd": 33,
+      "spe": 44
+     }
+    },
+    {
+     "species": "exeggcute",
+     "level": 40,
+     "moves": [
+      "confusion",
+      "stunspore",
+      "poisonpowder",
+      "sleeppowder"
+     ],
+     "evs": {
+      "hp": 54,
+      "atk": 27,
+      "def": 37,
+      "spa": 39,
+      "spd": 71,
+      "spe": 52
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 41,
+     "moves": [
+      "stomp",
+      "milkdrink",
+      "bide",
+      "rollout"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 56,
+      "def": 31,
+      "spa": 28,
+      "spd": 55,
+      "spe": 66
      }
     }
    ]
@@ -3804,39 +3957,57 @@
    "reward": 400,
    "party": [
     {
-     "species": "kangaskhan",
-     "level": 29,
+     "species": "venusaur",
+     "level": 38,
      "moves": [
-      "leer",
-      "bite",
-      "tailwhip",
-      "megapunch"
+      "poisonpowder",
+      "sleeppowder",
+      "razorleaf",
+      "sweetscent"
      ],
      "evs": {
-      "hp": 17,
-      "atk": 39,
-      "def": 34,
-      "spa": 45,
-      "spd": 26,
-      "spe": 43
+      "hp": 53,
+      "atk": 41,
+      "def": 42,
+      "spa": 52,
+      "spd": 27,
+      "spe": 52
      }
     },
     {
-     "species": "kangaskhan",
-     "level": 30,
+     "species": "smeargle",
+     "level": 39,
      "moves": [
-      "leer",
-      "bite",
-      "tailwhip",
-      "megapunch"
+      "swift",
+      "headbutt",
+      "slash",
+      "bodyslam"
      ],
      "evs": {
-      "hp": 50,
-      "atk": 27,
-      "def": 20,
-      "spa": 35,
-      "spd": 27,
-      "spe": 51
+      "hp": 53,
+      "atk": 22,
+      "def": 58,
+      "spa": 25,
+      "spd": 61,
+      "spe": 55
+     }
+    },
+    {
+     "species": "girafarig",
+     "level": 40,
+     "moves": [
+      "confusion",
+      "stomp",
+      "agility",
+      "batonpass"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 54,
+      "def": 40,
+      "spa": 44,
+      "spd": 42,
+      "spe": 64
      }
     }
    ]
@@ -3849,39 +4020,57 @@
    "reward": 350,
    "party": [
     {
-     "species": "stantler",
-     "level": 28,
+     "species": "smeargle",
+     "level": 37,
      "moves": [
-      "tackle",
-      "leer",
-      "hypnosis",
-      "stomp"
+      "swift",
+      "headbutt",
+      "slash",
+      "bodyslam"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 39,
-      "def": 38,
-      "spa": 29,
-      "spd": 34,
-      "spe": 29
+      "hp": 31,
+      "atk": 37,
+      "def": 39,
+      "spa": 50,
+      "spd": 50,
+      "spe": 53
      }
     },
     {
-     "species": "girafarig",
-     "level": 29,
+     "species": "tauros",
+     "level": 38,
      "moves": [
-      "tackle",
-      "confusion",
-      "stomp",
-      "agility"
+      "hornattack",
+      "scaryface",
+      "pursuit",
+      "rest"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 41,
-      "def": 20,
-      "spa": 37,
-      "spd": 26,
-      "spe": 48
+      "hp": 35,
+      "atk": 57,
+      "def": 48,
+      "spa": 34,
+      "spd": 37,
+      "spe": 55
+     }
+    },
+    {
+     "species": "dunsparce",
+     "level": 39,
+     "moves": [
+      "spite",
+      "pursuit",
+      "screech",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 40,
+      "atk": 56,
+      "def": 54,
+      "spa": 29,
+      "spd": 30,
+      "spe": 65
      }
     }
    ]
@@ -3894,21 +4083,57 @@
    "reward": 300,
    "party": [
     {
-     "species": "smeargle",
-     "level": 27,
+     "species": "sudowoodo",
+     "level": 37,
      "moves": [
-      "tackle",
-      "quickattack",
-      "swift",
-      "headbutt"
+      "flail",
+      "lowkick",
+      "rockslide",
+      "feintattack"
      ],
      "evs": {
-      "hp": 41,
+      "hp": 49,
+      "atk": 39,
+      "def": 27,
+      "spa": 58,
+      "spd": 54,
+      "spe": 32
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 38,
+     "moves": [
+      "stomp",
+      "milkdrink",
+      "bide",
+      "rollout"
+     ],
+     "evs": {
+      "hp": 53,
+      "atk": 50,
+      "def": 36,
+      "spa": 58,
+      "spd": 30,
+      "spe": 38
+     }
+    },
+    {
+     "species": "lickitung",
+     "level": 39,
+     "moves": [
+      "stomp",
+      "wrap",
+      "disable",
+      "slam"
+     ],
+     "evs": {
+      "hp": 33,
       "atk": 38,
-      "def": 28,
-      "spa": 29,
-      "spd": 23,
-      "spe": 30
+      "def": 54,
+      "spa": 50,
+      "spd": 44,
+      "spe": 54
      }
     }
    ]
@@ -3921,21 +4146,57 @@
    "reward": 250,
    "party": [
     {
-     "species": "exeggcute",
-     "level": 26,
+     "species": "tauros",
+     "level": 36,
      "moves": [
-      "reflect",
-      "leechseed",
-      "confusion",
-      "stunspore"
+      "hornattack",
+      "scaryface",
+      "pursuit",
+      "rest"
      ],
      "evs": {
-      "hp": 35,
-      "atk": 18,
-      "def": 24,
+      "hp": 40,
+      "atk": 33,
+      "def": 62,
       "spa": 25,
-      "spd": 46,
-      "spe": 34
+      "spd": 59,
+      "spe": 32
+     }
+    },
+    {
+     "species": "yanma",
+     "level": 37,
+     "moves": [
+      "detect",
+      "supersonic",
+      "swift",
+      "wingattack"
+     ],
+     "evs": {
+      "hp": 58,
+      "atk": 49,
+      "def": 31,
+      "spa": 50,
+      "spd": 42,
+      "spe": 29
+     }
+    },
+    {
+     "species": "sudowoodo",
+     "level": 38,
+     "moves": [
+      "flail",
+      "lowkick",
+      "rockslide",
+      "feintattack"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 27,
+      "def": 51,
+      "spa": 43,
+      "spd": 40,
+      "spe": 75
      }
     }
    ]
@@ -3948,21 +4209,57 @@
    "reward": 200,
    "party": [
     {
-     "species": "miltank",
-     "level": 24,
+     "species": "tangela",
+     "level": 35,
      "moves": [
-      "growl",
-      "defensecurl",
-      "stomp",
-      "milkdrink"
+      "vinewhip",
+      "bind",
+      "megadrain",
+      "stunspore"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 33,
-      "def": 18,
-      "spa": 17,
-      "spd": 32,
-      "spe": 39
+      "hp": 40,
+      "atk": 35,
+      "def": 65,
+      "spa": 38,
+      "spd": 28,
+      "spe": 38
+     }
+    },
+    {
+     "species": "smeargle",
+     "level": 36,
+     "moves": [
+      "quickattack",
+      "swift",
+      "headbutt",
+      "slash"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 32,
+      "def": 30,
+      "spa": 45,
+      "spd": 61,
+      "spe": 41
+     }
+    },
+    {
+     "species": "mrmime",
+     "level": 37,
+     "moves": [
+      "lightscreen",
+      "reflect",
+      "encore",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 39,
+      "atk": 63,
+      "def": 25,
+      "spa": 34,
+      "spd": 49,
+      "spe": 48
      }
     }
    ]
@@ -3975,57 +4272,75 @@
    "reward": 650,
    "party": [
     {
-     "species": "venusaur",
-     "level": 36,
+     "species": "dunsparce",
+     "level": 41,
      "moves": [
-      "poisonpowder",
-      "sleeppowder",
-      "razorleaf",
-      "sweetscent"
+      "spite",
+      "pursuit",
+      "screech",
+      "takedown"
      ],
      "evs": {
-      "hp": 50,
-      "atk": 39,
-      "def": 40,
-      "spa": 49,
-      "spd": 25,
-      "spe": 49
+      "hp": 27,
+      "atk": 58,
+      "def": 42,
+      "spa": 36,
+      "spd": 61,
+      "spe": 63
      }
     },
     {
-     "species": "smeargle",
-     "level": 37,
+     "species": "kangaskhan",
+     "level": 42,
      "moves": [
-      "swift",
-      "headbutt",
-      "slash",
+      "tailwhip",
+      "megapunch",
+      "rage",
+      "endure"
+     ],
+     "evs": {
+      "hp": 30,
+      "atk": 52,
+      "def": 54,
+      "spa": 50,
+      "spd": 52,
+      "spe": 56
+     }
+    },
+    {
+     "species": "miltank",
+     "level": 43,
+     "moves": [
+      "milkdrink",
+      "bide",
+      "rollout",
       "bodyslam"
      ],
      "evs": {
-      "hp": 50,
-      "atk": 21,
-      "def": 55,
-      "spa": 24,
-      "spd": 58,
-      "spe": 52
+      "hp": 38,
+      "atk": 63,
+      "def": 52,
+      "spa": 35,
+      "spd": 69,
+      "spe": 44
      }
     },
     {
-     "species": "girafarig",
-     "level": 38,
+     "species": "venusaur",
+     "level": 44,
      "moves": [
-      "confusion",
-      "stomp",
-      "agility",
-      "batonpass"
+      "sleeppowder",
+      "razorleaf",
+      "sweetscent",
+      "growth"
      ],
      "evs": {
-      "hp": 35,
-      "atk": 51,
-      "def": 38,
-      "spa": 42,
-      "spd": 40,
-      "spe": 61
+      "hp": 42,
+      "atk": 39,
+      "def": 63,
+      "spa": 32,
+      "spd": 62,
+      "spe": 69
      }
     }
    ]
@@ -4038,57 +4353,72 @@
    "reward": 600,
    "party": [
     {
-     "species": "smeargle",
-     "level": 34,
+     "species": "mrmime",
+     "level": 40,
      "moves": [
-      "quickattack",
-      "swift",
-      "headbutt",
-      "slash"
+      "lightscreen",
+      "reflect",
+      "encore",
+      "psybeam"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 34,
-      "def": 36,
-      "spa": 46,
+      "hp": 60,
+      "atk": 48,
+      "def": 34,
+      "spa": 29,
       "spd": 46,
-      "spe": 49
+      "spe": 61
      }
     },
     {
-     "species": "tauros",
-     "level": 35,
+     "species": "unown",
+     "level": 41,
      "moves": [
-      "hornattack",
-      "scaryface",
-      "pursuit",
-      "rest"
-     ],
-     "evs": {
-      "hp": 32,
-      "atk": 53,
-      "def": 44,
-      "spa": 32,
-      "spd": 34,
-      "spe": 51
-     }
-    },
-    {
-     "species": "dunsparce",
-     "level": 36,
-     "moves": [
-      "glare",
-      "spite",
-      "pursuit",
-      "screech"
+      "hiddenpower"
      ],
      "evs": {
       "hp": 37,
-      "atk": 51,
-      "def": 50,
-      "spa": 27,
-      "spd": 27,
-      "spe": 60
+      "atk": 53,
+      "def": 53,
+      "spa": 37,
+      "spd": 65,
+      "spe": 42
+     }
+    },
+    {
+     "species": "stantler",
+     "level": 42,
+     "moves": [
+      "hypnosis",
+      "stomp",
+      "sandattack",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 36,
+      "atk": 56,
+      "def": 56,
+      "spa": 50,
+      "spd": 56,
+      "spe": 40
+     }
+    },
+    {
+     "species": "exeggcute",
+     "level": 43,
+     "moves": [
+      "stunspore",
+      "poisonpowder",
+      "sleeppowder",
+      "solarbeam"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 75,
+      "def": 43,
+      "spa": 35,
+      "spd": 50,
+      "spe": 55
      }
     }
    ]
@@ -4101,57 +4431,75 @@
    "reward": 550,
    "party": [
     {
-     "species": "sudowoodo",
-     "level": 33,
+     "species": "farfetchd",
+     "level": 39,
      "moves": [
-      "rockthrow",
+      "furyattack",
+      "swordsdance",
+      "agility",
+      "slash"
+     ],
+     "evs": {
+      "hp": 69,
+      "atk": 31,
+      "def": 24,
+      "spa": 38,
+      "spd": 56,
+      "spe": 56
+     }
+    },
+    {
+     "species": "sudowoodo",
+     "level": 40,
+     "moves": [
       "flail",
       "lowkick",
-      "rockslide"
+      "rockslide",
+      "feintattack"
      ],
      "evs": {
-      "hp": 44,
-      "atk": 34,
-      "def": 24,
-      "spa": 52,
-      "spd": 48,
-      "spe": 29
+      "hp": 71,
+      "atk": 38,
+      "def": 28,
+      "spa": 32,
+      "spd": 73,
+      "spe": 38
      }
     },
     {
-     "species": "miltank",
-     "level": 34,
+     "species": "dodrio",
+     "level": 41,
      "moves": [
-      "stomp",
-      "milkdrink",
-      "bide",
-      "rollout"
+      "furyattack",
+      "triattack",
+      "rage",
+      "drillpeck"
      ],
      "evs": {
-      "hp": 48,
-      "atk": 45,
-      "def": 32,
-      "spa": 52,
-      "spd": 27,
-      "spe": 34
+      "hp": 29,
+      "atk": 73,
+      "def": 42,
+      "spa": 69,
+      "spd": 33,
+      "spe": 41
      }
     },
     {
-     "species": "lickitung",
-     "level": 35,
+     "species": "exeggcute",
+     "level": 42,
      "moves": [
-      "defensecurl",
-      "stomp",
-      "wrap",
-      "disable"
+      "confusion",
+      "stunspore",
+      "poisonpowder",
+      "sleeppowder"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 34,
-      "def": 48,
-      "spa": 45,
-      "spd": 39,
-      "spe": 49
+      "hp": 54,
+      "atk": 49,
+      "def": 35,
+      "spa": 44,
+      "spd": 58,
+      "spe": 55
      }
     }
    ]
@@ -4164,39 +4512,75 @@
    "reward": 500,
    "party": [
     {
-     "species": "tauros",
-     "level": 32,
+     "species": "smeargle",
+     "level": 39,
      "moves": [
-      "rage",
-      "hornattack",
-      "scaryface",
-      "pursuit"
+      "swift",
+      "headbutt",
+      "slash",
+      "bodyslam"
      ],
      "evs": {
-      "hp": 36,
-      "atk": 29,
-      "def": 56,
-      "spa": 23,
-      "spd": 52,
-      "spe": 28
+      "hp": 57,
+      "atk": 56,
+      "def": 30,
+      "spa": 34,
+      "spd": 30,
+      "spe": 66
      }
     },
     {
-     "species": "yanma",
-     "level": 33,
+     "species": "girafarig",
+     "level": 40,
      "moves": [
-      "doubleteam",
-      "sonicboom",
-      "detect",
-      "supersonic"
+      "confusion",
+      "stomp",
+      "agility",
+      "batonpass"
      ],
      "evs": {
-      "hp": 52,
-      "atk": 44,
-      "def": 28,
-      "spa": 44,
-      "spd": 37,
-      "spe": 26
+      "hp": 29,
+      "atk": 37,
+      "def": 36,
+      "spa": 61,
+      "spd": 58,
+      "spe": 57
+     }
+    },
+    {
+     "species": "girafarig",
+     "level": 41,
+     "moves": [
+      "stomp",
+      "agility",
+      "batonpass",
+      "psybeam"
+     ],
+     "evs": {
+      "hp": 55,
+      "atk": 41,
+      "def": 54,
+      "spa": 32,
+      "spd": 55,
+      "spe": 50
+     }
+    },
+    {
+     "species": "stantler",
+     "level": 42,
+     "moves": [
+      "hypnosis",
+      "stomp",
+      "sandattack",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 91,
+      "atk": 36,
+      "def": 38,
+      "spa": 33,
+      "spd": 59,
+      "spe": 37
      }
     }
    ]
@@ -4209,39 +4593,75 @@
    "reward": 450,
    "party": [
     {
-     "species": "sudowoodo",
-     "level": 31,
+     "species": "venusaur",
+     "level": 38,
      "moves": [
-      "rockthrow",
-      "flail",
-      "lowkick",
-      "rockslide"
+      "poisonpowder",
+      "sleeppowder",
+      "razorleaf",
+      "sweetscent"
      ],
      "evs": {
-      "hp": 24,
-      "atk": 22,
-      "def": 42,
-      "spa": 35,
-      "spd": 33,
-      "spe": 61
+      "hp": 52,
+      "atk": 43,
+      "def": 39,
+      "spa": 50,
+      "spd": 58,
+      "spe": 25
      }
     },
     {
-     "species": "tangela",
-     "level": 32,
+     "species": "tauros",
+     "level": 39,
      "moves": [
-      "poisonpowder",
-      "vinewhip",
-      "bind",
-      "megadrain"
+      "hornattack",
+      "scaryface",
+      "pursuit",
+      "rest"
+     ],
+     "evs": {
+      "hp": 68,
+      "atk": 55,
+      "def": 31,
+      "spa": 26,
+      "spd": 69,
+      "spe": 25
+     }
+    },
+    {
+     "species": "smeargle",
+     "level": 40,
+     "moves": [
+      "swift",
+      "headbutt",
+      "slash",
+      "bodyslam"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 42,
+      "def": 62,
+      "spa": 28,
+      "spd": 71,
+      "spe": 43
+     }
+    },
+    {
+     "species": "mrmime",
+     "level": 41,
+     "moves": [
+      "reflect",
+      "encore",
+      "psybeam",
+      "batonpass"
      ],
      "evs": {
       "hp": 37,
-      "atk": 32,
-      "def": 60,
-      "spa": 35,
-      "spd": 26,
-      "spe": 35
+      "atk": 45,
+      "def": 48,
+      "spa": 61,
+      "spd": 41,
+      "spe": 55
      }
     }
    ]
@@ -4255,38 +4675,56 @@
    "party": [
     {
      "species": "smeargle",
-     "level": 29,
+     "level": 38,
      "moves": [
-      "quickattack",
       "swift",
       "headbutt",
-      "slash"
+      "slash",
+      "bodyslam"
      ],
      "evs": {
-      "hp": 35,
-      "atk": 26,
-      "def": 24,
-      "spa": 36,
+      "hp": 48,
+      "atk": 55,
+      "def": 41,
+      "spa": 46,
       "spd": 49,
-      "spe": 33
+      "spe": 27
      }
     },
     {
-     "species": "mrmime",
-     "level": 30,
+     "species": "dodrio",
+     "level": 39,
      "moves": [
-      "meditate",
-      "doubleslap",
-      "lightscreen",
-      "reflect"
+      "furyattack",
+      "triattack",
+      "rage",
+      "drillpeck"
      ],
      "evs": {
-      "hp": 32,
-      "atk": 51,
-      "def": 20,
-      "spa": 27,
+      "hp": 48,
+      "atk": 67,
+      "def": 59,
+      "spa": 28,
+      "spd": 30,
+      "spe": 41
+     }
+    },
+    {
+     "species": "dunsparce",
+     "level": 40,
+     "moves": [
+      "spite",
+      "pursuit",
+      "screech",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 67,
+      "atk": 71,
+      "def": 33,
+      "spa": 28,
       "spd": 40,
-      "spe": 39
+      "spe": 40
      }
     }
    ]
@@ -4299,39 +4737,57 @@
    "reward": 350,
    "party": [
     {
-     "species": "dunsparce",
-     "level": 28,
+     "species": "lickitung",
+     "level": 37,
      "moves": [
-      "defensecurl",
-      "glare",
-      "spite",
-      "pursuit"
+      "stomp",
+      "wrap",
+      "disable",
+      "slam"
      ],
      "evs": {
-      "hp": 18,
-      "atk": 40,
-      "def": 29,
-      "spa": 25,
-      "spd": 42,
-      "spe": 43
+      "hp": 53,
+      "atk": 42,
+      "def": 38,
+      "spa": 49,
+      "spd": 27,
+      "spe": 49
      }
     },
     {
-     "species": "kangaskhan",
-     "level": 29,
+     "species": "dodrio",
+     "level": 38,
      "moves": [
-      "leer",
-      "bite",
-      "tailwhip",
-      "megapunch"
+      "furyattack",
+      "triattack",
+      "rage",
+      "drillpeck"
      ],
      "evs": {
-      "hp": 20,
-      "atk": 36,
-      "def": 37,
-      "spa": 34,
-      "spd": 36,
-      "spe": 39
+      "hp": 63,
+      "atk": 29,
+      "def": 39,
+      "spa": 57,
+      "spd": 26,
+      "spe": 52
+     }
+    },
+    {
+     "species": "dunsparce",
+     "level": 39,
+     "moves": [
+      "spite",
+      "pursuit",
+      "screech",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 60,
+      "atk": 33,
+      "def": 54,
+      "spa": 52,
+      "spd": 25,
+      "spe": 49
      }
     }
    ]
@@ -4344,21 +4800,54 @@
    "reward": 300,
    "party": [
     {
-     "species": "miltank",
-     "level": 27,
+     "species": "yanma",
+     "level": 37,
      "moves": [
-      "defensecurl",
-      "stomp",
-      "milkdrink",
-      "bide"
+      "detect",
+      "supersonic",
+      "swift",
+      "wingattack"
      ],
      "evs": {
-      "hp": 24,
-      "atk": 39,
-      "def": 33,
-      "spa": 22,
-      "spd": 43,
-      "spe": 28
+      "hp": 52,
+      "atk": 24,
+      "def": 39,
+      "spa": 57,
+      "spd": 33,
+      "spe": 55
+     }
+    },
+    {
+     "species": "stantler",
+     "level": 38,
+     "moves": [
+      "leer",
+      "hypnosis",
+      "stomp",
+      "sandattack"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 57,
+      "def": 42,
+      "spa": 25,
+      "spd": 36,
+      "spe": 43
+     }
+    },
+    {
+     "species": "unown",
+     "level": 39,
+     "moves": [
+      "hiddenpower"
+     ],
+     "evs": {
+      "hp": 41,
+      "atk": 50,
+      "def": 52,
+      "spa": 50,
+      "spd": 27,
+      "spe": 53
      }
     }
    ]
@@ -4371,21 +4860,57 @@
    "reward": 250,
    "party": [
     {
-     "species": "ivysaur",
-     "level": 26,
+     "species": "kangaskhan",
+     "level": 36,
      "moves": [
-      "vinewhip",
-      "poisonpowder",
-      "sleeppowder",
-      "razorleaf"
+      "bite",
+      "tailwhip",
+      "megapunch",
+      "rage"
      ],
      "evs": {
-      "hp": 25,
-      "atk": 23,
+      "hp": 44,
+      "atk": 67,
+      "def": 24,
+      "spa": 32,
+      "spd": 34,
+      "spe": 50
+     }
+    },
+    {
+     "species": "dodrio",
+     "level": 37,
+     "moves": [
+      "pursuit",
+      "furyattack",
+      "triattack",
+      "rage"
+     ],
+     "evs": {
+      "hp": 39,
+      "atk": 45,
       "def": 37,
-      "spa": 19,
-      "spd": 36,
-      "spe": 41
+      "spa": 43,
+      "spd": 41,
+      "spe": 54
+     }
+    },
+    {
+     "species": "tangela",
+     "level": 38,
+     "moves": [
+      "vinewhip",
+      "bind",
+      "megadrain",
+      "stunspore"
+     ],
+     "evs": {
+      "hp": 48,
+      "atk": 44,
+      "def": 35,
+      "spa": 35,
+      "spd": 51,
+      "spe": 54
      }
     }
    ]
@@ -4398,21 +4923,54 @@
    "reward": 200,
    "party": [
     {
-     "species": "mrmime",
-     "level": 24,
+     "species": "dunsparce",
+     "level": 35,
      "moves": [
-      "confusion",
-      "substitute",
-      "meditate",
-      "doubleslap"
+      "glare",
+      "spite",
+      "pursuit",
+      "screech"
      ],
      "evs": {
       "hp": 36,
       "atk": 29,
-      "def": 21,
-      "spa": 18,
-      "spd": 28,
-      "spe": 37
+      "def": 46,
+      "spa": 35,
+      "spd": 42,
+      "spe": 56
+     }
+    },
+    {
+     "species": "dodrio",
+     "level": 36,
+     "moves": [
+      "pursuit",
+      "furyattack",
+      "triattack",
+      "rage"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 59,
+      "def": 41,
+      "spa": 31,
+      "spd": 52,
+      "spe": 33
+     }
+    },
+    {
+     "species": "unown",
+     "level": 37,
+     "moves": [
+      "hiddenpower"
+     ],
+     "evs": {
+      "hp": 52,
+      "atk": 33,
+      "def": 44,
+      "spa": 33,
+      "spd": 66,
+      "spe": 31
      }
     }
    ]
@@ -4428,7 +4986,7 @@
    "party": [
     {
      "species": "murkrow",
-     "level": 42,
+     "level": 49,
      "moves": [
       "haze",
       "nightshade",
@@ -4436,48 +4994,66 @@
       "meanlook"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 59,
-      "def": 60,
-      "spa": 57,
-      "spd": 60,
-      "spe": 29
+      "hp": 35,
+      "atk": 69,
+      "def": 70,
+      "spa": 66,
+      "spd": 70,
+      "spe": 33
      }
     },
     {
      "species": "misdreavus",
-     "level": 43,
+     "level": 50,
      "moves": [
-      "confuseray",
       "meanlook",
       "psybeam",
-      "painsplit"
+      "painsplit",
+      "perishsong"
      ],
      "evs": {
-      "hp": 49,
-      "atk": 40,
-      "def": 45,
-      "spa": 71,
-      "spd": 32,
-      "spe": 64
+      "hp": 57,
+      "atk": 46,
+      "def": 52,
+      "spa": 83,
+      "spd": 37,
+      "spe": 75
      }
     },
     {
      "species": "electabuzz",
-     "level": 44,
+     "level": 51,
      "moves": [
-      "thunderpunch",
       "lightscreen",
       "swift",
-      "screech"
+      "screech",
+      "thunderbolt"
      ],
      "evs": {
-      "hp": 57,
-      "atk": 31,
-      "def": 56,
-      "spa": 34,
-      "spd": 75,
-      "spe": 55
+      "hp": 66,
+      "atk": 36,
+      "def": 65,
+      "spa": 39,
+      "spd": 87,
+      "spe": 64
+     }
+    },
+    {
+     "species": "heracross",
+     "level": 52,
+     "moves": [
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 75,
+      "atk": 84,
+      "def": 46,
+      "spa": 84,
+      "spd": 35,
+      "spe": 40
      }
     }
    ]
@@ -4490,57 +5066,75 @@
    "reward": 600,
    "party": [
     {
-     "species": "heracross",
-     "level": 40,
-     "moves": [
-      "endure",
-      "furyattack",
-      "counter",
-      "takedown"
-     ],
-     "evs": {
-      "hp": 57,
-      "atk": 64,
-      "def": 35,
-      "spa": 65,
-      "spd": 27,
-      "spe": 31
-     }
-    },
-    {
      "species": "electabuzz",
-     "level": 41,
+     "level": 48,
      "moves": [
-      "thunderpunch",
       "lightscreen",
       "swift",
-      "screech"
+      "screech",
+      "thunderbolt"
      ],
      "evs": {
-      "hp": 57,
-      "atk": 29,
-      "def": 28,
-      "spa": 72,
-      "spd": 35,
-      "spe": 66
+      "hp": 66,
+      "atk": 34,
+      "def": 33,
+      "spa": 84,
+      "spd": 41,
+      "spe": 77
      }
     },
     {
      "species": "marowak",
-     "level": 42,
+     "level": 49,
      "moves": [
-      "focusenergy",
       "bonemerang",
       "rage",
-      "falseswipe"
+      "falseswipe",
+      "thrash"
      ],
      "evs": {
-      "hp": 29,
+      "hp": 33,
+      "atk": 66,
+      "def": 60,
+      "spa": 64,
+      "spd": 64,
+      "spe": 56
+     }
+    },
+    {
+     "species": "ursaring",
+     "level": 50,
+     "moves": [
+      "feintattack",
+      "rest",
+      "slash",
+      "snore"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 74,
+      "def": 73,
+      "spa": 37,
+      "spd": 65,
+      "spe": 52
+     }
+    },
+    {
+     "species": "rhydon",
+     "level": 51,
+     "moves": [
+      "stomp",
+      "furyattack",
+      "scaryface",
+      "horndrill"
+     ],
+     "evs": {
+      "hp": 72,
       "atk": 57,
-      "def": 51,
-      "spa": 55,
-      "spd": 55,
-      "spe": 48
+      "def": 46,
+      "spa": 72,
+      "spd": 29,
+      "spe": 81
      }
     }
    ]
@@ -4553,44 +5147,8 @@
    "reward": 550,
    "party": [
     {
-     "species": "ursaring",
-     "level": 39,
-     "moves": [
-      "furyswipes",
-      "feintattack",
-      "rest",
-      "slash"
-     ],
-     "evs": {
-      "hp": 39,
-      "atk": 58,
-      "def": 57,
-      "spa": 29,
-      "spd": 51,
-      "spe": 40
-     }
-    },
-    {
-     "species": "rhyhorn",
-     "level": 40,
-     "moves": [
-      "stomp",
-      "furyattack",
-      "scaryface",
-      "horndrill"
-     ],
-     "evs": {
-      "hp": 56,
-      "atk": 45,
-      "def": 36,
-      "spa": 56,
-      "spd": 23,
-      "spe": 63
-     }
-    },
-    {
      "species": "magmar",
-     "level": 41,
+     "level": 47,
      "moves": [
       "firepunch",
       "smokescreen",
@@ -4598,12 +5156,66 @@
       "flamethrower"
      ],
      "evs": {
-      "hp": 32,
-      "atk": 66,
-      "def": 69,
-      "spa": 33,
-      "spd": 51,
-      "spe": 36
+      "hp": 37,
+      "atk": 76,
+      "def": 79,
+      "spa": 38,
+      "spd": 58,
+      "spe": 41
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 48,
+     "moves": [
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 33,
+      "atk": 42,
+      "def": 88,
+      "spa": 72,
+      "spd": 63,
+      "spe": 38
+     }
+    },
+    {
+     "species": "ursaring",
+     "level": 49,
+     "moves": [
+      "feintattack",
+      "rest",
+      "slash",
+      "snore"
+     ],
+     "evs": {
+      "hp": 46,
+      "atk": 56,
+      "def": 45,
+      "spa": 64,
+      "spd": 63,
+      "spe": 69
+     }
+    },
+    {
+     "species": "magmar",
+     "level": 50,
+     "moves": [
+      "smokescreen",
+      "sunnyday",
+      "flamethrower",
+      "confuseray"
+     ],
+     "evs": {
+      "hp": 72,
+      "atk": 58,
+      "def": 46,
+      "spa": 32,
+      "spd": 73,
+      "spe": 69
      }
     }
    ]
@@ -4617,7 +5229,7 @@
    "party": [
     {
      "species": "skarmory",
-     "level": 38,
+     "level": 47,
      "moves": [
       "sandattack",
       "swift",
@@ -4625,30 +5237,66 @@
       "furyattack"
      ],
      "evs": {
-      "hp": 26,
-      "atk": 33,
-      "def": 70,
-      "spa": 57,
-      "spd": 50,
-      "spe": 30
+      "hp": 47,
+      "atk": 67,
+      "def": 46,
+      "spa": 61,
+      "spd": 55,
+      "spe": 54
      }
     },
     {
-     "species": "ursaring",
-     "level": 39,
+     "species": "forretress",
+     "level": 48,
      "moves": [
-      "furyswipes",
-      "feintattack",
-      "rest",
-      "slash"
+      "takedown",
+      "rapidspin",
+      "bide",
+      "explosion"
+     ],
+     "evs": {
+      "hp": 46,
+      "atk": 80,
+      "def": 49,
+      "spa": 38,
+      "spd": 60,
+      "spe": 62
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 49,
+     "moves": [
+      "swift",
+      "agility",
+      "furyattack",
+      "steelwing"
      ],
      "evs": {
       "hp": 37,
-      "atk": 45,
-      "def": 36,
-      "spa": 51,
-      "spd": 50,
-      "spe": 55
+      "atk": 62,
+      "def": 75,
+      "spa": 55,
+      "spd": 32,
+      "spe": 82
+     }
+    },
+    {
+     "species": "charizard",
+     "level": 50,
+     "moves": [
+      "scaryface",
+      "flamethrower",
+      "wingattack",
+      "slash"
+     ],
+     "evs": {
+      "hp": 66,
+      "atk": 49,
+      "def": 48,
+      "spa": 64,
+      "spd": 64,
+      "spe": 59
      }
     }
    ]
@@ -4661,39 +5309,75 @@
    "reward": 450,
    "party": [
     {
-     "species": "magmar",
-     "level": 37,
+     "species": "murkrow",
+     "level": 46,
      "moves": [
-      "smog",
-      "firepunch",
-      "smokescreen",
-      "sunnyday"
+      "haze",
+      "nightshade",
+      "feintattack",
+      "meanlook"
      ],
      "evs": {
-      "hp": 53,
-      "atk": 43,
-      "def": 34,
-      "spa": 24,
-      "spd": 54,
-      "spe": 51
+      "hp": 37,
+      "atk": 63,
+      "def": 60,
+      "spa": 37,
+      "spd": 56,
+      "spe": 69
      }
     },
     {
-     "species": "skarmory",
-     "level": 38,
+     "species": "piloswine",
+     "level": 47,
      "moves": [
-      "sandattack",
-      "swift",
-      "agility",
-      "furyattack"
+      "endure",
+      "takedown",
+      "furyattack",
+      "mist"
      ],
      "evs": {
-      "hp": 38,
-      "atk": 54,
-      "def": 37,
-      "spa": 49,
-      "spd": 45,
-      "spe": 43
+      "hp": 62,
+      "atk": 27,
+      "def": 54,
+      "spa": 76,
+      "spd": 33,
+      "spe": 76
+     }
+    },
+    {
+     "species": "murkrow",
+     "level": 48,
+     "moves": [
+      "haze",
+      "nightshade",
+      "feintattack",
+      "meanlook"
+     ],
+     "evs": {
+      "hp": 67,
+      "atk": 64,
+      "def": 50,
+      "spa": 55,
+      "spd": 47,
+      "spe": 54
+     }
+    },
+    {
+     "species": "heracross",
+     "level": 49,
+     "moves": [
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 73,
+      "atk": 37,
+      "def": 58,
+      "spa": 46,
+      "spd": 61,
+      "spe": 69
      }
     }
    ]
@@ -4706,39 +5390,57 @@
    "reward": 400,
    "party": [
     {
-     "species": "forretress",
-     "level": 35,
+     "species": "gligar",
+     "level": 46,
      "moves": [
-      "selfdestruct",
-      "takedown",
-      "rapidspin",
-      "bide"
-     ],
-     "evs": {
-      "hp": 34,
-      "atk": 59,
-      "def": 36,
-      "spa": 28,
-      "spd": 44,
-      "spe": 46
-     }
-    },
-    {
-     "species": "skarmory",
-     "level": 36,
-     "moves": [
-      "peck",
-      "sandattack",
-      "swift",
-      "agility"
+      "quickattack",
+      "feintattack",
+      "slash",
+      "screech"
      ],
      "evs": {
       "hp": 27,
-      "atk": 45,
-      "def": 55,
-      "spa": 40,
-      "spd": 24,
-      "spe": 61
+      "atk": 57,
+      "def": 63,
+      "spa": 65,
+      "spd": 41,
+      "spe": 70
+     }
+    },
+    {
+     "species": "ursaring",
+     "level": 47,
+     "moves": [
+      "furyswipes",
+      "feintattack",
+      "rest",
+      "slash"
+     ],
+     "evs": {
+      "hp": 71,
+      "atk": 80,
+      "def": 39,
+      "spa": 39,
+      "spd": 51,
+      "spe": 49
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 48,
+     "moves": [
+      "meanlook",
+      "psybeam",
+      "painsplit",
+      "perishsong"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 66,
+      "def": 75,
+      "spa": 35,
+      "spd": 67,
+      "spe": 42
      }
     }
    ]
@@ -4751,39 +5453,57 @@
    "reward": 350,
    "party": [
     {
-     "species": "charmeleon",
-     "level": 34,
+     "species": "misdreavus",
+     "level": 45,
      "moves": [
-      "smokescreen",
-      "rage",
-      "scaryface",
-      "flamethrower"
+      "confuseray",
+      "meanlook",
+      "psybeam",
+      "painsplit"
      ],
      "evs": {
-      "hp": 45,
-      "atk": 33,
-      "def": 33,
-      "spa": 43,
-      "spd": 44,
-      "spe": 40
+      "hp": 66,
+      "atk": 40,
+      "def": 44,
+      "spa": 36,
+      "spd": 70,
+      "spe": 58
      }
     },
     {
-     "species": "murkrow",
-     "level": 35,
+     "species": "skarmory",
+     "level": 46,
      "moves": [
-      "pursuit",
-      "haze",
-      "nightshade",
-      "feintattack"
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 48,
-      "def": 45,
-      "spa": 28,
-      "spd": 43,
-      "spe": 53
+      "hp": 56,
+      "atk": 53,
+      "def": 56,
+      "spa": 54,
+      "spd": 39,
+      "spe": 64
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 47,
+     "moves": [
+      "meanlook",
+      "psybeam",
+      "painsplit",
+      "perishsong"
+     ],
+     "evs": {
+      "hp": 31,
+      "atk": 86,
+      "def": 65,
+      "spa": 56,
+      "spd": 44,
+      "spe": 47
      }
     }
    ]
@@ -4796,21 +5516,57 @@
    "reward": 300,
    "party": [
     {
-     "species": "piloswine",
-     "level": 33,
+     "species": "ursaring",
+     "level": 45,
      "moves": [
-      "powdersnow",
-      "endure",
-      "takedown",
-      "furyattack"
+      "furyswipes",
+      "feintattack",
+      "rest",
+      "slash"
      ],
      "evs": {
-      "hp": 44,
-      "atk": 19,
-      "def": 38,
-      "spa": 54,
-      "spd": 23,
-      "spe": 54
+      "hp": 43,
+      "atk": 63,
+      "def": 69,
+      "spa": 33,
+      "spd": 68,
+      "spe": 38
+     }
+    },
+    {
+     "species": "forretress",
+     "level": 46,
+     "moves": [
+      "takedown",
+      "rapidspin",
+      "bide",
+      "explosion"
+     ],
+     "evs": {
+      "hp": 60,
+      "atk": 37,
+      "def": 40,
+      "spa": 64,
+      "spd": 65,
+      "spe": 56
+     }
+    },
+    {
+     "species": "gligar",
+     "level": 47,
+     "moves": [
+      "quickattack",
+      "feintattack",
+      "slash",
+      "screech"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 53,
+      "def": 56,
+      "spa": 36,
+      "spd": 82,
+      "spe": 59
      }
     }
    ]
@@ -4823,21 +5579,57 @@
    "reward": 250,
    "party": [
     {
-     "species": "murkrow",
-     "level": 32,
+     "species": "donphan",
+     "level": 44,
      "moves": [
-      "pursuit",
-      "haze",
-      "nightshade",
-      "feintattack"
+      "flail",
+      "furyattack",
+      "rollout",
+      "rapidspin"
      ],
      "evs": {
-      "hp": 45,
-      "atk": 42,
-      "def": 33,
-      "spa": 36,
-      "spd": 32,
-      "spe": 36
+      "hp": 53,
+      "atk": 35,
+      "def": 60,
+      "spa": 57,
+      "spd": 36,
+      "spe": 67
+     }
+    },
+    {
+     "species": "sneasel",
+     "level": 45,
+     "moves": [
+      "screech",
+      "feintattack",
+      "furyswipes",
+      "agility"
+     ],
+     "evs": {
+      "hp": 69,
+      "atk": 35,
+      "def": 74,
+      "spa": 60,
+      "spd": 40,
+      "spe": 37
+     }
+    },
+    {
+     "species": "marowak",
+     "level": 46,
+     "moves": [
+      "bonemerang",
+      "rage",
+      "falseswipe",
+      "thrash"
+     ],
+     "evs": {
+      "hp": 68,
+      "atk": 72,
+      "def": 35,
+      "spa": 38,
+      "spd": 76,
+      "spe": 34
      }
     }
    ]
@@ -4850,21 +5642,57 @@
    "reward": 200,
    "party": [
     {
-     "species": "heracross",
-     "level": 30,
+     "species": "steelix",
+     "level": 43,
      "moves": [
-      "hornattack",
-      "endure",
-      "furyattack",
-      "counter"
+      "harden",
+      "rage",
+      "sandstorm",
+      "slam"
      ],
      "evs": {
-      "hp": 44,
-      "atk": 22,
-      "def": 35,
-      "spa": 28,
+      "hp": 35,
+      "atk": 72,
+      "def": 41,
+      "spa": 44,
       "spd": 37,
-      "spe": 43
+      "spe": 71
+     }
+    },
+    {
+     "species": "skarmory",
+     "level": 44,
+     "moves": [
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
+     ],
+     "evs": {
+      "hp": 74,
+      "atk": 41,
+      "def": 28,
+      "spa": 68,
+      "spd": 30,
+      "spe": 67
+     }
+    },
+    {
+     "species": "sneasel",
+     "level": 45,
+     "moves": [
+      "screech",
+      "feintattack",
+      "furyswipes",
+      "agility"
+     ],
+     "evs": {
+      "hp": 41,
+      "atk": 71,
+      "def": 59,
+      "spa": 45,
+      "spd": 48,
+      "spe": 51
      }
     }
    ]
@@ -4877,57 +5705,75 @@
    "reward": 650,
    "party": [
     {
-     "species": "gligar",
-     "level": 42,
+     "species": "murkrow",
+     "level": 49,
      "moves": [
-      "harden",
-      "quickattack",
+      "haze",
+      "nightshade",
       "feintattack",
-      "slash"
+      "meanlook"
      ],
      "evs": {
-      "hp": 24,
-      "atk": 52,
-      "def": 57,
-      "spa": 59,
-      "spd": 37,
-      "spe": 64
-     }
-    },
-    {
-     "species": "ursaring",
-     "level": 43,
-     "moves": [
-      "furyswipes",
-      "feintattack",
-      "rest",
-      "slash"
-     ],
-     "evs": {
-      "hp": 65,
-      "atk": 73,
-      "def": 36,
-      "spa": 36,
-      "spd": 47,
-      "spe": 44
-     }
-    },
-    {
-     "species": "misdreavus",
-     "level": 44,
-     "moves": [
-      "confuseray",
-      "meanlook",
-      "psybeam",
-      "painsplit"
-     ],
-     "evs": {
-      "hp": 46,
-      "atk": 61,
-      "def": 69,
-      "spa": 32,
-      "spd": 62,
+      "hp": 69,
+      "atk": 57,
+      "def": 76,
+      "spa": 33,
+      "spd": 69,
       "spe": 39
+     }
+    },
+    {
+     "species": "murkrow",
+     "level": 50,
+     "moves": [
+      "haze",
+      "nightshade",
+      "feintattack",
+      "meanlook"
+     ],
+     "evs": {
+      "hp": 62,
+      "atk": 60,
+      "def": 54,
+      "spa": 62,
+      "spd": 65,
+      "spe": 48
+     }
+    },
+    {
+     "species": "heracross",
+     "level": 51,
+     "moves": [
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 86,
+      "atk": 44,
+      "def": 39,
+      "spa": 72,
+      "spd": 61,
+      "spe": 56
+     }
+    },
+    {
+     "species": "shuckle",
+     "level": 52,
+     "moves": [
+      "encore",
+      "safeguard",
+      "bide",
+      "rest"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 73,
+      "def": 48,
+      "spa": 86,
+      "spd": 42,
+      "spe": 81
      }
     }
    ]
@@ -4940,57 +5786,75 @@
    "reward": 600,
    "party": [
     {
-     "species": "misdreavus",
-     "level": 40,
+     "species": "electabuzz",
+     "level": 48,
      "moves": [
-      "confuseray",
-      "meanlook",
-      "psybeam",
-      "painsplit"
+      "lightscreen",
+      "swift",
+      "screech",
+      "thunderbolt"
+     ],
+     "evs": {
+      "hp": 49,
+      "atk": 66,
+      "def": 57,
+      "spa": 37,
+      "spd": 77,
+      "spe": 50
+     }
+    },
+    {
+     "species": "forretress",
+     "level": 49,
+     "moves": [
+      "rapidspin",
+      "bide",
+      "explosion",
+      "spikes"
      ],
      "evs": {
       "hp": 59,
-      "atk": 36,
-      "def": 39,
-      "spa": 32,
+      "atk": 54,
+      "def": 40,
+      "spa": 66,
       "spd": 62,
-      "spe": 52
+      "spe": 62
      }
     },
     {
-     "species": "skarmory",
-     "level": 41,
+     "species": "shuckle",
+     "level": 50,
      "moves": [
-      "sandattack",
-      "swift",
-      "agility",
-      "furyattack"
+      "encore",
+      "safeguard",
+      "bide",
+      "rest"
      ],
      "evs": {
-      "hp": 50,
-      "atk": 47,
-      "def": 50,
-      "spa": 48,
-      "spd": 35,
-      "spe": 57
+      "hp": 61,
+      "atk": 35,
+      "def": 35,
+      "spa": 70,
+      "spd": 84,
+      "spe": 65
      }
     },
     {
-     "species": "misdreavus",
-     "level": 42,
+     "species": "charizard",
+     "level": 51,
      "moves": [
-      "confuseray",
-      "meanlook",
-      "psybeam",
-      "painsplit"
+      "scaryface",
+      "flamethrower",
+      "wingattack",
+      "slash"
      ],
      "evs": {
-      "hp": 27,
-      "atk": 77,
-      "def": 58,
-      "spa": 50,
-      "spd": 39,
-      "spe": 42
+      "hp": 60,
+      "atk": 58,
+      "def": 37,
+      "spa": 67,
+      "spd": 38,
+      "spe": 97
      }
     }
    ]
@@ -5003,57 +5867,75 @@
    "reward": 550,
    "party": [
     {
-     "species": "ursaring",
-     "level": 39,
+     "species": "heracross",
+     "level": 47,
      "moves": [
-      "furyswipes",
-      "feintattack",
-      "rest",
-      "slash"
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
      ],
      "evs": {
-      "hp": 38,
-      "atk": 55,
-      "def": 60,
-      "spa": 29,
-      "spd": 59,
-      "spe": 33
+      "hp": 49,
+      "atk": 37,
+      "def": 82,
+      "spa": 41,
+      "spd": 62,
+      "spe": 58
      }
     },
     {
-     "species": "forretress",
-     "level": 40,
+     "species": "piloswine",
+     "level": 48,
      "moves": [
+      "endure",
       "takedown",
-      "rapidspin",
-      "bide",
-      "explosion"
+      "furyattack",
+      "mist"
      ],
      "evs": {
       "hp": 52,
-      "atk": 33,
-      "def": 34,
-      "spa": 56,
-      "spd": 56,
-      "spe": 49
+      "atk": 51,
+      "def": 56,
+      "spa": 52,
+      "spd": 68,
+      "spe": 57
      }
     },
     {
-     "species": "gligar",
-     "level": 41,
+     "species": "donphan",
+     "level": 49,
      "moves": [
-      "harden",
-      "quickattack",
-      "feintattack",
-      "slash"
+      "furyattack",
+      "rollout",
+      "rapidspin",
+      "earthquake"
      ],
      "evs": {
-      "hp": 38,
-      "atk": 46,
-      "def": 49,
-      "spa": 31,
-      "spd": 71,
-      "spe": 52
+      "hp": 71,
+      "atk": 73,
+      "def": 58,
+      "spa": 42,
+      "spd": 63,
+      "spe": 36
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 50,
+     "moves": [
+      "meanlook",
+      "psybeam",
+      "painsplit",
+      "perishsong"
+     ],
+     "evs": {
+      "hp": 41,
+      "atk": 33,
+      "def": 71,
+      "spa": 78,
+      "spd": 79,
+      "spe": 48
      }
     }
    ]
@@ -5066,39 +5948,75 @@
    "reward": 500,
    "party": [
     {
-     "species": "donphan",
-     "level": 38,
+     "species": "piloswine",
+     "level": 47,
      "moves": [
-      "defensecurl",
-      "flail",
+      "endure",
+      "takedown",
       "furyattack",
-      "rollout"
+      "mist"
      ],
      "evs": {
-      "hp": 45,
-      "atk": 31,
-      "def": 52,
-      "spa": 49,
-      "spd": 31,
-      "spe": 58
+      "hp": 64,
+      "atk": 56,
+      "def": 43,
+      "spa": 66,
+      "spd": 51,
+      "spe": 50
      }
     },
     {
-     "species": "sneasel",
-     "level": 39,
+     "species": "steelix",
+     "level": 48,
      "moves": [
-      "quickattack",
-      "screech",
-      "feintattack",
-      "furyswipes"
+      "harden",
+      "rage",
+      "sandstorm",
+      "slam"
      ],
      "evs": {
-      "hp": 60,
-      "atk": 31,
-      "def": 64,
-      "spa": 52,
-      "spd": 35,
-      "spe": 32
+      "hp": 34,
+      "atk": 66,
+      "def": 53,
+      "spa": 84,
+      "spd": 33,
+      "spe": 65
+     }
+    },
+    {
+     "species": "ursaring",
+     "level": 49,
+     "moves": [
+      "feintattack",
+      "rest",
+      "slash",
+      "snore"
+     ],
+     "evs": {
+      "hp": 26,
+      "atk": 64,
+      "def": 63,
+      "spa": 75,
+      "spd": 40,
+      "spe": 74
+     }
+    },
+    {
+     "species": "charizard",
+     "level": 50,
+     "moves": [
+      "scaryface",
+      "flamethrower",
+      "wingattack",
+      "slash"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 57,
+      "def": 55,
+      "spa": 78,
+      "spd": 56,
+      "spe": 38
      }
     }
    ]
@@ -5111,39 +6029,75 @@
    "reward": 450,
    "party": [
     {
-     "species": "marowak",
-     "level": 37,
+     "species": "murkrow",
+     "level": 46,
      "moves": [
-      "leer",
-      "focusenergy",
-      "bonemerang",
-      "rage"
+      "haze",
+      "nightshade",
+      "feintattack",
+      "meanlook"
      ],
      "evs": {
-      "hp": 55,
-      "atk": 58,
-      "def": 28,
-      "spa": 31,
-      "spd": 61,
-      "spe": 27
+      "hp": 88,
+      "atk": 43,
+      "def": 31,
+      "spa": 79,
+      "spd": 36,
+      "spe": 45
      }
     },
     {
-     "species": "steelix",
-     "level": 38,
+     "species": "rhydon",
+     "level": 47,
      "moves": [
-      "rockthrow",
-      "harden",
-      "rage",
-      "sandstorm"
+      "stomp",
+      "furyattack",
+      "scaryface",
+      "horndrill"
      ],
      "evs": {
-      "hp": 31,
-      "atk": 63,
+      "hp": 49,
+      "atk": 52,
+      "def": 62,
+      "spa": 40,
+      "spd": 71,
+      "spe": 54
+     }
+    },
+    {
+     "species": "electabuzz",
+     "level": 48,
+     "moves": [
+      "lightscreen",
+      "swift",
+      "screech",
+      "thunderbolt"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 67,
+      "def": 73,
+      "spa": 51,
+      "spd": 46,
+      "spe": 62
+     }
+    },
+    {
+     "species": "heracross",
+     "level": 49,
+     "moves": [
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 66,
+      "atk": 61,
       "def": 37,
-      "spa": 39,
-      "spd": 33,
-      "spe": 63
+      "spa": 75,
+      "spd": 38,
+      "spe": 66
      }
     }
    ]
@@ -5157,38 +6111,56 @@
    "party": [
     {
      "species": "skarmory",
-     "level": 35,
+     "level": 46,
      "moves": [
-      "peck",
       "sandattack",
       "swift",
-      "agility"
+      "agility",
+      "furyattack"
      ],
      "evs": {
-      "hp": 59,
-      "atk": 32,
-      "def": 23,
-      "spa": 54,
-      "spd": 24,
-      "spe": 53
+      "hp": 67,
+      "atk": 65,
+      "def": 49,
+      "spa": 68,
+      "spd": 31,
+      "spe": 42
      }
     },
     {
-     "species": "sneasel",
-     "level": 36,
+     "species": "heracross",
+     "level": 47,
      "moves": [
-      "quickattack",
-      "screech",
-      "feintattack",
-      "furyswipes"
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
      ],
      "evs": {
-      "hp": 33,
-      "atk": 57,
-      "def": 47,
-      "spa": 36,
-      "spd": 38,
-      "spe": 41
+      "hp": 49,
+      "atk": 49,
+      "def": 44,
+      "spa": 39,
+      "spd": 65,
+      "spe": 84
+     }
+    },
+    {
+     "species": "forretress",
+     "level": 48,
+     "moves": [
+      "takedown",
+      "rapidspin",
+      "bide",
+      "explosion"
+     ],
+     "evs": {
+      "hp": 64,
+      "atk": 50,
+      "def": 63,
+      "spa": 56,
+      "spd": 67,
+      "spe": 36
      }
     }
    ]
@@ -5201,39 +6173,57 @@
    "reward": 350,
    "party": [
     {
-     "species": "murkrow",
-     "level": 34,
+     "species": "gligar",
+     "level": 45,
      "moves": [
-      "pursuit",
-      "haze",
-      "nightshade",
-      "feintattack"
+      "quickattack",
+      "feintattack",
+      "slash",
+      "screech"
      ],
      "evs": {
-      "hp": 48,
-      "atk": 40,
-      "def": 53,
-      "spa": 23,
-      "spd": 48,
-      "spe": 27
+      "hp": 46,
+      "atk": 34,
+      "def": 37,
+      "spa": 35,
+      "spd": 73,
+      "spe": 90
      }
     },
     {
-     "species": "murkrow",
-     "level": 35,
+     "species": "donphan",
+     "level": 46,
      "moves": [
-      "pursuit",
-      "haze",
-      "nightshade",
-      "feintattack"
+      "flail",
+      "furyattack",
+      "rollout",
+      "rapidspin"
      ],
      "evs": {
-      "hp": 43,
-      "atk": 42,
-      "def": 38,
-      "spa": 43,
-      "spd": 45,
-      "spe": 34
+      "hp": 35,
+      "atk": 69,
+      "def": 71,
+      "spa": 30,
+      "spd": 46,
+      "spe": 71
+     }
+    },
+    {
+     "species": "heracross",
+     "level": 47,
+     "moves": [
+      "furyattack",
+      "counter",
+      "takedown",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 27,
+      "atk": 82,
+      "def": 51,
+      "spa": 51,
+      "spd": 58,
+      "spe": 60
      }
     }
    ]
@@ -5246,21 +6236,57 @@
    "reward": 300,
    "party": [
     {
-     "species": "heracross",
-     "level": 33,
+     "species": "skarmory",
+     "level": 45,
      "moves": [
-      "hornattack",
-      "endure",
-      "furyattack",
-      "counter"
+      "sandattack",
+      "swift",
+      "agility",
+      "furyattack"
      ],
      "evs": {
-      "hp": 56,
-      "atk": 28,
-      "def": 25,
-      "spa": 46,
+      "hp": 68,
+      "atk": 57,
+      "def": 46,
+      "spa": 56,
       "spd": 39,
-      "spe": 36
+      "spe": 49
+     }
+    },
+    {
+     "species": "piloswine",
+     "level": 46,
+     "moves": [
+      "endure",
+      "takedown",
+      "furyattack",
+      "mist"
+     ],
+     "evs": {
+      "hp": 62,
+      "atk": 41,
+      "def": 41,
+      "spa": 70,
+      "spd": 55,
+      "spe": 53
+     }
+    },
+    {
+     "species": "forretress",
+     "level": 47,
+     "moves": [
+      "takedown",
+      "rapidspin",
+      "bide",
+      "explosion"
+     ],
+     "evs": {
+      "hp": 66,
+      "atk": 66,
+      "def": 53,
+      "spa": 29,
+      "spd": 58,
+      "spe": 57
      }
     }
    ]
@@ -5273,21 +6299,57 @@
    "reward": 250,
    "party": [
     {
-     "species": "shuckle",
-     "level": 32,
+     "species": "gligar",
+     "level": 44,
      "moves": [
-      "wrap",
-      "encore",
-      "safeguard",
-      "bide"
+      "quickattack",
+      "feintattack",
+      "slash",
+      "screech"
      ],
      "evs": {
-      "hp": 21,
-      "atk": 45,
-      "def": 30,
-      "spa": 53,
-      "spd": 26,
-      "spe": 50
+      "hp": 40,
+      "atk": 33,
+      "def": 67,
+      "spa": 55,
+      "spd": 49,
+      "spe": 64
+     }
+    },
+    {
+     "species": "gligar",
+     "level": 45,
+     "moves": [
+      "quickattack",
+      "feintattack",
+      "slash",
+      "screech"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 33,
+      "def": 71,
+      "spa": 38,
+      "spd": 63,
+      "spe": 76
+     }
+    },
+    {
+     "species": "misdreavus",
+     "level": 46,
+     "moves": [
+      "meanlook",
+      "psybeam",
+      "painsplit",
+      "perishsong"
+     ],
+     "evs": {
+      "hp": 37,
+      "atk": 63,
+      "def": 75,
+      "spa": 47,
+      "spd": 29,
+      "spe": 71
      }
     }
    ]
@@ -5300,21 +6362,57 @@
    "reward": 200,
    "party": [
     {
-     "species": "electabuzz",
-     "level": 30,
+     "species": "charizard",
+     "level": 43,
      "moves": [
-      "quickattack",
-      "thunderpunch",
-      "lightscreen",
-      "swift"
+      "rage",
+      "scaryface",
+      "flamethrower",
+      "wingattack"
      ],
      "evs": {
-      "hp": 30,
+      "hp": 55,
       "atk": 41,
-      "def": 36,
-      "spa": 23,
-      "spd": 48,
-      "spe": 31
+      "def": 81,
+      "spa": 50,
+      "spd": 39,
+      "spe": 35
+     }
+    },
+    {
+     "species": "electabuzz",
+     "level": 44,
+     "moves": [
+      "thunderpunch",
+      "lightscreen",
+      "swift",
+      "screech"
+     ],
+     "evs": {
+      "hp": 45,
+      "atk": 68,
+      "def": 33,
+      "spa": 33,
+      "spd": 64,
+      "spe": 65
+     }
+    },
+    {
+     "species": "magmar",
+     "level": 45,
+     "moves": [
+      "firepunch",
+      "smokescreen",
+      "sunnyday",
+      "flamethrower"
+     ],
+     "evs": {
+      "hp": 47,
+      "atk": 38,
+      "def": 40,
+      "spa": 62,
+      "spd": 68,
+      "spe": 61
      }
     }
    ]
@@ -5330,22 +6428,22 @@
    "party": [
     {
      "species": "ditto",
-     "level": 49,
+     "level": 57,
      "moves": [
       "transform"
      ],
      "evs": {
-      "hp": 64,
-      "atk": 51,
-      "def": 79,
-      "spa": 56,
-      "spd": 47,
-      "spe": 45
+      "hp": 74,
+      "atk": 60,
+      "def": 92,
+      "spa": 66,
+      "spd": 54,
+      "spe": 53
      }
     },
     {
      "species": "aerodactyl",
-     "level": 50,
+     "level": 58,
      "moves": [
       "ancientpower",
       "scaryface",
@@ -5353,17 +6451,17 @@
       "hyperbeam"
      ],
      "evs": {
-      "hp": 31,
-      "atk": 78,
-      "def": 35,
-      "spa": 40,
-      "spd": 87,
-      "spe": 79
+      "hp": 36,
+      "atk": 90,
+      "def": 41,
+      "spa": 46,
+      "spd": 101,
+      "spe": 92
      }
     },
     {
      "species": "aerodactyl",
-     "level": 51,
+     "level": 59,
      "moves": [
       "ancientpower",
       "scaryface",
@@ -5371,12 +6469,30 @@
       "hyperbeam"
      ],
      "evs": {
-      "hp": 71,
-      "atk": 73,
-      "def": 54,
-      "spa": 53,
-      "spd": 73,
-      "spe": 33
+      "hp": 82,
+      "atk": 84,
+      "def": 63,
+      "spa": 61,
+      "spd": 85,
+      "spe": 38
+     }
+    },
+    {
+     "species": "kabutops",
+     "level": 60,
+     "moves": [
+      "sandattack",
+      "endure",
+      "slash",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 91,
+      "atk": 70,
+      "def": 83,
+      "spa": 33,
+      "spd": 68,
+      "spe": 75
      }
     }
    ]
@@ -5389,44 +6505,26 @@
    "reward": 600,
    "party": [
     {
-     "species": "kabutops",
-     "level": 47,
+     "species": "dragonite",
+     "level": 56,
      "moves": [
-      "leer",
-      "sandattack",
-      "endure",
-      "slash"
-     ],
-     "evs": {
-      "hp": 71,
-      "atk": 55,
-      "def": 65,
-      "spa": 26,
-      "spd": 53,
-      "spe": 59
-     }
-    },
-    {
-     "species": "dragonair",
-     "level": 48,
-     "moves": [
-      "dragonrage",
       "slam",
       "agility",
-      "safeguard"
+      "safeguard",
+      "wingattack"
      ],
      "evs": {
-      "hp": 58,
-      "atk": 70,
-      "def": 32,
-      "spa": 58,
-      "spd": 73,
-      "spe": 46
+      "hp": 68,
+      "atk": 81,
+      "def": 37,
+      "spa": 67,
+      "spd": 85,
+      "spe": 54
      }
     },
     {
-     "species": "pupitar",
-     "level": 49,
+     "species": "tyranitar",
+     "level": 57,
      "moves": [
       "rockslide",
       "thrash",
@@ -5434,12 +6532,48 @@
       "crunch"
      ],
      "evs": {
-      "hp": 51,
-      "atk": 80,
-      "def": 71,
-      "spa": 36,
-      "spd": 76,
-      "spe": 29
+      "hp": 60,
+      "atk": 93,
+      "def": 83,
+      "spa": 42,
+      "spd": 88,
+      "spe": 34
+     }
+    },
+    {
+     "species": "kabutops",
+     "level": 58,
+     "moves": [
+      "sandattack",
+      "endure",
+      "slash",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 56,
+      "def": 78,
+      "spa": 68,
+      "spd": 64,
+      "spe": 75
+     }
+    },
+    {
+     "species": "scizor",
+     "level": 59,
+     "moves": [
+      "metalclaw",
+      "slash",
+      "swordsdance",
+      "doubleteam"
+     ],
+     "evs": {
+      "hp": 50,
+      "atk": 68,
+      "def": 47,
+      "spa": 93,
+      "spd": 88,
+      "spe": 66
      }
     }
    ]
@@ -5452,57 +6586,75 @@
    "reward": 550,
    "party": [
     {
-     "species": "kabutops",
-     "level": 46,
+     "species": "omastar",
+     "level": 55,
      "moves": [
       "leer",
-      "sandattack",
-      "endure",
-      "slash"
+      "protect",
+      "spikecannon",
+      "ancientpower"
      ],
      "evs": {
-      "hp": 52,
-      "atk": 44,
-      "def": 62,
-      "spa": 54,
-      "spd": 51,
-      "spe": 59
+      "hp": 34,
+      "atk": 63,
+      "def": 64,
+      "spa": 63,
+      "spd": 79,
+      "spe": 81
+     }
+    },
+    {
+     "species": "blissey",
+     "level": 56,
+     "moves": [
+      "eggbomb",
+      "defensecurl",
+      "lightscreen",
+      "doubleedge"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 73,
+      "def": 52,
+      "spa": 73,
+      "spd": 68,
+      "spe": 69
      }
     },
     {
      "species": "scizor",
-     "level": 47,
+     "level": 57,
      "moves": [
-      "agility",
       "metalclaw",
       "slash",
-      "swordsdance"
+      "swordsdance",
+      "doubleteam"
      ],
      "evs": {
-      "hp": 40,
+      "hp": 82,
       "atk": 54,
-      "def": 38,
-      "spa": 74,
-      "spd": 70,
-      "spe": 53
+      "def": 99,
+      "spa": 63,
+      "spd": 65,
+      "spe": 36
      }
     },
     {
-     "species": "omastar",
-     "level": 48,
+     "species": "porygon2",
+     "level": 58,
      "moves": [
-      "watergun",
-      "leer",
-      "protect",
-      "spikecannon"
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 55,
-      "def": 56,
-      "spa": 55,
-      "spd": 69,
-      "spe": 71
+      "hp": 87,
+      "atk": 95,
+      "def": 39,
+      "spa": 50,
+      "spd": 52,
+      "spe": 83
      }
     }
    ]
@@ -5515,39 +6667,75 @@
    "reward": 500,
    "party": [
     {
-     "species": "blissey",
-     "level": 45,
+     "species": "dragonite",
+     "level": 55,
      "moves": [
-      "sing",
-      "eggbomb",
-      "defensecurl",
-      "lightscreen"
+      "slam",
+      "agility",
+      "safeguard",
+      "wingattack"
      ],
      "evs": {
-      "hp": 46,
-      "atk": 59,
-      "def": 42,
+      "hp": 78,
+      "atk": 55,
+      "def": 73,
       "spa": 58,
-      "spd": 55,
-      "spe": 55
+      "spd": 62,
+      "spe": 58
      }
     },
     {
-     "species": "scizor",
-     "level": 46,
+     "species": "omastar",
+     "level": 56,
      "moves": [
-      "agility",
-      "metalclaw",
-      "slash",
-      "swordsdance"
+      "leer",
+      "protect",
+      "spikecannon",
+      "ancientpower"
      ],
      "evs": {
-      "hp": 66,
-      "atk": 44,
-      "def": 80,
+      "hp": 67,
+      "atk": 70,
+      "def": 67,
       "spa": 51,
-      "spd": 52,
-      "spe": 29
+      "spd": 67,
+      "spe": 69
+     }
+    },
+    {
+     "species": "eevee",
+     "level": 57,
+     "moves": [
+      "bite",
+      "batonpass",
+      "focusenergy",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 69,
+      "atk": 49,
+      "def": 87,
+      "spa": 77,
+      "spd": 40,
+      "spe": 76
+     }
+    },
+    {
+     "species": "slowbro",
+     "level": 58,
+     "moves": [
+      "headbutt",
+      "withdraw",
+      "amnesia",
+      "psychic"
+     ],
+     "evs": {
+      "hp": 92,
+      "atk": 67,
+      "def": 55,
+      "spa": 86,
+      "spd": 57,
+      "spe": 49
      }
     }
    ]
@@ -5560,39 +6748,75 @@
    "reward": 450,
    "party": [
     {
-     "species": "porygon2",
-     "level": 43,
+     "species": "jynx",
+     "level": 54,
      "moves": [
-      "recover",
-      "defensecurl",
-      "lockon",
-      "triattack"
+      "icepunch",
+      "meanlook",
+      "bodyslam",
+      "perishsong"
      ],
      "evs": {
-      "hp": 65,
-      "atk": 70,
-      "def": 29,
-      "spa": 37,
-      "spd": 38,
-      "spe": 62
+      "hp": 50,
+      "atk": 38,
+      "def": 83,
+      "spa": 87,
+      "spd": 84,
+      "spe": 37
      }
     },
     {
-     "species": "dragonair",
-     "level": 44,
+     "species": "slowbro",
+     "level": 55,
      "moves": [
-      "twister",
-      "dragonrage",
-      "slam",
-      "agility"
+      "headbutt",
+      "withdraw",
+      "amnesia",
+      "psychic"
      ],
      "evs": {
-      "hp": 63,
-      "atk": 44,
-      "def": 59,
-      "spa": 47,
-      "spd": 50,
-      "spe": 46
+      "hp": 91,
+      "atk": 52,
+      "def": 49,
+      "spa": 78,
+      "spd": 43,
+      "spe": 72
+     }
+    },
+    {
+     "species": "porygon2",
+     "level": 56,
+     "moves": [
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
+     ],
+     "evs": {
+      "hp": 99,
+      "atk": 69,
+      "def": 68,
+      "spa": 45,
+      "spd": 61,
+      "spe": 50
+     }
+    },
+    {
+     "species": "snorlax",
+     "level": 57,
+     "moves": [
+      "snore",
+      "bodyslam",
+      "rollout",
+      "hyperbeam"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 79,
+      "def": 66,
+      "spa": 56,
+      "spd": 67,
+      "spe": 88
      }
     }
    ]
@@ -5605,26 +6829,8 @@
    "reward": 400,
    "party": [
     {
-     "species": "omastar",
-     "level": 42,
-     "moves": [
-      "watergun",
-      "leer",
-      "protect",
-      "spikecannon"
-     ],
-     "evs": {
-      "hp": 50,
-      "atk": 53,
-      "def": 50,
-      "spa": 38,
-      "spd": 51,
-      "spe": 52
-     }
-    },
-    {
      "species": "eevee",
-     "level": 43,
+     "level": 54,
      "moves": [
       "bite",
       "batonpass",
@@ -5632,12 +6838,48 @@
       "takedown"
      ],
      "evs": {
-      "hp": 52,
-      "atk": 37,
-      "def": 66,
-      "spa": 58,
-      "spd": 30,
-      "spe": 57
+      "hp": 83,
+      "atk": 56,
+      "def": 43,
+      "spa": 73,
+      "spd": 86,
+      "spe": 36
+     }
+    },
+    {
+     "species": "blissey",
+     "level": 55,
+     "moves": [
+      "eggbomb",
+      "defensecurl",
+      "lightscreen",
+      "doubleedge"
+     ],
+     "evs": {
+      "hp": 89,
+      "atk": 40,
+      "def": 67,
+      "spa": 49,
+      "spd": 89,
+      "spe": 50
+     }
+    },
+    {
+     "species": "tyranitar",
+     "level": 56,
+     "moves": [
+      "rockslide",
+      "thrash",
+      "scaryface",
+      "crunch"
+     ],
+     "evs": {
+      "hp": 83,
+      "atk": 36,
+      "def": 46,
+      "spa": 74,
+      "spd": 79,
+      "spe": 74
      }
     }
    ]
@@ -5650,39 +6892,57 @@
    "reward": 350,
    "party": [
     {
-     "species": "slowbro",
-     "level": 40,
+     "species": "porygon2",
+     "level": 53,
      "moves": [
-      "confusion",
-      "disable",
-      "headbutt",
-      "withdraw"
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
      ],
      "evs": {
-      "hp": 64,
-      "atk": 46,
-      "def": 38,
-      "spa": 59,
-      "spd": 39,
-      "spe": 34
+      "hp": 52,
+      "atk": 83,
+      "def": 67,
+      "spa": 64,
+      "spd": 57,
+      "spe": 47
      }
     },
     {
      "species": "jynx",
-     "level": 41,
+     "level": 54,
      "moves": [
-      "doubleslap",
       "icepunch",
       "meanlook",
-      "bodyslam"
+      "bodyslam",
+      "perishsong"
      ],
      "evs": {
-      "hp": 38,
-      "atk": 29,
-      "def": 63,
-      "spa": 66,
-      "spd": 64,
-      "spe": 28
+      "hp": 73,
+      "atk": 74,
+      "def": 51,
+      "spa": 63,
+      "spd": 75,
+      "spe": 42
+     }
+    },
+    {
+     "species": "hitmonlee",
+     "level": 55,
+     "moves": [
+      "foresight",
+      "endure",
+      "megakick",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 66,
+      "atk": 62,
+      "def": 81,
+      "spa": 81,
+      "spd": 48,
+      "spe": 48
      }
     }
    ]
@@ -5695,21 +6955,57 @@
    "reward": 300,
    "party": [
     {
-     "species": "slowbro",
-     "level": 39,
+     "species": "snorlax",
+     "level": 53,
      "moves": [
-      "confusion",
-      "disable",
-      "headbutt",
-      "withdraw"
+      "rest",
+      "snore",
+      "bodyslam",
+      "rollout"
      ],
      "evs": {
-      "hp": 64,
-      "atk": 37,
-      "def": 35,
-      "spa": 55,
-      "spd": 30,
-      "spe": 51
+      "hp": 68,
+      "atk": 68,
+      "def": 80,
+      "spa": 80,
+      "spd": 32,
+      "spe": 44
+     }
+    },
+    {
+     "species": "eevee",
+     "level": 54,
+     "moves": [
+      "bite",
+      "batonpass",
+      "focusenergy",
+      "takedown"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 79,
+      "def": 73,
+      "spa": 52,
+      "spd": 38,
+      "spe": 72
+     }
+    },
+    {
+     "species": "dragonite",
+     "level": 55,
+     "moves": [
+      "slam",
+      "agility",
+      "safeguard",
+      "wingattack"
+     ],
+     "evs": {
+      "hp": 85,
+      "atk": 35,
+      "def": 66,
+      "spa": 49,
+      "spd": 93,
+      "spe": 56
      }
     }
    ]
@@ -5722,21 +7018,57 @@
    "reward": 250,
    "party": [
     {
-     "species": "porygon2",
-     "level": 38,
+     "species": "pupitar",
+     "level": 52,
      "moves": [
-      "recover",
-      "defensecurl",
-      "lockon",
-      "triattack"
+      "rockslide",
+      "thrash",
+      "scaryface",
+      "crunch"
      ],
      "evs": {
-      "hp": 67,
-      "atk": 47,
-      "def": 46,
-      "spa": 31,
-      "spd": 41,
-      "spe": 34
+      "hp": 77,
+      "atk": 70,
+      "def": 57,
+      "spa": 48,
+      "spd": 55,
+      "spe": 56
+     }
+    },
+    {
+     "species": "lapras",
+     "level": 53,
+     "moves": [
+      "perishsong",
+      "icebeam",
+      "raindance",
+      "safeguard"
+     ],
+     "evs": {
+      "hp": 35,
+      "atk": 61,
+      "def": 55,
+      "spa": 55,
+      "spd": 80,
+      "spe": 86
+     }
+    },
+    {
+     "species": "jynx",
+     "level": 54,
+     "moves": [
+      "icepunch",
+      "meanlook",
+      "bodyslam",
+      "perishsong"
+     ],
+     "evs": {
+      "hp": 81,
+      "atk": 81,
+      "def": 47,
+      "spa": 68,
+      "spd": 60,
+      "spe": 42
      }
     }
    ]
@@ -5749,21 +7081,57 @@
    "reward": 200,
    "party": [
     {
-     "species": "snorlax",
-     "level": 36,
+     "species": "scizor",
+     "level": 51,
      "moves": [
-      "bellydrum",
-      "headbutt",
-      "rest",
-      "snore"
+      "metalclaw",
+      "slash",
+      "swordsdance",
+      "doubleteam"
      ],
      "evs": {
-      "hp": 27,
-      "atk": 50,
-      "def": 41,
-      "spa": 36,
-      "spd": 42,
-      "spe": 56
+      "hp": 37,
+      "atk": 73,
+      "def": 81,
+      "spa": 67,
+      "spd": 46,
+      "spe": 53
+     }
+    },
+    {
+     "species": "blissey",
+     "level": 52,
+     "moves": [
+      "eggbomb",
+      "defensecurl",
+      "lightscreen",
+      "doubleedge"
+     ],
+     "evs": {
+      "hp": 34,
+      "atk": 46,
+      "def": 51,
+      "spa": 95,
+      "spd": 84,
+      "spe": 54
+     }
+    },
+    {
+     "species": "pupitar",
+     "level": 53,
+     "moves": [
+      "rockslide",
+      "thrash",
+      "scaryface",
+      "crunch"
+     ],
+     "evs": {
+      "hp": 85,
+      "atk": 46,
+      "def": 44,
+      "spa": 48,
+      "spd": 64,
+      "spe": 85
      }
     }
    ]
@@ -5776,8 +7144,26 @@
    "reward": 650,
    "party": [
     {
+     "species": "hitmonlee",
+     "level": 57,
+     "moves": [
+      "foresight",
+      "endure",
+      "megakick",
+      "reversal"
+     ],
+     "evs": {
+      "hp": 44,
+      "atk": 107,
+      "def": 45,
+      "spa": 63,
+      "spd": 41,
+      "spe": 99
+     }
+    },
+    {
      "species": "eevee",
-     "level": 49,
+     "level": 58,
      "moves": [
       "bite",
       "batonpass",
@@ -5785,48 +7171,48 @@
       "takedown"
      ],
      "evs": {
-      "hp": 75,
-      "atk": 51,
-      "def": 39,
-      "spa": 66,
-      "spd": 78,
-      "spe": 33
+      "hp": 86,
+      "atk": 57,
+      "def": 52,
+      "spa": 71,
+      "spd": 59,
+      "spe": 81
      }
     },
     {
-     "species": "blissey",
-     "level": 50,
+     "species": "jynx",
+     "level": 59,
      "moves": [
-      "eggbomb",
-      "defensecurl",
-      "lightscreen",
-      "doubleedge"
+      "meanlook",
+      "bodyslam",
+      "perishsong",
+      "blizzard"
      ],
      "evs": {
-      "hp": 81,
-      "atk": 36,
-      "def": 61,
-      "spa": 45,
-      "spd": 81,
-      "spe": 46
-     }
-    },
-    {
-     "species": "pupitar",
-     "level": 51,
-     "moves": [
-      "rockslide",
-      "thrash",
-      "scaryface",
-      "crunch"
-     ],
-     "evs": {
-      "hp": 76,
-      "atk": 33,
-      "def": 42,
-      "spa": 67,
+      "hp": 62,
+      "atk": 64,
+      "def": 48,
+      "spa": 77,
       "spd": 72,
-      "spe": 67
+      "spe": 90
+     }
+    },
+    {
+     "species": "porygon2",
+     "level": 60,
+     "moves": [
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
+     ],
+     "evs": {
+      "hp": 102,
+      "atk": 42,
+      "def": 103,
+      "spa": 46,
+      "spd": 67,
+      "spe": 61
      }
     }
    ]
@@ -5840,7 +7226,7 @@
    "party": [
     {
      "species": "porygon2",
-     "level": 47,
+     "level": 56,
      "moves": [
       "defensecurl",
       "lockon",
@@ -5848,47 +7234,65 @@
       "zapcannon"
      ],
      "evs": {
+      "hp": 53,
+      "atk": 96,
+      "def": 56,
+      "spa": 93,
+      "spd": 40,
+      "spe": 54
+     }
+    },
+    {
+     "species": "tyranitar",
+     "level": 57,
+     "moves": [
+      "rockslide",
+      "thrash",
+      "scaryface",
+      "crunch"
+     ],
+     "evs": {
       "hp": 46,
-      "atk": 73,
-      "def": 60,
+      "atk": 89,
+      "def": 57,
       "spa": 57,
-      "spd": 51,
-      "spe": 42
+      "spd": 82,
+      "spe": 68
      }
     },
     {
-     "species": "jynx",
-     "level": 48,
+     "species": "aerodactyl",
+     "level": 58,
      "moves": [
-      "doubleslap",
-      "icepunch",
-      "meanlook",
-      "bodyslam"
+      "ancientpower",
+      "scaryface",
+      "takedown",
+      "hyperbeam"
      ],
      "evs": {
-      "hp": 65,
-      "atk": 66,
-      "def": 45,
-      "spa": 56,
-      "spd": 67,
-      "spe": 37
+      "hp": 47,
+      "atk": 92,
+      "def": 95,
+      "spa": 40,
+      "spd": 66,
+      "spe": 66
      }
     },
     {
-     "species": "hitmonlee",
-     "level": 49,
+     "species": "lapras",
+     "level": 59,
      "moves": [
-      "mindreader",
-      "foresight",
-      "endure",
-      "megakick"
+      "icebeam",
+      "raindance",
+      "safeguard",
+      "hydropump"
      ],
      "evs": {
-      "hp": 59,
-      "atk": 55,
-      "def": 72,
-      "spa": 72,
-      "spd": 42,
+      "hp": 80,
+      "atk": 76,
+      "def": 89,
+      "spa": 48,
+      "spd": 77,
       "spe": 43
      }
     }
@@ -5902,57 +7306,75 @@
    "reward": 550,
    "party": [
     {
-     "species": "snorlax",
-     "level": 46,
+     "species": "hitmonlee",
+     "level": 55,
      "moves": [
-      "headbutt",
-      "rest",
-      "snore",
-      "bodyslam"
+      "foresight",
+      "endure",
+      "megakick",
+      "reversal"
      ],
      "evs": {
       "hp": 59,
-      "atk": 59,
-      "def": 69,
-      "spa": 69,
-      "spd": 28,
-      "spe": 38
+      "atk": 58,
+      "def": 64,
+      "spa": 73,
+      "spd": 42,
+      "spe": 89
      }
     },
     {
-     "species": "eevee",
-     "level": 47,
+     "species": "porygon2",
+     "level": 56,
      "moves": [
-      "bite",
-      "batonpass",
-      "focusenergy",
-      "takedown"
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
      ],
      "evs": {
-      "hp": 57,
-      "atk": 68,
-      "def": 63,
-      "spa": 45,
-      "spd": 33,
-      "spe": 63
+      "hp": 38,
+      "atk": 76,
+      "def": 99,
+      "spa": 93,
+      "spd": 38,
+      "spe": 48
      }
     },
     {
-     "species": "dragonair",
-     "level": 48,
+     "species": "omastar",
+     "level": 57,
      "moves": [
-      "dragonrage",
-      "slam",
-      "agility",
-      "safeguard"
+      "leer",
+      "protect",
+      "spikecannon",
+      "ancientpower"
      ],
      "evs": {
-      "hp": 74,
-      "atk": 31,
+      "hp": 50,
+      "atk": 86,
+      "def": 87,
+      "spa": 46,
+      "spd": 59,
+      "spe": 71
+     }
+    },
+    {
+     "species": "kabutops",
+     "level": 58,
+     "moves": [
+      "sandattack",
+      "endure",
+      "slash",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 90,
+      "atk": 37,
       "def": 58,
-      "spa": 43,
-      "spd": 81,
-      "spe": 49
+      "spa": 41,
+      "spd": 106,
+      "spe": 75
      }
     }
    ]
@@ -5965,39 +7387,75 @@
    "reward": 500,
    "party": [
     {
-     "species": "pupitar",
-     "level": 45,
+     "species": "tyranitar",
+     "level": 55,
      "moves": [
-      "screech",
       "rockslide",
       "thrash",
-      "scaryface"
+      "scaryface",
+      "crunch"
      ],
      "evs": {
-      "hp": 67,
-      "atk": 61,
-      "def": 50,
-      "spa": 42,
-      "spd": 48,
-      "spe": 49
+      "hp": 60,
+      "atk": 74,
+      "def": 79,
+      "spa": 34,
+      "spd": 102,
+      "spe": 36
      }
     },
     {
-     "species": "lapras",
-     "level": 46,
+     "species": "scizor",
+     "level": 56,
      "moves": [
-      "confuseray",
-      "perishsong",
-      "icebeam",
-      "raindance"
+      "metalclaw",
+      "slash",
+      "swordsdance",
+      "doubleteam"
      ],
      "evs": {
-      "hp": 30,
-      "atk": 53,
-      "def": 48,
-      "spa": 47,
-      "spd": 69,
-      "spe": 74
+      "hp": 39,
+      "atk": 95,
+      "def": 63,
+      "spa": 52,
+      "spd": 64,
+      "spe": 79
+     }
+    },
+    {
+     "species": "porygon2",
+     "level": 57,
+     "moves": [
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
+     ],
+     "evs": {
+      "hp": 42,
+      "atk": 92,
+      "def": 70,
+      "spa": 60,
+      "spd": 52,
+      "spe": 83
+     }
+    },
+    {
+     "species": "kabutops",
+     "level": 58,
+     "moves": [
+      "sandattack",
+      "endure",
+      "slash",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 65,
+      "atk": 98,
+      "def": 40,
+      "spa": 83,
+      "spd": 63,
+      "spe": 56
      }
     }
    ]
@@ -6010,39 +7468,75 @@
    "reward": 450,
    "party": [
     {
-     "species": "jynx",
-     "level": 43,
+     "species": "aerodactyl",
+     "level": 54,
      "moves": [
-      "doubleslap",
-      "icepunch",
-      "meanlook",
-      "bodyslam"
+      "ancientpower",
+      "scaryface",
+      "takedown",
+      "hyperbeam"
      ],
      "evs": {
-      "hp": 64,
-      "atk": 64,
-      "def": 37,
-      "spa": 54,
-      "spd": 48,
-      "spe": 33
+      "hp": 81,
+      "atk": 58,
+      "def": 82,
+      "spa": 43,
+      "spd": 49,
+      "spe": 66
      }
     },
     {
-     "species": "scizor",
-     "level": 44,
+     "species": "lapras",
+     "level": 55,
      "moves": [
-      "agility",
-      "metalclaw",
-      "slash",
+      "perishsong",
+      "icebeam",
+      "raindance",
+      "safeguard"
+     ],
+     "evs": {
+      "hp": 58,
+      "atk": 58,
+      "def": 48,
+      "spa": 53,
+      "spd": 91,
+      "spe": 78
+     }
+    },
+    {
+     "species": "pinsir",
+     "level": 56,
+     "moves": [
+      "harden",
+      "guillotine",
+      "submission",
       "swordsdance"
      ],
      "evs": {
-      "hp": 32,
-      "atk": 63,
-      "def": 70,
-      "spa": 58,
-      "spd": 40,
-      "spe": 46
+      "hp": 60,
+      "atk": 74,
+      "def": 60,
+      "spa": 82,
+      "spd": 82,
+      "spe": 35
+     }
+    },
+    {
+     "species": "jynx",
+     "level": 57,
+     "moves": [
+      "meanlook",
+      "bodyslam",
+      "perishsong",
+      "blizzard"
+     ],
+     "evs": {
+      "hp": 47,
+      "atk": 65,
+      "def": 86,
+      "spa": 64,
+      "spd": 51,
+      "spe": 86
      }
     }
    ]
@@ -6055,39 +7549,57 @@
    "reward": 400,
    "party": [
     {
-     "species": "blissey",
-     "level": 42,
+     "species": "wobbuffet",
+     "level": 54,
      "moves": [
-      "sing",
-      "eggbomb",
-      "defensecurl",
-      "lightscreen"
+      "counter",
+      "destinybond",
+      "mirrorcoat",
+      "safeguard"
      ],
      "evs": {
-      "hp": 28,
-      "atk": 37,
-      "def": 41,
-      "spa": 77,
-      "spd": 68,
-      "spe": 43
+      "hp": 42,
+      "atk": 42,
+      "def": 82,
+      "spa": 64,
+      "spd": 45,
+      "spe": 103
      }
     },
     {
-     "species": "pupitar",
-     "level": 43,
+     "species": "slowbro",
+     "level": 55,
      "moves": [
-      "screech",
-      "rockslide",
-      "thrash",
-      "scaryface"
+      "headbutt",
+      "withdraw",
+      "amnesia",
+      "psychic"
      ],
      "evs": {
-      "hp": 69,
-      "atk": 37,
-      "def": 36,
-      "spa": 39,
-      "spd": 52,
-      "spe": 69
+      "hp": 84,
+      "atk": 80,
+      "def": 74,
+      "spa": 54,
+      "spd": 56,
+      "spe": 38
+     }
+    },
+    {
+     "species": "lapras",
+     "level": 56,
+     "moves": [
+      "perishsong",
+      "icebeam",
+      "raindance",
+      "safeguard"
+     ],
+     "evs": {
+      "hp": 73,
+      "atk": 57,
+      "def": 65,
+      "spa": 91,
+      "spd": 42,
+      "spe": 64
      }
     }
    ]
@@ -6100,39 +7612,57 @@
    "reward": 350,
    "party": [
     {
-     "species": "hitmonlee",
-     "level": 40,
+     "species": "snorlax",
+     "level": 53,
      "moves": [
-      "focusenergy",
-      "highjumpkick",
-      "mindreader",
-      "foresight"
+      "rest",
+      "snore",
+      "bodyslam",
+      "rollout"
      ],
      "evs": {
-      "hp": 31,
-      "atk": 75,
-      "def": 32,
-      "spa": 44,
-      "spd": 29,
-      "spe": 70
+      "hp": 73,
+      "atk": 51,
+      "def": 76,
+      "spa": 55,
+      "spd": 49,
+      "spe": 67
      }
     },
     {
-     "species": "eevee",
-     "level": 41,
+     "species": "porygon2",
+     "level": 54,
      "moves": [
-      "quickattack",
-      "bite",
-      "batonpass",
-      "focusenergy"
+      "defensecurl",
+      "lockon",
+      "triattack",
+      "zapcannon"
      ],
      "evs": {
-      "hp": 61,
-      "atk": 40,
-      "def": 37,
-      "spa": 50,
-      "spd": 42,
-      "spe": 57
+      "hp": 82,
+      "atk": 53,
+      "def": 82,
+      "spa": 39,
+      "spd": 71,
+      "spe": 50
+     }
+    },
+    {
+     "species": "snorlax",
+     "level": 55,
+     "moves": [
+      "rest",
+      "snore",
+      "bodyslam",
+      "rollout"
+     ],
+     "evs": {
+      "hp": 77,
+      "atk": 56,
+      "def": 54,
+      "spa": 46,
+      "spd": 79,
+      "spe": 73
      }
     }
    ]
@@ -6145,21 +7675,54 @@
    "reward": 300,
    "party": [
     {
-     "species": "jynx",
-     "level": 39,
+     "species": "lapras",
+     "level": 53,
      "moves": [
-      "powdersnow",
-      "doubleslap",
-      "icepunch",
-      "meanlook"
+      "perishsong",
+      "icebeam",
+      "raindance",
+      "safeguard"
      ],
      "evs": {
-      "hp": 41,
-      "atk": 43,
-      "def": 32,
-      "spa": 51,
-      "spd": 47,
-      "spe": 59
+      "hp": 57,
+      "atk": 63,
+      "def": 68,
+      "spa": 42,
+      "spd": 66,
+      "spe": 74
+     }
+    },
+    {
+     "species": "ditto",
+     "level": 54,
+     "moves": [
+      "transform"
+     ],
+     "evs": {
+      "hp": 56,
+      "atk": 56,
+      "def": 81,
+      "spa": 58,
+      "spd": 44,
+      "spe": 82
+     }
+    },
+    {
+     "species": "blissey",
+     "level": 55,
+     "moves": [
+      "eggbomb",
+      "defensecurl",
+      "lightscreen",
+      "doubleedge"
+     ],
+     "evs": {
+      "hp": 54,
+      "atk": 79,
+      "def": 95,
+      "spa": 76,
+      "spd": 42,
+      "spe": 38
      }
     }
    ]
@@ -6172,21 +7735,57 @@
    "reward": 250,
    "party": [
     {
-     "species": "porygon2",
-     "level": 38,
+     "species": "pinsir",
+     "level": 52,
      "moves": [
-      "recover",
-      "defensecurl",
-      "lockon",
-      "triattack"
+      "harden",
+      "guillotine",
+      "submission",
+      "swordsdance"
      ],
      "evs": {
-      "hp": 64,
-      "atk": 27,
-      "def": 65,
-      "spa": 29,
-      "spd": 42,
-      "spe": 39
+      "hp": 45,
+      "atk": 50,
+      "def": 75,
+      "spa": 74,
+      "spd": 48,
+      "spe": 73
+     }
+    },
+    {
+     "species": "pinsir",
+     "level": 53,
+     "moves": [
+      "harden",
+      "guillotine",
+      "submission",
+      "swordsdance"
+     ],
+     "evs": {
+      "hp": 57,
+      "atk": 64,
+      "def": 69,
+      "spa": 62,
+      "spd": 70,
+      "spe": 50
+     }
+    },
+    {
+     "species": "scizor",
+     "level": 54,
+     "moves": [
+      "metalclaw",
+      "slash",
+      "swordsdance",
+      "doubleteam"
+     ],
+     "evs": {
+      "hp": 61,
+      "atk": 36,
+      "def": 79,
+      "spa": 69,
+      "spd": 80,
+      "spe": 53
      }
     }
    ]
@@ -6199,21 +7798,57 @@
    "reward": 200,
    "party": [
     {
-     "species": "porygon2",
-     "level": 36,
+     "species": "pinsir",
+     "level": 51,
      "moves": [
-      "recover",
-      "defensecurl",
-      "lockon",
-      "triattack"
+      "harden",
+      "guillotine",
+      "submission",
+      "swordsdance"
      ],
      "evs": {
-      "hp": 34,
-      "atk": 62,
-      "def": 36,
-      "spa": 60,
-      "spd": 26,
-      "spe": 35
+      "hp": 45,
+      "atk": 41,
+      "def": 87,
+      "spa": 71,
+      "spd": 54,
+      "spe": 60
+     }
+    },
+    {
+     "species": "jynx",
+     "level": 52,
+     "moves": [
+      "icepunch",
+      "meanlook",
+      "bodyslam",
+      "perishsong"
+     ],
+     "evs": {
+      "hp": 43,
+      "atk": 78,
+      "def": 52,
+      "spa": 82,
+      "spd": 38,
+      "spe": 71
+     }
+    },
+    {
+     "species": "kabutops",
+     "level": 53,
+     "moves": [
+      "sandattack",
+      "endure",
+      "slash",
+      "megadrain"
+     ],
+     "evs": {
+      "hp": 88,
+      "atk": 60,
+      "def": 47,
+      "spa": 33,
+      "spd": 61,
+      "spe": 82
      }
     }
    ]

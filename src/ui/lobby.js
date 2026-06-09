@@ -49,9 +49,8 @@ export class LobbyScreen {
     this.form = {
       mode: 'free',
       dayLength: '24hour',
-      ballAllowance: 25,            // 5–99 per map, or 'infinite' (slider max)
+      encounterAllowance: 10,       // catchable wild encounters per map, or 'infinite'
       name: '',
-      starter: world.progression.starters[0],
       character: 'red',
     };
     this.view = 'home';
@@ -76,9 +75,8 @@ export class LobbyScreen {
       const opts = {
         mode: this.form.mode,
         dayLength: this.form.dayLength,
-        ballAllowance: this.form.ballAllowance,
+        encounterAllowance: this.form.encounterAllowance,
         name: this.form.name.trim() || 'Player',
-        starter: this.form.starter,
         character: this.form.character,
       };
       const m = await conn.createLobby(opts);
@@ -98,7 +96,6 @@ export class LobbyScreen {
       const conn = this.ensureConn();
       const m = await conn.joinLobby(code, {
         name: this.form.name.trim() || 'Player',
-        starter: this.form.starter,
         character: this.form.character,
       });
       this.enter(m);
@@ -128,20 +125,6 @@ export class LobbyScreen {
   }
 
   // ---- sub-renderers -----------------------------------------------------
-  starterPicker() {
-    return el('div', { class: 'lb-starters' }, this.world.progression.starters.map((sid) => {
-      const sp = this.dex.getSpecies(sid);
-      const sel = this.form.starter === sid;
-      return el('button', {
-        class: `lb-starter${sel ? ' sel' : ''}`, type: 'button',
-        onclick: () => { this.form.starter = sid; this.render(); },
-      }, [
-        el('img', { src: spriteFront(sp.num), alt: sp.name }),
-        el('span', { text: sp.name }),
-      ]);
-    }));
-  }
-
   characterPicker() {
     return el('div', { class: 'lb-chars' }, CHARACTERS.map((c) => {
       const sel = this.form.character === c.id;
@@ -175,18 +158,18 @@ export class LobbyScreen {
     ]);
   }
 
-  // Poké Ball amount: a 5–99 slider whose final notch (100) means unlimited.
+  // Encounters per map: a 1–50 slider whose final notch (51) means unlimited.
   ballPicker() {
-    const cur = this.form.ballAllowance;
-    const sliderVal = cur === 'infinite' ? 100 : cur;
+    const cur = this.form.encounterAllowance;
+    const sliderVal = cur === 'infinite' ? 51 : cur;
     const labelFor = (v) => (v === 'infinite' ? '∞ Unlimited' : `${v} per map`);
     const valEl = el('span', { class: 'lb-slider-val', text: labelFor(cur) });
     const slider = el('input', {
-      class: 'lb-slider', type: 'range', min: 5, max: 100, step: 1, value: sliderVal,
+      class: 'lb-slider', type: 'range', min: 1, max: 51, step: 1, value: sliderVal,
       oninput: (e) => {
         const n = parseInt(e.target.value, 10);
-        this.form.ballAllowance = n >= 100 ? 'infinite' : n;
-        valEl.textContent = labelFor(this.form.ballAllowance); // live update, keep slider focus
+        this.form.encounterAllowance = n >= 51 ? 'infinite' : n;
+        valEl.textContent = labelFor(this.form.encounterAllowance); // live update, keep slider focus
       },
     });
     return el('div', { class: 'lb-slider-row' }, [slider, valEl]);
@@ -241,11 +224,11 @@ export class LobbyScreen {
         class: `lb-pill${this.form.dayLength === d.id ? ' sel' : ''}`, type: 'button',
         onclick: () => { this.form.dayLength = d.id; this.render(); },
       }, [el('b', { text: d.label }), el('span', { text: ` · ${d.sub}` })]))) : null,
-      el('h3', { class: 'lb-h', text: 'Poké Ball amount' }),
+      el('h3', { class: 'lb-h', text: 'Encounters per map' }),
       this.ballPicker(),
       ...this.playerSection(),
-      el('h3', { class: 'lb-h', text: 'Choose your starter' }),
-      this.starterPicker(),
+      el('h3', { class: 'lb-h', text: 'Your first Pokémon' }),
+      el('div', { style: 'opacity:.75;font-size:13px;margin:-4px 0 2px', text: "You'll be gifted a random Lv 5 Pokémon from Routes 1–2." }),
       el('div', { class: 'lb-cta' }, [
         el('button', { class: 'primary', type: 'button', text: this.busy ? 'Creating…' : 'Create & Start', disabled: this.busy, onclick: () => this.doCreate() }),
       ]),
@@ -267,8 +250,8 @@ export class LobbyScreen {
         }),
       ]),
       ...this.playerSection(),
-      el('h3', { class: 'lb-h', text: 'Choose your starter' }),
-      this.starterPicker(),
+      el('h3', { class: 'lb-h', text: 'Your first Pokémon' }),
+      el('div', { style: 'opacity:.75;font-size:13px;margin:-4px 0 2px', text: "You'll be gifted a random Lv 5 Pokémon from Routes 1–2." }),
       el('div', { class: 'lb-cta' }, [
         el('button', { class: 'primary', type: 'button', text: this.busy ? 'Joining…' : 'Join & Start', disabled: this.busy, onclick: () => this.doJoin() }),
       ]),

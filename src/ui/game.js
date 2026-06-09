@@ -61,18 +61,26 @@ export function catchChance(progression, rarity, hpPct, status, ball) {
   return Math.max(0.06, Math.min(0.95, p));
 }
 
-// How many Poké Balls the player gets per map (lobby setting).
-export function ballAllowanceValue(setting) {
-  return setting === 'infinite' ? Infinity : Number(setting) || 25;
+// The per-map catch-encounter allowance (lobby setting) as a number/Infinity.
+export function encounterMaxValue(setting) {
+  return setting === 'infinite' ? Infinity : (Number(setting) || 10);
+}
+
+// A random Lv5 gift species drawn from the Route 1 + Route 2 wild pools.
+function giftSpeciesFor(world) {
+  const enc = world.encounters || {};
+  const pool = [...(enc[1] || []), ...(enc[2] || [])].map((e) => e.species).filter(Boolean);
+  return pool.length ? pool[Math.floor(Math.random() * pool.length)] : world.progression.starters[0];
 }
 
 // Build a fresh local game state (used until the lobby system supplies one).
 export function createGameState(dex, world, opts = {}) {
-  const starter = opts.starter || world.progression.starters[0];
-  const ballSetting = opts.ballAllowance ?? 25;
+  const gift = opts.starter || giftSpeciesFor(world);
+  const encounterSetting = opts.encounterAllowance ?? 10;
+  const emax = encounterMaxValue(encounterSetting);
   const m1 = world.mapById[1];
-  const lead = makeMon(dex, starter, opts.starterLevel || 5);
-  lead.ivs = { ...DEFAULT_IVS }; // starters are a fixed 15/31 in every stat
+  const lead = makeMon(dex, gift, opts.starterLevel || 5);
+  lead.ivs = { ...DEFAULT_IVS }; // gifts are a fixed 15 in every stat
   return {
     name: opts.name || 'You',
     mode: opts.mode || 'free',
@@ -83,9 +91,13 @@ export function createGameState(dex, world, opts = {}) {
     box: [],
     bag: {},                                    // item id → count (Task 15)
     candies: {},                                // stat → EV-candy count
-    ballSetting,
-    balls: { pokeball: ballAllowanceValue(ballSetting), greatball: 0 },
-    caught: { [toId(starter)]: true },
+    encounterSetting,                           // catchable encounters per map
+    // Per-map remaining catchable encounters; granted once on first visit.
+    encounters: emax === Infinity ? {} : { 1: emax },
+    wildSeen: 0,                                // scripted intro levels (3,4,5)
+    // Poké Balls are unlimited/free now; only Great Balls (bought) are counted.
+    balls: { pokeball: Infinity, greatball: 0 },
+    caught: { [toId(gift)]: true },
   };
 }
 
@@ -102,16 +114,21 @@ export function makeMon(dex, species, level, shiny = false) {
 }
 
 // Build a runtime game state from a server save + lobby config. Lobby-level
-// settings (mode / ball allowance) come from config; everything else is the
-// player's persisted save. The "infinite" ball sentinel becomes Infinity here.
+// settings (mode / encounter allowance) come from config; everything else is the
+// player's persisted save.
 export function gameStateFromSave(world, config, save) {
-  const balls = { pokeball: 0, greatball: 0, ...(save.balls || {}) };
-  if (balls.pokeball === 'infinite') balls.pokeball = Infinity;
+  // Poké Balls are unlimited/free now; keep only the bought Great Ball count.
+  const balls = { pokeball: Infinity, greatball: (save.balls && save.balls.greatball) || 0 };
+  const encounterSetting = config.encounterAllowance ?? config.ballAllowance ?? 10;
+  const emax = encounterMaxValue(encounterSetting);
+  let encounters = (save.encounters && typeof save.encounters === 'object') ? { ...save.encounters } : null;
+  if (!encounters) encounters = emax === Infinity ? {} : { [save.map || 1]: emax };
   return {
     name: save.name || 'Player',
     character: save.character || 'red',
     mode: config.mode,
-    ballSetting: config.ballAllowance,
+    encounterSetting,
+    encounters,
     unlockedMap: config.unlockedMap,
     // Lobby-level week schedule (Task 18) — runtime only, refreshed by the
     // server's `dayAdvanced` pushes; never written back into the save.
@@ -124,16 +141,16 @@ export function gameStateFromSave(world, config, save) {
     party: save.party || [], box: save.box || [], bag: save.bag || {},
     candies: save.candies || {},
     balls,
+    wildSeen: save.wildSeen || 0,
     caught: save.caught || {},
     battledToday: !!save.battledToday,
   };
 }
 
-// Reduce a runtime state to the JSON-safe save the server persists. Infinity
-// (unlimited Poké Balls) is stored as the "infinite" sentinel.
+// Reduce a runtime state to the JSON-safe save the server persists. Only the
+// Great Ball count is stored (Poké Balls are unlimited); per-map remaining
+// catchable encounters are stored in `encounters`.
 export function serializeSave(state) {
-  const balls = { ...state.balls };
-  if (!Number.isFinite(balls.pokeball)) balls.pokeball = 'infinite';
   return {
     name: state.name, character: state.character,
     map: state.map, x: state.x, y: state.y, facing: state.facing,
@@ -141,7 +158,10 @@ export function serializeSave(state) {
     badges: state.badges, beatenTrainers: state.beatenTrainers,
     party: state.party, box: state.box, bag: state.bag,
     candies: state.candies || {},
-    balls, caught: state.caught,
+    balls: { greatball: (state.balls && state.balls.greatball) || 0 },
+    encounters: state.encounters || {},
+    wildSeen: state.wildSeen || 0,
+    caught: state.caught,
     battledToday: !!state.battledToday,
   };
 }
@@ -243,7 +263,7 @@ export class GameController {
       const sp = this.dex.getSpecies(mon.species);
       const stats = this.monStats(mon, mon.level);
       return el('div', { class: `pc-mon${mon.shiny ? ' shiny' : ''}` }, [
-        el('img', { class: 'pc-mon-sprite', src: spriteFront(sp.num), alt: sp.name }),
+        el('img', { class: 'pc-mon-sprite', src: spriteFront(sp.num, mon.shiny), alt: sp.name }),
         el('div', { class: 'pc-mon-info' }, [
           el('div', { class: 'pc-mon-head' }, [
             el('span', { class: 'pc-mon-name', text: sp.name + (mon.shiny ? ' ✦' : '') }),
@@ -617,11 +637,43 @@ export class GameController {
 
   addMoney(amt) { this.state.money = (this.state.money || 0) + amt; }
 
-  // Entering a map refreshes the per-map Poké Ball allowance. `entry` is the
-  // spawn point: 'spawn' (south, when arriving from the previous route) or
-  // 'north' (top, when coming back down from the next route).
+  // ---- catchable encounters (per-map) -----------------------------------
+  // The per-map allowance as a number (Infinity if unlimited).
+  encounterMax() { return encounterMaxValue(this.state.encounterSetting); }
+
+  // Catchable encounters remaining on a map (lazily defaults to the full max).
+  encountersLeft(map = this.state.map) {
+    const max = this.encounterMax();
+    if (max === Infinity) return Infinity;
+    const e = this.state.encounters || {};
+    return e[map] != null ? e[map] : max;
+  }
+
+  // Grant a map's encounter allowance the FIRST time it's visited (per-map pool).
+  grantMapEncounters(mapId) {
+    const max = this.encounterMax();
+    if (max === Infinity) return;
+    const e = this.state.encounters || (this.state.encounters = {});
+    if (e[mapId] == null) e[mapId] = max;
+  }
+
+  // Spend one catchable encounter on a map (any wild encounter outcome). Floors
+  // at 0 — beyond that you can still battle wild Pokémon, just not catch them.
+  consumeEncounter(map = this.state.map) {
+    const max = this.encounterMax();
+    if (max === Infinity) return;
+    const e = this.state.encounters || (this.state.encounters = {});
+    const cur = e[map] != null ? e[map] : max;
+    e[map] = Math.max(0, cur - 1);
+  }
+
+  // Can the player still catch on this map? (Encounters remaining > 0.)
+  canCatch(map = this.state.map) { return this.encountersLeft(map) > 0; }
+
+  // Move to a map. `entry` is the spawn point: 'spawn' (south, when arriving from
+  // the previous route) or 'north' (top, when coming back down from the next).
   goToMap(mapId, entry = 'spawn') {
-    this.state.balls.pokeball = ballAllowanceValue(this.state.ballSetting);
+    this.grantMapEncounters(mapId); // one-time per-map catchable-encounter pool
     if (this.ow) this.ow.players = []; // drop the old map's remote actors
     this.ow.goToMap(mapId, entry);
     this.ow.renderHud();
@@ -642,7 +694,12 @@ export class GameController {
     let r = Math.random() * total;
     let chosen = list[0];
     for (const e of list) { r -= e.weight; if (r <= 0) { chosen = e; break; } }
-    const level = randint(chosen.min, chosen.max);
+    // The first three wild encounters of the game ramp 3 → 4 → 5 (a gentle
+    // onboarding); after that, levels are random within the route's band.
+    const SCRIPTED = [3, 4, 5];
+    const seen = this.state.wildSeen || 0;
+    const level = seen < SCRIPTED.length ? SCRIPTED[seen] : randint(chosen.min, chosen.max);
+    this.state.wildSeen = seen + 1;
     const shiny = Math.random() < 1 / this.world.progression.shinyRate;
     return { species: chosen.species, name: chosen.name, level, rarity: chosen.rarity, shiny };
   }
@@ -659,7 +716,8 @@ export class GameController {
       const wild = {
         rarity: enc.rarity,
         shiny: enc.shiny,
-        balls: this.state.balls,
+        balls: this.state.balls,           // Poké Ball is Infinity (free); Great Ball is counted
+        canCatch: this.canCatch(),         // gated by this map's remaining encounters
         progression: this.world.progression,
         catchChance: (hpPct, status, ball) => catchChance(this.world.progression, enc.rarity, hpPct, status, ball),
         makeCaughtSet: () => makeMon(this.dex, enc.species, enc.level, enc.shiny),
@@ -672,6 +730,9 @@ export class GameController {
   }
 
   afterWild(res, enc) {
+    // Any wild encounter — caught, defeated, ran, lost or quit — spends one of
+    // this map's catchable encounters (floored at 0).
+    this.consumeEncounter(this.state.map);
     this.restoreOverworld();
     // EXP for defeating or catching the wild Pokémon (full heal is automatic:
     // party sets are rebuilt at full HP/PP each battle).
@@ -688,6 +749,7 @@ export class GameController {
     this.ow.renderPartyBar(); // reflect new levels / a caught member
     this.state.battledToday = true; // any wild encounter counts as a battle
     this.persist(true);
+    this.flushEvoToasts();    // celebrate any evolution(s)
     this.processLearnQueue(); // prompt for any level-up moves that need a slot
   }
 
@@ -725,6 +787,7 @@ export class GameController {
               ? `You defeated ${foe}! +₽${reward.toLocaleString('en-US')}${extra ? ` · ${extra}` : ''}`
               : 'You were defeated — but everyone was healed up.');
             this.persist(true);
+            this.flushEvoToasts();
             this.processLearnQueue();
             resolve(res.outcome === 'won');
           },
@@ -771,6 +834,7 @@ export class GameController {
                 ? `You beat ${g.leader}! Both badges earned — the path north is open!`
                 : `You beat ${g.leader} and earned a badge! +₽${reward.toLocaleString('en-US')}`) + (extra ? ` · ${extra}` : ''));
             } else this.ow.say(`${g.leader} was too strong this time. Train up and try again!`);
+            this.flushEvoToasts();
             this.processLearnQueue();
             resolve(res.outcome === 'won');
           },
@@ -879,7 +943,6 @@ export class GameController {
     const fought = participants ? new Set(participants) : null;
     const cap = this.mapCap(); // route's max level — Pokémon can't grow past it here
     const leveled = [];
-    const evolved = [];
     const learnedNames = [];
     this.state.party.forEach((mon, i) => {
       if (mon.level >= cap) return; // at the route's max level: gains no EXP (bar stays full)
@@ -894,16 +957,13 @@ export class GameController {
       if (mon.level > before) {
         const name = this.monName(mon);
         const { evolvedName, learned } = this.applyLevelGains(mon, before, i); // evolve + learn moves
-        leveled.push(`${evolvedName || name} →Lv ${mon.level}`);
-        if (evolvedName) evolved.push(evolvedName);
+        leveled.push(`${evolvedName || name} →Lv ${mon.level}`); // evolutions get their own toast
         learnedNames.push(...learned);
       }
     });
     if (!leveled.length) return '';
     const learnNote = learnedNames.length ? ` · Learned ${learnedNames.slice(0, 3).join(', ')}${learnedNames.length > 3 ? '…' : ''}` : '';
-    return (evolved.length
-      ? `Evolved: ${evolved.join(', ')}! ${leveled.length} Pokémon leveled up.`
-      : `${leveled.length} Pokémon leveled up! (${leveled.slice(0, 3).join(', ')}${leveled.length > 3 ? '…' : ''})`) + learnNote;
+    return `${leveled.length} Pokémon leveled up! (${leveled.slice(0, 3).join(', ')}${leveled.length > 3 ? '…' : ''})` + learnNote;
   }
 
   // Party as engine "sets" (shallow clones so the engine can't mutate state).
@@ -1138,11 +1198,22 @@ export class GameController {
       if (!entries) break;
       const e = entries.find((x) => x.method === 'level' && lv >= x.level);
       if (!e) break;
+      const fromName = this.dex.getSpecies(mon.species).name;
       mon.species = toId(e.to);
       this.state.caught[mon.species] = true;
-      evolvedName = this.dex.getSpecies(mon.species).name;
+      const sp = this.dex.getSpecies(mon.species);
+      evolvedName = sp.name;
+      (this.pendingEvos || (this.pendingEvos = [])).push({ from: fromName, to: sp.name, num: sp.num });
     }
     return evolvedName;
+  }
+
+  // Show a celebratory toast for each evolution that just happened (drained).
+  flushEvoToasts() {
+    const q = this.pendingEvos;
+    if (!q || !q.length || !this.ow) return;
+    this.pendingEvos = [];
+    for (const e of q) this.ow.evoToast(e.from, e.to, e.num);
   }
 
   // Replay every level a mon just gained (fromLevel+1 .. mon.level): evolve where
@@ -1242,7 +1313,7 @@ export class GameController {
       });
       const panel = el('div', { class: 'panel menu-panel learn-panel' }, [
         el('div', { class: 'menu-head' }, [
-          el('img', { class: 'learn-sprite', src: spriteFront(this.dex.getSpecies(mon.species).num), alt: '' }),
+          el('img', { class: 'learn-sprite', src: spriteFront(this.dex.getSpecies(mon.species).num, mon.shiny), alt: '' }),
           el('h3', { text: `${this.monName(mon)} wants to learn ${newMv.name}!` }),
         ]),
         el('div', { class: 'learn-new', text: `New move: ${newMv.name} · ${meta(newMv)}` }),
@@ -1261,9 +1332,12 @@ export class GameController {
     if (!entries) return null;
     const e = entries.find((x) => x.method === 'stone' && x.item === stoneId);
     if (!e) return null;
+    const fromName = this.dex.getSpecies(mon.species).name;
     mon.species = toId(e.to);
     this.state.caught[mon.species] = true;
-    return this.dex.getSpecies(mon.species).name;
+    const sp = this.dex.getSpecies(mon.species);
+    (this.pendingEvos || (this.pendingEvos = [])).push({ from: fromName, to: sp.name, num: sp.num });
+    return sp.name;
   }
 
   // ---- party / box management -------------------------------------------
@@ -1309,7 +1383,7 @@ export class GameController {
   // always-on party bar (transfers/evolutions can change the team).
   openBox(ow) {
     return new Promise((resolve) => {
-      const view = new PartyMenu(this, () => { view.root.remove(); ow.renderHud(); ow.renderPartyBar(); resolve(); }, { tab: 'box' });
+      const view = new PartyMenu(this, () => { view.root.remove(); ow.renderHud(); ow.renderPartyBar(); this.flushEvoToasts(); resolve(); }, { tab: 'box' });
       this.menuView = view; // dev handle
       ow.root.append(view.root);
     });
@@ -1317,7 +1391,7 @@ export class GameController {
 
   openItems(ow) {
     return new Promise((resolve) => {
-      const view = new PartyMenu(this, () => { view.root.remove(); ow.renderHud(); ow.renderPartyBar(); resolve(); }, { tab: 'items' });
+      const view = new PartyMenu(this, () => { view.root.remove(); ow.renderHud(); ow.renderPartyBar(); this.flushEvoToasts(); resolve(); }, { tab: 'items' });
       this.menuView = view; // dev handle
       ow.root.append(view.root);
     });
@@ -1382,7 +1456,7 @@ export class GameController {
           el('button', { class: 'ghost', text: '✕', onclick: close }),
         ]),
         el('div', { class: 'mn-card' }, [
-          el('img', { class: 'mn-sprite', src: spriteFront(species.num), alt: species.name }),
+          el('img', { class: 'mn-sprite', src: spriteFront(species.num, mon.shiny), alt: species.name }),
           el('div', { class: 'mn-meta' }, [types]),
         ]),
         el('div', { class: 'mn-summary' }, [

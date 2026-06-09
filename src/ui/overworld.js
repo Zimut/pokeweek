@@ -194,11 +194,14 @@ export class Overworld {
     const money = this.state.money ?? 0;
     this.hud.money.textContent = `₽${money.toLocaleString('en-US')}`;
     if (this.hud.balls) {
-      const b = this.state.balls;
-      if (b) {
-        const pb = b.pokeball === Infinity ? '∞' : b.pokeball;
-        this.hud.balls.textContent = `◓ ${pb}${b.greatball ? ` · ◓${b.greatball}` : ''}`;
-      } else this.hud.balls.textContent = '';
+      // Catchable encounters remaining on THIS route (Poké Balls are free now).
+      const setting = this.state.encounterSetting;
+      const max = setting === 'infinite' ? Infinity : (Number(setting) || 10);
+      const enc = this.state.encounters || {};
+      const left = max === Infinity ? Infinity : (enc[m.map] != null ? enc[m.map] : max);
+      const gb = (this.state.balls && this.state.balls.greatball) || 0;
+      this.hud.balls.textContent = `◓ ${left === Infinity ? '∞' : left}${gb ? ` · GB×${gb}` : ''}`;
+      this.hud.balls.title = `Catchable encounters left on this route${gb ? ` · ${gb} Great Ball${gb === 1 ? '' : 's'}` : ''}`;
     }
     const b = (this.state.badges && this.state.badges[m.map]) || {};
     const k = prog ? prog.kanto : 'Kanto';
@@ -248,7 +251,7 @@ export class Overworld {
         ondrop: (e) => { e.preventDefault(); slot.classList.remove('drag-over'); this.reorderParty(this._dragFrom, i); },
       }, [
         el('span', { class: 'ow-party-rank', text: `${i + 1}` }),
-        el('img', { class: 'ow-party-sprite', src: spriteFront(sp.num), alt: sp.name, draggable: 'false' }),
+        el('img', { class: 'ow-party-sprite', src: spriteFront(sp.num, mon.shiny), alt: sp.name, draggable: 'false' }),
         el('div', { class: 'ow-party-info' }, [
           el('span', { class: 'ow-party-name', text: name + (mon.shiny ? ' ✦' : '') }),
           el('span', { class: 'ow-party-lv', text: `Lv ${mon.level}` }),
@@ -460,6 +463,30 @@ export class Overworld {
     t.textContent = text;
     t.classList.add('show');
     this._toastT = setTimeout(() => t.classList.remove('show'), 2600);
+  }
+
+  // A celebratory evolution toast: the evolved sprite + "X evolved into Y!" with
+  // a golden glow. Queued so multiple evolutions play one after another.
+  evoToast(fromName, toName, num) {
+    (this._evoQueue || (this._evoQueue = [])).push({ fromName, toName, num });
+    if (!this._evoPlaying) this._playEvoToast();
+  }
+
+  _playEvoToast() {
+    const q = this._evoQueue || [];
+    if (!q.length || !this.arena) { this._evoPlaying = false; return; }
+    this._evoPlaying = true;
+    const { fromName, toName, num } = q.shift();
+    const card = el('div', { class: 'ow-evo-toast' }, [
+      el('img', { class: 'ow-evo-sprite', src: spriteFront(num), alt: toName }),
+      el('div', { class: 'ow-evo-text', html: `<span class="ow-evo-spark">✨</span> <b>${fromName}</b> evolved into <b>${toName}</b>!` }),
+    ]);
+    this.arena.append(card);
+    void card.offsetWidth; card.classList.add('show');
+    setTimeout(() => {
+      card.classList.remove('show');
+      setTimeout(() => { card.remove(); this._playEvoToast(); }, 400);
+    }, 3000);
   }
 
   // Overlay listing the Pokémon that can appear in this route's grass: each is

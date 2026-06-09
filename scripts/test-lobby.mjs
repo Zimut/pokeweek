@@ -20,16 +20,19 @@ console.log('Part A: registry + persistence');
 const dex = await ensureDex();
 const world = await ensureWorld();
 const reg = new LobbyRegistry(world, dex);
+// New players are gifted a random Lv5 mon from the Route 1 + Route 2 pools.
+const giftPool = new Set([...(world.encounters[1] || []), ...(world.encounters[2] || [])].map((e) => e.species));
 
-// Create a free-mode lobby with a known starter.
-const { lobby, identity } = reg.createLobby({ mode: 'free', ballAllowance: 25, name: 'Ash', starter: 'charmander', character: 'red' });
+// Create a free-mode lobby (players are gifted a random Route 1/2 Pokémon).
+const { lobby, identity } = reg.createLobby({ mode: 'free', encounterAllowance: 25, name: 'Ash', character: 'red' });
 const code = lobby.code;
 check('code is 6 digits', /^\d{6}$/.test(code));
 check('identity has playerId + secret', !!identity.playerId && !!identity.secret);
-check('starter is charmander Lv5', identity.save.party[0].species === 'charmander' && identity.save.party[0].level === 5);
-check('starter has moves', Array.isArray(identity.save.party[0].moves) && identity.save.party[0].moves.length > 0);
+check('gift is a Lv5 Route 1/2 mon', identity.save.party[0].level === 5 && giftPool.has(identity.save.party[0].species));
+check('gift has 15 IVs across the board', Object.values(identity.save.party[0].ivs).every((v) => v === 15));
+check('gift has moves', Array.isArray(identity.save.party[0].moves) && identity.save.party[0].moves.length > 0);
 check('starts with ₽0', identity.save.money === 0);
-check('balls allowance applied (25)', identity.save.balls.pokeball === 25);
+check('encounter allowance applied (25)', identity.save.encounters[1] === 25);
 check('spawns on map 1', identity.save.map === 1);
 check('free mode unlocks all maps', lobby.unlockedMap === world.progression.mapCount);
 
@@ -46,10 +49,10 @@ check('auth rejects wrong secret', reg.auth(code, identity.playerId, 'nope') ===
 check('auth rejects unknown lobby', reg.auth('000000', identity.playerId, identity.secret) === null);
 
 // A second player joins the same lobby with their own identity + fresh save.
-const join = reg.joinLobby(code, { name: 'Misty', starter: 'squirtle', character: 'kris' });
+const join = reg.joinLobby(code, { name: 'Misty', character: 'kris' });
 check('join mints a distinct playerId', join && join.identity.playerId !== identity.playerId);
 check('joiner gets a fresh ₽0 save', join && join.identity.save.money === 0);
-check('joiner starter squirtle', join && join.identity.save.party[0].species === 'squirtle');
+check('joiner gets a Route 1/2 gift', join && giftPool.has(join.identity.save.party[0].species));
 check('lobby now has 2 players', Object.keys(lobby.players).length === 2);
 
 // Force the save to disk and simulate a SERVER RESTART by booting a new registry.
@@ -61,11 +64,11 @@ check('lobby survives restart', !!restored);
 check('restored lobby keeps both players', restored && Object.keys(restored.players).length === 2);
 const resumed = reg2.auth(code, identity.playerId, identity.secret);
 check('restored save keeps money after restart', resumed && resumed.player.save.money === 1234);
-check('restored config preserved (ballAllowance)', restored && restored.ballAllowance === 25);
+check('restored config preserved (encounterAllowance)', restored && restored.encounterAllowance === 25);
 
 // Infinite allowance + week mode.
-const inf = reg.createLobby({ mode: 'week', dayLength: '1min', ballAllowance: 'infinite', name: 'Gold', starter: 'cyndaquil' });
-check('infinite allowance stored as sentinel', inf.identity.save.balls.pokeball === 'infinite');
+const inf = reg.createLobby({ mode: 'week', dayLength: '1min', encounterAllowance: 'infinite', name: 'Gold', starter: 'cyndaquil' });
+check('infinite allowance: unlimited encounters', inf.lobby.encounterAllowance === 'infinite' && Object.keys(inf.identity.save.encounters || {}).length === 0);
 check('week mode unlocks only map 1', inf.lobby.unlockedMap === 1);
 check('week day length preset applied (1min)', inf.lobby.dayLengthMs === 60000);
 
@@ -105,11 +108,11 @@ let wsCode, wsId, wsSecret;
 try {
   const c1 = client();
   await open(c1);
-  c1.send({ t: 'createLobby', mode: 'free', ballAllowance: 50, name: 'Net', starter: 'totodile', character: 'silver' });
+  c1.send({ t: 'createLobby', mode: 'free', encounterAllowance: 50, name: 'Net', character: 'silver' });
   const created = await once(c1, 'lobbyCreated');
   wsCode = created.code; wsId = created.playerId; wsSecret = created.secret;
   check('WS lobbyCreated returns code/identity', /^\d{6}$/.test(wsCode) && !!wsId && !!wsSecret);
-  check('WS save has totodile + 50 balls', created.save.party[0].species === 'totodile' && created.save.balls.pokeball === 50);
+  check('WS save has a Route 1/2 gift + 50 encounters', giftPool.has(created.save.party[0].species) && created.save.encounters[1] === 50);
 
   // Report a save, then disconnect.
   c1.send({ t: 'saveState', ack: true, save: { ...created.save, money: 5000, map: 2, x: 3, y: 3 } });

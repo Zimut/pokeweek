@@ -51,19 +51,22 @@ const randint = (rand, lo, hi) => lo + Math.floor(rand() * (hi - lo + 1));
 // ---------------------------------------------------------------------------
 // 1) PROGRESSION (global config + per-map bands/caps/gym pairing)
 // ---------------------------------------------------------------------------
+// Each route spans 8 levels, starting at 5, with bands overlapping at the
+// boundary so a team that maxed out on one route arrives matched to the next
+// (no more "too strong on arrival"). Map N = [5+8(N-1) .. 5+8N]; cap = top.
 const MAPS = [
-  { map: 1, band: [3, 7],   cap: 15, gymLevel: 10, kanto: 'Brock',     johto: 'Falkner', theme: 'meadow' },
-  { map: 2, band: [8, 12],  cap: 21, gymLevel: 16, kanto: 'Misty',     johto: 'Bugsy',   theme: 'forest' },
-  { map: 3, band: [13, 18], cap: 27, gymLevel: 22, kanto: 'Lt. Surge', johto: 'Whitney', theme: 'cave'   },
-  { map: 4, band: [18, 24], cap: 33, gymLevel: 28, kanto: 'Erika',     johto: 'Morty',   theme: 'coast'  },
-  { map: 5, band: [24, 30], cap: 39, gymLevel: 34, kanto: 'Sabrina',   johto: 'Jasmine', theme: 'plain'  },
-  { map: 6, band: [30, 36], cap: 45, gymLevel: 40, kanto: 'Blaine',    johto: 'Pryce',   theme: 'mountain' },
-  { map: 7, band: [36, 44], cap: 52, gymLevel: 48, kanto: 'Giovanni',  johto: 'Clair',   theme: 'plateau' },
+  { map: 1, band: [5, 13],  cap: 13, kanto: 'Brock',     johto: 'Falkner', theme: 'meadow' },
+  { map: 2, band: [13, 21], cap: 21, kanto: 'Misty',     johto: 'Bugsy',   theme: 'forest' },
+  { map: 3, band: [21, 29], cap: 29, kanto: 'Lt. Surge', johto: 'Whitney', theme: 'cave'   },
+  { map: 4, band: [29, 37], cap: 37, kanto: 'Erika',     johto: 'Morty',   theme: 'coast'  },
+  { map: 5, band: [37, 45], cap: 45, kanto: 'Sabrina',   johto: 'Jasmine', theme: 'plain'  },
+  { map: 6, band: [45, 53], cap: 53, kanto: 'Blaine',    johto: 'Pryce',   theme: 'mountain' },
+  { map: 7, band: [53, 61], cap: 61, kanto: 'Giovanni',  johto: 'Clair',   theme: 'plateau' },
 ];
 
 // The 8th map is the tournament arena: no bands/gyms, a high level cap so the
 // championship is fought on (nearly) full teams.
-const ARENA = { map: 8, cap: 55, theme: 'arena' };
+const ARENA = { map: 8, cap: 61, theme: 'arena' };
 
 const progression = {
   mapCount: 7,
@@ -81,7 +84,7 @@ const progression = {
   catchBaseByRarity: { common: 0.45, uncommon: 0.30, rare: 0.18, veryrare: 0.10 },
   ballMult: { pokeball: 1, greatball: 5 },
   maps: [
-    ...MAPS.map((m) => ({ map: m.map, band: m.band, cap: m.cap, gymLevel: m.gymLevel, kanto: m.kanto, johto: m.johto, theme: m.theme })),
+    ...MAPS.map((m) => ({ map: m.map, band: m.band, cap: m.cap, kanto: m.kanto, johto: m.johto, theme: m.theme })),
     { map: ARENA.map, cap: ARENA.cap, theme: ARENA.theme },
   ],
 };
@@ -339,9 +342,14 @@ for (const m of MAPS) {
     const rank = 9 - (i % 10);
     const cls = CLASS_BY_MAP[m.map][i % CLASS_BY_MAP[m.map].length];
     const name = NAMES[(i + m.map * 3) % NAMES.length];
-    // Party grows 1 → 2 → 3 across the column; the ace level scales from the
-    // band floor up to one below the cap, so top trainers eclipse the gym.
-    const size = rank <= 2 ? 1 : rank <= 6 ? 2 : 3;
+    // Party size grows with BOTH the route (a rising minimum, up to 3) and the
+    // column rank (the top trainers field more, up to 4 — gyms aren't capped at
+    // 4). e.g. Route 5: bottom trainers get 3, top trainers get 4.
+    const minSize = Math.min(3, Math.ceil(m.map / 2));   // 1,1,2,2,3,3,3
+    const maxSize = Math.min(4, minSize + 1);            // 2,2,3,3,4,4,4
+    const size = minSize + Math.round((rank / 9) * (maxSize - minSize));
+    // Ace level scales from the band floor (bottom) to one below the cap (top);
+    // members escalate toward the ace, ~1 level apart.
     const ace = Math.min(m.cap - 1, Math.round(m.band[0] + (m.cap - 1 - m.band[0]) * (rank / 9)));
     const party = [];
     for (let k = 0; k < size; k++) {
@@ -450,10 +458,13 @@ for (const [n, mv] of TM_LIST) {
   TM_ITEMS.push({ id: `tm${n}`, name: `TM${pad2(n)} ${mdef.name}`, kind: 'tm', move: toId(mv), price: 2000 });
 }
 
-// Every map's mart sells the full catalog — players can see and buy everything.
-const MART_ITEMS = [...BASE_ITEMS, ...TM_ITEMS];
+// Marts sell the base catalog everywhere; TMs only unlock from Route 3 onward.
+const TM_UNLOCK_MAP = 3;
 const mart = {};
-for (const m of MAPS) mart[m.map] = MART_ITEMS.map((it) => ({ ...it }));
+for (const m of MAPS) {
+  const items = m.map >= TM_UNLOCK_MAP ? [...BASE_ITEMS, ...TM_ITEMS] : BASE_ITEMS;
+  mart[m.map] = items.map((it) => ({ ...it }));
+}
 gyms[ARENA.map] = {}; // the arena has no gym leaders
 mart[ARENA.map] = []; // the arena has no mart
 

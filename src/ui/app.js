@@ -117,7 +117,7 @@ async function main() {
       mount(Object.assign(document.createElement('div'), { className: 'loading', textContent: 'World data failed: ' + err.message + ' — run "npm run build:world".' }));
       return;
     }
-    const state = createGameState(dex, world, { name: 'You', ballAllowance: 25, starterLevel: 8 });
+    const state = createGameState(dex, world, { name: 'You', encounterAllowance: 10, starterLevel: 8 });
     const game = new GameController(dex, world, state, { onExit: () => showSetup() });
     window.__game = game; // dev aid for the preview
     mount(game.start());

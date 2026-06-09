@@ -297,7 +297,7 @@ export class BattleView {
         style: `border-left:8px solid ${color}`,
         onclick: () => { this.clearMenu(); resolve({ type: 'switch', target: p.index }); },
       }, [
-        el('img', { src: spriteFront(p.num) }),
+        el('img', { src: spriteFront(p.num, p.shiny) }),
         el('div', { class: 'sw-meta' }, [
           el('span', { text: `${p.name}  Lv${p.level}`, style: 'font-size:12px;font-weight:800' }),
           el('div', { class: 'mini-hp' }, el('div', { class: 'f', style: `width:${pct}%` })),
@@ -340,7 +340,7 @@ export class BattleView {
   async onSwitchIn(e) {
     const s = this.dom.slot[e.side];
     this.refreshParty(e.side);
-    s.sprite.src = e.side === 0 ? spriteBack(e.num) : spriteFront(e.num);
+    s.sprite.src = e.side === 0 ? spriteBack(e.num, e.shiny) : spriteFront(e.num, e.shiny);
     s.sprite.classList.remove('faint');
     s.name.textContent = e.name;
     s.lv.textContent = `Lv${e.level}`;

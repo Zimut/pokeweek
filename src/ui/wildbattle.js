@@ -97,10 +97,15 @@ export class WildBattleView extends BattleView {
     const menu = this.dom.menu;
     menu.className = 'menu actions';
     menu.innerHTML = '';
+    const canCatch = this.wild.canCatch !== false; // gated by this route's encounters
     menu.append(
       el('button', { class: 'primary', text: '⚔ FIGHT', onclick: () => this.renderMoveMenu(side, req, resolve) }),
       el('button', { class: 'secondary', text: '🔁 POKéMON', disabled: !req.active.canSwitch, onclick: () => this.renderSwitchMenu(side, req, resolve, false) }),
-      el('button', { class: 'ghost', text: '🎯 BALL', onclick: () => this.renderBallMenu(side, req, resolve) }),
+      el('button', {
+        class: 'ghost', text: '🎯 BALL', disabled: !canCatch,
+        title: canCatch ? '' : "You're out of catchable encounters on this route.",
+        onclick: () => { if (canCatch) this.renderBallMenu(side, req, resolve); },
+      }),
       el('button', { class: 'ghost', text: '🏃 RUN', onclick: () => { this.clearMenu(); resolve({ type: 'run' }); } }),
     );
   }

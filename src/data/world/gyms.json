@@ -8,7 +8,7 @@
    "team": [
     {
      "species": "geodude",
-     "level": 15,
+     "level": 13,
      "moves": [
       "tackle",
       "defensecurl",
@@ -16,7 +16,7 @@
      ],
      "evs": {
       "hp": 0,
-      "atk": 105,
+      "atk": 91,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -25,16 +25,15 @@
     },
     {
      "species": "onix",
-     "level": 15,
+     "level": 13,
      "moves": [
       "screech",
       "tackle",
-      "bind",
-      "rockthrow"
+      "bind"
      ],
      "evs": {
       "hp": 0,
-      "atk": 105,
+      "atk": 91,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -51,16 +50,15 @@
    "team": [
     {
      "species": "pidgey",
-     "level": 15,
+     "level": 13,
      "moves": [
       "tackle",
       "sandattack",
-      "gust",
-      "quickattack"
+      "gust"
      ],
      "evs": {
       "hp": 0,
-      "atk": 105,
+      "atk": 91,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -69,16 +67,15 @@
     },
     {
      "species": "pidgeotto",
-     "level": 15,
+     "level": 13,
      "moves": [
       "tackle",
       "sandattack",
-      "gust",
-      "quickattack"
+      "gust"
      ],
      "evs": {
       "hp": 0,
-      "atk": 105,
+      "atk": 91,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -204,25 +201,25 @@
    "team": [
     {
      "species": "voltorb",
-     "level": 27,
+     "level": 29,
      "moves": [
-      "tackle",
       "screech",
       "sonicboom",
-      "selfdestruct"
+      "selfdestruct",
+      "rollout"
      ],
      "evs": {
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 189,
+      "spa": 203,
       "spd": 0,
       "spe": 0
      }
     },
     {
      "species": "pikachu",
-     "level": 27,
+     "level": 29,
      "moves": [
       "quickattack",
       "doubleteam",
@@ -231,7 +228,7 @@
      ],
      "evs": {
       "hp": 0,
-      "atk": 189,
+      "atk": 203,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -240,7 +237,7 @@
     },
     {
      "species": "magnemite",
-     "level": 27,
+     "level": 29,
      "moves": [
       "supersonic",
       "sonicboom",
@@ -251,7 +248,7 @@
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 189,
+      "spa": 203,
       "spd": 0,
       "spe": 0
      }
@@ -266,7 +263,7 @@
    "team": [
     {
      "species": "clefairy",
-     "level": 27,
+     "level": 29,
      "moves": [
       "sing",
       "doubleslap",
@@ -277,14 +274,14 @@
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 189,
+      "spa": 203,
       "spd": 0,
       "spe": 0
      }
     },
     {
      "species": "miltank",
-     "level": 27,
+     "level": 29,
      "moves": [
       "defensecurl",
       "stomp",
@@ -293,7 +290,7 @@
      ],
      "evs": {
       "hp": 0,
-      "atk": 189,
+      "atk": 203,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -312,25 +309,25 @@
    "team": [
     {
      "species": "gloom",
-     "level": 33,
+     "level": 37,
      "moves": [
-      "poisonpowder",
       "stunspore",
       "sleeppowder",
-      "acid"
+      "acid",
+      "moonlight"
      ],
      "evs": {
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 231,
-      "spd": 0,
+      "spa": 252,
+      "spd": 7,
       "spe": 0
      }
     },
     {
      "species": "weepinbell",
-     "level": 33,
+     "level": 37,
      "moves": [
       "poisonpowder",
       "stunspore",
@@ -338,8 +335,8 @@
       "sweetscent"
      ],
      "evs": {
-      "hp": 0,
-      "atk": 231,
+      "hp": 7,
+      "atk": 252,
       "def": 0,
       "spa": 0,
       "spd": 0,
@@ -348,18 +345,18 @@
     },
     {
      "species": "tangela",
-     "level": 33,
+     "level": 37,
      "moves": [
-      "poisonpowder",
       "vinewhip",
       "bind",
-      "megadrain"
+      "megadrain",
+      "stunspore"
      ],
      "evs": {
       "hp": 0,
       "atk": 0,
-      "def": 0,
-      "spa": 231,
+      "def": 7,
+      "spa": 252,
       "spd": 0,
       "spe": 0
      }
@@ -373,8 +370,8 @@
    "reward": 1000,
    "team": [
     {
-     "species": "haunter",
-     "level": 33,
+     "species": "gengar",
+     "level": 37,
      "moves": [
       "meanlook",
       "curse",
@@ -385,14 +382,14 @@
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 231,
+      "spa": 252,
       "spd": 0,
-      "spe": 0
+      "spe": 7
      }
     },
     {
-     "species": "haunter",
-     "level": 33,
+     "species": "gengar",
+     "level": 37,
      "moves": [
       "meanlook",
       "curse",
@@ -403,26 +400,26 @@
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 231,
+      "spa": 252,
       "spd": 0,
-      "spe": 0
+      "spe": 7
      }
     },
     {
      "species": "misdreavus",
-     "level": 33,
+     "level": 37,
      "moves": [
-      "spite",
       "confuseray",
       "meanlook",
-      "psybeam"
+      "psybeam",
+      "painsplit"
      ],
      "evs": {
       "hp": 0,
       "atk": 0,
       "def": 0,
-      "spa": 231,
-      "spd": 0,
+      "spa": 252,
+      "spd": 7,
       "spe": 0
      }
     }
@@ -438,12 +435,12 @@
    "team": [
     {
      "species": "alakazam",
-     "level": 39,
+     "level": 45,
      "moves": [
-      "psybeam",
       "recover",
       "futuresight",
-      "psychic"
+      "psychic",
+      "reflect"
      ],
      "evs": {
       "hp": 0,
@@ -451,42 +448,42 @@
       "def": 0,
       "spa": 252,
       "spd": 0,
-      "spe": 21
+      "spe": 63
      }
     },
     {
      "species": "hypno",
-     "level": 39,
+     "level": 45,
      "moves": [
-      "disable",
       "confusion",
       "headbutt",
-      "poisongas"
+      "poisongas",
+      "meditate"
      ],
      "evs": {
       "hp": 0,
       "atk": 252,
       "def": 0,
       "spa": 0,
-      "spd": 21,
+      "spd": 63,
       "spe": 0
      }
     },
     {
      "species": "mrmime",
-     "level": 39,
+     "level": 45,
      "moves": [
-      "lightscreen",
       "reflect",
       "encore",
-      "psybeam"
+      "psybeam",
+      "batonpass"
      ],
      "evs": {
       "hp": 0,
       "atk": 0,
       "def": 0,
       "spa": 252,
-      "spd": 21,
+      "spd": 63,
       "spe": 0
      }
     }
@@ -500,17 +497,17 @@
    "team": [
     {
      "species": "magneton",
-     "level": 39,
+     "level": 45,
      "moves": [
-      "thunderwave",
       "lockon",
       "swift",
-      "triattack"
+      "triattack",
+      "screech"
      ],
      "evs": {
       "hp": 0,
       "atk": 0,
-      "def": 21,
+      "def": 63,
       "spa": 252,
       "spd": 0,
       "spe": 0
@@ -518,17 +515,17 @@
     },
     {
      "species": "steelix",
-     "level": 39,
+     "level": 45,
      "moves": [
-      "rockthrow",
       "harden",
       "rage",
-      "sandstorm"
+      "sandstorm",
+      "slam"
      ],
      "evs": {
       "hp": 0,
       "atk": 252,
-      "def": 21,
+      "def": 63,
       "spa": 0,
       "spd": 0,
       "spe": 0
@@ -536,7 +533,7 @@
     },
     {
      "species": "skarmory",
-     "level": 39,
+     "level": 45,
      "moves": [
       "sandattack",
       "swift",
@@ -546,7 +543,7 @@
      "evs": {
       "hp": 0,
       "atk": 252,
-      "def": 21,
+      "def": 63,
       "spa": 0,
       "spd": 0,
       "spe": 0
@@ -564,12 +561,12 @@
    "team": [
     {
      "species": "magmar",
-     "level": 45,
+     "level": 53,
      "moves": [
-      "firepunch",
       "smokescreen",
       "sunnyday",
-      "flamethrower"
+      "flamethrower",
+      "confuseray"
      ],
      "evs": {
       "hp": 0,
@@ -577,17 +574,17 @@
       "def": 0,
       "spa": 252,
       "spd": 0,
-      "spe": 63
+      "spe": 119
      }
     },
     {
      "species": "rapidash",
-     "level": 45,
+     "level": 53,
      "moves": [
-      "stomp",
       "firespin",
       "takedown",
-      "furyattack"
+      "furyattack",
+      "agility"
      ],
      "evs": {
       "hp": 0,
@@ -595,17 +592,17 @@
       "def": 0,
       "spa": 0,
       "spd": 0,
-      "spe": 63
+      "spe": 119
      }
     },
     {
      "species": "arcanine",
-     "level": 45,
+     "level": 53,
      "moves": [
-      "flamewheel",
       "leer",
       "roar",
-      "takedown"
+      "takedown",
+      "extremespeed"
      ],
      "evs": {
       "hp": 0,
@@ -613,7 +610,7 @@
       "def": 0,
       "spa": 0,
       "spd": 0,
-      "spe": 63
+      "spe": 119
      }
     }
    ]
@@ -626,7 +623,7 @@
    "team": [
     {
      "species": "dewgong",
-     "level": 45,
+     "level": 53,
      "moves": [
       "aurorabeam",
       "rest",
@@ -638,13 +635,13 @@
       "atk": 252,
       "def": 0,
       "spa": 0,
-      "spd": 63,
+      "spd": 119,
       "spe": 0
      }
     },
     {
      "species": "piloswine",
-     "level": 45,
+     "level": 53,
      "moves": [
       "endure",
       "takedown",
@@ -652,7 +649,7 @@
       "mist"
      ],
      "evs": {
-      "hp": 63,
+      "hp": 119,
       "atk": 252,
       "def": 0,
       "spa": 0,
@@ -662,15 +659,15 @@
     },
     {
      "species": "lapras",
-     "level": 45,
+     "level": 53,
      "moves": [
-      "confuseray",
       "perishsong",
       "icebeam",
-      "raindance"
+      "raindance",
+      "safeguard"
      ],
      "evs": {
-      "hp": 63,
+      "hp": 119,
       "atk": 252,
       "def": 0,
       "spa": 0,
@@ -690,12 +687,12 @@
    "team": [
     {
      "species": "dugtrio",
-     "level": 52,
+     "level": 61,
      "moves": [
-      "dig",
       "sandattack",
       "slash",
-      "earthquake"
+      "earthquake",
+      "fissure"
      ],
      "evs": {
       "hp": 0,
@@ -703,12 +700,12 @@
       "def": 0,
       "spa": 0,
       "spd": 0,
-      "spe": 112
+      "spe": 175
      }
     },
     {
      "species": "nidoking",
-     "level": 52,
+     "level": 61,
      "moves": [
       "hornattack",
       "poisonsting",
@@ -721,22 +718,22 @@
       "def": 0,
       "spa": 0,
       "spd": 0,
-      "spe": 112
+      "spe": 175
      }
     },
     {
      "species": "rhydon",
-     "level": 52,
+     "level": 61,
      "moves": [
-      "stomp",
       "furyattack",
       "scaryface",
-      "horndrill"
+      "horndrill",
+      "takedown"
      ],
      "evs": {
       "hp": 0,
       "atk": 252,
-      "def": 112,
+      "def": 175,
       "spa": 0,
       "spd": 0,
       "spe": 0
@@ -752,7 +749,7 @@
    "team": [
     {
      "species": "gyarados",
-     "level": 52,
+     "level": 61,
      "moves": [
       "twister",
       "hydropump",
@@ -764,31 +761,31 @@
       "atk": 252,
       "def": 0,
       "spa": 0,
-      "spd": 112,
+      "spd": 175,
       "spe": 0
      }
     },
     {
-     "species": "dragonair",
-     "level": 52,
+     "species": "dragonite",
+     "level": 61,
      "moves": [
-      "dragonrage",
-      "slam",
       "agility",
-      "safeguard"
+      "safeguard",
+      "wingattack",
+      "outrage"
      ],
      "evs": {
       "hp": 0,
       "atk": 252,
       "def": 0,
       "spa": 0,
-      "spd": 112,
+      "spd": 175,
       "spe": 0
      }
     },
     {
      "species": "kingdra",
-     "level": 52,
+     "level": 61,
      "moves": [
       "watergun",
       "twister",
@@ -798,7 +795,7 @@
      "evs": {
       "hp": 0,
       "atk": 252,
-      "def": 112,
+      "def": 175,
       "spa": 0,
       "spd": 0,
       "spe": 0
