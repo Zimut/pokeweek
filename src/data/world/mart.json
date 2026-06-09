@@ -4,55 +4,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {
@@ -97,55 +55,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {
@@ -190,55 +106,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {
@@ -423,55 +297,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {
@@ -656,55 +488,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {
@@ -889,55 +679,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {
@@ -1122,55 +870,13 @@
    "id": "greatball",
    "name": "Great Ball",
    "kind": "ball",
-   "price": 500,
+   "price": 2000,
    "mult": 5
   },
   {
    "id": "rarecandy",
    "name": "Rare Candy",
    "kind": "levelup",
-   "price": 2000
-  },
-  {
-   "id": "hpup",
-   "name": "HP Up",
-   "kind": "statboost",
-   "stat": "hp",
-   "price": 1000
-  },
-  {
-   "id": "protein",
-   "name": "Protein",
-   "kind": "statboost",
-   "stat": "atk",
-   "price": 1000
-  },
-  {
-   "id": "iron",
-   "name": "Iron",
-   "kind": "statboost",
-   "stat": "def",
-   "price": 1000
-  },
-  {
-   "id": "calcium",
-   "name": "Calcium",
-   "kind": "statboost",
-   "stat": "spa",
-   "price": 1000
-  },
-  {
-   "id": "zinc",
-   "name": "Zinc",
-   "kind": "statboost",
-   "stat": "spd",
-   "price": 1000
-  },
-  {
-   "id": "carbos",
-   "name": "Carbos",
-   "kind": "statboost",
-   "stat": "spe",
    "price": 1000
   },
   {

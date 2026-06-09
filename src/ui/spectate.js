@@ -63,6 +63,11 @@ export class SpectateView extends BattleView {
     return active ? active.types : null;
   }
 
+  // Live party bar shows side 0's team (neutral viewer, absolute sides).
+  partyTeams() {
+    return [this.teamsCache[0] || [], this.teamsCache[1] || []];
+  }
+
   refreshParty(side) {
     const s = this.dom.slot[side];
     if (!s) return;

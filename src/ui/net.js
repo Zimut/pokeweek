@@ -139,6 +139,11 @@ export class NetworkBattleView extends BattleView {
     return active ? active.types : null;
   }
 
+  // Live party bar source. teamsCache is already in local order (index 0 = me).
+  partyTeams() {
+    return [this.teamsCache[0] || [], this.teamsCache[1] || []];
+  }
+
   refreshParty(side) {
     const s = this.dom.slot[side];
     if (!s) return;

@@ -74,7 +74,7 @@ const progression = {
   weekDays: 7,                    // a 1-week game = one day per route (Task 18)
   startMoney: 0,
   teamSize: 6,
-  rewards: { trainer: 200, gym: 1000, pvpWin: 1000, pvpLose: -1000, dailyPenalty: -2000 },
+  rewards: { trainer: 100, gym: 500, pvpWin: 1000, pvpLose: -1000, dailyPenalty: -2000 },
   ballOptions: [10, 25, 50, 100, 'infinite'],
   dayDefaultMs: 24 * 60 * 60 * 1000,
   starters: ['bulbasaur', 'charmander', 'squirtle', 'chikorita', 'cyndaquil', 'totodile'],
@@ -362,7 +362,7 @@ for (const m of MAPS) {
       const species = evolveTo(idOf(baseNum), level);
       party.push({ species, level, moves: dex.defaultMoves(species, level), evs: trainerEvs(level, rand) });
     }
-    const reward = Math.round(progression.rewards.trainer * (1 + 0.25 * rank));
+    const reward = progression.rewards.trainer; // flat — every trainer pays the same
     list.push({ id: i, class: cls, name, rank, reward, party });
   }
   trainers[m.map] = list;
@@ -428,14 +428,8 @@ for (const m of MAPS) {
 // 7) MART (full catalog available on every map; prices from design doc)
 // ---------------------------------------------------------------------------
 const BASE_ITEMS = [
-  { id: 'greatball', name: 'Great Ball', kind: 'ball', price: 500, mult: 5 },
-  { id: 'rarecandy', name: 'Rare Candy', kind: 'levelup', price: 2000 },
-  { id: 'hpup', name: 'HP Up', kind: 'statboost', stat: 'hp', price: 1000 },
-  { id: 'protein', name: 'Protein', kind: 'statboost', stat: 'atk', price: 1000 },
-  { id: 'iron', name: 'Iron', kind: 'statboost', stat: 'def', price: 1000 },
-  { id: 'calcium', name: 'Calcium', kind: 'statboost', stat: 'spa', price: 1000 },
-  { id: 'zinc', name: 'Zinc', kind: 'statboost', stat: 'spd', price: 1000 },
-  { id: 'carbos', name: 'Carbos', kind: 'statboost', stat: 'spe', price: 1000 },
+  { id: 'greatball', name: 'Great Ball', kind: 'ball', price: 2000, mult: 5 },
+  { id: 'rarecandy', name: 'Rare Candy', kind: 'levelup', price: 1000 },
   { id: 'firestone', name: 'Fire Stone', kind: 'stone', price: 2000 },
   { id: 'waterstone', name: 'Water Stone', kind: 'stone', price: 2000 },
   { id: 'thunderstone', name: 'Thunder Stone', kind: 'stone', price: 2000 },

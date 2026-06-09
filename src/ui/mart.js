@@ -1,5 +1,5 @@
 // Poké Mart overlay: buy the current map's items, organized into tabs by type
-// (Balls, Stones, Vitamins, Candy, TMs, HMs). Great Balls land in the ball
+// (Balls, Rare Candy, Stones, TMs). Great Balls land in the ball
 // pouch; everything else goes to the bag. Re-renders after each purchase so
 // money totals and "owned" counts stay live. Pure view — the GameController
 // owns the economy (buyItem / ownedCount / martInventory).
@@ -21,11 +21,11 @@ const el = (tag, props = {}, kids = []) => {
 // Tabs in display order; each groups one or more item kinds. Only tabs with
 // items in stock are shown.
 const TAB_DEFS = [
-  { id: 'usables', label: 'Usables', kinds: ['ball', 'levelup', 'statboost'] },
+  { id: 'usables', label: 'Usables', kinds: ['ball', 'levelup'] },
   { id: 'stones', label: 'Stones', kinds: ['stone'] },
   { id: 'tms', label: 'TMs', kinds: ['tm'] },
 ];
-const KIND_LABEL = { ball: 'Poké Ball', statboost: 'Vitamin', levelup: 'Level up', stone: 'Evolution', tm: 'TM' };
+const KIND_LABEL = { ball: 'Poké Ball', levelup: 'Level up', stone: 'Evolution', tm: 'TM' };
 const yen = (n) => `₽${Number(n).toLocaleString('en-US')}`;
 
 export class MartView {

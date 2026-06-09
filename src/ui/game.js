@@ -13,13 +13,12 @@ import { PartyMenu } from './menu.js';
 import { NetworkBattleView } from './net.js';
 import { SpectateView } from './spectate.js';
 import { spriteFront, TYPE_COLORS, expToNext } from './data.js';
+import { sfx } from './sfx.js';
 
 // Stat keys/labels shared by the menu summary and vitamin items.
 export const STAT_KEYS = ['hp', 'atk', 'def', 'spa', 'spd', 'spe'];
 export const STAT_LABEL = { hp: 'HP', atk: 'Attack', def: 'Defense', spa: 'Sp. Atk', spd: 'Sp. Def', spe: 'Speed' };
 const STAT_SHORT = { hp: 'HP', atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
-// Vitamins grant EVs (like modern games); EV candies (from wild defeats) do too.
-const VITAMIN_EV = 10;
 // EXP granted per level of every Pokémon defeated. Participants get the full
 // amount; benched Pokémon get BENCH_EXP_SHARE of it (modern "EXP Share" style).
 const EXP_PER_FOE_LEVEL = 5;
@@ -348,6 +347,7 @@ export class GameController {
   // The server settled the wager (authoritative). Adopt its money + flag, and —
   // if we won — earn EV candies for the opponent's team we defeated.
   onPvpResult(m) {
+    const before = this.state.money || 0;
     if (typeof m.money === 'number') this.state.money = m.money;
     this.state.battledToday = true;
     if (Array.isArray(m.defeatedTeam) && m.defeatedTeam.length) {
@@ -355,6 +355,7 @@ export class GameController {
       if (msg && this.ow) this.ow.say(msg);
     }
     if (this.ow) this.ow.renderHud();
+    if (typeof m.money === 'number') this.queueMoneyFloat(this.state.money - before);
     this.persist(true);
   }
 
@@ -635,7 +636,26 @@ export class GameController {
     return this.state.unlockedMap || this.world.progression.mapCount;
   }
 
-  addMoney(amt) { this.state.money = (this.state.money || 0) + amt; }
+  addMoney(amt) { this.state.money = (this.state.money || 0) + amt; this.queueMoneyFloat(amt); }
+
+  // Float a ±money chip on the HUD. If a battle view is covering the overworld,
+  // accumulate the delta and flush it when we return (so the player sees the
+  // reward appear back on the map).
+  queueMoneyFloat(amt) {
+    if (!amt) return;
+    if (this.ow && !this._removeBattle) this.ow.moneyFloat(amt);
+    else this._pendingMoney = (this._pendingMoney || 0) + amt;
+  }
+
+  // Brief full-screen flash used as a battle enter/exit transition.
+  flashTransition() {
+    const f = document.createElement('div');
+    f.className = 'screen-flash';
+    this.root.append(f);
+    void f.offsetWidth;
+    f.classList.add('on');
+    setTimeout(() => f.remove(), 480);
+  }
 
   // ---- catchable encounters (per-map) -----------------------------------
   // The per-map allowance as a number (Infinity if unlimited).
@@ -895,6 +915,7 @@ export class GameController {
   // Hide the overworld, show the battle view, and run it. The view's own
   // onDone/result handler calls restoreOverworld() when the player continues.
   mountBattleView(view) {
+    this.flashTransition();           // battle-start transition
     this.ow.root.style.display = 'none';
     this.root.append(view.root);
     this._removeBattle = () => { try { view.root.remove(); } catch { /* ignore */ } };
@@ -904,8 +925,11 @@ export class GameController {
   restoreOverworld() {
     if (this._removeBattle) { this._removeBattle(); this._removeBattle = null; }
     this.ow.root.style.display = '';
+    this.flashTransition();           // battle-end transition
     this.ow.renderHud();
     this.ow.renderPartyBar();
+    // Flush any rewards earned while the battle covered the map.
+    if (this._pendingMoney) { this.ow.moneyFloat(this._pendingMoney); this._pendingMoney = 0; }
   }
 
   addPokemon(set) {
@@ -962,6 +986,7 @@ export class GameController {
       }
     });
     if (!leveled.length) return '';
+    sfx.play('levelup');
     const learnNote = learnedNames.length ? ` · Learned ${learnedNames.slice(0, 3).join(', ')}${learnedNames.length > 3 ? '…' : ''}` : '';
     return `${leveled.length} Pokémon leveled up! (${leveled.slice(0, 3).join(', ')}${leveled.length > 3 ? '…' : ''})` + learnNote;
   }
@@ -1033,19 +1058,11 @@ export class GameController {
     const mon = this.state.party[monIndex];
     if (!mon) return { ok: false, msg: 'No Pokémon selected.' };
     let res;
-    if (item.kind === 'statboost') res = this.applyStatBoost(mon, item);
-    else if (item.kind === 'levelup') res = this.applyRareCandy(mon, monIndex);
+    if (item.kind === 'levelup') res = this.applyRareCandy(mon, monIndex);
     else if (item.kind === 'stone') res = this.applyStone(mon, item.id);
     else res = { ok: false, msg: "It won't have any effect." };
     if (res.ok) { this.state.bag[id] = count - 1; this.persist(true); }
     return res;
-  }
-
-  // Vitamins grant EVs to their stat (capped per stat + by the 510 total).
-  applyStatBoost(mon, item) {
-    const r = this.addEV(mon, item.stat, VITAMIN_EV);
-    if (!r.added) return { ok: false, msg: `${this.monName(mon)}'s ${STAT_LABEL[item.stat]} EVs are maxed.` };
-    return { ok: true, msg: `${this.monName(mon)} gained ${r.added} ${STAT_LABEL[item.stat]} EVs!` };
   }
 
   // Raise a mon's EV in `stat` by up to `amount`, honoring the 252/stat and 510
@@ -1121,6 +1138,7 @@ export class GameController {
     const before = this.monName(mon);
     const fromLevel = mon.level;
     mon.level += 1;
+    sfx.play('levelup');
     const { evolvedName, learned } = this.applyLevelGains(mon, fromLevel, monIndex);
     const learnNote = learned.length ? ` It learned ${learned.join(', ')}!` : '';
     return {
@@ -1213,6 +1231,7 @@ export class GameController {
     const q = this.pendingEvos;
     if (!q || !q.length || !this.ow) return;
     this.pendingEvos = [];
+    sfx.play('evolve');
     for (const e of q) this.ow.evoToast(e.from, e.to, e.num);
   }
 

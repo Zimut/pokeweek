@@ -4,6 +4,7 @@
 // "free" action (the wild Pokémon doesn't counter that turn) — the limited
 // per-map ball supply is what keeps catching costly.
 import { BattleView } from './battle.js';
+import { sfx } from './sfx.js';
 
 const el = (tag, props = {}, kids = []) => {
   const n = document.createElement(tag);
@@ -97,16 +98,18 @@ export class WildBattleView extends BattleView {
     const menu = this.dom.menu;
     menu.className = 'menu actions';
     menu.innerHTML = '';
-    const canCatch = this.wild.canCatch !== false; // gated by this route's encounters
+    const canCatch = this.wild.canCatch !== false;  // Poké Balls gated by route encounters
+    const hasGreat = (this.wild.balls.greatball || 0) > 0; // Great Balls ignore that limit
+    const canBall = canCatch || hasGreat;
     menu.append(
-      el('button', { class: 'primary', text: '⚔ FIGHT', onclick: () => this.renderMoveMenu(side, req, resolve) }),
-      el('button', { class: 'secondary', text: '🔁 POKéMON', disabled: !req.active.canSwitch, onclick: () => this.renderSwitchMenu(side, req, resolve, false) }),
+      el('button', { class: 'primary', text: '⚔ FIGHT', onclick: () => { sfx.play('menu'); this.renderMoveMenu(side, req, resolve); } }),
+      el('button', { class: 'secondary', text: '🔁 POKéMON', disabled: !req.active.canSwitch, onclick: () => { sfx.play('menu'); this.renderSwitchMenu(side, req, resolve, false); } }),
       el('button', {
-        class: 'ghost', text: '🎯 BALL', disabled: !canCatch,
-        title: canCatch ? '' : "You're out of catchable encounters on this route.",
-        onclick: () => { if (canCatch) this.renderBallMenu(side, req, resolve); },
+        class: 'ghost', text: '🎯 BALL', disabled: !canBall,
+        title: canBall ? '' : "Out of catchable encounters — a Great Ball can still catch.",
+        onclick: () => { if (canBall) { sfx.play('menu'); this.renderBallMenu(side, req, resolve); } },
       }),
-      el('button', { class: 'ghost', text: '🏃 RUN', onclick: () => { this.clearMenu(); resolve({ type: 'run' }); } }),
+      el('button', { class: 'ghost', text: '🏃 RUN', onclick: () => { sfx.play('back'); this.clearMenu(); resolve({ type: 'run' }); } }),
     );
   }
 
@@ -114,13 +117,17 @@ export class WildBattleView extends BattleView {
     const menu = this.dom.menu;
     menu.className = 'menu';
     menu.innerHTML = '';
+    const canCatch = this.wild.canCatch !== false;
     for (const ball of ['pokeball', 'greatball']) {
       const n = this.wild.balls[ball];
       const count = n === Infinity ? '∞' : n;
+      // Poké Balls need a catchable encounter left; Great Balls only need stock
+      // (they catch even when you're out of encounters — and always succeed).
+      const disabled = ball === 'greatball' ? (n <= 0) : !canCatch;
+      const title = (ball === 'pokeball' && !canCatch) ? 'No catchable encounters left on this route' : '';
       menu.append(el('button', {
-        class: 'ballbtn',
-        disabled: n !== Infinity && n <= 0,
-        onclick: () => { this.clearMenu(); resolve({ type: 'ball', ball }); },
+        class: 'ballbtn', disabled, title,
+        onclick: () => { sfx.play('select'); this.clearMenu(); resolve({ type: 'ball', ball }); },
       }, [
         el('span', { class: `ball-ico ball-${ball}` }),
         el('span', { class: 'ball-name', text: BALL_NAME[ball] }),
@@ -144,23 +151,50 @@ export class WildBattleView extends BattleView {
 
     await this.say(`You used one ${BALL_NAME[ball]}!`, true);
     const sprite = this.dom.slot[1].sprite;
+    sfx.play('throw');
     await this.ballAnim(sprite);
 
     const caught = Math.random() < chance;
     // Number of wobbles before the result (cosmetic): more for closer calls.
     const wobbles = caught ? 3 : Math.min(3, Math.floor((Math.random() * 0.6 + chance) * 4));
-    for (let i = 0; i < wobbles; i++) { await this.wobble(sprite); }
+    for (let i = 0; i < wobbles; i++) { sfx.play('wobble'); await this.wobble(sprite); }
 
     if (caught) {
       sprite.classList.add('caught');
+      this.sparkle(sprite);
+      sfx.play('catch');
       await this.say(`Gotcha! ${foe.name} was caught!`, true);
       await this.sleep(500);
       this.caughtSet = this.wild.makeCaughtSet();
       return true;
     }
     sprite.classList.remove('inball');
+    sfx.play('back');
     await this.say('Oh no! The Pokémon broke free!', true);
     return false;
+  }
+
+  // Burst of sparkle particles around a sprite on a successful catch.
+  sparkle(sprite) {
+    const field = this.dom.battle;
+    if (!field || !sprite) return;
+    const br = field.getBoundingClientRect();
+    const sr = sprite.getBoundingClientRect();
+    const cx = sr.left + sr.width / 2 - br.left;
+    const cy = sr.top + sr.height / 2 - br.top;
+    const N = 10;
+    for (let i = 0; i < N; i++) {
+      const ang = (i / N) * Math.PI * 2;
+      const dist = 26 + (i % 3) * 12;
+      const p = el('div', { class: 'catch-spark' });
+      p.style.left = `${cx}px`;
+      p.style.top = `${cy}px`;
+      p.style.setProperty('--dx', `${Math.cos(ang) * dist}px`);
+      p.style.setProperty('--dy', `${Math.sin(ang) * dist}px`);
+      p.style.animationDuration = `${0.7 / this.speed}s`;
+      field.append(p);
+      setTimeout(() => p.remove(), 800 / this.speed);
+    }
   }
 
   ballAnim(sprite) {

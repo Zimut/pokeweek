@@ -5,8 +5,8 @@
  "startMoney": 0,
  "teamSize": 6,
  "rewards": {
-  "trainer": 200,
-  "gym": 1000,
+  "trainer": 100,
+  "gym": 500,
   "pvpWin": 1000,
   "pvpLose": -1000,
   "dailyPenalty": -2000

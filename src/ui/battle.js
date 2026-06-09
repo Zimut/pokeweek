@@ -5,6 +5,7 @@ import { Battle } from '../engine/battle.js';
 import { AI } from '../engine/ai.js';
 import { spriteFront, spriteBack, STATUS_SHORT, TYPE_COLORS } from './data.js';
 import { moveDescription, effectivenessInfo } from './movedesc.js';
+import { sfx } from './sfx.js';
 
 const el = (tag, props = {}, kids = []) => {
   const n = document.createElement(tag);
@@ -25,6 +26,8 @@ const el = (tag, props = {}, kids = []) => {
 // sticks. Shared by every battle view (all extend BattleView).
 const SPEED_KEY = 'pokeweek:battleSpeed';
 const SPEED_CYCLE = [1, 2, 4];
+// Short labels for the floating stat-change arrows.
+const STAT_ABBR = { atk: 'Atk', def: 'Def', spa: 'Sp.Atk', spd: 'Sp.Def', spe: 'Speed', accuracy: 'Acc', evasion: 'Eva' };
 function loadBattleSpeed() {
   try { const v = Number(localStorage.getItem(SPEED_KEY)); return SPEED_CYCLE.includes(v) ? v : 1; } catch { return 1; }
 }
@@ -68,27 +71,38 @@ export class BattleView {
       speedBtn.textContent = `Speed: ${this.speed}x`;
       saveBattleSpeed(this.speed); // persist the preference forever
     });
+    const muteBtn = el('button', { class: 'ghost', text: sfx.isMuted() ? '🔇' : '🔊', title: 'Toggle sound' });
+    muteBtn.addEventListener('click', () => { const m = sfx.toggle(); muteBtn.textContent = m ? '🔇' : '🔊'; });
     const quitBtn = el('button', { class: 'ghost', text: '✕ Quit', onclick: () => this.quit() });
     const header = el('div', { style: 'width:min(860px,96vw);display:flex;align-items:center;gap:10px' }, [
-      this.dom.turn, el('span', { style: 'flex:1' }), speedBtn, quitBtn,
+      this.dom.turn, el('span', { style: 'flex:1' }), speedBtn, muteBtn, quitBtn,
     ]);
 
-    // battlefield
+    // battlefield (+ full-field flash overlay used for impact/transition juice)
     this.dom.battle = el('div', { class: 'battle' });
+    this.dom.flash = el('div', { class: 'bt-flash' });
     this.dom.slot = [this.makeSlot(0), this.makeSlot(1)];
-    this.dom.battle.append(this.dom.slot[1].wrap, this.dom.slot[0].wrap);
+    this.dom.battle.append(this.dom.slot[1].wrap, this.dom.slot[0].wrap, this.dom.flash);
+
+    // live party bar — tracks each side's HP/status/faint during the fight
+    this.dom.pbar = el('div', { class: 'bt-party' });
 
     // control deck
     this.dom.msg = el('div', { class: 'msgbox' });
     this.dom.menu = el('div', { class: 'menu' });
     const deck = el('div', { class: 'deck' }, [this.dom.msg, this.dom.menu]);
 
-    this.root.append(header, this.dom.battle, deck);
+    this.root.append(header, this.dom.battle, this.dom.pbar, deck);
+    this.renderBattleParty();
   }
 
   makeSlot(side) {
     const isFoe = side === 1;
     const sprite = el('img', { class: 'sprite', alt: '' });
+    // Status overlay sits on top of the sprite. It must NOT use the sprite's own
+    // `animation` (that channel is owned by hurt/lunge/cast), so it's a separate
+    // element tinted/animated independently via the .status-fx CSS classes.
+    const statusFx = el('div', { class: 'status-fx' });
     const name = el('span', { class: 'ic-name' });
     const lv = el('span', { class: 'ic-lv' });
     const status = el('span', { class: 'ic-status' });
@@ -103,14 +117,15 @@ export class BattleView {
       isFoe ? null : party,
     ]);
     const wrap = el('div', { class: `field-slot ${isFoe ? 'foe' : 'ally'}` }, [
-      el('div', { class: 'platform' }), sprite, card,
+      el('div', { class: 'platform' }), sprite, statusFx, card,
     ]);
-    return { wrap, sprite, name, lv, status, hpfill, hptext, party, isFoe };
+    return { wrap, sprite, statusFx, name, lv, status, hpfill, hptext, party, isFoe };
   }
 
   // ---- run / restart -----------------------------------------------------
   async run() {
     this.buildDom();
+    this.intro();
     this.battle.start();
     await this.playEvents(this.battle.flushLog());
     await this.loop();
@@ -119,9 +134,18 @@ export class BattleView {
   async restart() {
     this.initBattle();
     this.buildDom();
+    this.intro();
     this.battle.start();
     await this.playEvents(this.battle.flushLog());
     await this.loop();
+  }
+
+  // Battle-start sweep: a quick wipe over the field as the scene opens.
+  intro() {
+    const b = this.dom && this.dom.battle;
+    if (!b) return;
+    b.classList.remove('bt-intro'); void b.offsetWidth; b.classList.add('bt-intro');
+    setTimeout(() => b.classList.remove('bt-intro'), 700);
   }
 
   // Header ✕ Quit. Subclasses override to forfeit (trainer/gym), abandon the
@@ -191,8 +215,8 @@ export class BattleView {
     menu.className = 'menu actions';
     menu.innerHTML = '';
     menu.append(
-      el('button', { class: 'primary', text: '⚔ FIGHT', onclick: () => this.renderMoveMenu(side, req, resolve) }),
-      el('button', { class: 'secondary', text: '🔁 POKéMON', disabled: !req.active.canSwitch, onclick: () => this.renderSwitchMenu(side, req, resolve, false) }),
+      el('button', { class: 'primary', text: '⚔ FIGHT', onclick: () => { sfx.play('menu'); this.renderMoveMenu(side, req, resolve); } }),
+      el('button', { class: 'secondary', text: '🔁 POKéMON', disabled: !req.active.canSwitch, onclick: () => { sfx.play('menu'); this.renderSwitchMenu(side, req, resolve, false); } }),
     );
     if (this.config.kind === 'wild' && side === 0) {
       menu.append(el('button', { class: 'ghost', text: '🏃 RUN', onclick: () => { this.say('Got away safely!'); setTimeout(() => this.onExit(), 600); } }));
@@ -226,7 +250,7 @@ export class BattleView {
         class: 'movebtn',
         disabled: m.disabled,
         style: `border-left:8px solid ${color}`,
-        onclick: () => { this.clearMenu(); resolve({ type: 'move', move: m.index }); },
+        onclick: () => { sfx.play('select'); this.clearMenu(); resolve({ type: 'move', move: m.index }); },
         onmouseenter: () => this.showMoveTip(m, full, eff),
         onmouseleave: restore,
         onfocus: () => this.showMoveTip(m, full, eff),
@@ -295,7 +319,7 @@ export class BattleView {
       const btn = el('button', {
         class: 'switchbtn',
         style: `border-left:8px solid ${color}`,
-        onclick: () => { this.clearMenu(); resolve({ type: 'switch', target: p.index }); },
+        onclick: () => { sfx.play('select'); this.clearMenu(); resolve({ type: 'switch', target: p.index }); },
       }, [
         el('img', { src: spriteFront(p.num, p.shiny) }),
         el('div', { class: 'sw-meta' }, [
@@ -319,7 +343,7 @@ export class BattleView {
   clearMenu() { if (this.dom.menu) { this.dom.menu.innerHTML = ''; this.dom.menu.className = 'menu'; } }
 
   // ---- event animation ---------------------------------------------------
-  async playEvents(events) { for (const e of events) await this.playEvent(e); }
+  async playEvents(events) { for (const e of events) { await this.playEvent(e); this.renderBattleParty(); } }
 
   async playEvent(e) {
     switch (e.type) {
@@ -329,12 +353,20 @@ export class BattleView {
       case 'damage': await this.onDamage(e); return;
       case 'heal': this.setHp(e.side, e.hpPct, e.hp, e.maxhp); if (e.text) await this.say(e.text); else await this.sleep(420); return;
       case 'faint': await this.onFaint(e); if (e.text) await this.say(e.text); return;
-      case 'status': this.updateStatus(e.side, e.status); break;
+      case 'status': this.updateStatus(e.side, e.status); sfx.play('statdown'); break;
       case 'curestatus': this.updateStatus(e.side, null); break;
+      case 'boost': this.onBoost(e); break;
       case 'weather': this.setWeatherClass(e.weather); break;
       default: break;
     }
     if (e.text) await this.say(e.text);
+  }
+
+  // Stat change → floating arrow(s) + a rising/falling chirp.
+  onBoost(e) {
+    const up = (e.amount || 0) >= 0;
+    this.statArrow(e.side, e.stat, up, Math.abs(e.amount || 1));
+    sfx.play(up ? 'stat' : 'statdown');
   }
 
   async onSwitchIn(e) {
@@ -356,15 +388,52 @@ export class BattleView {
     const s = this.dom.slot[e.side];
     s.sprite.classList.remove('hurt'); void s.sprite.offsetWidth; s.sprite.classList.add('hurt');
     if (e.dmg > 0) this.floatDamage(e.side, e.dmg, e.crit);
+    const big = e.crit || e.eff === 'super';
+    if (e.dmg > 0) {
+      this.shake(big);                       // mild screen shake; a touch stronger on crit/super
+      this.flash(big ? 0.5 : 0.26);          // brief impact flash
+      sfx.play(e.eff === 'resist' ? 'weakhit' : big ? 'superhit' : 'hit');
+    }
     this.setHp(e.side, e.hpPct, e.hp, e.maxhp);
+    if (e.side === 0 && e.hpPct > 0 && e.hpPct <= 0.2) sfx.play('lowhp'); // your mon in the red
     await this.sleep(580);
   }
 
   async onFaint(e) {
     const s = this.dom.slot[e.side];
     s.sprite.classList.add('faint');
+    sfx.play('faint');
     this.refreshParty(e.side, e.side);
     await this.sleep(520);
+  }
+
+  // Mild screen shake on impact (the field nudges, not the whole page).
+  shake(strong = false) {
+    const b = this.dom && this.dom.battle;
+    if (!b) return;
+    const cls = strong ? 'bt-shake-strong' : 'bt-shake';
+    b.classList.remove('bt-shake', 'bt-shake-strong'); void b.offsetWidth; b.classList.add(cls);
+    setTimeout(() => b.classList.remove(cls), 360);
+  }
+
+  // Brief white flash over the field (alpha 0..1). Used for hits and intros.
+  flash(alpha = 0.3) {
+    const f = this.dom && this.dom.flash;
+    if (!f) return;
+    f.style.setProperty('--a', String(alpha));
+    f.classList.remove('on'); void f.offsetWidth; f.classList.add('on');
+    setTimeout(() => f.classList.remove('on'), 220);
+  }
+
+  // Floating stat-change arrow near the affected mon.
+  statArrow(side, stat, up, n) {
+    if (!this.dom || !this.dom.battle) return;
+    const label = STAT_ABBR[stat] || stat;
+    const arrows = (up ? '▲' : '▼').repeat(Math.min(2, Math.max(1, n)));
+    const pos = side === 1 ? 'top:26%;right:24%' : 'bottom:34%;left:22%';
+    const f = el('div', { class: `stat-arrow ${up ? 'up' : 'down'}`, text: `${label} ${arrows}`, style: pos });
+    this.dom.battle.append(f);
+    setTimeout(() => f.remove(), 1100 / this.speed);
   }
 
   // Attack flourish, played right after the "X used Y!" line and before the
@@ -430,6 +499,7 @@ export class BattleView {
   updateStatus(side, status) {
     const s = this.dom.slot[side];
     if (!s || !s.status) return; // missing/unknown side — never throw out of the turn loop
+    if (s.statusFx) s.statusFx.className = status ? `status-fx show fx-${status}` : 'status-fx';
     if (!status) { s.status.className = 'ic-status'; s.status.textContent = ''; return; }
     s.status.className = `ic-status show st-${status}`;
     s.status.textContent = STATUS_SHORT[status] || status.toUpperCase();
@@ -440,6 +510,38 @@ export class BattleView {
     s.party.innerHTML = '';
     const team = this.battle.teamView(this.battle.sides[side]);
     for (const p of team) s.party.append(el('div', { class: `dot${p.fainted ? ' fainted' : ''}` }));
+  }
+
+  // [playerTeam, foeTeam] for the live party bar. NetworkBattleView overrides
+  // this (it has no local engine, and the player may be side 1).
+  partyTeams() {
+    if (!this.battle) return [[], []];
+    return [this.battle.teamView(this.battle.sides[0]), this.battle.teamView(this.battle.sides[1])];
+  }
+
+  // Live party tracker between the field and the deck: a chip per team member
+  // with a mini-sprite, a thin HP bar and a status tag. The active mon is
+  // highlighted, fainted ones dimmed. Rebuilt after every event so it mirrors
+  // the current battle state (it shows full health again once the overworld
+  // re-heals the team after the fight).
+  renderBattleParty() {
+    const bar = this.dom && this.dom.pbar;
+    if (!bar) return;
+    const team = this.partyTeams()[0] || [];
+    bar.innerHTML = '';
+    for (const p of team) {
+      const pct = Math.max(0, Math.min(100, Math.round((p.hpPct || 0) * 100)));
+      const hpcls = p.fainted ? 'dead' : pct <= 20 ? 'low' : pct <= 50 ? 'mid' : '';
+      const chip = el('div', {
+        class: `bt-pchip${p.active ? ' active' : ''}${p.fainted ? ' fainted' : ''}`,
+        title: `${p.name} Lv${p.level}`,
+      }, [
+        el('img', { class: 'bt-pico', src: spriteFront(p.num, p.shiny), alt: '' }),
+        el('div', { class: 'bt-phpwrap' }, el('div', { class: `bt-php ${hpcls}`, style: `width:${pct}%` })),
+        p.status ? el('span', { class: `bt-pst st-${p.status}`, text: STATUS_SHORT[p.status] || p.status.toUpperCase() }) : null,
+      ]);
+      bar.append(chip);
+    }
   }
 
   setWeatherClass(weather) {
@@ -470,6 +572,7 @@ export class BattleView {
   // ---- result ------------------------------------------------------------
   showResult() {
     const w = this.battle.winner;
+    sfx.play(w === 0 ? 'win' : 'faint');
     const title = w === 'tie' ? "It's a tie!" : `${this.config.names[w]} won!`;
     const sub = this.config.kind === 'wild' && w === 0 ? 'The wild Pokémon was defeated!'
       : `Battle ended in ${this.battle.turn} turns.`;

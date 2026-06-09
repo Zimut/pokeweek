@@ -5,7 +5,7 @@
    "class": "Youngster",
    "name": "Liz",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "butterfree",
@@ -46,7 +46,7 @@
    "class": "Lass",
    "name": "Sam",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "jigglypuff",
@@ -90,7 +90,7 @@
    "class": "Bug Catcher",
    "name": "Kai",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "spinarak",
@@ -133,7 +133,7 @@
    "class": "Picnicker",
    "name": "Bret",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "pidgey",
@@ -174,7 +174,7 @@
    "class": "Youngster",
    "name": "Tess",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "mareep",
@@ -216,7 +216,7 @@
    "class": "Lass",
    "name": "Dale",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "ledyba",
@@ -241,7 +241,7 @@
    "class": "Bug Catcher",
    "name": "Nina",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "cleffa",
@@ -267,7 +267,7 @@
    "class": "Picnicker",
    "name": "Owen",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "igglybuff",
@@ -293,7 +293,7 @@
    "class": "Youngster",
    "name": "Rita",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "pichu",
@@ -319,7 +319,7 @@
    "class": "Lass",
    "name": "Gus",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "spinarak",
@@ -344,7 +344,7 @@
    "class": "Bug Catcher",
    "name": "Vera",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "hoothoot",
@@ -386,7 +386,7 @@
    "class": "Picnicker",
    "name": "Theo",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "sunkern",
@@ -430,7 +430,7 @@
    "class": "Youngster",
    "name": "Mona",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "metapod",
@@ -471,7 +471,7 @@
    "class": "Lass",
    "name": "Cody",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "hoppip",
@@ -514,7 +514,7 @@
    "class": "Bug Catcher",
    "name": "Iris",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "rattata",
@@ -558,7 +558,7 @@
    "class": "Picnicker",
    "name": "Hank",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "pikachu",
@@ -585,7 +585,7 @@
    "class": "Youngster",
    "name": "Zoe",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "sentret",
@@ -610,7 +610,7 @@
    "class": "Lass",
    "name": "Pete",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "sunkern",
@@ -635,7 +635,7 @@
    "class": "Bug Catcher",
    "name": "Lana",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "caterpie",
@@ -660,7 +660,7 @@
    "class": "Picnicker",
    "name": "Joey",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "ledyba",
@@ -686,7 +686,7 @@
    "class": "Bug Catcher",
    "name": "Bret",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "nidorina",
@@ -731,7 +731,7 @@
    "class": "Camper",
    "name": "Tess",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "ekans",
@@ -776,7 +776,7 @@
    "class": "Youngster",
    "name": "Dale",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "nidorino",
@@ -821,7 +821,7 @@
    "class": "Lass",
    "name": "Nina",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "bellsprout",
@@ -866,7 +866,7 @@
    "class": "Twins",
    "name": "Owen",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "oddish",
@@ -911,7 +911,7 @@
    "class": "Bug Catcher",
    "name": "Rita",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "mankey",
@@ -938,7 +938,7 @@
    "class": "Camper",
    "name": "Gus",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "togetic",
@@ -964,7 +964,7 @@
    "class": "Youngster",
    "name": "Vera",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "psyduck",
@@ -990,7 +990,7 @@
    "class": "Lass",
    "name": "Theo",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "meowth",
@@ -1016,7 +1016,7 @@
    "class": "Twins",
    "name": "Mona",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "oddish",
@@ -1041,7 +1041,7 @@
    "class": "Bug Catcher",
    "name": "Cody",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "oddish",
@@ -1086,7 +1086,7 @@
    "class": "Camper",
    "name": "Iris",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "bellsprout",
@@ -1131,7 +1131,7 @@
    "class": "Youngster",
    "name": "Hank",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "snubbull",
@@ -1176,7 +1176,7 @@
    "class": "Lass",
    "name": "Zoe",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "psyduck",
@@ -1221,7 +1221,7 @@
    "class": "Twins",
    "name": "Pete",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "oddish",
@@ -1266,7 +1266,7 @@
    "class": "Bug Catcher",
    "name": "Lana",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "nidorina",
@@ -1293,7 +1293,7 @@
    "class": "Camper",
    "name": "Joey",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "mankey",
@@ -1320,7 +1320,7 @@
    "class": "Youngster",
    "name": "Mikey",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "psyduck",
@@ -1346,7 +1346,7 @@
    "class": "Lass",
    "name": "Anna",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "snubbull",
@@ -1373,7 +1373,7 @@
    "class": "Twins",
    "name": "Liz",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "mankey",
@@ -1401,7 +1401,7 @@
    "class": "Hiker",
    "name": "Nina",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "voltorb",
@@ -1464,7 +1464,7 @@
    "class": "Super Nerd",
    "name": "Owen",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "quilava",
@@ -1527,7 +1527,7 @@
    "class": "Engineer",
    "name": "Rita",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "gastly",
@@ -1590,7 +1590,7 @@
    "class": "Firebreather",
    "name": "Gus",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "houndoom",
@@ -1653,7 +1653,7 @@
    "class": "Camper",
    "name": "Vera",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "slugma",
@@ -1716,7 +1716,7 @@
    "class": "Hiker",
    "name": "Theo",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "houndour",
@@ -1761,7 +1761,7 @@
    "class": "Super Nerd",
    "name": "Mona",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "voltorb",
@@ -1805,7 +1805,7 @@
    "class": "Engineer",
    "name": "Cody",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "slugma",
@@ -1850,7 +1850,7 @@
    "class": "Firebreather",
    "name": "Iris",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "ponyta",
@@ -1895,7 +1895,7 @@
    "class": "Camper",
    "name": "Hank",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "kadabra",
@@ -1940,7 +1940,7 @@
    "class": "Hiker",
    "name": "Zoe",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "dugtrio",
@@ -2003,7 +2003,7 @@
    "class": "Super Nerd",
    "name": "Pete",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "quilava",
@@ -2066,7 +2066,7 @@
    "class": "Engineer",
    "name": "Lana",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "quilava",
@@ -2129,7 +2129,7 @@
    "class": "Firebreather",
    "name": "Joey",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "slugma",
@@ -2192,7 +2192,7 @@
    "class": "Camper",
    "name": "Mikey",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "diglett",
@@ -2255,7 +2255,7 @@
    "class": "Hiker",
    "name": "Anna",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "koffing",
@@ -2300,7 +2300,7 @@
    "class": "Super Nerd",
    "name": "Liz",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "magnemite",
@@ -2345,7 +2345,7 @@
    "class": "Engineer",
    "name": "Sam",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "drowzee",
@@ -2390,7 +2390,7 @@
    "class": "Firebreather",
    "name": "Kai",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "gastly",
@@ -2435,7 +2435,7 @@
    "class": "Camper",
    "name": "Bret",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "geodude",
@@ -2482,7 +2482,7 @@
    "class": "Swimmer",
    "name": "Gus",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "shellder",
@@ -2545,7 +2545,7 @@
    "class": "Sailor",
    "name": "Vera",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "seadra",
@@ -2608,7 +2608,7 @@
    "class": "Fisher",
    "name": "Theo",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "gyarados",
@@ -2668,7 +2668,7 @@
    "class": "Lass",
    "name": "Mona",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "kingler",
@@ -2731,7 +2731,7 @@
    "class": "Beauty",
    "name": "Cody",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "seel",
@@ -2794,7 +2794,7 @@
    "class": "Swimmer",
    "name": "Iris",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "kingler",
@@ -2839,7 +2839,7 @@
    "class": "Sailor",
    "name": "Hank",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "qwilfish",
@@ -2884,7 +2884,7 @@
    "class": "Fisher",
    "name": "Zoe",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "kingler",
@@ -2929,7 +2929,7 @@
    "class": "Lass",
    "name": "Pete",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "mantine",
@@ -2974,7 +2974,7 @@
    "class": "Beauty",
    "name": "Lana",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "wartortle",
@@ -3019,7 +3019,7 @@
    "class": "Swimmer",
    "name": "Joey",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "kingler",
@@ -3082,7 +3082,7 @@
    "class": "Sailor",
    "name": "Mikey",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "gyarados",
@@ -3145,7 +3145,7 @@
    "class": "Fisher",
    "name": "Anna",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "shellder",
@@ -3208,7 +3208,7 @@
    "class": "Lass",
    "name": "Liz",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "wartortle",
@@ -3271,7 +3271,7 @@
    "class": "Beauty",
    "name": "Sam",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "staryu",
@@ -3334,7 +3334,7 @@
    "class": "Swimmer",
    "name": "Kai",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "horsea",
@@ -3379,7 +3379,7 @@
    "class": "Sailor",
    "name": "Bret",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "delibird",
@@ -3421,7 +3421,7 @@
    "class": "Fisher",
    "name": "Tess",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "octillery",
@@ -3466,7 +3466,7 @@
    "class": "Lass",
    "name": "Dale",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "delibird",
@@ -3508,7 +3508,7 @@
    "class": "Beauty",
    "name": "Nina",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "shellder",
@@ -3555,7 +3555,7 @@
    "class": "Psychic",
    "name": "Mona",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "dunsparce",
@@ -3633,7 +3633,7 @@
    "class": "Pokémaniac",
    "name": "Cody",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "stantler",
@@ -3711,7 +3711,7 @@
    "class": "Bird Keeper",
    "name": "Iris",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "tangela",
@@ -3792,7 +3792,7 @@
    "class": "Lass",
    "name": "Hank",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "dodrio",
@@ -3873,7 +3873,7 @@
    "class": "Schoolboy",
    "name": "Zoe",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "girafarig",
@@ -3954,7 +3954,7 @@
    "class": "Psychic",
    "name": "Pete",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "venusaur",
@@ -4017,7 +4017,7 @@
    "class": "Pokémaniac",
    "name": "Lana",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "smeargle",
@@ -4080,7 +4080,7 @@
    "class": "Bird Keeper",
    "name": "Joey",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "sudowoodo",
@@ -4143,7 +4143,7 @@
    "class": "Lass",
    "name": "Mikey",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "tauros",
@@ -4206,7 +4206,7 @@
    "class": "Schoolboy",
    "name": "Anna",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "tangela",
@@ -4269,7 +4269,7 @@
    "class": "Psychic",
    "name": "Liz",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "dunsparce",
@@ -4350,7 +4350,7 @@
    "class": "Pokémaniac",
    "name": "Sam",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "mrmime",
@@ -4428,7 +4428,7 @@
    "class": "Bird Keeper",
    "name": "Kai",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "farfetchd",
@@ -4509,7 +4509,7 @@
    "class": "Lass",
    "name": "Bret",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "smeargle",
@@ -4590,7 +4590,7 @@
    "class": "Schoolboy",
    "name": "Tess",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "venusaur",
@@ -4671,7 +4671,7 @@
    "class": "Psychic",
    "name": "Dale",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "smeargle",
@@ -4734,7 +4734,7 @@
    "class": "Pokémaniac",
    "name": "Nina",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "lickitung",
@@ -4797,7 +4797,7 @@
    "class": "Bird Keeper",
    "name": "Owen",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "yanma",
@@ -4857,7 +4857,7 @@
    "class": "Lass",
    "name": "Rita",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "kangaskhan",
@@ -4920,7 +4920,7 @@
    "class": "Schoolboy",
    "name": "Gus",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "dunsparce",
@@ -4982,7 +4982,7 @@
    "class": "Hiker",
    "name": "Hank",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "murkrow",
@@ -5063,7 +5063,7 @@
    "class": "Skier",
    "name": "Zoe",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "electabuzz",
@@ -5144,7 +5144,7 @@
    "class": "Blackbelt",
    "name": "Pete",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "magmar",
@@ -5225,7 +5225,7 @@
    "class": "Birdkeeper",
    "name": "Lana",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "skarmory",
@@ -5306,7 +5306,7 @@
    "class": "Pokémaniac",
    "name": "Joey",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "murkrow",
@@ -5387,7 +5387,7 @@
    "class": "Hiker",
    "name": "Mikey",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "gligar",
@@ -5450,7 +5450,7 @@
    "class": "Skier",
    "name": "Anna",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "misdreavus",
@@ -5513,7 +5513,7 @@
    "class": "Blackbelt",
    "name": "Liz",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "ursaring",
@@ -5576,7 +5576,7 @@
    "class": "Birdkeeper",
    "name": "Sam",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "donphan",
@@ -5639,7 +5639,7 @@
    "class": "Pokémaniac",
    "name": "Kai",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "steelix",
@@ -5702,7 +5702,7 @@
    "class": "Hiker",
    "name": "Bret",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "murkrow",
@@ -5783,7 +5783,7 @@
    "class": "Skier",
    "name": "Tess",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "electabuzz",
@@ -5864,7 +5864,7 @@
    "class": "Blackbelt",
    "name": "Dale",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "heracross",
@@ -5945,7 +5945,7 @@
    "class": "Birdkeeper",
    "name": "Nina",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "piloswine",
@@ -6026,7 +6026,7 @@
    "class": "Pokémaniac",
    "name": "Owen",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "murkrow",
@@ -6107,7 +6107,7 @@
    "class": "Hiker",
    "name": "Rita",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "skarmory",
@@ -6170,7 +6170,7 @@
    "class": "Skier",
    "name": "Gus",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "gligar",
@@ -6233,7 +6233,7 @@
    "class": "Blackbelt",
    "name": "Vera",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "skarmory",
@@ -6296,7 +6296,7 @@
    "class": "Birdkeeper",
    "name": "Theo",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "gligar",
@@ -6359,7 +6359,7 @@
    "class": "Pokémaniac",
    "name": "Mona",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "charizard",
@@ -6424,7 +6424,7 @@
    "class": "Cooltrainer",
    "name": "Lana",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "ditto",
@@ -6502,7 +6502,7 @@
    "class": "Veteran",
    "name": "Joey",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "dragonite",
@@ -6583,7 +6583,7 @@
    "class": "Ace Trainer",
    "name": "Mikey",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "omastar",
@@ -6664,7 +6664,7 @@
    "class": "Dragon Tamer",
    "name": "Anna",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "dragonite",
@@ -6745,7 +6745,7 @@
    "class": "Cooltrainer",
    "name": "Liz",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "jynx",
@@ -6826,7 +6826,7 @@
    "class": "Veteran",
    "name": "Sam",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "eevee",
@@ -6889,7 +6889,7 @@
    "class": "Ace Trainer",
    "name": "Kai",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "porygon2",
@@ -6952,7 +6952,7 @@
    "class": "Dragon Tamer",
    "name": "Bret",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "snorlax",
@@ -7015,7 +7015,7 @@
    "class": "Cooltrainer",
    "name": "Tess",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "pupitar",
@@ -7078,7 +7078,7 @@
    "class": "Veteran",
    "name": "Dale",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "scizor",
@@ -7141,7 +7141,7 @@
    "class": "Ace Trainer",
    "name": "Nina",
    "rank": 9,
-   "reward": 650,
+   "reward": 100,
    "party": [
     {
      "species": "hitmonlee",
@@ -7222,7 +7222,7 @@
    "class": "Dragon Tamer",
    "name": "Owen",
    "rank": 8,
-   "reward": 600,
+   "reward": 100,
    "party": [
     {
      "species": "porygon2",
@@ -7303,7 +7303,7 @@
    "class": "Cooltrainer",
    "name": "Rita",
    "rank": 7,
-   "reward": 550,
+   "reward": 100,
    "party": [
     {
      "species": "hitmonlee",
@@ -7384,7 +7384,7 @@
    "class": "Veteran",
    "name": "Gus",
    "rank": 6,
-   "reward": 500,
+   "reward": 100,
    "party": [
     {
      "species": "tyranitar",
@@ -7465,7 +7465,7 @@
    "class": "Ace Trainer",
    "name": "Vera",
    "rank": 5,
-   "reward": 450,
+   "reward": 100,
    "party": [
     {
      "species": "aerodactyl",
@@ -7546,7 +7546,7 @@
    "class": "Dragon Tamer",
    "name": "Theo",
    "rank": 4,
-   "reward": 400,
+   "reward": 100,
    "party": [
     {
      "species": "wobbuffet",
@@ -7609,7 +7609,7 @@
    "class": "Cooltrainer",
    "name": "Mona",
    "rank": 3,
-   "reward": 350,
+   "reward": 100,
    "party": [
     {
      "species": "snorlax",
@@ -7672,7 +7672,7 @@
    "class": "Veteran",
    "name": "Cody",
    "rank": 2,
-   "reward": 300,
+   "reward": 100,
    "party": [
     {
      "species": "lapras",
@@ -7732,7 +7732,7 @@
    "class": "Ace Trainer",
    "name": "Iris",
    "rank": 1,
-   "reward": 250,
+   "reward": 100,
    "party": [
     {
      "species": "pinsir",
@@ -7795,7 +7795,7 @@
    "class": "Dragon Tamer",
    "name": "Hank",
    "rank": 0,
-   "reward": 200,
+   "reward": 100,
    "party": [
     {
      "species": "pinsir",

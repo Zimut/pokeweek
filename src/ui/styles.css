@@ -289,6 +289,98 @@ h1, h2, h3 { margin: 0 0 8px; letter-spacing: .5px; }
 .dmgfloat.crit { color: var(--warn); font-size: 24px; }
 @keyframes floatUp { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-34px); opacity: 0; } }
 
+/* ---- battle juice: shake, flash, status aura, stat arrows, sparkle ----- */
+/* Mild screen shake on impact (the field nudges; a touch stronger on crit). */
+.battle.bt-shake { animation: btShake .32s ease; }
+.battle.bt-shake-strong { animation: btShakeStrong .36s ease; }
+@keyframes btShake {
+  0%,100% { transform: translate(0,0); }
+  25% { transform: translate(-3px, 2px); }
+  50% { transform: translate(3px, -2px); }
+  75% { transform: translate(-2px, 1px); }
+}
+@keyframes btShakeStrong {
+  0%,100% { transform: translate(0,0); }
+  20% { transform: translate(-5px, 3px); }
+  40% { transform: translate(5px, -3px); }
+  60% { transform: translate(-4px, 2px); }
+  80% { transform: translate(3px, -2px); }
+}
+/* Full-field impact / intro flash overlay (alpha driven by --a). */
+.bt-flash {
+  position: absolute; inset: 0; z-index: 45; pointer-events: none;
+  background: #fff; opacity: 0;
+}
+.bt-flash.on { animation: btFlash .2s ease; }
+@keyframes btFlash { from { opacity: var(--a, .3); } to { opacity: 0; } }
+/* Battle-start sweep across the field. */
+.battle.bt-intro::after {
+  content: ''; position: absolute; inset: 0; z-index: 44; pointer-events: none;
+  background: linear-gradient(120deg, rgba(0,0,0,0) 40%, rgba(255,255,255,.65) 50%, rgba(0,0,0,0) 60%);
+  animation: btIntro .7s ease forwards;
+}
+@keyframes btIntro { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+
+/* Status aura over the active sprite (own element — keeps off the sprite's
+   animation channel, which is owned by hurt/lunge/cast). */
+.status-fx { position: absolute; pointer-events: none; z-index: 6; opacity: 0; border-radius: 16px; transition: opacity .2s; }
+.field-slot.foe .status-fx { width: 132px; height: 132px; right: 100px; top: 30px; }
+.field-slot.ally .status-fx { width: 156px; height: 156px; left: 86px; bottom: 8px; }
+.status-fx.show { opacity: 1; }
+.status-fx.fx-brn { background: radial-gradient(circle, rgba(240,128,48,0) 52%, rgba(240,128,48,.42) 100%); animation: fxPulse 1.0s ease-in-out infinite; }
+.status-fx.fx-psn, .status-fx.fx-tox { background: radial-gradient(circle, rgba(160,64,160,0) 52%, rgba(160,64,160,.45) 100%); animation: fxPulse 1.4s ease-in-out infinite; }
+.status-fx.fx-par { background: radial-gradient(circle, rgba(248,208,48,0) 52%, rgba(248,208,48,.5) 100%); animation: fxBlink .32s steps(2) infinite; }
+.status-fx.fx-slp { background: radial-gradient(circle, rgba(136,152,168,0) 52%, rgba(136,152,168,.4) 100%); animation: fxPulse 2.0s ease-in-out infinite; }
+.status-fx.fx-frz { background: radial-gradient(circle, rgba(152,216,216,0) 48%, rgba(152,216,216,.5) 100%); }
+@keyframes fxPulse { 0%,100% { opacity: .4; } 50% { opacity: .95; } }
+@keyframes fxBlink { 0% { opacity: .35; } 100% { opacity: .9; } }
+
+/* Floating stat-change arrows. */
+.stat-arrow {
+  position: absolute; font-weight: 900; font-size: 14px; letter-spacing: .3px;
+  pointer-events: none; z-index: 42; animation: floatUp 1.1s ease forwards;
+  text-shadow: 1px 1px 0 var(--border), -1px -1px 0 var(--border);
+}
+.stat-arrow.up { color: #4fd06a; }
+.stat-arrow.down { color: #ff7a7a; }
+
+/* Catch-success sparkles. */
+.catch-spark {
+  position: absolute; width: 8px; height: 8px; margin: -4px 0 0 -4px; z-index: 46;
+  pointer-events: none; border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #fff, #ffe267 60%, rgba(255,210,60,0) 75%);
+  box-shadow: 0 0 8px 2px rgba(255,225,120,.9);
+  animation: catchSpark .7s ease-out forwards;
+}
+@keyframes catchSpark {
+  0% { transform: translate(0,0) scale(.4); opacity: 0; }
+  25% { opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(1.1); opacity: 0; }
+}
+
+/* Live party bar between the field and the control deck. */
+.bt-party {
+  width: min(860px, 96vw); display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; margin: 2px 0 -2px;
+}
+.bt-pchip {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  width: 54px; padding: 4px 3px; border-radius: 9px;
+  background: var(--panel); border: 2px solid var(--border); opacity: .9;
+}
+.bt-pchip.active { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(80,160,255,.35); opacity: 1; }
+.bt-pchip.fainted { opacity: .4; filter: grayscale(.7); }
+.bt-pico { width: 30px; height: 30px; image-rendering: auto; }
+.bt-phpwrap { width: 100%; height: 5px; background: #58504a; border-radius: 4px; overflow: hidden; }
+.bt-php { height: 100%; background: var(--good); border-radius: 4px; transition: width .4s ease; }
+.bt-php.mid { background: var(--warn); }
+.bt-php.low { background: var(--bad); }
+.bt-php.dead { width: 0 !important; }
+.bt-pst {
+  font-size: 8px; font-weight: 800; color: #fff; padding: 0 4px; border-radius: 4px;
+  line-height: 1.4; text-transform: uppercase;
+}
+
 /* ---- control deck (message + menus) ----------------------------------- */
 .deck {
   width: min(860px, 96vw);
@@ -402,8 +494,22 @@ h1, h2, h3 { margin: 0 0 8px; letter-spacing: .5px; }
 .ow-day { font-weight: 800; color: var(--accent-2); padding: 3px 9px; border-radius: 999px; background: rgba(0,0,0,.06); font-size: 13px; }
 .ow-day:empty { display: none; }
 .ow-day.locked { color: #c0392b; background: rgba(192,57,43,.12); }
-.ow-money { font-weight: 800; color: #2c7a2c; }
+.ow-money { font-weight: 800; color: #2c7a2c; position: relative; }
 .ow-balls { font-weight: 800; color: #c0392b; }
+/* floating ±money chip on the wallet */
+.ow-money-float {
+  position: absolute; left: 50%; top: -2px; transform: translateX(-50%);
+  font-weight: 900; font-size: 13px; white-space: nowrap; pointer-events: none;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.25); animation: owMoneyFloat 1.5s ease forwards;
+}
+.ow-money-float.up { color: #38b24a; }
+.ow-money-float.down { color: #d44; }
+@keyframes owMoneyFloat {
+  0% { opacity: 0; transform: translate(-50%, 4px); }
+  18% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -22px); }
+}
+.ow-mute { padding: 5px 9px; }
 .ow-route-label { font-weight: 800; letter-spacing: .5px; }
 .ow-route { padding: 5px 10px; }
 .ow-badges { display: inline-flex; gap: 4px; }
@@ -448,7 +554,9 @@ h1, h2, h3 { margin: 0 0 8px; letter-spacing: .5px; }
 .ow-party-slot.lead .ow-party-rank { background: var(--accent-2); }
 .ow-party-sprite { width: 38px; height: 38px; image-rendering: auto; pointer-events: none; }
 .ow-party-info { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.ow-party-nameline { display: flex; align-items: center; gap: 4px; min-width: 0; }
 .ow-party-name { font-weight: 800; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ow-party-st { font-size: 8px; font-weight: 800; color: #fff; padding: 0 4px; border-radius: 4px; text-transform: uppercase; flex: none; }
 .ow-party-lv { font-size: 11px; color: #556; font-weight: 700; }
 .ow-party-types { display: flex; gap: 3px; flex-wrap: wrap; }
 .ow-ptype { font-size: 9px; font-weight: 800; color: #fff; padding: 0 4px; border-radius: 4px; text-transform: uppercase; }
@@ -469,6 +577,29 @@ h1, h2, h3 { margin: 0 0 8px; letter-spacing: .5px; }
   transition: opacity .2s ease, transform .2s ease;
 }
 .ow-toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+/* map-transition fade: black overlay that quickly fades out on arrival */
+.ow-fade {
+  position: absolute; inset: 0; z-index: 30; pointer-events: none;
+  background: #0a0c14; opacity: 0;
+}
+.ow-fade.out { animation: owFade .45s ease forwards; }
+@keyframes owFade { from { opacity: 1; } to { opacity: 0; } }
+
+/* battle enter/exit full-screen flash (mounted on the game root) */
+.screen-flash {
+  position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+  background: #fff; opacity: 0;
+}
+.screen-flash.on { animation: screenFlash .46s ease forwards; }
+@keyframes screenFlash { 0% { opacity: .85; } 100% { opacity: 0; } }
+
+/* bump nudge when walking into something solid */
+@keyframes owBump {
+  0%,100% { transform: translate(0,0); }
+  35% { transform: translate(-2px, 0); }
+  70% { transform: translate(2px, 0); }
+}
 
 /* celebratory evolution toast: evolved sprite + message with a golden glow */
 .ow-evo-toast {

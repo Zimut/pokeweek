@@ -4,7 +4,7 @@
    "leader": "Brock",
    "region": "Kanto",
    "gymType": "Rock",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "geodude",
@@ -46,7 +46,7 @@
    "leader": "Falkner",
    "region": "Johto",
    "gymType": "Flying",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "pidgey",
@@ -90,7 +90,7 @@
    "leader": "Misty",
    "region": "Kanto",
    "gymType": "Water",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "goldeen",
@@ -134,7 +134,7 @@
    "leader": "Bugsy",
    "region": "Johto",
    "gymType": "Bug",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "butterfree",
@@ -197,7 +197,7 @@
    "leader": "Lt. Surge",
    "region": "Kanto",
    "gymType": "Electric",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "voltorb",
@@ -259,7 +259,7 @@
    "leader": "Whitney",
    "region": "Johto",
    "gymType": "Normal",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "clefairy",
@@ -305,7 +305,7 @@
    "leader": "Erika",
    "region": "Kanto",
    "gymType": "Grass",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "gloom",
@@ -367,7 +367,7 @@
    "leader": "Morty",
    "region": "Johto",
    "gymType": "Ghost",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "gengar",
@@ -431,7 +431,7 @@
    "leader": "Sabrina",
    "region": "Kanto",
    "gymType": "Psychic",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "alakazam",
@@ -493,7 +493,7 @@
    "leader": "Jasmine",
    "region": "Johto",
    "gymType": "Steel",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "magneton",
@@ -557,7 +557,7 @@
    "leader": "Blaine",
    "region": "Kanto",
    "gymType": "Fire",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "magmar",
@@ -619,7 +619,7 @@
    "leader": "Pryce",
    "region": "Johto",
    "gymType": "Ice",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "dewgong",
@@ -683,7 +683,7 @@
    "leader": "Giovanni",
    "region": "Kanto",
    "gymType": "Ground",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "dugtrio",
@@ -745,7 +745,7 @@
    "leader": "Clair",
    "region": "Johto",
    "gymType": "Dragon",
-   "reward": 1000,
+   "reward": 500,
    "team": [
     {
      "species": "gyarados",

@@ -11,7 +11,8 @@
 // overworld reads and writes, plus async `hooks` invoked on each interaction.
 // While a hook runs, input is locked (`busy`) so battles/menus can take over
 // the screen and resume cleanly afterwards.
-import { spriteFront, TYPE_COLORS, expFraction } from './data.js';
+import { spriteFront, TYPE_COLORS, expFraction, STATUS_SHORT } from './data.js';
+import { sfx } from './sfx.js';
 
 const el = (tag, props = {}, kids = []) => {
   const n = document.createElement(tag);
@@ -127,11 +128,13 @@ export class Overworld {
     this.hud.maxlv = el('span', { class: 'ow-maxlv', title: 'Highest Pokémon level on this route' });
     const boxBtn = el('button', { class: 'ghost ow-btn', text: '💻 PC Box', onclick: () => this.runHook('onBox') });
     const itemsBtn = el('button', { class: 'ghost ow-btn', text: '🎒 Items', onclick: () => this.runHook('onItems') });
+    const muteBtn = el('button', { class: 'ghost ow-btn ow-mute', text: sfx.isMuted() ? '🔇' : '🔊', title: 'Toggle sound' });
+    muteBtn.addEventListener('click', () => { const m = sfx.toggle(); muteBtn.textContent = m ? '🔇' : '🔊'; });
     const exit = el('button', { class: 'ghost ow-leave', text: '↩ Exit', onclick: () => this.hooks.onExit && this.hooks.onExit() });
     const topBar = el('div', { class: 'ow-hud ow-top' }, [
       el('div', { class: 'ow-hud-group ow-left' }, [this.hud.money, this.hud.balls]),
       el('div', { class: 'ow-hud-group ow-center' }, [this.hud.badges, this.hud.maxlv]),
-      el('div', { class: 'ow-hud-group ow-right' }, [boxBtn, itemsBtn, exit]),
+      el('div', { class: 'ow-hud-group ow-right' }, [boxBtn, itemsBtn, muteBtn, exit]),
     ]);
 
     // ---- arena: tile stage + always-on party bar (+ transient toast)
@@ -143,7 +146,8 @@ export class Overworld {
     this.stageEl.addEventListener('click', (e) => this.onStageClick(e));
     this.partyBarEl = el('div', { class: 'ow-party' });
     this.toastEl = el('div', { class: 'ow-toast' });
-    this.arena = el('div', { class: 'ow-arena' }, [this.stageEl, this.partyBarEl, this.toastEl]);
+    this.fadeEl = el('div', { class: 'ow-fade' }); // map-transition wipe overlay
+    this.arena = el('div', { class: 'ow-arena' }, [this.stageEl, this.partyBarEl, this.toastEl, this.fadeEl]);
 
     // ---- bottom bar: [Route N · Name · ⓘ Route · day] ···· [#code]
     this.hud.route = el('span', { class: 'ow-route-label' });
@@ -253,7 +257,10 @@ export class Overworld {
         el('span', { class: 'ow-party-rank', text: `${i + 1}` }),
         el('img', { class: 'ow-party-sprite', src: spriteFront(sp.num, mon.shiny), alt: sp.name, draggable: 'false' }),
         el('div', { class: 'ow-party-info' }, [
-          el('span', { class: 'ow-party-name', text: name + (mon.shiny ? ' ✦' : '') }),
+          el('div', { class: 'ow-party-nameline' }, [
+            el('span', { class: 'ow-party-name', text: name + (mon.shiny ? ' ✦' : '') }),
+            mon.status ? el('span', { class: `ow-party-st st-${mon.status}`, text: STATUS_SHORT[mon.status] || String(mon.status).toUpperCase() }) : null,
+          ]),
           el('span', { class: 'ow-party-lv', text: `Lv ${mon.level}` }),
           el('div', { class: 'ow-party-types' }, sp.types.map((t) =>
             el('span', { class: 'ow-ptype', style: `background:${TYPE_COLORS[t] || '#888'}`, text: t }))),
@@ -452,6 +459,43 @@ export class Overworld {
     this.state.facing = entry === 'north' ? 'down' : 'up';
     this.render();
     this.layout();
+    this.fadeIn();
+  }
+
+  // Quick fade-from-black when arriving on a new map.
+  fadeIn() {
+    const f = this.fadeEl;
+    if (!f) return;
+    f.classList.remove('out'); void f.offsetWidth; f.classList.add('out');
+    setTimeout(() => f.classList.remove('out'), 460);
+  }
+
+  // Small nudge + thud when the player walks into something solid. Throttled so
+  // holding a direction against a wall doesn't machine-gun the sound.
+  bump() {
+    if (this._bumping) return;
+    this._bumping = true;
+    sfx.play('bump');
+    setTimeout(() => { this._bumping = false; }, 220);
+    // Animate the hop wrapper, not the actor itself — the actor's transform
+    // carries its tile position, so animating it would teleport the sprite.
+    const h = this.playerEl && this.playerEl.querySelector('.ow-actor-hop');
+    if (!h) return;
+    h.style.animation = 'none'; void h.offsetWidth;
+    h.style.animation = 'owBump 0.2s ease';
+    setTimeout(() => { if (h) h.style.animation = ''; }, 230);
+  }
+
+  // Floating ±money chip over the wallet on the HUD (earned/spent feedback).
+  moneyFloat(amt) {
+    if (!amt || !this.hud || !this.hud.money) return;
+    const up = amt > 0;
+    const f = el('div', {
+      class: `ow-money-float ${up ? 'up' : 'down'}`,
+      text: `${up ? '+' : '−'}₽${Math.abs(amt).toLocaleString('en-US')}`,
+    });
+    this.hud.money.append(f);
+    setTimeout(() => f.remove(), 1500);
   }
 
   // Transient feedback toast over the stage (replaces the old permanent log).
@@ -612,7 +656,7 @@ export class Overworld {
     if (this.playerEl) this.playerEl.className = `ow-actor ow-player face-${dir}${this._walk ? ' frame-b' : ''}`;
     const { dx, dy } = DIRS[dir];
     const nx = this.state.x + dx, ny = this.state.y + dy;
-    if (nx < 0 || ny < 0 || nx >= this.W || ny >= this.H) return false;
+    if (nx < 0 || ny < 0 || nx >= this.W || ny >= this.H) { this.bump(); return false; }
     const code = this.tiles[ny][nx];
 
     // Interactables block the tile but trigger their hook on bump.
@@ -620,7 +664,7 @@ export class Overworld {
     if (code === MART) { await this.runHook('onMart'); return false; }
     if (code === GYM_K) { await this.interactGym('kanto'); return false; }
     if (code === GYM_J) { await this.interactGym('johto'); return false; }
-    if (code === WALL || !WALKABLE.has(code)) return false;
+    if (code === WALL || !WALKABLE.has(code)) { this.bump(); return false; }
 
     // Walkable — animate the step.
     await this.moveTo(nx, ny);

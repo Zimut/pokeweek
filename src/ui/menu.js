@@ -1,6 +1,6 @@
 // In-overworld menu overlay: manage the party (up to 6) and PC box, view a
-// Pokémon summary (stats + moves), and use bag items (vitamins, Rare Candy,
-// evolution stones) on a chosen party member. Pure view — the GameController
+// Pokémon summary (stats + moves), and use bag items (Rare Candy, evolution
+// stones) + EV candies on a chosen party member. Pure view — the GameController
 // owns the rules (useItem / movePartyToBox / moveBoxToParty / monStats).
 import { spriteFront, TYPE_COLORS } from './data.js';
 
