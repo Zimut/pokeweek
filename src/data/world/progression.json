@@ -28,7 +28,7 @@
   "totodile"
  ],
  "shinyRate": 300,
- "encounterStepRate": 0.12,
+ "encounterStepRate": 0.24,
  "catchBaseByRarity": {
   "common": 0.45,
   "uncommon": 0.3,
